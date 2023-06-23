@@ -1,0 +1,33 @@
+@import "src/assets/styles/helpers/mixin";
+
+.contentBox {
+  padding: 60px 0;
+
+  &.topBig {
+    padding-top: 120px;
+
+    @include _768 {
+      padding-top: 60px;
+    }
+  }
+
+  &.bottomBig {
+    padding-bottom: 120px;
+
+    @include _768 {
+      padding-bottom: 60px;
+    }
+  }
+
+  &.gray {
+    background: transparent;
+  }
+
+  &.blue {
+    background: var(--color-blue-darken);
+  }
+
+  @include _768 {
+    padding: 30px 0;
+  }
+}

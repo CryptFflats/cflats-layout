@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "author": "stepan663663@gmail.com",
+  "default_locale": "en",
+  "theme_color": "#fff",
+  "background_color": "#2d2d2d",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "https://cryptoflats.io/",
+  "name": "Cryptoflats",
+  "short_name": "Cryptoflats",
+  "description": "Cryptoflats - is a collection of generated NFT tokens on the Binance Smart Chain.",
+  "icons": [
+    {
+      "src": "https://cryptoflats.static.fra1.cdn.digitaloceanspaces.com/icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cryptoflats.static.fra1.cdn.digitaloceanspaces.com/icons/icon_256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cryptoflats.static.fra1.cdn.digitaloceanspaces.com/icons/icon_128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cryptoflats.static.fra1.cdn.digitaloceanspaces.com/icons/icon_64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cryptoflats.static.fra1.cdn.digitaloceanspaces.com/icons/icon_32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cryptoflats.static.fra1.cdn.digitaloceanspaces.com/icons/icon_16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

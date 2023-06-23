@@ -1,0 +1,202 @@
+@import "src/assets/styles/helpers/mixin";
+@import "src/assets/styles/helpers/variables";
+
+.rarityAbout {
+  padding: 190px 0 80px 0;
+
+  @include _768 {
+    padding: 100px 0 65px 0;
+  }
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-orange);
+  margin-bottom: 60px;
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
+}
+
+.text {
+  max-width: 790px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 120px;
+
+  @include _768 {
+    margin-top: 45px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tabButton {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  background: none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 20px;
+
+  &.active {
+    border: 2px solid #FFF;
+  }
+
+  &.active-gold {
+    color: var(--color-yellow);
+    border: 2px solid var(--color-yellow);
+  }
+
+  &.active-diamond {
+    color: var(--color-diamond);
+    border: 2px solid var(--color-diamond);
+  }
+
+  &--gold {
+    color: var(--color-yellow);
+  }
+
+  &--diamond {
+    color: var(--color-diamond);
+  }
+}
+
+.tabs {
+  position: relative;
+}
+
+.tabWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.tab {
+  min-height: 500px;
+  background-size: cover;
+  padding: 70px 0 200px 0;
+  text-align: center;
+
+  @include _1024 {
+    padding: 70px 0;
+  }
+
+  &.active {
+    transition: opacity 1s 0.3s;
+    display: block;
+    opacity: 1;
+  }
+}
+
+.aboutFlats {
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 40px;
+  padding: 24px 40px;
+  display: inline-block;
+  max-width: 1110px;
+  margin: 0 auto 100px auto;
+
+  @include _1200 {
+    display: none;
+  }
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include _1200 {
+    justify-content: center;
+  }
+}
+
+.apartment {
+  max-width: 500px;
+  max-height: 500px;
+
+  @include _1200 {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+.flatInfo {
+  display: flex;
+  gap: 100px;
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 40px;
+  padding: 58px 41px;
+
+  @include _1200 {
+    margin-top: 50px;
+    padding: 42px 20px;
+    gap: 0;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.infoPoints {
+   > li {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    margin-bottom: 25px;
+    color: var(--color-yellow);
+    text-align: left;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+
+  @include _1200 {
+     > li {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.infoAbout {
+  > li {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    margin-bottom: 25px;
+    text-align: right;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+
+  @include _1200 {
+    > li {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
+}

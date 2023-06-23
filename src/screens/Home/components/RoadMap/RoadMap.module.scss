@@ -1,0 +1,193 @@
+@import "src/assets/styles/helpers/mixin";
+@import "src/assets/styles/helpers/variables";
+
+.animBox {
+  color: var(--color-yellow);
+  margin-bottom: 120px;
+
+  @include _768 {
+    margin-bottom: 60px;
+  }
+}
+
+.lineAnim {
+  background: var(--color-yellow);
+}
+
+.roadmapCards {
+  position: relative;
+}
+
+.roadmapCard {
+  margin: 0 auto 20px auto;
+  border-radius: 45px;
+  position: relative;
+  z-index: 100;
+  padding: 10px;
+  max-width: 1000px;
+
+  &.turquoise {
+    background: var(--color-turquoise);
+    color: var(--color-turquoise-darken);
+  }
+
+  &.blue {
+    background: #66CDDB;
+    color: #085A65;
+  }
+
+  &.yellow {
+    background: #DBC166;
+    color: #5E4B0A;
+  }
+
+  &.pink {
+    background: var(--color-pink);
+    color: var(--color-pink-darken);
+  }
+
+  &.purple {
+    background: var(--color-purple);
+    color: var(--color-purple-darken);
+  }
+}
+
+.roadmapHeader {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 50px;
+
+  @include _768 {
+    gap: 20px;
+  }
+}
+
+.progress {
+  font-size: 1.625rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: #000;
+  background: #FFF;
+  border-radius: 30px;
+  padding: 13px 23px;
+
+  @include _768 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 7px;
+  }
+}
+
+.roadmapCardTitle {
+  font-size: $text;
+  line-height: $text-height;
+  font-weight: 600;
+  position: relative;
+
+
+  @include _768 {
+    font-size: $text-medium;
+    line-height: $text-medium-height;
+  }
+}
+
+.roadmapBody {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s linear;
+  padding-left: 150px;
+
+  @include _768 {
+    padding-left: 40px;
+  }
+}
+
+.roadmapBodyTitle {
+  font-family: var(--body-font-family);
+  font-size: $text;
+  line-height: $text-height;
+  font-weight: 600;
+  color: #FFF;
+  margin-bottom: 21px;
+  position: relative;
+  margin-top: 5px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 641px;
+    top: -5px;
+
+    @include _768 {
+      display: none;
+    }
+  }
+
+  &.turquoise-b {
+    &::before {
+      background: #0A5845;
+    }
+  }
+
+  &.blue-b {
+    &::before {
+      background: #085A65;
+    }
+  }
+
+  &.yellow-b {
+    &::before {
+      background: #5d4b0a;
+    }
+  }
+
+  &.pink-b {
+    &::before {
+      background: #722f5f;
+    }
+  }
+
+  &.purple-b {
+    &::before {
+      background: #362066;
+    }
+  }
+
+  @include _768 {
+    margin-bottom: 17px;
+    font-size: 17px;
+  }
+}
+
+.roadmapCardList {
+  li {
+    font-size: $text-medium;
+    line-height: $text-medium-height;
+    margin-bottom: 15px;
+    position: relative;
+
+    span {
+      font-weight: 700;
+    }
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #FFF;
+      left: -20px;
+      top: 9px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    @include _768 {
+      font-size: $text-mobile;
+      line-height: $text-mobile-height;
+    }
+  }
+}
+
+

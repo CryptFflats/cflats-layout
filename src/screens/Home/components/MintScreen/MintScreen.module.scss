@@ -1,0 +1,510 @@
+@import "src/assets/styles/base/animation";
+@import "src/assets/styles/helpers/mixin";
+
+.mintScreen {
+  position: relative;
+  background: #F4E9E9;
+  overflow: hidden;
+  display: flex;
+
+  @include _1024 {
+    flex-direction: column;
+  }
+}
+
+.aboutRooms {
+  overflow: hidden;
+  position: relative;
+  width: 59%;
+  height: auto;
+
+  @include _1024 {
+    width: 100%;
+  }
+}
+
+.videoWrapper {
+  display: block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mintButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  top: 25%;
+  transform: translateY(-40%);
+  z-index: 5;
+}
+
+.aboutRoomsText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #F3F3F3;
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
+
+  @include _576 {
+    padding-top: 15%;
+  }
+
+  > h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+
+    @include _1200 {
+      font-size: 2.3rem;
+      line-height: 2.6rem;
+    }
+
+    @include _576 {
+      font-size: 1.7rem;
+      line-height: 2.3rem;
+    }
+
+    @include _480 {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  > h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-top: 20px;
+
+    @include _1200 {
+      font-size: 1.7rem;
+      line-height: 1.9rem;
+      margin-top: 15px;
+    }
+
+    @include _576 {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      margin-top: 5px;
+    }
+
+    @include _480 {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  > p {
+    margin-top: 130px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.2rem;
+
+    @include _1200 {
+      margin-top: 90px;
+      font-size: 1.7rem;
+      line-height: 1.9rem;
+    }
+
+    @include _576 {
+      margin-top: 30px;
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+.hashtags {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  gap: 70px;
+  color: #349EEB;
+  font-weight: 600;
+
+  @include _1350 {
+    margin-top: 40px;
+    gap: 50px;
+  }
+
+  @include _576 {
+    gap: 25px;
+    margin-top: 30px;
+  }
+}
+
+.hashtag {
+  position: relative;
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+
+  @include _1200 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  @include _576 {
+    font-size: 0.8rem;
+  }
+
+  &.hashtag-1 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  &.hashtag-2 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+  }
+
+  &.hashtag-3 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+  }
+
+  &.hashtag-4 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+  }
+
+  &.hashtag-5 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.1s;
+  }
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  30% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  60% {
+    transform: translate(-3px, 2px) rotate(0deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, 2px) rotate(-1deg);
+  }
+}
+
+.aboutNft {
+  width: 53%;
+  height: auto;
+  background: #F4E9E9;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 12%;
+  color: #000;
+
+  @include _1024 {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  @include _576 {
+    padding-top: 25%;
+  }
+
+  > h1 {
+    font-family: var(--body-font-family);
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 10;
+
+    @include _576 {
+      font-size: 2.5rem;
+      line-height: 2.7rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  > p {
+    color: #626262;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 33px;
+    position: relative;
+    z-index: 10;
+
+    > strong {
+      color: #000;
+    }
+
+    @include _576 {
+      font-size: 1.5rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+.dec-anim {
+  position: absolute;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.sofa {
+  img {
+    animation: fade-move1 infinite linear 7s alternate;
+  }
+
+
+    top: 0px;
+    transform: translateX(-100px);
+
+
+  @include _1980 {
+    top: -50px;
+    max-width: 440px;
+    max-height: 471px;
+  }
+
+  @include _1700 {
+    max-width: 380px;
+  }
+
+  @include _1550 {
+    max-width: 340px;
+  }
+
+  @include _1350 {
+    max-width: 300px;
+  }
+
+  @include _576 {
+    max-width: 250px;
+  }
+}
+
+.armchair {
+  img {
+    animation: fade-move2 infinite linear 10s alternate;
+  }
+
+
+    top: -30px;
+    left: 65%;
+    transform: translateX(-65%);
+
+
+  @include _1700 {
+    max-width: 240px;
+  }
+
+  @include _1350 {
+    max-width: 200px;
+  }
+
+  @include _576 {
+    max-width: 180px;
+    top: 0;
+  }
+}
+
+.chess {
+  filter: blur(3px);
+
+
+    top: 0;
+    right: 0;
+
+
+  @include _1980 {
+    max-width: 250px;
+  }
+
+  @include _1550 {
+    max-width: 200px;
+  }
+
+  @include _1350 {
+    max-width: 150px;
+  }
+
+  @include _576 {
+    max-width: 130px;
+    right: -10px;
+  }
+
+  img {
+    animation: fade-move3 infinite linear 4s alternate;
+  }
+}
+
+.diamond-card {
+  filter: blur(3px);
+
+
+    transform: rotate(-25.54deg) translateX(-110px);
+    max-width: calc(550.33px - 5%);
+    max-height: calc(366.89px - 5%);
+    left: 0;
+    bottom: 110px;
+
+
+  @include _1980 {
+    max-width: calc(550.33px - 20%);
+    max-height: calc(366.89px - 20%);
+    bottom: 140px;
+  }
+
+  @include _1700 {
+    max-width: calc(550.33px - 30%);
+    max-height: calc(366.89px - 30%);
+  }
+
+  @include _1550 {
+    max-width: calc(550.33px - 40%);
+    max-height: calc(366.89px - 40%);
+  }
+
+  @include _1350 {
+    max-width: calc(550.33px - 50%);
+    max-height: calc(366.89px - 50%);
+    bottom: 150px;
+    transform: rotate(-25.54deg) translateX(-85px);
+  }
+
+  @include _1200 {
+    max-width: calc(550.33px - 75%);
+    max-height: calc(366.89px - 70%);
+    bottom: 150px;
+  }
+
+  @include _1024 {
+    max-width: calc(550.33px - 45%);
+    max-height: calc(366.89px - 45%);
+    bottom: 20px;
+    transform: rotate(-25.54deg) translateX(-50px);
+  }
+
+  @include _768 {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+
+.gold-card {
+
+    bottom: 250px;
+    right: 0px;
+    max-width: 420px;
+    max-height: 289.18px;
+    transform: rotate(32.27deg) translateX(100px);
+
+
+  @include _1980 {
+    max-width: 320px;
+    max-height: 289.18px;
+    bottom: 100px;
+  }
+
+  @include _1700 {
+    max-width: 250px;
+  }
+
+  @include _1550 {
+    max-width: 240px;
+    transform: rotate(32.27deg) translateX(50px);
+  }
+
+  @include _1350 {
+    max-width: 200px;
+  }
+
+  @include _1200 {
+    max-width: 150px;
+    bottom: 50px;
+  }
+}
+
+.table {
+  img {
+    animation: fade-move4 infinite linear 4s alternate;
+  }
+
+  @include _2560 {
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-55%);
+  }
+
+  @include _1980 {
+    max-width: 156px;
+    max-height: 258px;
+  }
+
+  @include _1550 {
+    max-width: 126px;
+  }
+
+  @include _1350 {
+    max-width: 100px;
+  }
+
+  @include _1200 {
+    bottom: -20px;
+  }
+}
+
+
+
+.loadVideoScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #4d4949;
+  top: 0;
+  left: 0;
+
+  > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

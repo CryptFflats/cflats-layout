@@ -1,0 +1,33 @@
+@import "src/assets/styles/helpers/mixin";
+
+.wallets {
+  padding: 30px 40px 40px 40px;
+
+  > .text {
+    margin-bottom: 20px;
+
+    span {
+      color: var(--color-yellow);
+    }
+  }
+
+  @include _576 {
+    padding: 0 25px 25px 25px;
+  }
+}
+
+.walletsGroup {
+  $gray: #A5A5A5;
+
+  border: 2px solid $gray;
+  border-radius: 30px;
+  overflow: hidden;
+
+  > li {
+    border-bottom: 2px solid $gray;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

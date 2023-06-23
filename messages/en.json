@@ -1,0 +1,517 @@
+{
+  "Home": {
+    "navigation": {
+      "about":{
+        "title": "about",
+        "path": "#about"
+      },
+      "roadmap":{
+        "title": "roadmap",
+        "path": "#roadmap"
+      },
+      "team":{
+        "title": "team",
+        "path": "#team"
+      },
+      "faq":{
+        "title": "faq",
+        "path": "#faq"
+      },
+      "litepaper":{
+        "title": "litepaper",
+        "path": "/litepaper"
+      }
+      },
+    "about": {
+      "first": {
+        "title": "about",
+        "paragraph": "Cryptoflats - is a collection of generated NFT tokens on the Binance Smart Chain. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
+      },
+      "second": {
+        "title": "specs",
+        "paragraph": "Every Cryptoflat room is unique and created from a combination of more than 500+ 3D elements such as walls, floors, furniture, decor, light and cats :) You can expect different tiers of rarity within this collection components."
+      }
+    },
+    "cryptoflats_video": {
+      "play_game": "PLAY TO EARN GAME",
+      "coming_soon": "Coming soon!",
+      "watch_trailer": "Watch trailer"
+    },
+    "rarity": {
+      "title": "RARITY",
+      "about": "Each class of NFT has a different probability of being minted. There will be from 5555 to 2222 tokens of GEN#1-GEN#4, in which there will be standard, silver, gold and diamond rarities. GEN#5 will not have a rarity at all, because of its uniqueness by itself.",
+      "tabs": {
+        "rarity_01": {
+          "id": "rarity_01",
+          "img": "d9070113-0b6b-4faa-bba2-dfa463ed5600/public",
+          "background": "https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/03939ae7-4ead-4366-4b01-8424406d8500/cover",
+          "name": "GOLD PASS",
+          "class": "active-gold",
+          "about_flats": "СFLAT Gold pass gives an advantage over other users",
+          "tab_info": {
+            "n1": "Adds +10% income of all staked NFTs",
+            "n2": "50% discount on land for purchase GEN#2-GEN#4",
+            "n3": "30% discount on land for purchase GEN#5",
+            "n4": "Private chat and airdrop conditions",
+            "n5": "Golden tick on our discord channel "
+            }
+        },
+        "rarity_02": {
+          "id": "rarity_02",
+          "img": "9b9f2044-5426-4fb6-948b-a37c6a885a00/public",
+          "background": "https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/2003c158-850a-4146-9413-827893a74d00/cover",
+          "name": "DIAMOND PASS",
+          "class": "active-diamond",
+          "about_flats": "СFLAT Diamond pass gives an advantage over other users with gold pass",
+          "tab_info": {
+            "n1": "Adds +20% income of all staked NFTs",
+            "n2": "Free purchase of land for acquisition GEN#2, GEN#3",
+            "n3": "70% discount on land for purchase GEN#4, GEN#5",
+            "n4": "Private chat and airdrop conditions",
+            "n5": "Diamond tick on our discord channel"
+          }
+        },
+        "rarity_03": {
+          "id": "rarity_03",
+          "img": "c8834aa0-188e-4c56-96df-4c01441d8500/public",
+          "background": "https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/0c3c095e-8da8-43d3-d2b0-f5254f6e6800/cover",
+          "name": "STANDARD FLATS",
+          "class": "active",
+          "about_flats": "70% of the overall quantity with huge variety of backgrounds in different colors and shapes",
+          "tab_info": {
+            "n1": "Approximate Quantity - 3490 pcs",
+            "n2": "Income per day (Staking) - 5000 CFLAT",
+            "n3": "Staking days - 100",
+            "n4": "Staking days - 100",
+            "n5": "Token claim - 60% to wallet"
+          }
+        },
+        "rarity_04": {
+          "id": "rarity_04",
+          "img": "c8834aa0-188e-4c56-96df-4c01441d8500/public",
+          "background": "https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/5c856f88-c6e8-4c76-0edc-93b2ac9c7a00/cover",
+          "name": "SILVER FLATS",
+          "class": "active",
+          "about_flats": "15% of the overall quantity with silver background andrarity lettering",
+          "tab_info": {
+            "n1": "Approximate Quantity - 835 pcs",
+            "n2": "Net Income per day (Staking) - 4526 CFLAT",
+            "n3": "Net Income per day (Staking) - 4526 CFLAT",
+            "n4": "Net Income per day (Staking) - 4526 CFLAT",
+            "n5": "Token claim - 100% to wallet"
+          }
+        },
+        "rarity_05": {
+          "id": "rarity_05",
+          "img": "c8834aa0-188e-4c56-96df-4c01441d8500/public",
+          "background": "https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/03939ae7-4ead-4366-4b01-8424406d8500/cover",
+          "name": "GOLD FLATS",
+          "class": "active-gold",
+          "about_flats": "10% of the overall quantity with gold background and rarity lettering",
+          "tab_info": {
+            "n1": "Approximate Quantity - 555 pcs",
+            "n2": "Net Income per day (Staking) - 5324 CFLAT",
+            "n3": "Net Income per day (Staking) - 5324 CFLAT",
+            "n4": "Claim to unstake - after 5 days",
+            "n5": "Token claim - 100% to wallet"
+          }
+        },
+        "rarity_06": {
+          "id": "rarity_06",
+          "img": "c8834aa0-188e-4c56-96df-4c01441d8500/public",
+          "background": "https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/2003c158-850a-4146-9413-827893a74d00/cover",
+          "name": "DIAMOND FLATS",
+          "class": "active-diamond",
+          "about_flats": "5% of the overall quantity with diamond background and rarity lettering",
+          "tab_info": {
+            "n1": "Approximate Quantity - 225 pcs",
+            "n2": "Net Income per day (Staking) - 6128CFLAT",
+            "n3": "Net Income per day (Staking) - 6128CFLAT",
+            "n4": "Claim to unstake - after 5 days",
+            "n5": "Token claim - 100% to wallet"
+          }
+        }
+      }
+    },
+    "concept": {
+      "title": "CONCEPT",
+      "paragraph": "Cryptoflats project develops and transforms since 2021, inspired by the thought of developing a meta-universe where every player has their designer apartments with interactive and financial mechanics.\nThe ability to earn rental income by renting out an apartment or room is certainly not something new, but we have some interactive tools in mind, that make this process really exciting - a p2e game in which everyone will have their own virtual apartment with a unique style."
+    },
+    "roadmap": {
+      "title": "ROADMAP",
+      "accordion": {
+        "20%": {
+          "class": "turquoise",
+          "classTitle": "turquoise-b",
+          "progress": "20%",
+          "headerTitle": "CREATING OF ISOMETRIC ROOMS",
+          "titleBody": "Q2 2023– Q3 2023",
+          "listText": {
+            "n1": "DROP #1 - 5555 NFT isometric Living Rooms",
+            "n2": "DROP #2 - 4444 NFT isometric Bedrooms",
+            "n3": "DROP #3 - 3333 NFT isometric Kitchen and Dining rooms",
+            "n4": "DROP #4 - 2222 NFT isometric Playrooms",
+            "n5": "DROP #5 - 1111 NFT isometric Secret rooms"
+          }
+        },
+        "40%": {
+          "class": "blue",
+          "classTitle": "blue-b",
+          "progress": "40%",
+          "headerTitle": "TOKENSALE",
+          "titleBody": "Q3 2023",
+          "listText": {
+            "n1": "CFLAT token will be the internal game currency with a lot of advantages",
+            "n2": "We will provide you the project of Tokenomics where you can see all the benefits",
+            "n3": "We will hold private and public token sales and create pool of liquidity"
+          }
+        },
+        "60%": {
+          "class": "yellow",
+          "classTitle": "yellow-b",
+          "progress": "60%",
+          "headerTitle": "FULL APARTMENT FROM NFT ROOMS",
+          "titleBody": "Q3 2023 – Q4 2023",
+          "listText": {
+            "n1": "You can create full apartment based on the metadata of Cryptoflats NFT tokens",
+            "n2": "Created apartment will turn to your individual p2e item",
+            "n3": "This stage gives you an opportunity to earn CFLAT tokens by holding your virtual apartment",
+            "n4": "You can mint your full apartment to sell it on marketplace"
+          }
+        },
+        "80%": {
+          "class": "pink",
+          "classTitle": "pink-b",
+          "progress": "80%",
+          "headerTitle": "INTERNAL MARKETPLACE",
+          "titleBody": "Q4 2023",
+          "listText": {
+            "n1": "You can use marketplace to buy interior items and then place them in you rooms",
+            "n2": "Interior designers can post their items to marketplace and sell them to the apartment owners",
+            "n3": "You can offer your services to create individual content",
+            "n4": "Marketplace offers game mechanics targeted to improve your apartment properties"
+          }
+        },
+        "100%": {
+          "class": "purple",
+          "classTitle": "purple-b",
+          "progress": "100%",
+          "headerTitle": "THE GAME",
+          "titleBody": "Q1 2024– Q3 2024",
+          "listText": {
+            "n1": "Web game that allows you to spend fun and easy time with friends and make money while you at it",
+            "n2": "Your crypto apartment will be turned to 3D model using metadata of nft tokens in your wallet",
+            "n3": "You can invite anyone in your apartment as a 3d avatar as long as they have at least one CFLAT token in their wallet",
+            "n4": "You will be able to interract with interior items, making a mess not only in your Cryptoflat :)",
+            "n5": "The abililty of having NPC pets, robots and other characters",
+            "n6": "Rating system and different scenarios of social behaving and reputation (kind neiborgh, crusher, thief)",
+            "n7": "Internal economy built on the p2p model between game participants"
+          }
+        }
+      }
+    },
+    "team": {
+      "title": "TEAM",
+      "paragraph": "Cryptoflats was created by two architects who are passionate about blockchain and NFT technologies. The idea of free creative interpretation and the absence of limiting technical factors made it possible to create a bright and stylish interior collection that includes elements of surrealism and comfort all rolled into one",
+      "persons": {
+        "Andrew": {
+          "name": "Andrew Archie",
+          "about": "Architect and designer<br>Dreamer, riding orka"
+        },
+        "Max": {
+          "name": "Max Frei (MO)",
+          "about": "Architect and designer<br>NFT world traveler"
+        }
+      }
+    },
+    "game": {
+      "title": "THE GAME",
+      "paragraph": "Our project is about design, entertainment, interaction and income creating. We want to unite everyone who liked our project into one big and friendly community. After you put all the rooms together and turn them into a full-fledged apartment, then you can invite your friends to it and interact with each other using avatars."
+    },
+    "faq": {
+      "q1": {
+        "question": "How do I get Cryptoflats NFT?",
+        "answer": "You can get NFT CryptoFlats using the MINT button on our website. In the future, you will be able to buyour NFT on any marketplace that supports BEP-721 tokens. Follow the news and you will definitely be one of the first to get it."
+      },
+      "q2": {
+        "question": "What is the meaning of the GEN#s?",
+        "answer": "Each GEN# signifies phases of project development. With each new phase, we will provide the opportunity to purchase the next room in your future crypto apartment. There are 6 GENs from 0 to 5 and you can get the idea about it in our Litepaper."
+      },
+      "q3": {
+        "question": "How many rooms will be created?",
+        "answer": "We will create 5 types of rooms in the first season of the project: Living room, Bedroom, Kitchen-dining room, Play room and the so-called Secret room. The number of each type of room will decrease by 1000 with each new drop."
+      },
+      "q4": {
+        "question": "What is the secret room?",
+        "answer": "The secret room will be different from the usual room in the apartment. It will be a cool place where surreal fantasies will take shape. The secret room will be available for sale at the end of the first season of the project in the form of a mystery box."
+      },
+      "q5": {
+        "question": "I bought all types of rooms. What should I do next?",
+        "answer": "The most interesting thing is coming - all your purchased crypto rooms will be formed into a full-fledged apartment, where you can invite your other friends and get an interesting gaming experience"
+      },
+      "q6": {
+        "question": "What kind of game you are going to create?",
+        "answer": "We will not reveal our hand yet, but we can say for sure this will be an interactive online game where you will be able to communicate, move not only in your NFT apartment, but also visit others. Maybe make a mess there or something?"
+      }
+      },
+    "footer": {
+      "all_rights_reserved": "All Rights Reserved"
+    },
+    "modals": {
+      "developing_text": "<span>Oh, sorry!</span> This function is in progress, but we`re doing well and very soon it will be ready to use."
+    },
+    "mint": {
+      "gen_zero": {
+        "text": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! <br><br> It gets you an additional benefits like 40% discount on land to purchase GEN#2 - GEN#4 and increase active gaming skills!\n"
+      },
+      "gen_first": {
+        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. By minting GEN#1, you will get random NFT of random rarity at one price. <br><br> If you whitelisted, then your price will be 30% less. You can stake this NFT to get income in CFLAT tokens.  \n"
+      },
+      "wlMarket": {
+        "text": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market. <br><br> We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",
+        "button": "Buy whitelist"
+      }
+    }
+  },
+  "Info": {
+    "cryptoflats": "cryptoflats",
+    "about_cryptoflats": "Generated nft apartments<br>Made by interior designers",
+    "profileSidebar": {
+      "myWallet": "My Wallet",
+      "enterDapp": "Enter Cryptoflats dApp",
+      "buyCflat": "Buy CFLAT token",
+      "nftCollection": "My NFT collection",
+      "language": "Language",
+      "support": "Support",
+      "logOut": "Log Out",
+      "chooseLanguage": "Choose language"
+    },
+    "walletSidebar": {
+      "myWallet": "My Wallet",
+      "about": "If you don`t have a <span>wallet</span> yet, you can select provider and create right now."
+    }
+  },
+  "Litepaper": {
+    "navigation": {
+      "return_to_site": "RETURN TO MAIN SITE",
+      "menu": {
+        "INTRODUCTION": {
+          "title":"INTRODUCTION",
+          "path":"#introduction"
+        },
+        "CONCEPT": {
+          "title":"CONCEPT",
+          "path":"#concept"
+        },
+        "ABOUT": {
+          "title":"ABOUT THE COLLECTION",
+          "path":"#collection"
+        },
+        "RARITY": {
+          "title":"RARITY",
+          "path":"#rarity"
+        },
+        "PROJECT_TOKEN": {
+          "title":"CFLAT PROJECT TOKEN",
+          "path":"#token-project"
+        },
+        "dAPP": {
+          "title":"CRYPTOFLATS dAPP",
+          "path":"#dapp"
+        },
+        "GEN#0": {
+          "title":"GEN#0 – CFLAT NFT PASS RARITY",
+          "path":"#gen0"
+        },
+        "GEN#1": {
+          "title":"GEN#1 – LIVING ROOM RARITY",
+          "path":"#gen1"
+        },
+        "GAME": {
+          "title":"NFT STRUCTURE. META GAME.",
+          "path":"#meta"
+        }
+        },
+      "goUp": "GO UP"
+    },
+    "INTRODUCTION": {
+      "title": "INTRODUCTION",
+      "text": "<span>Cryptoflats (abbr. CNRS)</span> - is a <span>gaming p2e </span> project with NFT tokens represented by procedurally generated NFT rooms <span>BEP-721</span> standard. Every NFT room is a flat cell containing game mechanics after being filled.<br><br>The room itself is an isometric image made out of <span>500+ 3D elements.</span> That is why projects come with a wide variety of furniture, patterns and textures. The collection is divided by <span>5 GEN#</span> each one representing a different room. All of our NFTs will be stored on Binance smart chain and will be available to mint at our website."
+    },
+    "CONCEPT": {
+      "title": "CONCEPT",
+      "text": "<span>Cryptoflats project</span> develops and transforms since 2021, inspired by the thought of developing a meta-universe where every player has their designer apartments with interactive and financial mechanics.<br><br>The ability to earn rental income by renting out an apartment or room is certainly not something new, but we have some interactive tools in mind, that make this process really exciting - a <span>p2e game</span> in which everyone will have their own virtual apartment with a unique style."
+    },
+    "ABOUT_COLLECTION": {
+      "title": "ABOUT THE COLLECTION",
+      "text": "<span>Cryptoflats collection</span> divided by several GEN# issued in series. Each GEN# starting with the first one will differ from the previous one by less and less content. <span>GEN#1 – GEN#5</span> – NFT rooms for a cryptoflat. <span>GEN#0</span> – NFT pass granting holder many benefits.<br><br> <span>List containing GEN#0 – GEN#5.</span>",
+      "list": {
+        "n1": "GEN#0 – NFT pass – 1111 pieces",
+        "n2": "GEN#1 – Living room – 5555 pieces",
+        "n3": "GEN#2 – Bedroom – 4444 pieces",
+        "n4": "GEN#3 – Kitchen and dining room – 3333 pieces",
+        "n5": "GEN#4 – Game room – 2222 pieces",
+        "n6": "GEN#5 – Secret room – 1111 pieces – issued as mystery box"
+      }
+    },
+    "RARITY": {
+      "title": "RARITY",
+      "text": "Every <span>GEN#</span> has a rarity benefiting the holder in some way. Lets list general moments of the rarity of our NFT tokens.<br><br> <span>GEN#1-GEN#5 rarity:</span>",
+      "list": {
+        "n1": "Standard rarity – 70% of the total collection.",
+        "n2": "Silver rarity – 15% of the total collection.",
+        "n3": "Gold rarity – 10% of the total collection.",
+        "n4": "Diamond rarity – 5% of the total collection."
+      },
+      "aboutText": "In order to consider how rarity affects anything, it is necessary to introduce the concept of our internal CFLAT token and the pre-game mechanics of the project, which will be available after the release of <span>GEN#1.</span>"
+    },
+    "CFLAT_TOKEN": {
+      "title": "CFLAT PROJECT TOKEN",
+      "text": "<span>CFLAT</span> – internal project token acting as in-game currency, acquiring for renting an apartment (staking), used for internal payments between users, purchase of the next <span>GEN#</span>, etc.",
+      "list": [
+        "Token name - CFLAT",
+        "Standard - BEP20",
+        "Total Supply: 15 000 000 000",
+        "LP: (38%) - 5 700 000 000",
+        "Community token (Staking): (54%) - 8 100 000 000",
+        "Team: (8%) - 1 200 000 000",
+        "Starting price: 0,00008 $"
+      ],
+      "aboutText": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token."
+    },
+    "DAPP": {
+      "title": "CRYPTOFLATS DAPP",
+      "text": "The second key point for understanding what the <span>Cryptoflats</span> project is will be our decentralized app responsible for all the main operations of the 1st big stage, before the main meta-game. <br><br> <span>CRYPTOFLATS dAPP</span> - internal project account, accessed through the Connect Wallet service. App is needed to account for the purchased NFT, acquisition of apartment pieces, NFT staking and earning CFLAT tokens. The account will display all purchased NFTs of the project, staking list, calculation of earned tokens and withdrawal to your wallet, taking into account the rarity and their advantages as well as primary game mechanics, in which it is possible to lose part of the income, or to acquire it. <br><br> <span>Account navigation:</span>",
+      "functions": {
+        "select": "<span>SELECT ALL button</span> - highlights ALL NFTs, both collection and staking (marked by a round dot in the top right corner).",
+        "stake": "<span>STAKE ALL button</span> - transfers all allocated NFTs to staking (does not affect already staked NFT)",
+        "unstake": "<span>UNSTAKE ALL button</span> - all staked allocated NFTs are transferred back to the owner's collection. If the lock is in effect (first five days of staking), then such an NFT remains staked.",
+        "claim": "<span>CLAIM TOKENS button</span> - withdraws the token from the project to the owner's wallet (all or partly). That action follows smart contract rules for tokens.",
+        "view": "<span>VIEW ALL button</span> - brings up a window with all NFTs purchased by user."
+      },
+      "aboutText": "App account also contains a map of an apartment which opens gradually either for free, or at a discount, or for a fee, depending on user token rarity."
+    },
+    "GEN0": {
+      "title": "GEN#0 – CFLAT NFT PASS RARITY",
+      "gold_pass": {
+        "text": "GOLD NFT PASS (90% drop chance):",
+        "list": [
+          "Participates in weekly GEN#1 raffles (there will be a total of 200 WL raffled off) while staking NFT PASS:",
+          "50% discount on land for purchase GEN#2 - GEN#4",
+          "Enemy passive skill (chance of stealing your GEN#2 - GEN#4) is reduced by 1%",
+          "Active skill for Silver, Gold, Diamond NFT is increased by 5%"
+        ]
+      },
+      "diamond_pass": {
+        "text": "DIAMOND NFT PASS (10% drop chance):",
+        "list": [
+          "Participates in weekly FREE raffles (there will be a total of 40 FREE raffled off) While staking NFT PASS:",
+          "Free purchase of land for acquisition GEN#2, GEN#3",
+          "70% discount on land for purchase GEN#4, GEN#5",
+          "Passive enemy skill (chance of stealing your GEN#2 - GEN#4) is reduced by 2%",
+          "Active skill for Silver, Gold, Diamond NFT is increased by 5%"
+        ]
+      }
+    },
+    "GEN1": {
+      "title": "GEN#1 - LIVING ROOM RARITY",
+      "text": "This part of the lightpaper consist of rarity properties for GEN#1. With each level of GEN# returns will increase.",
+      "passive_skill": "Passive skill:",
+      "standard": {
+        "title": "FLATS Standard NFT (70% drop chance)",
+        "list": [
+          "Earn 5000 CFLAT a day",
+          "60% earning when tokens are claimed",
+          "After unstacking there is a chance that NFT can be transferred to a more premium owner (loss of ownership of the room)"
+        ]
+      },
+      "silver": {
+        "title": "FLATS Silver NFT (15% drop chance)",
+        "list": [
+          "18% of tokens from the income of all staked Flats standard nft",
+          "2% chans of claiming room ownership from Flats standard nft user* *For GEN#2-GEN 4 only",
+          "Active skill: RENT",
+          "A 50/50 chance for taking 30% from the income from one random Flats standard nft user"
+        ],
+        "about": "*rent cost = 6 $ for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. The rent value is calculated in BNB."
+      },
+      "gold": {
+        "title": "FLATS Gold NFT (10% drop chance)",
+        "list": [
+          "15% of tokens from the income of all staked Flats standard nft",
+          "3% chance of claiming room ownership from Flats standard nft user**For GEN#2-GEN 4 only",
+          "2% chance of claiming room ownership from Flats silver nft user* *For GEN#2-GEN 4 only",
+          "Active skill: RENT",
+          "A 50/50 chance for taking 40% from the income from one random Flats standard nft user and Flats silver nft user"
+        ],
+        "about": "*rent cost = 5 $ for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. The rent value is calculated in BNB."
+      },
+      "diamond": {
+        "title": "FLATS Diamond NFT (5% drop chance)",
+        "list": [
+          "7% of tokens from the income of all staked Flats standard nft",
+          "4% chance of claiming room ownership from Flats standard nft user*",
+          "3% chance of claiming room ownership from Flats silver nft user*",
+          "2% chance of claiming room ownership from Flats gold nft user* *For GEN# 2-GEN#4 only",
+          "Active skill: RENT",
+          "A 50/50 chance for taking 30% from the income from one random Flats standard,silver,gold nft user"
+        ],
+        "about": "*rent cost = 4 $ for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. The rent value is calculated in BNB.",
+        "funds": "Funds for using an active skill go to the team's wallet to develop the Cryptoflats ecosystem."
+      },
+      "mint": {
+        "title": "GEN#2 mint requires open territory:",
+        "list": [
+          "If there is no stake GEN 1: you must first open the GEN#1 plot for 0.05 bnb",
+          "If there is a staked GEN 1: 15000 CFLAT",
+          "With a staked CFLAT PASS (GEN#0), the corresponding bonuses apply."
+        ]
+      },
+      "staking": {
+        "title": "Staking will allow for bundles of increasing profitability will work. For GEN#1 - GEN#2 only.",
+        "list": [
+          "Standard GEN#1 + Standard GEN#2 +3%",
+          "Silver GEN#1(2) + Standard GEN#2(1) +3.5%",
+          "Gold GEN#1(2) + Standard GEN#2(1) +4%",
+          "Diamond GEN#1(2) + Standard GEN#2(1) +4,5%",
+          "Silver GEN#1 + Silver GEN#2 + Standard +5%",
+          "Gold GEN#1(2) + Silver GEN#2(1) + Standard +6%",
+          "Diamond GEN#1(2) + Silver GEN#2(1) + Standard +7%",
+          "Gold GEN#1 + Gold GEN#2 + Standard +8%",
+          "Diamond GEN#1(2) + Gold GEN#2(1) + Standard +9%",
+          "Diamond GEN#1 + Diamond GEN#2 + Standard +10%"
+        ]
+      }
+    },
+    "GAME": {
+      "title": "NFT STRUCTURE. META GAME",
+      "text": "This is an example of GEN # 1 NFT using - this will help understand how the game will operate in the Cryptoflats meta universe. <br><br> The NFT in the project consists of many 3D layers pre-rendered by our team. All elements are carefully selected for style, color and texture. Quantity of the rooms available is planned in such a way that in the future they can be folded into an apartment and used inside it with game and financial mechanics.",
+      "rooms": {
+        "text": "NFT room consists of the following layers:",
+        "list": ["Background", "Floor", "Left wall", "Right wall", "Carpet near window", "Carpet near sofa", "Curtain", "Curtain rod", "Decor near window", "Decor near wall", "Desktop", "Desk chair", "Decor left of a TV", "Decor right of a TV", "TV stand", "Rare cat", "Bra", "Armchair", "Coffee table", "Sofa", "Door", "Chandelier", "Rarity"],
+        "text2": "Such a large number of layers allowed us to create a collection of truly unique images, but in the same visual style. All elements are 3D models, which will later be used to create a meta game in which everyone will have their own NFT apartment.",
+        "text3": "NFT apartment is a 3d space assembled from 5 rooms, each of which is a GEN# from 1 to 5. The assembly of the apartment is carried out automatically based on the metadatabase from each NFT purchased by the user.",
+        "text4": "Meta game is planned to be a truly online experience and accessed to be use wallet ID. Game engine Unity will allow us to implement good looking graphics, and also all game and financial mechanics"
+      },
+      "tenets_game": {
+        "text": "Main tenets of the game:",
+        "list": [
+          "Live, meet, communicate - you will be able to move around your apartment using 3D avatar, invite other crypto-users through guest access, get a pet and change the whole feel of the apartment.",
+          "Have fun - we are thinking about mechanics where you can break into other apartments, steal pets and cause damage and destruction. Maybe steal a sofa and put it in your apartment?",
+          "Get creative - on our marketplace it will be possible to purchase 3D interior items for each of their rooms and apply them in real time so that your apartment is unique, and other users can appreciate your taste.",
+          "Invite people to hang out in private meetings, for fun or to do business - the financial mechanics of CFLAT token exchanges and voice chat will be implemented in the apartments. You can pay with tokens for a service to have a pink cat stolen for you, which was brought to order in apartment #84B7!"
+        ]
+      }
+    },
+    "litepaper_copyright": "All rights reserved."
+  },
+  "MetaData": {
+    "Home": {
+      "title": "Cryptoflats - Home",
+      "description": "Cryptoflats - is a collection of generated NFT tokens on the Binance Smart Chain. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
+    },
+    "LitePaper": {
+      "description": "Cryptoflats Litepaper is a document where you can find all exhaustive information about project. It includes chapters about GENs rarity, CFLAT token, decentralized application and much more. Litepaper will be updated as each phase of the project begins. Follow our socials and stay tuned to be the first to know about every updates and drops!"
+    }
+  }
+}

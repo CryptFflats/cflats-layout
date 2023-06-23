@@ -1,0 +1,18 @@
+@import "src/assets/styles/helpers/mixin";
+
+.socialIcons {
+  display: flex;
+}
+
+.socialIcon {
+  padding: 0 9px;
+
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    @include hoverWhite;
+  }
+}

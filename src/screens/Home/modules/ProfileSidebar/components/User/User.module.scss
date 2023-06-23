@@ -1,0 +1,50 @@
+@import "src/assets/styles/helpers/mixin";
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #A5A5A5;
+  padding: 40px 30px;
+
+  @include _576 {
+    padding: 40px 30px;
+  }
+
+  @include _576 {
+    gap: 50px;
+    justify-content: start;
+  }
+}
+
+.userGroup {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  > p {
+    font-weight: 600;
+
+    @include _576 {
+      display: none;
+    }
+  }
+
+  @include _576 {
+    display: block;
+  }
+}
+
+.userIcon {
+  $size: 50px;
+
+  width: $size;
+  height: $size;
+
+  > img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+  }
+}

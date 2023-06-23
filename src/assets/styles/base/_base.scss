@@ -1,0 +1,50 @@
+@import "../helpers/variables";
+@import "../helpers/mixin";
+
+//html {
+//  scroll-behavior: smooth;
+//  height: auto;
+//}
+
+//html, body {
+//  position: relative;
+//}
+
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--body-font-weight);
+  color: var(--body-color);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+h1, h2, h3, h4, h5 h6 {
+  font-family: var(--title-font);
+  font-size: $title;
+  line-height: $title-height;
+  font-weight: $bold;
+}
+
+a {
+  color: #fff;
+}
+
+p {
+  font-size: $text;
+  line-height: $text-height;
+
+  @include _768 {
+    font-size: $text-mobile;
+    line-height: $text-mobile-height;
+  }
+}
+
+button {
+  padding: 0;
+}

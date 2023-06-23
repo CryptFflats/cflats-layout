@@ -1,0 +1,47 @@
+@import "src/assets/styles/helpers/mixin";
+
+$aboutBg: 'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/8fd0f37f-da74-4d18-21a1-0176b3e12100/public';
+
+.about {
+  min-height: 780px;
+  width: 100%;
+  background: url($aboutBg);
+  padding: 120px 0;
+
+  @include _768 {
+    min-height: 600px;
+    padding: 85px 0;
+  }
+}
+
+.contentWrapper {
+  max-width: 980px;
+  margin: 0 auto;
+
+  &Margin {
+    margin-bottom: 120px;
+
+    @include _768 {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  color: var(--color-yellow);
+  margin-bottom: 3.75rem;
+  text-transform: uppercase;
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
+}
+
+.text {
+  text-align: center;
+
+  @include _1024 {
+    text-align: left  ;
+  }
+}

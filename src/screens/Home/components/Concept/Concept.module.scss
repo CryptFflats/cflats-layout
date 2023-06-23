@@ -1,0 +1,58 @@
+@import "src/assets/styles/helpers/mixin";
+
+$purple: #ca47d6;
+
+.animBox {
+  color: $purple;
+  margin-bottom: 60px;
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
+}
+
+.lineAnim {
+  background: $purple;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rowCol {
+  width: 50%;
+
+  @include _1200 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  > p {
+    max-width: 540px;
+
+    @include _1200 {
+      margin: 0 auto 60px auto;
+    }
+  }
+}
+
+.buildAnimation {
+  max-width: 450px;
+  max-height: 450px;
+
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: end;
+
+  @include _1200 {
+    justify-content: center;
+  }
+}

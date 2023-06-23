@@ -1,0 +1,19 @@
+@import "src/assets/styles/helpers/mixin";
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 2px solid #A5A5A5;
+  border-bottom: 2px solid #A5A5A5;
+  padding: 40px;
+
+  @include _576 {
+    border-bottom: none;
+    padding: 25px;
+  }
+
+  > .text {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,32 @@
+@import "src/assets/styles/helpers/mixin";
+
+.wrapper {
+  min-height: 100vh;
+
+  &.gray {
+    background: var(--color-gray);
+  }
+
+  &.white {
+    background: #fff;
+    color: var(--color-gray-light);
+    padding: 90px 50px 0 50px;
+
+    @include _2560 {
+      max-width: 1660px;
+    }
+
+    @include _1980 {
+      max-width: 1360px;
+    }
+
+
+    @include _1024 {
+      padding: 100px 20px;
+    }
+  }
+
+  &.lock {
+    overflow-x: hidden;
+  }
+}

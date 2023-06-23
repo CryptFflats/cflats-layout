@@ -1,0 +1,153 @@
+@import "src/assets/styles/helpers/mixin";
+@import "src/assets/styles/helpers/variables";
+
+.navbar {
+  padding: 80px 0;
+  position: relative;
+  z-index: 15;
+
+  @include _1200 {
+    padding: 25px 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  @include _2560 {
+    max-width: 1890px;
+  }
+
+  @include _1980 {
+    max-width: 1500px;
+  }
+
+  @include _1440 {
+    max-width: 1400px;
+  }
+
+  @include _1200 {
+    padding: 0 45px;
+    max-width: 1200px;
+  }
+
+  @include _1024 {
+    align-items: center;
+  }
+
+  @include _768 {
+    padding: 0 40px;
+  }
+
+  @include _480 {
+    padding: 0 30px;
+  }
+}
+
+.navigation {
+  display: flex;
+
+  > li {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  > li > a {
+
+    @include _2560 {
+      font-size: $text;
+      line-height: $text-height;
+    }
+
+    @include _1980 {
+      font-size: 1.3rem;
+      line-height: $text-height;
+    }
+
+    font-size: $text;
+    line-height: $text-height;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @include hoverWhite;
+  }
+
+  @include _1350 {
+    display:  none;
+  }
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @include _1024 {
+    gap: 20px;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+  display: none;
+
+  span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.3s linear;
+
+    &:nth-of-type(2) {
+      top: calc(50% - 10px);
+    }
+
+    &:nth-of-type(3) {
+      top: calc(50% + 10px);
+    }
+  }
+
+  &.active {
+    span {
+      &:nth-of-type(1) {
+        width: 0;
+      }
+
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+      }
+
+      &:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+      }
+    }
+  }
+
+  @include _1024 {
+    display: block;
+  }
+}
+
+.socialIcons {
+  @include _1024 {
+    display: none !important;
+  }
+}

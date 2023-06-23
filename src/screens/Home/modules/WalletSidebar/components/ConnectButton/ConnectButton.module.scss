@@ -1,0 +1,53 @@
+@import "src/assets/styles/helpers/mixin";
+@import "src/assets/styles/helpers/variables";
+
+//.connectButton {
+//  background: transparent;
+//  display: flex;
+//  align-items: center;
+//  gap: 20px;
+//  width: 100%;
+//  border: none;
+//  padding: 23px 35px;
+//  transition: 0.4s;
+//  cursor: pointer;
+//
+//  &:hover {
+//    background: #3D3D3D;
+//  }
+//
+//  @include _576 {
+//    padding: 21px 30px;
+//  }
+//}
+
+.text {
+  font-size: $text;
+  line-height: $text-height;
+  color: #fff;
+  font-weight: 700;
+
+  @include _576 {
+    font-size: $text-medium;
+    line-height: $text-medium-height;
+  }
+}
+
+.icon {
+  @include  _576 {
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @include _576 {
+    gap: 15px;
+  }
+}

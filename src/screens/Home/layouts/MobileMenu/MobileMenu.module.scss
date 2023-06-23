@@ -1,0 +1,51 @@
+@import "src/assets/styles/helpers/mixin";
+
+.mobileMenu {
+  position: fixed;
+  background: rgba(35, 35, 35, 0.95);
+  top: 0;
+  z-index: 14;
+  transform: translateX(-100%);
+  transition: 0.4s ease-out;
+  display: none;
+  padding: 20%;
+  width: 100vw;
+  height: 100vh;
+  //overflow-y: scroll;
+  //overflow-x: hidden;
+
+  &.visible {
+    transform: translateX(0%);
+  }
+
+  @include _1024 {
+    display: block;
+  }
+
+  @include _768 {
+    padding: 40% 10%;
+  }
+}
+
+.navList {
+
+  li {
+    a {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;;
+      text-transform: uppercase;
+
+      @include _576 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+.socialIcons {
+  margin-top: 50px;
+}

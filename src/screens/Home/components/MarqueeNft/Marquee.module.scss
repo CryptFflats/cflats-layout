@@ -1,0 +1,24 @@
+@import "src/assets/styles/helpers/mixin";
+
+.marqueCards {
+  position: relative;
+}
+
+.marqueeCard {
+  overflow: hidden;
+
+  @include _2560 {
+    width: 300px;
+    height: 300px;
+  }
+
+  @include _1980 {
+    width: 216px;
+    height: 216px;
+  }
+
+  @include _1024 {
+    width: 130px;
+    height: 130px;
+  }
+}

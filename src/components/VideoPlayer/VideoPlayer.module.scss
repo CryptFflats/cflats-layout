@@ -1,0 +1,19 @@
+.videoWrapper {
+  position: absolute;
+  display: block;
+  vertical-align: top;
+  box-sizing: border-box;
+  line-height: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

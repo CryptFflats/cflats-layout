@@ -1,0 +1,138 @@
+@import "src/assets/styles/helpers/mixin";
+
+.title {
+  margin-bottom: 60px;
+
+  @include _768 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.subtitle {
+  margin-bottom: 120px;
+
+  @include _768 {
+    margin-bottom: 60px;
+  }
+}
+
+
+.gamePlace {
+  position: relative;
+  margin-top: 120px;
+  overflow: hidden;
+
+  @include _1400 {
+    display: none;
+  }
+}
+
+.room {
+  position: absolute;
+  user-select: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drop1 {
+  bottom: 369px;
+  left: 529px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 5;
+}
+
+.drop2 {
+  bottom: 240px;
+  left: 772px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.drop3 {
+  bottom: 155px;
+  left: 120px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.drop4 {
+  bottom: 135px;
+  left: 571px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 7;
+}
+
+.drop5 {
+  bottom: 28px;
+  left: 364px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 10;
+}
+
+.name-drop {
+  //font-family: $base-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.drop-text {
+  position: absolute;
+}
+
+.about-drop {
+  position: absolute;
+}
+
+.name-drop5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name-drop3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-drop3 {
+  top: 57%;
+  left: 53%;
+  transform: translate(-57%, -53%);
+}
+
+.about-drop5 {
+  top: 58%;
+  left: 53%;
+  transform: translate(-58%, -53%);
+}
+
+.gameAnimation {
+  display: none;
+  position: relative;
+
+  @include _1400 {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.gameAnimationImg {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

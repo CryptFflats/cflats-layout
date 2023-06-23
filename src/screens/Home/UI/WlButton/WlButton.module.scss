@@ -1,0 +1,31 @@
+.wlButton {
+  user-select: none;
+  border: none;
+  outline: none;
+  background: var(--color-gray-light);
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  color: #FFF;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 360px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  cursor: pointer;
+
+  > .market {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  > .about {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}

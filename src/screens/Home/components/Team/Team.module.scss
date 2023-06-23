@@ -1,0 +1,87 @@
+@import "src/assets/styles/base/animation";
+@import "src/assets/styles/helpers/mixin";
+@import "src/assets/styles/helpers/variables";
+
+.animBox {
+  margin-bottom: 60px;
+  color: var(--color-green);
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
+}
+
+.lineAnim {
+  background: var(--color-green);
+}
+
+.teamCards {
+  max-width: 800px;
+  margin: 70px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //gap: 200px;
+  //margin-top: 70px;
+
+  @include _768 {
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.teamCard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.teamCardAbout {
+  margin-top: 60px;
+
+  > h1 {
+    font-family: var(--body-font-family);
+    font-size: $text;
+    line-height: $text-height;
+
+    @include _768 {
+      font-size: $text-mobile;
+      line-height: $text-mobile-height;
+    }
+  }
+
+  @include _768 {
+    margin-top: 30px;
+  }
+}
+
+.teamImg {
+  max-width: 300px;
+  max-height: 300px;
+
+  //@include _768 {
+  //  max-width: 250px;
+  //  max-height: 250px;
+  //}
+
+  @include _768 {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.teamImg1 {
+  animation: change_color_01 infinite 8s linear;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  border-radius: 50%;
+}
+
+.teamImg2 {
+  animation: change_color_02 infinite 8s linear;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  border-radius: 50%;
+}

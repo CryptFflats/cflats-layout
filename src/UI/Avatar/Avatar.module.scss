@@ -1,0 +1,25 @@
+@import "src/assets/styles/helpers/mixin";
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  display: block;
+
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include  _1024 {
+    width: 45px;
+    height: 45px;
+  }
+
+  @include  _768 {
+    width: 40px;
+    height: 40px;
+  }
+}
