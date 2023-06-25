@@ -41,6 +41,7 @@ export const config = createConfig({
 			chains,
 			options: {
 
+
 			}
 		}),
 	],
