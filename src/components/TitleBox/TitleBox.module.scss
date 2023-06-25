@@ -19,31 +19,13 @@
   }
 }
 
-//.lineAnim {
-//  width: 20px;
-//  height: 20px;
-//  border-radius: 50%;
-//  position: relative;
-//
-//  &::before {
-//    content: '';
-//    position: absolute;
-//    height: 2px;
-//    transform: translateX(-100%);
-//    top: 8px;
-//    transition: 0.5s;
-//    width: 0;
-//    background: inherit;
-//  }
-//
-//  @include _1200 {
-//    display: none;
-//  }
-//}
-
 .animBox {
   position: relative;
   border-radius: 50%;
+
+  @include _1024 {
+    display: none;
+  }
 }
 
 .circle {
