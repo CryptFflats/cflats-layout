@@ -8,6 +8,7 @@ import abi from '../../../../../core/abi/gen_first.json'
 export const useMint = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isError, setIsError] = useState<boolean>(false);
+
 	const { address } = useAccount();
 
 	const mintGen = async () => {
