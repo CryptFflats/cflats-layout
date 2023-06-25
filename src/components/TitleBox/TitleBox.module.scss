@@ -23,7 +23,7 @@
   position: relative;
   border-radius: 50%;
 
-  @include _1024 {
+  @include _1200 {
     display: none;
   }
 }
