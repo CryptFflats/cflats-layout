@@ -51,6 +51,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 			/>
 			<meta property="og:image" content="https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover" />
 			<meta name="yandex-verification" content="90ddaeffb810e21a" />
+			<meta name="google-site-verification" content="Hhf3ISRXwjlZILhTPf2JkySLOcKV4p0Ftmj4plc2zvs" />
 			<Script id='yandex-metrika'>
 				{`
 					<!-- Yandex.Metrika counter -->
