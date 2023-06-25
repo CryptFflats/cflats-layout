@@ -50,6 +50,8 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 				href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 			/>
 			<meta property="og:image" content="https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover" />
+			<meta property="og:image:width" content="1000"/>
+			<meta property="og:image:height" content="1000"/>
 		</head>
 		<body>
 		<Script src='https://www.googletagmanager.com/gtag/js?id=G-DW47EZWVL0' />
