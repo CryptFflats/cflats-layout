@@ -3,7 +3,6 @@ import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
-import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { LedgerConnector } from 'wagmi/connectors/ledger'
 import { ALCHEMY_KEY, WALLET_CONNECT_KEY } from '../constance';
@@ -39,7 +38,10 @@ export const config = createConfig({
 			},
 		}),
 		new LedgerConnector({
-			chains
+			chains,
+			options: {
+
+			}
 		}),
 	],
 	publicClient,
