@@ -52,10 +52,9 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 			<meta property="og:image" content="https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover" />
 			<meta name="yandex-verification" content="90ddaeffb810e21a" />
 			<meta name="google-site-verification" content="Hhf3ISRXwjlZILhTPf2JkySLOcKV4p0Ftmj4plc2zvs" />
-			<Script id='yandex-metrika'>
+			<Script type="text/javascript">
 				{`
 					<!-- Yandex.Metrika counter -->
-					<script type="text/javascript" >
 						 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 						 m[i].l=1*new Date();
 						 for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -67,11 +66,10 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 									trackLinks:true,
 									accurateTrackBounce:true
 						 });
-					</script>
-					<noscript><div><img src="https://mc.yandex.ru/watch/94107530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 					<!-- /Yandex.Metrika counter -->
 				`}
 			</Script>
+			<noscript><div><img src="https://mc.yandex.ru/watch/94107530" style={{position:'absolute', left: '-9999px'}} alt="" /></div></noscript>
 		</head>
 		<body>
 		<Script src='https://www.googletagmanager.com/gtag/js?id=G-DW47EZWVL0' />
