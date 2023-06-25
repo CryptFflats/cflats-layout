@@ -9,10 +9,10 @@ import Concept from './sections/Concept'
 import Collection from './sections/Collection'
 import Rarity from './sections/Rarity'
 import TokenProject from './sections/TokenProject'
-// import Dapp from './sections/Dapp'
-// import Gen0 from './sections/Gen0'
-// import Gen1 from './sections/Gen1'
-// import Meta from './sections/Meta'
+import Dapp from './sections/Dapp'
+import Gen0 from './sections/Gen0'
+import Gen1 from './sections/Gen1'
+import Meta from './sections/Meta'
 import ScrollButton from '../../UI/ScrollButton/ScrollButton'
 import { useTranslations } from 'next-intl';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
@@ -108,22 +108,14 @@ const Layout = () => {
 
 				<div className={styles['main-sections']}>
 					<Introduction />
-
 					<Concept />
-
 					<Collection />
-
 					<Rarity />
-
 					<TokenProject />
-
-					{/*<Dapp />*/}
-
-					{/*<Gen0 />*/}
-
-					{/*<Gen1 />*/}
-
-					{/*<Meta />*/}
+					<Dapp />
+					<Gen0 />
+					<Gen1 />
+					<Meta />
 
 					<p className={classNames(styles['litepaper-copyright'])}>
 						Cryptoflats Lightpaper 2023 (c) {t('litepaper_copyright')}

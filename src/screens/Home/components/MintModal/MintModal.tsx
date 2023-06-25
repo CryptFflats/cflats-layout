@@ -12,7 +12,7 @@ const MintModal = () => {
 			<br />
 			<a
 				target={'_blank'}
-				href={`https://mumbai.polygonscan.com/tx/${txHash}`}
+				href={`https://bscscan.com/tx/${txHash}`}
 			>
 				View Transaction Details
 			</a>

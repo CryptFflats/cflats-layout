@@ -1,0 +1,63 @@
+@import "src/assets/styles/helpers/mixin";
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include _1200 {
+    display: block;
+  }
+
+  > h1 {
+    color: inherit;
+    text-transform: uppercase;
+
+    @include _1200 {
+      text-align: center;
+    }
+  }
+}
+
+//.lineAnim {
+//  width: 20px;
+//  height: 20px;
+//  border-radius: 50%;
+//  position: relative;
+//
+//  &::before {
+//    content: '';
+//    position: absolute;
+//    height: 2px;
+//    transform: translateX(-100%);
+//    top: 8px;
+//    transition: 0.5s;
+//    width: 0;
+//    background: inherit;
+//  }
+//
+//  @include _1200 {
+//    display: none;
+//  }
+//}
+
+.animBox {
+  position: relative;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.lineAnim {
+  height: 2px;
+  background: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

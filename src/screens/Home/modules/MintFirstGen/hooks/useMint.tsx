@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { CDN_URL, MINT_GEN_ZERO_ADDRESS } from '../../../../../core/utils/constance';
+import { MINT_GEN_FIRST_ADDRESS } from '../../../../../core/utils/constance';
 import CryptoflatsNFT from '../../../../../core/utils/contract/CryptoflatsNFT';
 import { useAccount } from 'wagmi';
-import abi from '../../../../../core/abi/gen_zero.json'
+import abi from '../../../../../core/abi/gen_first.json'
 
 
 export const useMint = () => {
@@ -15,9 +15,9 @@ export const useMint = () => {
 			setIsLoading(true);
 
 			const cryptoflatsNFT = new CryptoflatsNFT(
-				MINT_GEN_ZERO_ADDRESS,
+				MINT_GEN_FIRST_ADDRESS,
 				address ? address : '',
-				0,
+				1,
 				[],
 				[],
 				abi

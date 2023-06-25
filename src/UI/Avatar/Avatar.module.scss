@@ -8,6 +8,10 @@
   border: 3px solid #fff;
   display: block;
 
+  &.noBorder {
+    border: none;
+  }
+
   > img {
     max-width: 100%;
     height: auto;

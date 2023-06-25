@@ -6,6 +6,23 @@ import WagmiProvider from '../../core/utils/wagmi/WagmiProvider';
 import { NextAppDirEmotionCacheProvider } from 'tss-react/next/appDir';
 import { getMessages } from '../../core/utils/utils/getMessages';
 import { Metadata } from 'next';
+import Script from 'next/script';
+import { Open_Sans, Nunito } from '@next/font/google';
+import classNames from 'classnames';
+
+const openSans = Open_Sans({
+	subsets: ['latin', 'cyrillic'],
+	weight: ['400', '500', '600', '700', '800'],
+	display: 'swap',
+	variable: '--font-open-sans'
+});
+
+const nunito = Nunito({
+	subsets: ['latin', 'cyrillic'],
+	weight: ['700', '800'],
+	display: 'swap',
+	variable: '--font-nunito'
+});
 
 type Props = {
 	children: ReactNode;
@@ -13,48 +30,49 @@ type Props = {
 };
 
 export const metadata: Metadata = {
+	themeColor: '#fff',
 	openGraph: {
 		type: 'website',
 		url: 'https://cryptoflats.io',
 		siteName: 'CryptoFlats',
-	},
-}
+		images: {
+			url: 'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover'
+		}
+	}
+};
 
-export default async function LocaleLayout({
-																						 children,
-																						 params: { locale }
-																					 }: Props) {
+export default async function LocaleLayout({ children, params: { locale } }: Props) {
 	const messages = await getMessages(locale);
 
-
-
 	return (
-		<html lang={locale}>
+		<html lang={locale} className={classNames(openSans.variable, nunito.variable)}>
 		<head>
 			<link rel='manifest' href='/manifest.json' />
-			<meta name='theme-color' content='#ffffff' />
-			{/*<link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' />*/}
 			<link
 				rel='stylesheet'
 				href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 			/>
-			<meta property='og:image' content='https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover' />
-
 		</head>
 		<body>
-			<NextIntlClientProvider locale={locale} messages={messages}>
-				<ReduxProvider>
-					<WagmiProvider>
-						<NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
-							{children}
-						</NextAppDirEmotionCacheProvider>
-					</WagmiProvider>
-				</ReduxProvider>
-			</NextIntlClientProvider>
+		<Script src='https://www.googletagmanager.com/gtag/js?id=G-DW47EZWVL0' />
+		<Script id='google-analytics'>
+			{`
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
 
-			<script>
-				AOS.init();
-			</script>
+				gtag('config', 'G-DW47EZWVL0');
+      `}
+		</Script>
+		<NextIntlClientProvider locale={locale} messages={messages}>
+			<ReduxProvider>
+				<WagmiProvider>
+					<NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
+						{children}
+					</NextAppDirEmotionCacheProvider>
+				</WagmiProvider>
+			</ReduxProvider>
+		</NextIntlClientProvider>
 		</body>
 		</html>
 	);

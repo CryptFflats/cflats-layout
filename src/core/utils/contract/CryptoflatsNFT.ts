@@ -9,8 +9,8 @@ class CryptoflatsNFT {
 	private readonly userAddress: string;
 	private readonly contractAddress: string;
 	private readonly abi: any;
-	private readonly networkId = '0x13881'; //0x13881 **** 16
-	readonly _providerUrl = 'https://rpc-mumbai.maticvigil.com/'; //https://bsc-dataseed.binance.org/ ****** https://rpc-mumbai.maticvigil.com/
+	private readonly networkId = '16'; //0x13881 **** 16
+	readonly _providerUrl = 'https://bsc-dataseed.binance.org/'; //https://bsc-dataseed.binance.org/ ****** https://rpc-mumbai.maticvigil.com/
 	private readonly _provider = new ethers.providers.JsonRpcProvider(
 		this._providerUrl
 	);
@@ -69,15 +69,15 @@ class CryptoflatsNFT {
 					method: 'wallet_addEthereumChain',
 					params: [
 						{
-							chainId: this.networkId,
-							rpcUrls: ['https://rpc-mumbai.maticvigil.com'],
-							chainName: 'Mumbai Testnet',
+							chainId: '0x38', // Chain ID для Binance Smart Chain
+							rpcUrls: ['https://bsc-dataseed.binance.org/'], // RPC-URL для Binance Smart Chain
+							chainName: 'Binance Smart Chain',
 							nativeCurrency: {
-								name: 'MATIC',
-								symbol: 'MATIC',
+								name: 'BNB',
+								symbol: 'BNB',
 								decimals: 18
 							},
-							blockExplorerUrls: ['https://mumbai.polygonscan.com']
+							blockExplorerUrls: ['https://bscscan.com'] // Ссылка на блокэксплорер для Binance Smart Chain
 						}
 					]
 				});

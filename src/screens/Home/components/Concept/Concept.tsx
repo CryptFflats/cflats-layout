@@ -5,12 +5,10 @@ import classNames from 'classnames'
 import { useTranslations } from 'next-intl';
 import ContentBox from '../../../../containers/ContentBox/ContentBox';
 import TitleBox from '../../../../components/TitleBox/TitleBox';
-import * as process from 'process';
 import { CDN_URL } from '../../../../core/utils/constance';
 
 const Concept = () => {
 	const t = useTranslations('Home')
-	const API_TOKEN = process.env.NEXT_PUBLIC_API_KEY
 
 	return (
 		<ContentBox paddingTopBig>
@@ -25,7 +23,7 @@ const Concept = () => {
 				</div>
 				<div className={classNames(styles.rowCol, styles.flex)}>
 					<div className={styles.buildAnimation}>
-						<img src={`${CDN_URL}/build-anim.webp`} alt={'Concept Animation'} />
+						<img src={`${CDN_URL}/videos/build-anim.webp`} alt={'Concept Animation'} />
 					</div>
 				</div>
 			</div>

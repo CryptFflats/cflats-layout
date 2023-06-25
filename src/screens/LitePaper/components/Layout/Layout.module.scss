@@ -196,6 +196,10 @@
       font-weight: 600;
     }
 
+    &.mb-10 {
+      margin-bottom: 10px;
+    }
+
     &.mb-30 {
       margin-bottom: 30px;
     }
@@ -214,6 +218,10 @@
       margin-bottom: 60px;
     }
 
+    &.mb-30 {
+      margin-bottom: 30px;
+    }
+
     li {
       font-size: 1.125rem;
       line-height: 1.5rem;
@@ -226,6 +234,12 @@
   }
 
   > img {
+    &.mb-60 {
+      margin-bottom: 60px;
+    }
+  }
+
+  > div {
     &.mb-60 {
       margin-bottom: 60px;
     }

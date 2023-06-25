@@ -18,6 +18,7 @@ import { ProfileSidebar } from './modules/ProfileSidebar';
 import DevelopingModal from './components/DevelopingModal/DevelopingModal';
 import MobileMenu from './layouts/MobileMenu/MobileMenu';
 import MintModal from './components/MintModal/MintModal';
+import ModalVideo from './components/ModalVideo/ModalVideo';
 
 const Home = () => {
 	return (
@@ -42,6 +43,7 @@ const Home = () => {
 
 			<DevelopingModal />
 			<MintModal />
+			<ModalVideo />
 		</Wrapper>
 	);
 };

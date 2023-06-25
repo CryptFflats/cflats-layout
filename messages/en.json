@@ -368,15 +368,15 @@
     "CFLAT_TOKEN": {
       "title": "CFLAT PROJECT TOKEN",
       "text": "<span>CFLAT</span> – internal project token acting as in-game currency, acquiring for renting an apartment (staking), used for internal payments between users, purchase of the next <span>GEN#</span>, etc.",
-      "list": [
-        "Token name - CFLAT",
-        "Standard - BEP20",
-        "Total Supply: 15 000 000 000",
-        "LP: (38%) - 5 700 000 000",
-        "Community token (Staking): (54%) - 8 100 000 000",
-        "Team: (8%) - 1 200 000 000",
-        "Starting price: 0,00008 $"
-      ],
+      "list": {
+        "n1": "Token name - CFLAT",
+        "n2": "Standard - BEP20",
+        "n3": "Total Supply: 15 000 000 000",
+        "n4": "LP: (38%) - 5 700 000 000",
+        "n5": "Community token (Staking): (54%) - 8 100 000 000",
+        "n6": "Team: (8%) - 1 200 000 000",
+        "n7": "Starting price: 0,00008 $"
+      },
       "aboutText": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token."
     },
     "DAPP": {
@@ -395,22 +395,21 @@
       "title": "GEN#0 – CFLAT NFT PASS RARITY",
       "gold_pass": {
         "text": "GOLD NFT PASS (90% drop chance):",
-        "list": [
-          "Participates in weekly GEN#1 raffles (there will be a total of 200 WL raffled off) while staking NFT PASS:",
-          "50% discount on land for purchase GEN#2 - GEN#4",
-          "Enemy passive skill (chance of stealing your GEN#2 - GEN#4) is reduced by 1%",
-          "Active skill for Silver, Gold, Diamond NFT is increased by 5%"
-        ]
+        "list": {
+          "n1": "Participates in weekly GEN#1 raffles (there will be a total of 200 WL raffled off) while staking NFT PASS:",
+          "n2": "50% discount on land for purchase GEN#2 - GEN#4",
+          "n3": "Enemy passive skill (chance of stealing your GEN#2 - GEN#4) is reduced by 1%",
+          "n4": "Active skill for Silver, Gold, Diamond NFT is increased by 5%"
+        }
       },
       "diamond_pass": {
         "text": "DIAMOND NFT PASS (10% drop chance):",
-        "list": [
-          "Participates in weekly FREE raffles (there will be a total of 40 FREE raffled off) While staking NFT PASS:",
-          "Free purchase of land for acquisition GEN#2, GEN#3",
-          "70% discount on land for purchase GEN#4, GEN#5",
-          "Passive enemy skill (chance of stealing your GEN#2 - GEN#4) is reduced by 2%",
-          "Active skill for Silver, Gold, Diamond NFT is increased by 5%"
-        ]
+        "list": {
+          "n1": "Participates in weekly FREE raffles (there will be a total of 40 FREE raffled off) While staking NFT PASS:",
+          "n2": "Free purchase of land for acquisition GEN#2, GEN#3",
+          "n3": "70% discount on land for purchase GEN#4, GEN#5",
+          "n4": "Passive enemy skill (chance of stealing your GEN#2 - GEN#4) is reduced by 2%"
+        }
       }
     },
     "GEN1": {
@@ -419,45 +418,22 @@
       "passive_skill": "Passive skill:",
       "standard": {
         "title": "FLATS Standard NFT (70% drop chance)",
-        "list": [
-          "Earn 5000 CFLAT a day",
-          "60% earning when tokens are claimed",
-          "After unstacking there is a chance that NFT can be transferred to a more premium owner (loss of ownership of the room)"
-        ]
+        "passive": "Earn 3000 CFLAT a day"
       },
       "silver": {
         "title": "FLATS Silver NFT (15% drop chance)",
-        "list": [
-          "18% of tokens from the income of all staked Flats standard nft",
-          "2% chans of claiming room ownership from Flats standard nft user* *For GEN#2-GEN 4 only",
-          "Active skill: RENT",
-          "A 50/50 chance for taking 30% from the income from one random Flats standard nft user"
-        ],
-        "about": "*rent cost = 6 $ for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. The rent value is calculated in BNB."
+        "passive": "Earn 4000 CFLAT a day",
+        "active": "A 50/50 chance for taking 30% from the income from one random Flats standard NFT user. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "gold": {
         "title": "FLATS Gold NFT (10% drop chance)",
-        "list": [
-          "15% of tokens from the income of all staked Flats standard nft",
-          "3% chance of claiming room ownership from Flats standard nft user**For GEN#2-GEN 4 only",
-          "2% chance of claiming room ownership from Flats silver nft user* *For GEN#2-GEN 4 only",
-          "Active skill: RENT",
-          "A 50/50 chance for taking 40% from the income from one random Flats standard nft user and Flats silver nft user"
-        ],
-        "about": "*rent cost = 5 $ for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. The rent value is calculated in BNB."
+        "passive": "Earn 5000 CFLAT a day",
+        "active": "A 50/50 chance for taking 40% from the income from one random Flats standard NFT user. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "diamond": {
         "title": "FLATS Diamond NFT (5% drop chance)",
-        "list": [
-          "7% of tokens from the income of all staked Flats standard nft",
-          "4% chance of claiming room ownership from Flats standard nft user*",
-          "3% chance of claiming room ownership from Flats silver nft user*",
-          "2% chance of claiming room ownership from Flats gold nft user* *For GEN# 2-GEN#4 only",
-          "Active skill: RENT",
-          "A 50/50 chance for taking 30% from the income from one random Flats standard,silver,gold nft user"
-        ],
-        "about": "*rent cost = 4 $ for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. The rent value is calculated in BNB.",
-        "funds": "Funds for using an active skill go to the team's wallet to develop the Cryptoflats ecosystem."
+        "passive": "Earn 6000 CFLAT a day",
+        "active": "A 50/50 chance for taking 50% from the income from one random Flats standard NFT user. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours"
       },
       "mint": {
         "title": "GEN#2 mint requires open territory:",
@@ -488,19 +464,43 @@
       "text": "This is an example of GEN # 1 NFT using - this will help understand how the game will operate in the Cryptoflats meta universe. <br><br> The NFT in the project consists of many 3D layers pre-rendered by our team. All elements are carefully selected for style, color and texture. Quantity of the rooms available is planned in such a way that in the future they can be folded into an apartment and used inside it with game and financial mechanics.",
       "rooms": {
         "text": "NFT room consists of the following layers:",
-        "list": ["Background", "Floor", "Left wall", "Right wall", "Carpet near window", "Carpet near sofa", "Curtain", "Curtain rod", "Decor near window", "Decor near wall", "Desktop", "Desk chair", "Decor left of a TV", "Decor right of a TV", "TV stand", "Rare cat", "Bra", "Armchair", "Coffee table", "Sofa", "Door", "Chandelier", "Rarity"],
+        "list": {
+          "n1": "Background",
+          "n2": "Floor",
+          "n3": "Left wall",
+          "n4": "Right wall",
+          "n5": "Carpet near window",
+          "n6": "Carpet near sofa",
+          "n7": "Curtain",
+          "n8": "Curtain rod",
+          "n9": "Decor near window",
+          "n10": "Decor near wall",
+          "n11": "Desktop",
+          "n12": "Desk chair",
+          "n13": "Decor left of a TV",
+          "n14": "Decor right of a TV",
+          "n15": "TV stand",
+          "n16": "Rare cat",
+          "n17": "Bra",
+          "n18": "Armchair",
+          "n19": "Coffee table",
+          "n20": "Sofa",
+          "n21": "Door",
+          "n22": "Chandelier",
+          "n23": "Rarity"
+        },
         "text2": "Such a large number of layers allowed us to create a collection of truly unique images, but in the same visual style. All elements are 3D models, which will later be used to create a meta game in which everyone will have their own NFT apartment.",
         "text3": "NFT apartment is a 3d space assembled from 5 rooms, each of which is a GEN# from 1 to 5. The assembly of the apartment is carried out automatically based on the metadatabase from each NFT purchased by the user.",
         "text4": "Meta game is planned to be a truly online experience and accessed to be use wallet ID. Game engine Unity will allow us to implement good looking graphics, and also all game and financial mechanics"
       },
       "tenets_game": {
         "text": "Main tenets of the game:",
-        "list": [
-          "Live, meet, communicate - you will be able to move around your apartment using 3D avatar, invite other crypto-users through guest access, get a pet and change the whole feel of the apartment.",
-          "Have fun - we are thinking about mechanics where you can break into other apartments, steal pets and cause damage and destruction. Maybe steal a sofa and put it in your apartment?",
-          "Get creative - on our marketplace it will be possible to purchase 3D interior items for each of their rooms and apply them in real time so that your apartment is unique, and other users can appreciate your taste.",
-          "Invite people to hang out in private meetings, for fun or to do business - the financial mechanics of CFLAT token exchanges and voice chat will be implemented in the apartments. You can pay with tokens for a service to have a pink cat stolen for you, which was brought to order in apartment #84B7!"
-        ]
+        "list": {
+          "n1": "Live, meet, communicate - you will be able to move around your apartment using 3D avatar, invite other crypto-users through guest access, get a pet and change the whole feel of the apartment.",
+          "n2": "Have fun - we are thinking about mechanics where you can break into other apartments, steal pets and cause damage and destruction. Maybe steal a sofa and put it in your apartment?",
+          "n3": "Get creative - on our marketplace it will be possible to purchase 3D interior items for each of their rooms and apply them in real time so that your apartment is unique, and other users can appreciate your taste.",
+          "n4": "Invite people to hang out in private meetings, for fun or to do business - the financial mechanics of CFLAT token exchanges and voice chat will be implemented in the apartments. You can pay with tokens for a service to have a pink cat stolen for you, which was brought to order in apartment #84B7!"
+        }
       }
     },
     "litepaper_copyright": "All rights reserved."

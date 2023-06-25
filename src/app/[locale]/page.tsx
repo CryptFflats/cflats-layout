@@ -2,6 +2,7 @@ import Home from "../../screens/Home/Home";
 import { createTranslator } from 'next-intl';
 import { getMessages } from '../../core/utils/utils/getMessages';
 import { ReactNode } from 'react';
+import { Metadata } from 'next';
 
 type Props = {
 	children: ReactNode;
@@ -9,7 +10,7 @@ type Props = {
 };
 
 
-export async function generateMetadata({params: {locale}}: any) {
+export async function generateMetadata({params: {locale}}: any): Promise<Metadata> {
 	const messages = await getMessages(locale);
 
 	const t = createTranslator({locale, messages});

@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles';
 import { Button } from '@mui/material';
 
 export const BlueButton = styled(Button)(({ theme }) => ({
-	fontFamily: 'Nunito, sans-serif;',
+	fontFamily: 'var(--font-nunito)',
 	fontSize: '2rem',
 	lineHeight: '1.5rem',
 	fontWeight: 700,

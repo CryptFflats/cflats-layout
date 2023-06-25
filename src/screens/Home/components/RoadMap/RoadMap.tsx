@@ -3,7 +3,6 @@ import ContentBox from '../../../../containers/ContentBox/ContentBox'
 import TitleBox from '../../../../components/TitleBox/TitleBox'
 import React, { useState } from 'react'
 import classNames from 'classnames'
-import { IAccordion } from './types'
 import { useTranslations } from 'next-intl';
 
 const RoadMap = () => {
@@ -11,11 +10,11 @@ const RoadMap = () => {
 	const elRef = React.useRef() as React.MutableRefObject<HTMLInputElement>
 	const t = useTranslations('Home')
 	const accodionData = [
-		"20%",
-		"40%",
-		"60%",
-		"80%",
-		"100%",
+		{ key: "20%", arr: ['n1', 'n2', 'n3', 'n4', 'n5'] },
+		{ key: "40%", arr: ['n1', 'n2', 'n3'] },
+		{ key: "60%", arr: ['n1', 'n2', 'n3', 'n4'] },
+		{ key: "80%", arr: ['n1', 'n2', 'n3', 'n4'] },
+		{ key: "100%", arr: ['n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'] },
 	]
 
 	const toggleAccordion = (index: any) => {
@@ -33,15 +32,15 @@ const RoadMap = () => {
 				{accodionData.map((item, index) => {
 					return (
 						<div
-							className={classNames(styles.roadmapCard, styles[t(`roadmap.accordion.${item}.class`)])}
+							className={classNames(styles.roadmapCard, styles[t(`roadmap.accordion.${item.key}.class`)])}
 							onClick={() => toggleAccordion(index)}
 							key={index}
 						>
 							<div className={styles.roadmapHeader}>
-								<div className={styles.progress}>{t(`roadmap.accordion.${item}.progress`)}</div>
+								<div className={styles.progress}>{t(`roadmap.accordion.${item.key}.progress`)}</div>
 
 								<h2 className={classNames(styles.roadmapCardTitle)}>
-									{t(`roadmap.accordion.${item}.headerTitle`)}
+									{t(`roadmap.accordion.${item.key}.headerTitle`)}
 								</h2>
 							</div>
 
@@ -56,17 +55,17 @@ const RoadMap = () => {
 								<h2
 									className={classNames(
 										styles.roadmapBodyTitle,
-										styles[t(`roadmap.accordion.${item}.classTitle`)]
+										styles[t(`roadmap.accordion.${item.key}.classTitle`)]
 									)}
 								>
-									{t(`roadmap.accordion.${item}.titleBody`)}
+									{t(`roadmap.accordion.${item.key}.titleBody`)}
 								</h2>
 
-								{/*<ul className={styles.roadmapCardList}>*/}
-								{/*	{item.listText.map((item, index) => {*/}
-								{/*		return <li key={index}>{item}</li>*/}
-								{/*	})}*/}
-								{/*</ul>*/}
+								<ul className={styles.roadmapCardList}>
+									{item.arr.map((list, index) => {
+										return <li key={index}>{t(`roadmap.accordion.${item.key}.listText.${list}`)}</li>
+									})}
+								</ul>
 							</div>
 						</div>
 					)

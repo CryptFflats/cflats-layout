@@ -5,6 +5,7 @@ import { useAppSelector } from '../../core/hooks/store.hook';
 import CfImage from '../../components/CfImage/CfImage';
 import { useState } from 'react';
 import { Skeleton } from '@mui/material';
+import classNames from 'classnames';
 
 const Avatar = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -12,7 +13,7 @@ const Avatar = () => {
 	const { avatar } = useAppSelector(state => state.MenuSlice)
 
   return (
-    <span className={styles.avatar}>
+    <span className={classNames(styles.avatar, isLoading && styles.noBorder)}>
 			<CfImage
 				onLoad={() => setIsLoading(false)}
 				style={{ display: isLoading ? 'none' : '' }}

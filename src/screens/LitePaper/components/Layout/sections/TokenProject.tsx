@@ -1,36 +1,61 @@
-'use client'
+'use client';
 
-import styles from '../Layout.module.scss'
+import styles from '../Layout.module.scss';
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../../../../../core/utils/animations/fadeInUp';
 
 const TokenProject = () => {
-	const t = useTranslations('Litepaper')
+	const t = useTranslations('Litepaper');
 
 	return (
-		<div id='#token-project' className={styles['main-section']}>
-			<h2 data-aos='fade-up'>{t('CFLAT_TOKEN.title')}</h2>
+		<motion.section
+			id='#token-project'
+			className={styles['main-section']}
+		>
+			<motion.h2
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+			>
+				{t('CFLAT_TOKEN.title')}
+			</motion.h2>
 
-			<p data-aos='fade-up'
-				 className={styles['mb-30']}
-				 dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text') }}
+			<motion.p variants={fadeInUp}
+								initial={'hidden'}
+								whileInView='show'
+								viewport={{ once: true, amount: 0.5 }}
+								className={styles['mb-30']}
+								dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text') }}
 			/>
 
-			{/*<ul className={styles.strong}>*/}
-			{/*	{list.map((item, index) => {*/}
-			{/*		return (*/}
-			{/*			<li key={index} data-aos='fade-up'>*/}
-			{/*				{item}*/}
-			{/*			</li>*/}
-			{/*		)*/}
-			{/*	})}*/}
-			{/*</ul>*/}
+			<ul className={styles.strong}>
+				{['n1', 'n2', 'n3', 'n4', 'n6', 'n7'].map((item, index) => {
+					return (
+						<motion.li
+							variants={fadeInUp}
+							initial={'hidden'}
+							whileInView='show'
+							viewport={{ once: true, amount: 0.5 }}
+							key={index}
+						>
+							{t(`CFLAT_TOKEN.list.${item}`)}
+						</motion.li>
+					)
+				})}
+			</ul>
 
-			<p data-aos='fade-up'
-				 className={styles['mb-0']}
-				 dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.aboutText') }}
+			<motion.p
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-0']}
+				dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.aboutText') }}
 			/>
-		</div>
-	)
-}
+		</motion.section>
+	);
+};
 
-export default TokenProject
+export default TokenProject;

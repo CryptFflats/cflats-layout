@@ -37,8 +37,8 @@ const AboutRooms = () => {
 						preload={'metadata'}
 						ref={videoRef}
 					>
-						<source src={`${CDN_URL}/appart-buid.webm`} />
-						<source src={`${CDN_URL}/appart-build.mp4`} type="video/mp4" />
+						<source src={`${CDN_URL}/videos/appart-buid.webm`} />
+						<source src={`${CDN_URL}/videos/appart-build.mp4`} type="video/mp4" />
 					</video>
 				</div>
 

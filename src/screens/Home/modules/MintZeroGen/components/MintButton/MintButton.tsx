@@ -16,8 +16,6 @@ const MintButton = () => {
 			const tx = await mintGen();
 			dispatch(setIsActive(true))
 			dispatch(setTxHash(tx.transactionHash))
-			console.log(tx.transactionHash)
-			console.log(tx)
 		} catch(err: any) {
 		    throw new Error(err);
 		}

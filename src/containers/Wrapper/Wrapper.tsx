@@ -6,7 +6,8 @@ import classNames from "classnames";
 import { useAppDispatch } from '../../core/hooks/store.hook';
 import { setAvatar } from '../../core/store/slices/MenuSlice';
 import { userIconsData } from '../../core/data/userIcons.data';
-import AOS from 'aos'
+// import 'aos/dist/aos.css'
+// import AOS from 'aos'
 
 interface WrapperProps {
   children?: ReactNode
@@ -20,31 +21,6 @@ const Wrapper: FC<WrapperProps> = ({ children, background, lock }) => {
 	const getRandomIcon = (icons: string[]) => {
 		return icons[Math.floor(Math.random() * icons.length)]
 	}
-
-	useEffect(() => {
-		AOS.init({
-			startEvent: 'load',
-			once: true
-		});
-		//AOS.refresh();
-	},[]);
-
-	// useEffect(() => {
-	// 	AOS.refresh(); // Assuming AOS is available in the scope
-	// }, []);
-
-	useEffect(() => {
-		const handleLoad = () => {
-			AOS.refresh(); // Предполагается, что AOS доступно в области видимости
-		};
-
-		window.addEventListener('load', handleLoad);
-
-		return () => {
-			window.removeEventListener('load', handleLoad);
-		};
-	}, []);
-
 
 	useEffect(() => {
 		const icon = getRandomIcon(userIconsData)

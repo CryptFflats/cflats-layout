@@ -9,6 +9,7 @@ import { setGenFirst } from '../../../../../../core/store/slices/MintSlice'
 import CfImage from '../../../../../../components/CfImage/CfImage'
 import { BlueButton } from '../../../../../../styled/BlueButton';
 import { useTranslations } from 'next-intl';
+import MintButton from '../MintButton/MintButton';
 
 const MintFirstGen = () => {
 	const { genFirstPlace } = useAppSelector(state => state.MintSlice)
@@ -28,7 +29,7 @@ const MintFirstGen = () => {
 
 			<p dangerouslySetInnerHTML={{ __html: t.raw('mint.gen_first.text') }} />
 
-			<BlueButton>MINT GEN 1</BlueButton>
+			<MintButton />
 		</MintPlace>
 	)
 }
