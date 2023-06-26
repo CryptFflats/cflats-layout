@@ -31,7 +31,46 @@ export const BlueButton = styled(Button)(({ theme }) => ({
 	},
 
 	'@media(max-width: 1768px)': {
+		padding: '15px 35px',
 		fontSize: "1.75rem",
 		lineHeight: "2rem"
+	},
+
+	'@media(max-width: 1440px)': {
+		padding: '15px 35px',
+		fontSize: "1.25rem",
+		lineHeight: "1.5rem"
+	},
+
+	'@media(max-width: 1024px)': {
+		padding: '10px 30px',
+		fontSize: "1rem",
+		lineHeight: "1.5rem"
+	}
+}))
+
+export const BlueMint = styled(BlueButton)(({ theme }) => ({
+	position: 'absolute',
+	bottom: '10%',
+	left: '50%',
+	transform: 'translateX(-50%)',
+
+	'@media(max-width: 1650px)': {
+		bottom: "5%"
+	},
+
+	'@media(max-width: 1200px)': {
+		bottom: "3%"
+	},
+
+	'@media(max-width: 768px)': {
+		minWidth: '190px'
+	}
+}))
+
+export const RoomsButton = styled(BlueButton)(({ theme }) => ({
+	minWidth: '360px',
+	'@media(max-width: 768px)': {
+		minWidth: '250px'
 	}
 }))

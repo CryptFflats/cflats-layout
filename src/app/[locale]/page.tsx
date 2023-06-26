@@ -1,14 +1,7 @@
 import Home from "../../screens/Home/Home";
 import { createTranslator } from 'next-intl';
 import { getMessages } from '../../core/utils/utils/getMessages';
-import { ReactNode } from 'react';
 import { Metadata } from 'next';
-
-type Props = {
-	children: ReactNode;
-	params: {locale: string};
-};
-
 
 export async function generateMetadata({params: {locale}}: any): Promise<Metadata> {
 	const messages = await getMessages(locale);
@@ -24,10 +17,6 @@ export async function generateMetadata({params: {locale}}: any): Promise<Metadat
 		}
 	};
 }
-
-// export const metadata = {
-// 	title: 'Cryptoflats - Home'
-// }
 
 export default function HomePage() {
   return (

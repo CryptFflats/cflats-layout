@@ -6,7 +6,7 @@ import CfImage from '../../../../components/CfImage/CfImage'
 import { useAppDispatch } from '../../../../core/hooks/store.hook'
 import { setGenFirst, setGenZero, setWhileList } from '../../../../core/store/slices/MintSlice';
 import WlButton from '../../UI/WlButton/WlButton';
-import { BlueButton } from '../../../../styled/BlueButton';
+import { BlueButton, RoomsButton } from '../../../../styled/BlueButton';
 import { MintZeroGen } from '../../modules/MintZeroGen';
 import MintFirstGen from '../../modules/MintFirstGen/components/MintFirstGen/MintFirstGen';
 import { WlMarket } from '../../modules/WlMarket';
@@ -17,19 +17,17 @@ const AboutNft = () => {
 	return (
 		<div className={classNames(styles.aboutNft)}>
 			<div className={styles.mintButtons}>
-				<BlueButton
-					sx={{ minWidth: '360px' }}
+				<RoomsButton
 					onClick={() => dispatch(setGenFirst(true))}
 				>
 					MINT GEN 1
-				</BlueButton>
+				</RoomsButton>
 
-				<BlueButton
-					sx={{ minWidth: '360px' }}
+				<RoomsButton
 					onClick={() => dispatch(setGenZero(true))}
 				>
 					MINT NFT PASS
-				</BlueButton>
+				</RoomsButton>
 
 				<WlButton onClick={() => dispatch(setWhileList(true))} />
 			</div>

@@ -34,7 +34,7 @@
     },
     "cryptoflats_video": {
       "play_game": "PLAY TO EARN GAME",
-      "coming_soon": "Coming soon!",
+      "coming_soon": "Whitelist stage!",
       "watch_trailer": "Watch trailer"
     },
     "rarity": {
@@ -262,15 +262,16 @@
     },
     "mint": {
       "gen_zero": {
-        "text": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! <br><br> It gets you an additional benefits like 40% discount on land to purchase GEN#2 - GEN#4 and increase active gaming skills!\n"
+        "text": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! <br><br> It gets you an additional benefits like 40% discount on land to purchase GEN#2 - GEN#4 and increase active gaming skills!"
       },
       "gen_first": {
-        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. By minting GEN#1, you will get random NFT of random rarity at one price. <br><br> If you whitelisted, then your price will be 30% less. You can stake this NFT to get income in CFLAT tokens.  \n"
+        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. <br><br> By minting GEN#1, you will get random NFT of random rarity at one price. You can stake this NFT to get income in CFLAT tokens."
       },
       "wlMarket": {
         "text": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market. <br><br> We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",
         "button": "Buy whitelist"
-      }
+      },
+      "alert": "<span>Public sale is not started yet!</span> You can expect a huge amount of gas if you are <strong>NOT whitelisted!</strong>"
     }
   },
   "Info": {

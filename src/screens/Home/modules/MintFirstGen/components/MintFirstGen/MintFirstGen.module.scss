@@ -1,0 +1,17 @@
+@import "src/assets/styles/helpers/mixin";
+
+.image {
+  width: 45%;
+
+  @include _1200 {
+    width: 40%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+}

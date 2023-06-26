@@ -1,3 +1,5 @@
+@import "src/assets/styles/helpers/mixin";
+
 .wlPlace {
   position: absolute;
   background: #F4E9E9;
@@ -20,14 +22,41 @@
   position: relative;
   max-width: 80%;
   margin: 0 auto;
-  padding: 18% 20px 20px 20px;
+  padding: 14% 20px 20px 20px;
+
+  @include _1650 {
+    padding: 10% 20px 20px 20px;
+  }
+
+  @include _1440 {
+    padding: 8% 20px 20px 20px;
+  }
+
+  @include _1024 {
+    max-width: 90%;
+  }
 
   > p {
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: left;
     color: #fff;
-    margin-bottom: 4em;
+    margin-bottom: 10%;
+
+    @include _1440 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    @include _1200 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 5%;
+    }
+
+    @include _1024 {
+      margin-bottom: 8%;
+    }
   }
 }
 
@@ -39,11 +68,32 @@
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 700;
-  margin-bottom: 2em;
+  margin-bottom: 10%;
+
+  @include _1440 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 7%;
+  }
+
+  @include _1200 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 5%;
+  }
+
+  @include _1024 {
+    margin-bottom: 8%;
+  }
+
+  @include _500 {
+    margin-bottom: 5%;
+  }
 }
 
 .close {
   position: absolute;
   right: 20px;
   top: 20px;
+  z-index: 20;
 }

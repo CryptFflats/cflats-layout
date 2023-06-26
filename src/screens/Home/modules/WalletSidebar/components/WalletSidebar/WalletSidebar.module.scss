@@ -5,20 +5,20 @@
   background: var(--color-gray);
   border-radius: 0 0 50px 50px;
   width: 580px;
-  top: 252px;
+  top: 212px;
   right: 0;
   z-index: 20;
 
-  @include _1200 {
-    top: 141px;
+  @include _1440 {
+    top: 172px;
   }
 
   @include _1024 {
-    top: 96px;
+    top: 127px;
   }
 
   @include _768 {
-    top: 94px;
+    top: 124px;
   }
 
   @include _576 {

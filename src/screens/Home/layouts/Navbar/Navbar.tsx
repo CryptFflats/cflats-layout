@@ -1,7 +1,7 @@
 'use client'
 
-import dynamic from 'next/dynamic'
 import styles from './Navbar.module.scss'
+import dynamic from 'next/dynamic'
 import Logo from '../../UI/Logo/Logo'
 import Navigation from './Navigation'
 import SocialIcons from '../../../../UI/SocialIcons/SocialIcons'

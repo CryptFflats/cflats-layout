@@ -1,0 +1,21 @@
+.toastify {
+  width: 750px;
+  padding: 50px 65px;
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 10px;
+  position: relative;
+}
+
+.content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+
+  > span {
+    color: var(--color-yellow);
+  }
+
+  > strong {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,11 @@
+@import "src/assets/styles/helpers/mixin";
+
+.image {
+  @include _1980   {
+    width: 80%;
+  }
+
+  @include _1200 {
+    width: 70%;
+  }
+}

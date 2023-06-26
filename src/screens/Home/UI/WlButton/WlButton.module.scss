@@ -1,3 +1,5 @@
+@import "src/assets/styles/helpers/mixin";
+
 .wlButton {
   user-select: none;
   border: none;
@@ -27,5 +29,9 @@
   > .about {
     font-size: 1.125rem;
     line-height: 1.5rem;
+  }
+
+  @include _768 {
+    min-width: 250px;
   }
 }

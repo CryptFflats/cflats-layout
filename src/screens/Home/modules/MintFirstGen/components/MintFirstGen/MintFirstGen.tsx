@@ -1,5 +1,6 @@
 'use client'
 
+import styles from './MintFirstGen.module.scss'
 import MintPlace from '../../../../components/MintPlace/MintPlace';
 import {
 	useAppDispatch,
@@ -7,7 +8,6 @@ import {
 } from '../../../../../../core/hooks/store.hook'
 import { setGenFirst } from '../../../../../../core/store/slices/MintSlice'
 import CfImage from '../../../../../../components/CfImage/CfImage'
-import { BlueButton } from '../../../../../../styled/BlueButton';
 import { useTranslations } from 'next-intl';
 import MintButton from '../MintButton/MintButton';
 
@@ -22,11 +22,11 @@ const MintFirstGen = () => {
 			open={genFirstPlace}
 		>
 			<CfImage
+				className={styles.image}
 				src={'fb86448c-7c18-470b-2cdd-515a45862e00/public'}
 				alt={'gen1 image'}
 				fluid
 			/>
-
 			<p dangerouslySetInnerHTML={{ __html: t.raw('mint.gen_first.text') }} />
 
 			<MintButton />

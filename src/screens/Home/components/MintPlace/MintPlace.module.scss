@@ -1,3 +1,5 @@
+@import "src/assets/styles/helpers/mixin";
+
 .mintPlace {
   position: absolute;
   background: #F4E9E9;
@@ -16,19 +18,71 @@
 .content {
   position: relative;
   max-width: 80%;
+  height: 100%;
   margin: 0 auto;
-  padding: 40px 20px 20px 20px;
+  padding: 8% 0;
 
-  > img {
-    margin-bottom: 1em;
+  @include _1650 {
+    padding: 5% 0;
   }
 
-  > p {
+  @include _1440 {
+    max-width: 85%;
+  }
+
+  @include _1200 {
+    padding: 3% 0;
+    max-width: 90%;
+  }
+
+  @include _1024 {
+    padding: 3% 0;
+    max-width: 70%;
+  }
+
+  @include _768 {
+    max-width: 85%;
+  }
+
+  @include _576 {
+    max-width: 90%;
+  }
+
+  > img {
+    margin-bottom: 8%;
+
+    @include _1440 {
+      margin-bottom: 5%;
+    }
+
+    @include _1200 {
+      margin-bottom: 3%;
+    }
+  }
+
+  p {
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: left;
     color: #706464;
-    margin-bottom: 1.5em;
+    font-weight: 500;
+    //margin-bottom: 7%;
+
+    @include _1980 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    @include _1440 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    @include _1350 {
+      font-size: 0.875rem;
+      line-height: 1.4rem;
+      //margin-bottom: 5%;
+    }
   }
 }
 
@@ -36,5 +90,6 @@
   position: absolute;
   right: 20px;
   top: 20px;
+  z-index: 20;
 }
 
