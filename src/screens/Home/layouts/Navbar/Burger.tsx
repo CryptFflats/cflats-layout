@@ -23,7 +23,7 @@ const Burger = () => {
 		dispatch(setMenuActive(!isMenuActive))
 		dispatch(setWalletActive(false))
 		dispatch(setProfileActive(false))
-		isMenuActive ? enableBodyScroll(document.body) : disableBodyScroll(document.body)
+		// isMenuActive ? enableBodyScroll(document.body) : disableBodyScroll(document.body)
 	}
 
 	return (

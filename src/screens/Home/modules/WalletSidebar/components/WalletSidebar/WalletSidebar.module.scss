@@ -1,25 +1,25 @@
 @import "src/assets/styles/helpers/mixin";
 
 .walletSidebar {
-  position: absolute;
+  //position: absolute;
   background: var(--color-gray);
   border-radius: 0 0 50px 50px;
   width: 580px;
   top: 212px;
-  right: 0;
-  z-index: 20;
+  //right: 0;
+  //z-index: 20;
 
-  @include _1440 {
-    top: 172px;
-  }
-
-  @include _1024 {
-    top: 127px;
-  }
-
-  @include _768 {
-    top: 124px;
-  }
+  //@include _1440 {
+  //  top: 172px;
+  //}
+  //
+  //@include _1024 {
+  //  top: 127px;
+  //}
+  //
+  //@include _768 {
+  //  top: 124px;
+  //}
 
   @include _576 {
     width: 100%;

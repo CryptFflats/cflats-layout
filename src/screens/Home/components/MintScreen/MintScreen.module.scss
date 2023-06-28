@@ -3,7 +3,6 @@
 
 .mintScreen {
   position: relative;
-  background: #F4E9E9;
   overflow: hidden;
   display: flex;
 
@@ -60,7 +59,7 @@
   }
 
   @include _576 {
-
+    transform: translateY(10%);
   }
 }
 
@@ -143,7 +142,7 @@
     }
 
     @include _576 {
-      margin-top: 30px;
+      margin-top: 50px;
       font-size: 1rem;
       line-height: 1.4rem;
     }
@@ -263,7 +262,7 @@
   }
 
   @include _500 {
-    min-height: 400px;
+    min-height: 390px;
   }
 
   > h1 {

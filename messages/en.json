@@ -50,10 +50,10 @@
           "about_flats": "СFLAT Gold pass gives an advantage over other users",
           "tab_info": {
             "n1": "Adds +10% income of all staked NFTs",
-            "n2": "50% discount on land for purchase GEN#2-GEN#4",
+            "n2": "50% discount on land for purchase GEN#2 - GEN#4 ",
             "n3": "30% discount on land for purchase GEN#5",
             "n4": "Private chat and airdrop conditions",
-            "n5": "Golden tick on our discord channel "
+            "n5": "Golden tick on our discord channel"
             }
         },
         "rarity_02": {
@@ -80,10 +80,10 @@
           "about_flats": "70% of the overall quantity with huge variety of backgrounds in different colors and shapes",
           "tab_info": {
             "n1": "Approximate Quantity - 3490 pcs",
-            "n2": "Income per day (Staking) - 5000 CFLAT",
-            "n3": "Staking days - 100",
-            "n4": "Staking days - 100",
-            "n5": "Token claim - 60% to wallet"
+            "n2": "Income per day (Staking) - 3000 CFLAT",
+            "n3": "Staking days - 180",
+            "n4": "Claim to unstake - after 5 days",
+            "n5": "Token claim - 100% to wallet"
           }
         },
         "rarity_04": {
@@ -95,9 +95,9 @@
           "about_flats": "15% of the overall quantity with silver background andrarity lettering",
           "tab_info": {
             "n1": "Approximate Quantity - 835 pcs",
-            "n2": "Net Income per day (Staking) - 4526 CFLAT",
-            "n3": "Net Income per day (Staking) - 4526 CFLAT",
-            "n4": "Net Income per day (Staking) - 4526 CFLAT",
+            "n2": "Net Income per day (Staking) - 4000 CFLAT",
+            "n3": "Staking days - 180",
+            "n4": "Claim to unstake - after 5 days",
             "n5": "Token claim - 100% to wallet"
           }
         },
@@ -110,8 +110,8 @@
           "about_flats": "10% of the overall quantity with gold background and rarity lettering",
           "tab_info": {
             "n1": "Approximate Quantity - 555 pcs",
-            "n2": "Net Income per day (Staking) - 5324 CFLAT",
-            "n3": "Net Income per day (Staking) - 5324 CFLAT",
+            "n2": "Net Income per day (Staking) - 5000 CFLAT",
+            "n3": "Staking days - 180",
             "n4": "Claim to unstake - after 5 days",
             "n5": "Token claim - 100% to wallet"
           }
@@ -125,8 +125,8 @@
           "about_flats": "5% of the overall quantity with diamond background and rarity lettering",
           "tab_info": {
             "n1": "Approximate Quantity - 225 pcs",
-            "n2": "Net Income per day (Staking) - 6128CFLAT",
-            "n3": "Net Income per day (Staking) - 6128CFLAT",
+            "n2": "Net Income per day (Staking) - 6000 CFLAT",
+            "n3": "Staking days - 180",
             "n4": "Claim to unstake - after 5 days",
             "n5": "Token claim - 100% to wallet"
           }
@@ -262,10 +262,12 @@
     },
     "mint": {
       "gen_zero": {
-        "text": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! <br><br> It gets you an additional benefits like 40% discount on land to purchase GEN#2 - GEN#4 and increase active gaming skills!"
+        "text": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! <br><br> It gets you an additional benefits like 40% discount on land to purchase GEN#2 - GEN#4 and increase active gaming skills!",
+        "textMobile": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! It gets you an additional benefits like discount and increasing active gaming skills!"
       },
       "gen_first": {
-        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. <br><br> By minting GEN#1, you will get random NFT of random rarity at one price. You can stake this NFT to get income in CFLAT tokens."
+        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. <br><br> By minting GEN#1, you will get random NFT of random rarity at one price. You can stake this NFT to get income in CFLAT tokens.",
+        "textMobile": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. By minting GEN#1, you will get random NFT of random rarity at one price."
       },
       "wlMarket": {
         "text": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market. <br><br> We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",

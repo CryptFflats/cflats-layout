@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './SocialIcons.module.scss'
 import { socialIconsData } from './SocialIcons.data'
 import classNames from 'classnames'
@@ -5,6 +7,8 @@ import { FC } from 'react'
 
 interface SocialIconsProps {
 	className?: string
+	direction?: 'center' | 'start'
+
 }
 const SocialIcons: FC<SocialIconsProps> = ({ className }) => {
 	return (

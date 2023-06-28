@@ -1,12 +1,15 @@
+'use client'
+
 import styles from './WalletSidebar.module.scss'
-import { useAccount, useConnect } from 'wagmi';
+import { useAccount } from 'wagmi';
 import User from '../User/User';
 import Wallets from '../Wallets/Wallets';
 import { useAppSelector } from '../../../../../../core/hooks/store.hook';
 
 const WalletSidebar = () => {
 	const { isConnected } = useAccount()
-	const { isWalletActive, isProfileActive } = useAppSelector(
+	const { height } = useAppSelector(state => state.NavbarSlice)
+	const { isWalletActive } = useAppSelector(
 		state => state.MenuSlice
 	)
 
@@ -14,7 +17,7 @@ const WalletSidebar = () => {
 		<>
 			{
 				!isConnected && isWalletActive && (
-					<div className={styles.walletSidebar}>
+					<div style={{ position: 'absolute', zIndex: '20', right: 0, top: height }} className={styles.walletSidebar}>
 						<User />
 						<Wallets />
 					</div>

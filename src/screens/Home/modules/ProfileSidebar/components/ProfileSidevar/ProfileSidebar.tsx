@@ -9,6 +9,7 @@ import { useAccount } from 'wagmi';
 
 const ProfileSidebar = () => {
 	const { menu } = useAppSelector(state => state.ProfileSidebarSlice)
+	const { height } = useAppSelector(state => state.NavbarSlice)
 	const dispatch = useAppDispatch()
 	const { isConnected } = useAccount()
 	const { isProfileActive } = useAppSelector(
@@ -23,7 +24,7 @@ const ProfileSidebar = () => {
 						touchEvent={false}
 						onClickAway={() => dispatch(setProfileActive(false))}
 					>
-						<div className={styles.profileSidebar}>
+						<div style={{ position: 'absolute', zIndex: '20', right: 0, top: height }} className={styles.profileSidebar}>
 							<User />
 							{menu === 'menu' && <MenuList />}
 							{menu === 'lang' && <LanguageMenu />}

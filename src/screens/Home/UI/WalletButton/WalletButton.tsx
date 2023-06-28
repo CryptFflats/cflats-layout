@@ -18,7 +18,7 @@ const WalletButton = () => {
 		dispatch(setWalletActive(!isWalletActive))
 		if (isMenuActive) {
 			dispatch(setMenuActive(false))
-			enableBodyScroll(document.body)
+			//enableBodyScroll(document.body)
 		}
 	}
 

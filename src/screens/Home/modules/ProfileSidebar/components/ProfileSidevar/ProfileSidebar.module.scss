@@ -4,23 +4,23 @@
   background: var(--color-gray);
   border-radius: 0 0 50px 50px;
   width: 580px;
-  position: absolute;
-  top: 212px;
-  right: 0;
+  //position: absolute;
+  //top: 212px;
+  //right: 0;
   overflow: hidden;
-  z-index: 20;
+  //z-index: 20;
 
-  @include _1440 {
-    top: 172px;
-  }
-
-  @include _1024 {
-    top: 127px;
-  }
-
-  @include _768 {
-    top: 124px;
-  }
+  //@include _1440 {
+  //  top: 172px;
+  //}
+  //
+  //@include _1024 {
+  //  top: 127px;
+  //}
+  //
+  //@include _768 {
+  //  top: 124px;
+  //}
 
   @include _576 {
     width: 100%;

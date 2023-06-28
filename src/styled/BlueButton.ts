@@ -60,7 +60,7 @@ export const BlueMint = styled(BlueButton)(({ theme }) => ({
 	},
 
 	'@media(max-width: 1200px)': {
-		bottom: "3%"
+		bottom: "8%"
 	},
 
 	'@media(max-width: 768px)': {
@@ -72,5 +72,12 @@ export const RoomsButton = styled(BlueButton)(({ theme }) => ({
 	minWidth: '360px',
 	'@media(max-width: 768px)': {
 		minWidth: '250px'
+	}
+}))
+
+export const WatchTrailer = styled(BlueButton)(({ theme }) => ({
+	marginTop: '50px',
+	'@media(max-width: 576px)': {
+		marginTop: '30px'
 	}
 }))

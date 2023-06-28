@@ -6,7 +6,7 @@ import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { useAppDispatch } from '../../../../core/hooks/store.hook'
 import { setTrailer } from '../../../../core/store/slices/ModalSlice'
 import { useTranslations } from 'next-intl';
-import { BlueButton } from '../../../../styled/BlueButton';
+import { WatchTrailer } from '../../../../styled/BlueButton';
 import { CDN_URL } from '../../../../core/utils/constance';
 import { CircularProgress } from '@mui/material';
 
@@ -15,8 +15,6 @@ const AboutRooms = () => {
 	const dispatch = useAppDispatch()
 	const t = useTranslations('Home')
 	const videoRef = useRef<HTMLVideoElement>(null);
-
-
 
 	const handleOnLoadedData = () => {
 		setIsLoading(false)
@@ -46,12 +44,11 @@ const AboutRooms = () => {
 					<h1>{t('cryptoflats_video.play_game')}</h1>
 					<p>{t('cryptoflats_video.coming_soon')}</p>
 
-					<BlueButton
-						sx={{ marginTop: '50px' }}
+					<WatchTrailer
 						onClick={() => dispatch(setTrailer(true))}
 					>
 						{t('cryptoflats_video.watch_trailer')}
-					</BlueButton>
+					</WatchTrailer>
 
 					<ul className={styles.hashtags}>
 						<li className={classNames(styles.hashtag, styles['hashtag-1'])}>

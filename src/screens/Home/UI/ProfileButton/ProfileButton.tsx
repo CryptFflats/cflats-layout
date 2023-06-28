@@ -18,7 +18,7 @@ const ProfileButton = () => {
 		dispatch(setProfileActive(!isProfileActive));
 		if (isMenuActive) {
 			dispatch(setMenuActive(false));
-			enableBodyScroll(document.body)
+			//enableBodyScroll(document.body)
 		}
 	};
 

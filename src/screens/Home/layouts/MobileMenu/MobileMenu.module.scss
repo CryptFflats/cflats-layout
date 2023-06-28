@@ -5,7 +5,7 @@
   background: rgba(35, 35, 35, 0.95);
   top: 0;
   z-index: 14;
-  transform: translateX(-100%);
+  //transform: translateX(-100%);
   transition: 0.4s ease-out;
   display: none;
   padding: 20%;
@@ -14,9 +14,9 @@
   //overflow-y: scroll;
   //overflow-x: hidden;
 
-  &.visible {
-    transform: translateX(0%);
-  }
+  //&.visible {
+  //  transform: translateX(0%);
+  //}
 
   @include _1024 {
     display: block;
@@ -27,9 +27,18 @@
   }
 }
 
-.navList {
+.content {
+  padding: 10%;
+}
 
+.navList {
   li {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     a {
       text-decoration: none;
       color: #FFF;
@@ -47,5 +56,6 @@
 }
 
 .socialIcons {
-  margin-top: 50px;
+  margin-top: 100px;
+  justify-content: center;
 }

@@ -10,11 +10,13 @@ import { setGenZero } from '../../../../../../core/store/slices/MintSlice'
 import CfImage from '../../../../../../components/CfImage/CfImage'
 import { useTranslations } from 'next-intl';
 import MintButton from '../MintButton/MintButton';
+import { useMediaQuery } from '@mui/material';
 
 const MintZeroGen = () => {
 	const { genZeroPlace } = useAppSelector(state => state.MintSlice)
 	const dispatch = useAppDispatch()
 	const t = useTranslations("Home")
+	const query = useMediaQuery('(max-width: 600px)')
 
 	return (
 		<MintPlace onClose={() => dispatch(setGenZero(false))} open={genZeroPlace}>
@@ -25,7 +27,15 @@ const MintZeroGen = () => {
 				fluid
 			/>
 
-			<p dangerouslySetInnerHTML={{ __html: t.raw('mint.gen_zero.text') }} />
+			{
+				query ? (
+					<p dangerouslySetInnerHTML={{ __html: t.raw('mint.gen_zero.textMobile') }} />
+				)
+					:
+					(
+						<p dangerouslySetInnerHTML={{ __html: t.raw('mint.gen_zero.text') }} />
+					)
+			}
 
 			<MintButton />
 		</MintPlace>

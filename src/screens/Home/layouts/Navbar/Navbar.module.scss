@@ -2,26 +2,13 @@
 @import "src/assets/styles/helpers/variables";
 
 .navbar {
-  padding: 80px 0;
+  padding: 45px 0;
   position: relative;
   z-index: 15;
+  background: var(--color-gray);
 
-  @include _1980 {
-    padding: 60px 0;
-  }
-
-  @include _1440 {
-    padding: 40px 0;
-  }
-
-  &::before {
-    content: '';
-    height: 5px;
-    width: 100%;
-    background: var(--color-gray);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  @include _768 {
+    padding: 20px 0;
   }
 }
 
@@ -30,7 +17,7 @@
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 
   @include _2560 {
     max-width: 1890px;
@@ -63,7 +50,7 @@
   }
 
   @include _480 {
-    padding: 0 30px;
+    padding: 0 30px 0 40px;
   }
 }
 

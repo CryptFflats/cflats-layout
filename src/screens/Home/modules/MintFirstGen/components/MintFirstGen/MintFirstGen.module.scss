@@ -3,9 +3,9 @@
 .image {
   width: 45%;
 
-  @include _1200 {
-    width: 40%;
-  }
+  //@include _1200 {
+  //  width: 50%;
+  //}
 }
 
 .container {

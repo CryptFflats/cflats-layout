@@ -4,6 +4,7 @@ import ModalSlice from './slices/ModalSlice'
 import ProfileSidebarSlice from '../../screens/Home/modules/ProfileSidebar/slices/ProfileSidebarSlice'
 import MintSlice from './slices/MintSlice'
 import MintSuccess from './slices/MintSuccess';
+import NavbarSlice from './slices/NavbarSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -11,7 +12,8 @@ export const store = configureStore({
 		ModalSlice,
 		ProfileSidebarSlice,
 		MintSlice,
-		MintSuccess
+		MintSuccess,
+		NavbarSlice
 	}
 })
 

@@ -26,7 +26,7 @@ const Toastify = () => {
 	}, []);
 
 	const handleClose = () => {
-		Cookies.set('wl-alert', 'true', { expires: 7 });
+		Cookies.set('wl-alert', 'true', { expires: 1 });
 		setIsOpen(false);
 	}
 
