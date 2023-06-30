@@ -14,6 +14,9 @@ export async function generateMetadata({params: {locale}}: any): Promise<Metadat
 		openGraph: {
 			title: t('MetaData.Home.title'),
 			description: t('MetaData.Home.description'),
+			images: {
+				url: 'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/e402f1cf-2a33-4284-de2c-45d0e4c59f00/cover'
+			}
 		}
 	};
 }

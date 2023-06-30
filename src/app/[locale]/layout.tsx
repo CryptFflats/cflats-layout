@@ -50,7 +50,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 				rel='stylesheet'
 				href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 			/>
-			<meta property="og:image" content="https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover" />
+			{/*<meta property="og:image" content="https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover" />*/}
 			<meta name="yandex-verification" content="90ddaeffb810e21a" />
 			<meta name="google-site-verification" content="Hhf3ISRXwjlZILhTPf2JkySLOcKV4p0Ftmj4plc2zvs" />
 			<Script type="text/javascript">
@@ -87,7 +87,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 			<ReduxProvider>
 				<WagmiProvider>
 					<NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
-						{children}
+							{children}
 					</NextAppDirEmotionCacheProvider>
 				</WagmiProvider>
 			</ReduxProvider>

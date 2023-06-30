@@ -1,11 +1,13 @@
 'use client'
 
 import styles from './Wrapper.module.scss'
-import { FC, ReactNode, useEffect } from 'react';
+import { FC, ReactNode, useEffect, useState } from 'react';
 import classNames from "classnames";
 import { useAppDispatch } from '../../core/hooks/store.hook';
 import { setAvatar } from '../../core/store/slices/MenuSlice';
 import { userIconsData } from '../../core/data/userIcons.data';
+import { useAccount } from 'wagmi';
+import Preload from '../../layouts/Preload/Preload';
 // import 'aos/dist/aos.css'
 // import AOS from 'aos'
 
@@ -17,10 +19,16 @@ interface WrapperProps {
 
 const Wrapper: FC<WrapperProps> = ({ children, background, lock }) => {
 	const dispatch = useAppDispatch()
+	//const [isLoading, setIsLoading] = useState<boolean>(true)
 
 	const getRandomIcon = (icons: string[]) => {
 		return icons[Math.floor(Math.random() * icons.length)]
 	}
+
+	// useEffect(() => {
+	// 	setIsLoading(	)
+	// }, []);
+
 
 	useEffect(() => {
 		const icon = getRandomIcon(userIconsData)
@@ -33,7 +41,10 @@ const Wrapper: FC<WrapperProps> = ({ children, background, lock }) => {
       background === 'gray' ? styles.gray : background === 'white' && styles.white,
       lock && styles.lock
     )}>
-      {children}
+      {/*{*/}
+			{/*	isLoading ? (<Preload/>) : children*/}
+			{/*}*/}
+			{children}
     </div>
   );
 }

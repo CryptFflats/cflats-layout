@@ -7,6 +7,7 @@ import { setMenuActive } from '../../../../core/store/slices/MenuSlice';
 import SocialIcons from '../../../../UI/SocialIcons/SocialIcons';
 import { SwipeableDrawer } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import LanguageChanger from './LanguageChanger';
 
 interface NavLink {
 	path: string;
@@ -43,6 +44,8 @@ const MobileMenu = () => {
 					</ul>
 
 					<SocialIcons className={styles.socialIcons} />
+
+					<LanguageChanger />
 				</div>
 			</div>
 		</Menu>

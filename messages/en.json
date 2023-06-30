@@ -271,6 +271,7 @@
       },
       "wlMarket": {
         "text": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market. <br><br> We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",
+        "textMobile": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market.   We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",
         "button": "Buy whitelist"
       },
       "alert": "<span>Public sale is not started yet!</span> You can expect a huge amount of gas if you are <strong>NOT whitelisted!</strong>"
@@ -399,19 +400,21 @@
       "gold_pass": {
         "text": "GOLD NFT PASS (90% drop chance):",
         "list": {
-          "n1": "Participates in weekly GEN#1 raffles (there will be a total of 200 WL raffled off) while staking NFT PASS:",
+          "n1": "Adds +10% income of all staked NFTs",
           "n2": "50% discount on land for purchase GEN#2 - GEN#4",
-          "n3": "Enemy passive skill (chance of stealing your GEN#2 - GEN#4) is reduced by 1%",
-          "n4": "Active skill for Silver, Gold, Diamond NFT is increased by 5%"
+          "n3": "30% discount on land for purchase GEN#5",
+          "n4": "Private chat and airdrop conditions",
+          "n5": "Golden tick on our discord channel"
         }
       },
       "diamond_pass": {
         "text": "DIAMOND NFT PASS (10% drop chance):",
         "list": {
-          "n1": "Participates in weekly FREE raffles (there will be a total of 40 FREE raffled off) While staking NFT PASS:",
+          "n1": "Adds +20% income of all staked NFTs",
           "n2": "Free purchase of land for acquisition GEN#2, GEN#3",
           "n3": "70% discount on land for purchase GEN#4, GEN#5",
-          "n4": "Passive enemy skill (chance of stealing your GEN#2 - GEN#4) is reduced by 2%"
+          "n4": "Private chat and airdrop conditions",
+          "n5": "Diamond tick on our discord channel"
         }
       }
     },
@@ -419,24 +422,49 @@
       "title": "GEN#1 - LIVING ROOM RARITY",
       "text": "This part of the lightpaper consist of rarity properties for GEN#1. With each level of GEN# returns will increase.",
       "passive_skill": "Passive skill:",
+      "active_skill": "Active skill:",
       "standard": {
         "title": "FLATS Standard NFT (70% drop chance)",
-        "passive": "Earn 3000 CFLAT a day"
+        "passive": {
+          "n1": "Approximate Quantity - 3490 pcs",
+          "n2": "Income per day (Staking) - 3000 CFLAT",
+          "n3": "Staking days - 180",
+          "n4": "Claim to unstake - after 5 days",
+          "n5": "Token claim - 100% to wallet"
+        }
       },
       "silver": {
         "title": "FLATS Silver NFT (15% drop chance)",
-        "passive": "Earn 4000 CFLAT a day",
+        "passive": {
+          "n1": "Approximate Quantity - 835 pcs",
+          "n2": "Net Income per day (Staking) - 4000 CFLAT",
+          "n3": "Staking days - 180",
+          "n4": "Claim to unstake - after 5 days",
+          "n5": "Token claim - 100% to wallet"
+        },
         "active": "A 50/50 chance for taking 30% from the income from one random Flats standard NFT user. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "gold": {
         "title": "FLATS Gold NFT (10% drop chance)",
-        "passive": "Earn 5000 CFLAT a day",
-        "active": "A 50/50 chance for taking 40% from the income from one random Flats standard NFT user. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "passive": {
+          "n1": "Approximate Quantity - 555 pcs",
+          "n2": "Net Income per day (Staking) - 5000 CFLAT",
+          "n3": "Staking days - 180",
+          "n4": "Claim to unstake - after 5 days",
+          "n5": "Token claim - 100% to wallet"
+        },
+        "active": "A 50/50 chance for taking 40% from the income from one random Flats standard and silver NFT user. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "diamond": {
         "title": "FLATS Diamond NFT (5% drop chance)",
-        "passive": "Earn 6000 CFLAT a day",
-        "active": "A 50/50 chance for taking 50% from the income from one random Flats standard NFT user. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours"
+        "passive": {
+          "n1": "Approximate Quantity - 225 pcs",
+          "n2": "Net Income per day (Staking) - 6000 CFLAT",
+          "n3": "Staking days - 180",
+          "n4": "Claim to unstake - after 5 days",
+          "n5": "Token claim - 100% to wallet"
+        },
+        "active": "A 50/50 chance for taking 50% from the income from one random Flats standard, silver and gold NFT user. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours"
       },
       "mint": {
         "title": "GEN#2 mint requires open territory:",

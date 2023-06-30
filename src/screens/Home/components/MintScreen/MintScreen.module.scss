@@ -59,7 +59,7 @@
   }
 
   @include _576 {
-    transform: translateY(10%);
+    transform: translateY(5%);
   }
 }
 
@@ -105,18 +105,18 @@
   > h2 {
     font-size: 2rem;
     line-height: 2.2rem;
-    margin-top: 20px;
+    //margin-top: 20px;
 
     @include _1440 {
       font-size: 1.7rem;
       line-height: 1.9rem;
-      margin-top: 15px;
+      //margin-top: 15px;
     }
 
     @include _576 {
       font-size: 1.3rem;
       line-height: 1.8rem;
-      margin-top: 5px;
+      //margin-top: 5px;
     }
 
     @include _480 {
@@ -126,23 +126,25 @@
   }
 
   > p {
-    margin-top: 130px;
+    //margin-top: 130px;
+    margin-top: 15%;
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.2rem;
 
     @include _1650 {
-      margin-top: 90px;
+      //margin-top: 90px;
     }
 
     @include _1440 {
-      margin-top: 60px;
+      //margin-top: 60px;
       font-size: 1.7rem;
       line-height: 1.9rem;
     }
 
     @include _576 {
-      margin-top: 50px;
+      //margin-top: 50px;
+      margin-top: 12%;
       font-size: 1rem;
       line-height: 1.4rem;
     }
@@ -152,19 +154,20 @@
 .hashtags {
   display: flex;
   justify-content: center;
-  margin-top: 75px;
+  //margin-top: 75px;
+  margin-top: 10%;
   gap: 70px;
   color: #349EEB;
   font-weight: 600;
 
   @include _1350 {
-    margin-top: 40px;
+    //margin-top: 40px;
     gap: 50px;
   }
 
   @include _576 {
     gap: 25px;
-    margin-top: 30px;
+    //margin-top: 30px;
   }
 }
 
@@ -263,6 +266,10 @@
 
   @include _500 {
     min-height: 390px;
+  }
+
+  @include _400 {
+    min-height: 360px;
   }
 
   > h1 {

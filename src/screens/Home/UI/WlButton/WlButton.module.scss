@@ -10,7 +10,7 @@
   color: #FFF;
   display: inline-flex;
   flex-direction: column;
-  min-width: 360px;
+  min-width: 410px;
   justify-content: center;
   align-items: center;
   padding: 25px;
@@ -20,15 +20,29 @@
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    font-size: 1.5rem;
-    line-height: 1.7rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 600;
     margin-bottom: 10px;
+
+    @include _1980 {
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+    }
   }
 
   > .about {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @include _1980 {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @include _1980 {
+    min-width: 360px;
   }
 
   @include _768 {

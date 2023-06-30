@@ -7,7 +7,9 @@ const WlButton = ({ onClick }: {onClick: () => void}) => {
 	return (
 		<button onClick={onClick} className={styles.wlButton}>
 			<span className={styles.market}>
-				<i><IcWl/></i>
+				<i>
+					<IcWl/>
+				</i>
 				WL Market
 			</span>
 			<span className={styles.about}>

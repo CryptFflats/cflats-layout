@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './Preload.module.scss'
-import IcLogo  from '../../assets/images/icons/logo.svg'
+import IcLogo  from '../../assets/images/icons/logo_key.svg'
 
 const Preload = () => {
 	return (

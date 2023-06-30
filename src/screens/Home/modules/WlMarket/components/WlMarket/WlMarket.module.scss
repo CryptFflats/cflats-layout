@@ -20,17 +20,19 @@
 
 .content {
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   max-width: 80%;
   margin: 0 auto;
-  padding: 14% 20px 20px 20px;
-
-  @include _1650 {
-    padding: 10% 20px 20px 20px;
-  }
-
-  @include _1440 {
-    padding: 8% 20px 20px 20px;
-  }
+  //padding: 14% 20px 20px 20px;
+  //
+  //@include _1650 {
+  //  padding: 10% 20px 20px 20px;
+  //}
+  //
+  //@include _1440 {
+  //  padding: 8% 20px 20px 20px;
+  //}
 
   @include _1024 {
     max-width: 90%;
@@ -55,7 +57,7 @@
     }
 
     @include _1024 {
-      margin-bottom: 8%;
+      margin-bottom: 10%;
     }
   }
 }
@@ -87,7 +89,7 @@
   }
 
   @include _500 {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
 }
 

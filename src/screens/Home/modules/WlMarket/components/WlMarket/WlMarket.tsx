@@ -15,6 +15,7 @@ import { CDN_URL } from '../../../../../../core/utils/constance';
 const WlMarket = () => {
 	const { wlPlace } = useAppSelector(state => state.MintSlice);
 	const query = useMediaQuery('(max-width:1440px)');
+	const mobileQuery = useMediaQuery('(max-width:600px)')
 	const t = useTranslations("Home");
 	const dispatch = useAppDispatch();
 
@@ -48,7 +49,12 @@ const WlMarket = () => {
 										<i>WL Market</i>
 									</span>
 
-									<p dangerouslySetInnerHTML={{ __html: t.raw('mint.wlMarket.text') }} />
+									{
+										mobileQuery ?
+											(<p dangerouslySetInnerHTML={{ __html: t.raw('mint.wlMarket.textMobile') }} />)
+											:
+											(<p dangerouslySetInnerHTML={{ __html: t.raw('mint.wlMarket.text') }} />)
+									}
 
 									<BlueButton
 										href={'https://wl.market/collections/cryptoflats?type=sell'}

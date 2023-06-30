@@ -59,3 +59,23 @@
   margin-top: 100px;
   justify-content: center;
 }
+
+.languageChanger {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+  color: #bebcbc;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  > a {
+    text-decoration: none;
+  }
+
+  > span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
