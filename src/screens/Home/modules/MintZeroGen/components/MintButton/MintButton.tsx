@@ -4,7 +4,7 @@ import { useMint } from '../../hooks/useMint';
 import Progress from '../../../../../../components/Progress/Progress';
 import { useAppDispatch } from '../../../../../../core/hooks/store.hook';
 import { setIsActive, setTxHash } from '../../../../../../core/store/slices/MintSuccess';
-import { BlueMint } from '../../../../../../styled/BlueButton';
+import { BlueMint, MintDiv } from '../../../../../../styled/BlueButton';
 import { setWalletActive } from '../../../../../../core/store/slices/MenuSlice';
 import { useAccount } from 'wagmi';
 
@@ -26,10 +26,12 @@ const MintButton = () => {
 	}
 
 	return (
-		<BlueMint disabled={isLoading} onClick={mint}>
-			<i>MINT NFT PASS</i>
-			{isLoading && <Progress/>}
-		</BlueMint>
+		<MintDiv>
+			<BlueMint disabled={isLoading} onClick={mint}>
+				<i>MINT NFT PASS</i>
+				{isLoading && <Progress/>}
+			</BlueMint>
+		</MintDiv>
 	);
 };
 

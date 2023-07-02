@@ -1,6 +1,6 @@
 'use client'
 
-import { BlueMint } from '../../../../../../styled/BlueButton';
+import { BlueMint, MintDiv } from '../../../../../../styled/BlueButton';
 import { useMint } from '../../hooks/useMint';
 import { useAppDispatch } from '../../../../../../core/hooks/store.hook';
 import { setIsActive, setTxHash } from '../../../../../../core/store/slices/MintSuccess';
@@ -26,10 +26,12 @@ const MintButton = () => {
 	}
 
 	return (
-		<BlueMint onClick={mint} >
-			<i>MINT GEN 1</i>
-			{isLoading && <Progress/>}
-		</BlueMint>
+		<MintDiv>
+			<BlueMint disabled={isLoading} onClick={mint} >
+				<i>MINT GEN 1</i>
+				{isLoading && <Progress/>}
+			</BlueMint>
+		</MintDiv>
 	);
 };
 

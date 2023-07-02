@@ -56,17 +56,47 @@ export const BlueButton = styled(Button)(({ theme }) => ({
 }))
 
 export const BlueMint = styled(BlueButton)(({ theme }) => ({
+	// position: 'relative',
+	// bottom: '10%',
+	// left: '50%',
+	// transform: 'translateX(-50%)',
+	//
+	// '@media(max-width: 1980px)': {
+	// 	bottom: "5%"
+	// },
+	//
+	// '@media(max-width: 1650px)': {
+	// 	bottom: "5%"
+	// },
+	//
+	// '@media(max-width: 1024px)': {
+	// 	bottom: "8%"
+	// },
+	//
+	// '@media(max-width: 1200px)': {
+	// 	bottom: "5%"
+	// },
+	//
+	//
+	// '@media(max-width: 768px)': {
+	// 	minWidth: '190px',
+	// 	bottom: "8%"
+	// }
+}))
+
+export const MintDiv = styled('div')(({ theme }) => ({
 	position: 'absolute',
 	bottom: '10%',
 	left: '50%',
 	transform: 'translateX(-50%)',
+	width: '100%',
 
 	'@media(max-width: 1980px)': {
 		bottom: "5%"
 	},
 
 	'@media(max-width: 1650px)': {
-		bottom: "5%"
+		bottom: "8%"
 	},
 
 	'@media(max-width: 1024px)': {
@@ -79,7 +109,7 @@ export const BlueMint = styled(BlueButton)(({ theme }) => ({
 
 
 	'@media(max-width: 768px)': {
-		minWidth: '190px',
+		//minWidth: '190px',
 		bottom: "8%"
 	}
 }))

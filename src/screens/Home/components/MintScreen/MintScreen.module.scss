@@ -163,6 +163,11 @@
   @include _1350 {
     //margin-top: 40px;
     gap: 50px;
+    margin-top: 7%;
+  }
+
+  @include _1024 {
+    margin-top: 10%;
   }
 
   @include _576 {
@@ -519,6 +524,43 @@
 
   @include _1200 {
     bottom: -20px;
+  }
+}
+
+.desktop {
+  filter: blur(3px);
+  left: -150px;
+  bottom: -145px;
+
+  img {
+    animation: fade-move4 infinite linear 4s alternate;
+  }
+
+  @include _1440 {
+    max-width: 500px;
+  }
+
+  @include _576 {
+    max-width: 400px;
+  }
+}
+
+.secTable {
+  right: -160px;
+  bottom: -70px;
+  filter: blur(1px);
+  max-width: 400px;
+
+  img {
+    animation: fade-move1 infinite linear 4s alternate;
+  }
+
+  @include _1440 {
+    max-width: 350px;
+  }
+
+  @include _576 {
+    max-width: 300px;
   }
 }
 
