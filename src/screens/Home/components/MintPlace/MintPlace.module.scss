@@ -51,6 +51,10 @@
   > img {
     margin-bottom: 8%;
 
+    @include _1980 {
+      margin-bottom: 9%;
+    }
+
     @include _1440 {
       margin-bottom: 5%;
     }

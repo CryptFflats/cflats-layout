@@ -92,16 +92,16 @@ export const MintDiv = styled('div')(({ theme }) => ({
 	width: '100%',
 
 	'@media(max-width: 1980px)': {
-		bottom: "5%"
-	},
-
-	'@media(max-width: 1650px)': {
 		bottom: "8%"
 	},
 
-	'@media(max-width: 1024px)': {
-		bottom: "8%"
-	},
+	// '@media(max-width: 1650px)': {
+	// 	bottom: "8%"
+	// },
+	//
+	// '@media(max-width: 1024px)': {
+	// 	bottom: "8%"
+	// },
 
 	'@media(max-width: 1200px)': {
 		bottom: "5%"

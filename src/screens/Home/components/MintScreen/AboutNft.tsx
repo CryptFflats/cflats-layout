@@ -48,22 +48,22 @@ const AboutNft = () => {
 
 			<div className={classNames(styles['dec-anim'], styles.chess)}>
 				<CfImage
-					src={'134082ea-e540-41e3-3e3e-6309813a7a00/public'}
+					src={'ec7743b5-60fb-4395-c596-e0d92f227900/public'} // ec7743b5-60fb-4395-c596-e0d92f227900 &&134082ea-e540-41e3-3e3e-6309813a7a00
 					alt='chess'
 				/>
 			</div>
 
 			<div className={classNames(styles['dec-anim'], styles.desktop)}>
 				<CfImage
-					src={'6ccd65ef-082b-4885-eaf5-ddbac1cba900/public'}
+					src={'6ccd65ef-082b-4885-eaf5-ddbac1cba900/cover'}
 					alt='Desktop'
 				/>
 			</div>
 
 			<div className={classNames(styles['dec-anim'], styles.secTable)}>
 				<CfImage
-					src={'5cbf15e0-116e-4ff3-d6b7-2028f66b9900/public'}
-					alt='table'
+					src={'5cbf15e0-116e-4ff3-d6b7-2028f66b9900/cover'}
+					alt='second table'
 				/>
 			</div>
 
