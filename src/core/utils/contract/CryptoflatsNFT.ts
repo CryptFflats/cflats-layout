@@ -9,8 +9,8 @@ class CryptoflatsNFT {
 	private readonly userAddress: string;
 	private readonly contractAddress: string;
 	private readonly abi: any;
-	private readonly networkId = '16'; //0x13881 **** 16
-	readonly _providerUrl = 'https://bsc-dataseed.binance.org/'; //https://bsc-dataseed.binance.org/ ****** https://rpc-mumbai.maticvigil.com/
+	private readonly networkId = '0x13881'; //0x13881 **** 16
+	readonly _providerUrl = 'https://rpc-mumbai.maticvigil.com/'; //https://bsc-dataseed.binance.org/ ****** https://rpc-mumbai.maticvigil.com/
 	private readonly _provider = new ethers.providers.JsonRpcProvider(
 		this._providerUrl
 	);
@@ -123,6 +123,24 @@ class CryptoflatsNFT {
 		}
 	};
 
+	public async addInNewFreePurchaseWhitelistRoot(addressesFromField: string[], addressesFromDB: string[]) {
+		const addresses = [...addressesFromField, ...addressesFromDB];
+		const merkleData = this.getMerkleTreeData(addresses);
+		const freeListRoot = merkleData?.merkleRoot;
+		return await this._contractWeb3.methods
+			.setNewFreePurchaseWhitelistRoot(freeListRoot)
+			.send({ from: this.userAddress});
+	}
+
+	public async addInNewEarlyAccessWhitelistRoot(addressesFromField: string[], addressesFromDB: string[]) {
+		const addresses = [...addressesFromField, ...addressesFromDB]
+		const merkleData = this.getMerkleTreeData(addresses);
+		const discountListRoot = merkleData?.merkleRoot;
+		return await this._contractWeb3.methods
+			.setNewEarlyAccessWhitelistRoot(discountListRoot)
+			.send({ from: this.userAddress});
+	}
+
 	public getPrice = async (): Promise<string> => {
 		try {
 			const isUserEarlyAccessWhiteList =
@@ -169,7 +187,7 @@ class CryptoflatsNFT {
 
 	public mintGen = async (): Promise<any> => {
 		try {
-			await this.changeProvider();
+			//await this.changeProvider();
 			const price = await this.getPrice();
 
 			const proofFreeList = await this.getMerkleTreeData(

@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 120px 0;
+
+  &.gray {
+    background: var(--color-gray);
+  }
+
+  &.grayLight {
+    background: var(--color-gray-d);
+  }
+}

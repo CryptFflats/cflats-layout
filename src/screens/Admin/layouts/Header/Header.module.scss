@@ -1,0 +1,94 @@
+@import "src/assets/styles/helpers/mixin";
+@import "src/assets/styles/helpers/variables";
+
+.header {
+  min-height: 275px;
+  position: relative;
+  padding-top: 100px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background: url("https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/caf88164-6953-4363-bcce-81d48cbfbd00/cover") repeat;
+  //background-size: cover;
+  background-size: contain;
+}
+
+//.bg {
+//  height: 275px;
+//  position: absolute;
+//  inset: 0;
+//  //height: 100%;
+//  //width: 100%;
+//  background: url("https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/caf88164-6953-4363-bcce-81d48cbfbd00/cover") repeat;
+//  //background-size: cover;
+//  background-size: contain;
+//}
+
+.container {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.logo {
+  //height: 45px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+
+  > h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    font-weight: $bold;
+  }
+
+  > p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: $semiBold;
+    padding-left: 0.1rem;
+    position: absolute;
+    right: -60px;
+    bottom: -10px;
+  }
+}
+
+.key {
+  position: absolute;
+  top: -35px;
+  left: -41px;
+  width: 68px;
+  height: 64px;
+  animation: move infinite linear .7s;
+  animation-direction: alternate;
+
+  @include _768 {
+    height: 44px;
+    width: 46px;
+    top: -27px;
+    left: -32px;
+
+    svg {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  @include _480 {
+    top: -20px;
+    left: -25px;;
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}

@@ -9,6 +9,7 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 import { Open_Sans, Nunito } from '@next/font/google';
 import classNames from 'classnames';
+import AuthProvider from '../../core/providers/AuthProvider';
 
 const openSans = Open_Sans({
 	subsets: ['latin', 'cyrillic'],
@@ -32,6 +33,7 @@ type Props = {
 export const metadata: Metadata = {
 	title: 'Cryptoflats',
 	themeColor: '#fff',
+	manifest: '/manifest.json',
 	openGraph: {
 		type: 'website',
 		url: 'https://cryptoflats.io',
@@ -45,14 +47,10 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 	return (
 		<html lang={locale} className={classNames(openSans.variable, nunito.variable)}>
 		<head>
-			<link rel='manifest' href='/manifest.json' />
 			<link
 				rel='stylesheet'
 				href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 			/>
-			{/*<meta property="og:image" content="https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ea0d8174-f4c5-4de5-d8d0-233c40381500/cover" />*/}
-			<meta name="yandex-verification" content="90ddaeffb810e21a" />
-			<meta name="google-site-verification" content="Hhf3ISRXwjlZILhTPf2JkySLOcKV4p0Ftmj4plc2zvs" />
 			<Script type="text/javascript">
 				{`
 					<!-- Yandex.Metrika counter -->
@@ -83,15 +81,15 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
 				gtag('config', 'G-DW47EZWVL0');
       `}
 		</Script>
-		<NextIntlClientProvider locale={locale} messages={messages}>
-			<ReduxProvider>
-				<WagmiProvider>
-					<NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
-							{children}
-					</NextAppDirEmotionCacheProvider>
-				</WagmiProvider>
-			</ReduxProvider>
-		</NextIntlClientProvider>
+			<NextIntlClientProvider locale={locale} messages={messages}>
+				<ReduxProvider>
+					<WagmiProvider>
+						<NextAppDirEmotionCacheProvider options={{ key: 'css' }}>
+								{children}
+						</NextAppDirEmotionCacheProvider>
+					</WagmiProvider>
+				</ReduxProvider>
+			</NextIntlClientProvider>
 		</body>
 		</html>
 	);
