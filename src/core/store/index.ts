@@ -5,6 +5,7 @@ import ProfileSidebarSlice from '../../screens/Home/modules/ProfileSidebar/slice
 import MintSlice from './slices/MintSlice'
 import MintSuccess from './slices/MintSuccess';
 import NavbarSlice from './slices/NavbarSlice';
+import UserSlice from './slices/UserSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -13,7 +14,8 @@ export const store = configureStore({
 		ProfileSidebarSlice,
 		MintSlice,
 		MintSuccess,
-		NavbarSlice
+		NavbarSlice,
+		UserSlice
 	}
 })
 

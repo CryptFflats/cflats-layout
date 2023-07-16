@@ -44,11 +44,13 @@ const FreeMint: FC = () => {
 			}
 
 			const addressesFromDb = await WhiteListService.getGenZeroFree();
-
 			await cryptoflatsNft.addInNewFreePurchaseWhitelistRoot(addressesInArr, addressesFromDb)
 
-			await WhiteListService.addToGenZeroDiscount(addressesInObj)
+			await WhiteListService.addToGenZeroFree(addressesInObj);
+
+			alert('Success')
 		} catch(err) {
+			alert('Error!')
 			throw err;
 		}
 	}

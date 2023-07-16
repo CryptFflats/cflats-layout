@@ -87,6 +87,11 @@ class CryptoflatsNFT {
 		}
 	};
 
+	private sortAddresses = (addresses: string[]) => {
+		const sorted = addresses.sort();
+		return sorted.filter((item, index) => sorted.indexOf(item) === index);
+	}
+
 	public connect = (signer: Signer): CryptoflatsNFT => {
 		// @ts-ignore
 		return this._contractEthers.connect(signer) as CryptoflatsNFT;
@@ -125,7 +130,8 @@ class CryptoflatsNFT {
 
 	public async addInNewFreePurchaseWhitelistRoot(addressesFromField: string[], addressesFromDB: string[]) {
 		const addresses = [...addressesFromField, ...addressesFromDB];
-		const merkleData = this.getMerkleTreeData(addresses);
+		const sortedAddresses = this.sortAddresses(addresses)
+		const merkleData = this.getMerkleTreeData(sortedAddresses);
 		const freeListRoot = merkleData?.merkleRoot;
 		return await this._contractWeb3.methods
 			.setNewFreePurchaseWhitelistRoot(freeListRoot)
@@ -133,8 +139,9 @@ class CryptoflatsNFT {
 	}
 
 	public async addInNewEarlyAccessWhitelistRoot(addressesFromField: string[], addressesFromDB: string[]) {
-		const addresses = [...addressesFromField, ...addressesFromDB]
-		const merkleData = this.getMerkleTreeData(addresses);
+		const addresses = [...addressesFromField, ...addressesFromDB];
+		const sortedAddresses = this.sortAddresses(addresses);
+		const merkleData = this.getMerkleTreeData(sortedAddresses);
 		const discountListRoot = merkleData?.merkleRoot;
 		return await this._contractWeb3.methods
 			.setNewEarlyAccessWhitelistRoot(discountListRoot)

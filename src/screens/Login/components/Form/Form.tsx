@@ -4,28 +4,34 @@ import styles from './Form.module.scss'
 import { SubmitButton } from './styles';
 import { Inputs } from 'preact/compat';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { IFormData } from './types';
 import { useRouter } from 'next/navigation';
 import { signIn } from 'next-auth/react';
-import AuthService from '../../../../core/services/Auth.service';
+
 import { AuthContext } from '../../../../core/context/auth-context';
 import { useContext } from 'react';
 import Cookies from 'js-cookie';
+import { IAuth } from '../../../../core/services/AuthService/types';
+import AuthService from '../../../../core/services/AuthService/Auth.service';
+import { useAppDispatch } from '../../../../core/hooks/store.hook';
+import { setIsAdmin, setUser } from '../../../../core/store/slices/UserSlice';
 
 const Form = () => {
 	const router = useRouter();
+	const dispatch = useAppDispatch()
 	const {
 		register,
 		handleSubmit,
 		watch,
 		formState: { errors },
-	} = useForm<IFormData>()
+	} = useForm<IAuth>()
 
-	const onSubmit: SubmitHandler<IFormData> = async (data) => {
+	const onSubmit: SubmitHandler<IAuth> = async (data: IAuth) => {
 		try {
-			// const token = await AuthService.loginIn(data);
-			// Cookies.set('token', token)
-			//router.push('/admin');
+			const response = await AuthService.login(data);
+			localStorage.setItem('token', response.data.accessToken);
+			dispatch(setIsAdmin(true));
+			dispatch(setUser(response.data.user));
+			alert('Success')
 		} catch(err: any) {
 		    throw new Error(err)
 		}
@@ -58,7 +64,7 @@ const Form = () => {
 						/>
 					</div>
 
-					<SubmitButton onClick={() => signIn('login-in')}>
+					<SubmitButton type={'submit'}>
 						Login In
 					</SubmitButton>
 				</div>
