@@ -8,7 +8,8 @@ import { setTrailer } from '../../../../core/store/slices/ModalSlice'
 import { useTranslations } from 'next-intl';
 import { WatchTrailer } from '../../../../styled/BlueButton';
 import { CDN_URL } from '../../../../core/utils/constance';
-import { CircularProgress } from '@mui/material';
+import WhiteListService from '../../../../core/services/WhiteList/WhiteList.service';
+import { IGetWhiteList } from '../../../../core/services/WhiteList/types';
 
 const AboutRooms = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -20,6 +21,14 @@ const AboutRooms = () => {
 		setIsLoading(false)
 		console.log('Video loaded')
 	}
+
+	// const getWl = async () => {
+	// 	// const params: IGetWhiteList = { name: 'gen-zero', type: 'discount' }
+	// 	// const { data } = await WhiteListService.getWhiteList(params);
+	// 	// console.log(data)
+	// 	const data = await WhiteListService.updateWhiteList({ name: 'gen-zero', type: 'discount', addresses: [] });
+	// 	console.log(data)
+	// }
 
 	return (
 			<div className={styles.aboutRooms}>
@@ -46,6 +55,7 @@ const AboutRooms = () => {
 
 					<WatchTrailer
 						onClick={() => dispatch(setTrailer(true))}
+						// onClick={getWl}
 					>
 						{t('cryptoflats_video.watch_trailer')}
 					</WatchTrailer>

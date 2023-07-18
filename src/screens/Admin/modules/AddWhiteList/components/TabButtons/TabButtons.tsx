@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { WlTab, WlTabs } from './styles';
 
 const a11yProps = (index: number) => {
@@ -19,13 +19,16 @@ const tabsData = [
 	{ label: 'GEN 5 SECRET ROOMS', value: 5, disabled: true },
 ];
 
+interface TabButtonProps {
+	handleChange: (event: React.SyntheticEvent, newValue: number) => void
+	value: number
+}
 
-const TabButtons: FC = () => {
-	const [value, setValue] = useState(0);
+const TabButtons: FC<TabButtonProps> = ({ handleChange, value }) => {
 
-	const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-		setValue(newValue);
-	};
+	// const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+	// 	setValue(newValue);
+	// };
 
 
 	return (

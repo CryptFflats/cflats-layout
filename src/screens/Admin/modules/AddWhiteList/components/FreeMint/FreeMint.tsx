@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import styles from './FreeMint.module.scss'
 import Container from '../../../../containers/Container/Container';
 import LineInput from '../../../../UI/LineInput/LineInput';
@@ -8,66 +8,53 @@ import YellowButton from '../../../../UI/YellowButton/YellowButton';
 import { useForm } from 'react-hook-form';
 import { stringToArr } from '../../utils/stringToArr';
 import { isAddressesVerify } from '../../../../../../core/utils/contract/utils/isAddressesVerify';
-import WhiteListService from '../../services/WhiteList.service';
+import WhiteListService from '../../../../../../core/services/WhiteList/WhiteList.service';
 import { MINT_GEN_ZERO_ADDRESS } from '../../../../../../core/utils/constance';
 import { useAccount } from 'wagmi';
 import CryptoflatsNFT from '../../../../../../core/utils/contract/CryptoflatsNFT';
 import abi from '../../../../../../core/abi/gen_zero.json';
+import { useWhiteList } from '../../hooks/useWhiteList';
+import { Backdrop, CircularProgress } from '@mui/material';
 
 
 interface IFreeMint {
-	freeAddresses: string
+	addresses: string
 }
 
-const FreeMint: FC = () => {
-	const { register, handleSubmit } = useForm<IFreeMint>();
-	const { address } = useAccount();
-	const cryptoflatsNft = new CryptoflatsNFT(
-		MINT_GEN_ZERO_ADDRESS,
-		address ? address : '',
-		0,
-		[],
-		[],
-		abi
-	)
+interface FreeMintProps {
+	gen: number
+}
 
-	const submit = async (data: IFreeMint) => {
+const FreeMint: FC<FreeMintProps> = ({ gen }) => {
+	const { submit, isLoading } = useWhiteList(gen, 'free')
+	const { register, handleSubmit, reset } = useForm<IFreeMint>();
+
+	const addToFreeWl = async (data: IFreeMint) => {
 		try {
-			const addresses = data.freeAddresses;
-			const addressesInArr = stringToArr(addresses);
-			const addressesInObj = { addresses: addressesInArr }
-			const isAddressesCorrect = isAddressesVerify(addressesInArr);
-
-			if (!isAddressesCorrect) {
-				console.log('Addresses Not Correct!')
-				return null;
-			}
-
-			const addressesFromDb = await WhiteListService.getGenZeroFree();
-			await cryptoflatsNft.addInNewFreePurchaseWhitelistRoot(addressesInArr, addressesFromDb)
-
-			await WhiteListService.addToGenZeroFree(addressesInObj);
-
-			alert('Success')
+			await submit(data);
+			reset()
 		} catch(err) {
-			alert('Error!')
-			throw err;
+		    throw err
 		}
 	}
 
 	return (
 		<div className={styles.freeMint}>
 			<Container>
-				<form onSubmit={handleSubmit(submit)}>
+				<form onSubmit={handleSubmit(addToFreeWl)}>
 					<h1>FREE MINT WALLETS</h1>
 
-					<LineInput {...register('freeAddresses')} />
+					<LineInput {...register('addresses')} />
 
 					<YellowButton type={'submit'} sx={{ marginTop: '45px' }}>
 						ADD TO FREE WL
 					</YellowButton>
 				</form>
 			</Container>
+
+			<Backdrop sx={{ zIndex: 1000 }} open={isLoading}>
+				<CircularProgress color="inherit" />
+			</Backdrop>
 		</div>
 	);
 };

@@ -274,7 +274,8 @@
         "textMobile": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market.   We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",
         "button": "Buy whitelist"
       },
-      "alert": "<span>Public sale is not started yet!</span> You can expect a huge amount of gas if you are <strong>NOT whitelisted!</strong>"
+      "alert": "<span>Public sale is not started yet!</span> You can expect a huge amount of gas if you are <strong>NOT whitelisted!</strong>",
+      "alertWl": "<span>Oh, sorry!</span> You can`t mint our NFT because of you`re not whitelisted! Please, become whitelisted or wait of public sale starting."
     }
   },
   "Info": {

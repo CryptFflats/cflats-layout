@@ -2,13 +2,8 @@
 
 import styles from './Form.module.scss'
 import { SubmitButton } from './styles';
-import { Inputs } from 'preact/compat';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
-import { signIn } from 'next-auth/react';
-
-import { AuthContext } from '../../../../core/context/auth-context';
-import { useContext } from 'react';
 import Cookies from 'js-cookie';
 import { IAuth } from '../../../../core/services/AuthService/types';
 import AuthService from '../../../../core/services/AuthService/Auth.service';
@@ -28,12 +23,14 @@ const Form = () => {
 	const onSubmit: SubmitHandler<IAuth> = async (data: IAuth) => {
 		try {
 			const response = await AuthService.login(data);
-			localStorage.setItem('token', response.data.accessToken);
+			localStorage.setItem('rfr-token', response.data.refreshToken);
+			Cookies.set('ath-token', response.data.accessToken);
 			dispatch(setIsAdmin(true));
 			dispatch(setUser(response.data.user));
-			alert('Success')
+			router.push('/admin');
 		} catch(err: any) {
-		    throw new Error(err)
+			alert('Wrong Login or Password')
+			throw new Error(err);
 		}
 	}
 //

@@ -3,12 +3,15 @@ import { CDN_URL, MINT_GEN_ZERO_ADDRESS } from '../../../../../core/utils/consta
 import CryptoflatsNFT from '../../../../../core/utils/contract/CryptoflatsNFT';
 import { useAccount } from 'wagmi';
 import abi from '../../../../../core/abi/gen_zero.json'
-import WhiteListService from '../../../../Admin/modules/AddWhiteList/services/WhiteList.service';
+import WhiteListService from '../../../../../core/services/WhiteList/WhiteList.service';
+import { useAppDispatch } from '../../../../../core/hooks/store.hook';
+import { setIsUserHaveWl } from '../../../../../core/store/slices/UserSlice';
 
 
 export const useMint = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isError, setIsError] = useState<boolean>(false);
+	const dispatch = useAppDispatch()
 	const { address } = useAccount();
 
 
@@ -16,21 +19,25 @@ export const useMint = () => {
 		try {
 			setIsLoading(true);
 
-			const freeList = await WhiteListService.getGenZeroFree();
-			const discountList = await WhiteListService.getGenZeroDiscount();
-			console.log(freeList)
-			console.log(discountList)
+			const freeList = await WhiteListService.getWhiteList({ name: 'gen-zero', type: 'free' });
+			const discountList = await WhiteListService.getWhiteList({ name: 'gen-zero', type: 'discount' });
 
 			const cryptoflatsNFT = new CryptoflatsNFT(
 				MINT_GEN_ZERO_ADDRESS,
 				address ? address : '',
 				0,
-				freeList,
-				discountList,
+				freeList.data.addresses,
+				discountList.data.addresses,
 				abi
 			);
 
+			const isUserInFreeList = await cryptoflatsNFT.isUserFreePurchaseWhitelist();
+			const isUserInDiscountList = await cryptoflatsNFT.isUserEarlyAccessWhiteList();
 
+			if (!isUserInFreeList && !isUserInDiscountList) {
+				dispatch(setIsUserHaveWl(false))
+				throw new Error('You can`t mint our NFT because of you`re not whitelisted!')
+			}
 
 			return await cryptoflatsNFT.mintGen();
 		} catch (err: any) {

@@ -2,6 +2,7 @@ import { AxiosInstance } from 'axios';
 import $api from '../../api/api';
 import { IAuth, IAuthResponse } from './types';
 import { AxiosResponse } from 'axios';
+import Cookies from 'js-cookie';
 
 class AuthService {
 	 public login = async (data: IAuth): Promise<AxiosResponse<IAuthResponse>> => {
@@ -13,7 +14,12 @@ class AuthService {
 	}
 
 	public logOut = () => {
-		 localStorage.removeItem('token')
+		 localStorage.removeItem('rfr-token');
+		 Cookies.remove('ath-token');
+	}
+
+	public checkAuth = async (refreshToken: string): Promise<AxiosResponse<IAuthResponse>> => {
+		return await $api.post('auth/login/access-token', { refreshToken });
 	}
 }
 

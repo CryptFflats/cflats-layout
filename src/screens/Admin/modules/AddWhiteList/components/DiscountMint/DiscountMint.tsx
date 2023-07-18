@@ -1,6 +1,6 @@
 'use client'
 
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import styles from './DiscountMint.module.scss'
 import LineInput from '../../../../UI/LineInput/LineInput';
 import YellowButton from '../../../../UI/YellowButton/YellowButton';
@@ -12,63 +12,50 @@ import { MINT_GEN_ZERO_ADDRESS } from '../../../../../../core/utils/constance';
 import abi from '../../../../../../core/abi/gen_zero.json';
 import { stringToArr } from '../../utils/stringToArr';
 import { isAddressesVerify } from '../../../../../../core/utils/contract/utils/isAddressesVerify';
-import WhiteListService from '../../services/WhiteList.service';
+import WhiteListService from '../../../../../../core/services/WhiteList/WhiteList.service';
+import { useWhiteList } from '../../hooks/useWhiteList';
+import { Backdrop, CircularProgress } from '@mui/material';
 
 interface IDiscountMint {
-	discountAddresses: string
+	addresses: string
 }
 
-const DiscountMint: FC = () => {
-	const { register, handleSubmit } = useForm<IDiscountMint>();
-	const { address } = useAccount();
-	const cryptoflatsNft = new CryptoflatsNFT(
-		MINT_GEN_ZERO_ADDRESS,
-		address ? address : '',
-		0,
-		[],
-		[],
-		abi
-	)
+interface DiscountMintProps {
+	gen: number
+}
 
 
-	const submit = async (data: IDiscountMint) => {
-		try {
-			const addresses = data.discountAddresses;
-			const addressesInArr = stringToArr(addresses);
-			const addressesInObj = { addresses: addressesInArr }
-			const isAddressesCorrect = isAddressesVerify(addressesInArr);
+const DiscountMint: FC<DiscountMintProps> = ({ gen }) => {
+	const { submit, isLoading	} = useWhiteList(gen, 'discount')
+	const { register, handleSubmit, reset } = useForm<IDiscountMint>();
 
-			if (!isAddressesCorrect) {
-				console.log('Addresses Not Correct!')
-				return null;
-			}
-
-			const addressesFromDb = await WhiteListService.getGenZeroDiscount();
-			await cryptoflatsNft.addInNewEarlyAccessWhitelistRoot(addressesInArr, addressesFromDb)
-
-			await WhiteListService.addToGenZeroDiscount(addressesInObj);
-
-			alert('Success')
-		} catch(err) {
-			alert('Error!')
-			throw err;
-		}
+	const addToWl = async (data: IDiscountMint) => {
+	  try {
+	  	await submit(data)
+			reset()
+	  } catch(err) {
+			throw err
+	  }
 	}
 
 
 	return (
 		<div className={styles.discountMint}>
 			<Container>
-				<form onSubmit={handleSubmit(submit)}>
+				<form onSubmit={handleSubmit(addToWl)}>
 					<h1>DISCOUNT WALLETS</h1>
 
-					<LineInput {...register('discountAddresses')} />
+					<LineInput {...register('addresses')} />
 
 					<YellowButton type={'submit'} sx={{ marginTop: '45px' }}>
 						ADD TO DISCOUNT WL
 					</YellowButton>
 				</form>
 			</Container>
+
+			<Backdrop sx={{ zIndex: 1000 }} open={isLoading}>
+				<CircularProgress color="inherit" />
+			</Backdrop>
 		</div>
 	);
 };

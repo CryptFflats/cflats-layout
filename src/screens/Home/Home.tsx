@@ -45,7 +45,6 @@ const Home = () => {
 			<DevelopingModal />
 			<MintModal />
 			<ModalVideo />
-			<Toastify />
 		</Wrapper>
 	);
 };

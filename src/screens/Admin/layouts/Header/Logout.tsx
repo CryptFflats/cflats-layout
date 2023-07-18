@@ -1,11 +1,22 @@
-'use-client'
+'use client'
 
 import { ButtonBase } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { useRouter } from 'next/navigation';
+import AuthService from '../../../../core/services/AuthService/Auth.service';
 
 const Logout = () => {
+	const router = useRouter()
+
+	const logOut = () => {
+		AuthService.logOut();
+		router.push('/');
+	}
+
 	return (
-		<CustomButton>LOGOUT</CustomButton>
+		<CustomButton onClick={logOut}>
+			LOGOUT
+		</CustomButton>
 	);
 };
 
