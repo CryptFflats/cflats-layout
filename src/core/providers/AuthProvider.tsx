@@ -8,29 +8,29 @@ import { useAppDispatch } from '../hooks/store.hook';
 import { useRouter } from 'next/navigation';
 import Preload from '../../layouts/Preload/Preload';
 
-const AuthProvider = ({ children } : { children: ReactNode }) => {
+const AuthProvider = ({ children }: { children: ReactNode }) => {
 	const router = useRouter();
-	const [isLoading, setIsLoading] = useState<boolean>(true)
-	const dispatch = useAppDispatch()
+	const [isLoading, setIsLoading] = useState<boolean>(true);
+	const dispatch = useAppDispatch();
 
 	useEffect(() => {
-		const token = localStorage.getItem('rfr-token')
+		const token = localStorage.getItem('rfr-token');
 		const checkAuth = async () => {
 			try {
-				if (!token) return
+				if (!token) return;
 
 				const response = await AuthService.checkAuth(token);
 				dispatch(setIsAdmin(true));
 				dispatch(setUser(response.data.user));
 				localStorage.setItem('rfr-token', response.data.refreshToken);
 				Cookies.set('ath-token', response.data.accessToken);
-			} catch(err: any) {
+			} catch (err: any) {
 				router.push('/');
 				throw new Error(err);
 			} finally {
 				setIsLoading(false);
 			}
-		}
+		};
 
 		if (!token) {
 			return router.push('/');
@@ -42,10 +42,10 @@ const AuthProvider = ({ children } : { children: ReactNode }) => {
 	}, []);
 
 	if (isLoading) {
-		return <Preload />
+		return <Preload />;
 	}
 
-	return children;
+	return <>{children}</>
 };
 
 export default AuthProvider;

@@ -35,7 +35,7 @@ export const config = createConfig({
 			chains,
 			options: {
 				projectId: WALLET_CONNECT_KEY,
-				relayUrl: 'wss://relay.walletconnect.org'
+				//relayUrl: 'wss://relay.walletconnect.org'
 			},
 		}),
 		new LedgerConnector({
