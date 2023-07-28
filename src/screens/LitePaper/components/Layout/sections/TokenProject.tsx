@@ -27,7 +27,25 @@ const TokenProject = () => {
 								whileInView='show'
 								viewport={{ once: true, amount: 0.5 }}
 								className={styles['mb-30']}
-								dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text') }}
+								dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text_1') }}
+			/>
+
+			<motion.p
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+				dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text_2') }}
+			/>
+
+			<motion.p
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+				dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text_3') }}
 			/>
 
 			<ul className={styles.strong}>
@@ -42,18 +60,10 @@ const TokenProject = () => {
 						>
 							{t(`CFLAT_TOKEN.list.${item}`)}
 						</motion.li>
-					)
+					);
 				})}
 			</ul>
 
-			<motion.p
-				variants={fadeInUp}
-				initial={'hidden'}
-				whileInView='show'
-				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-0']}
-				dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.aboutText') }}
-			/>
 		</motion.section>
 	);
 };

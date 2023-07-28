@@ -8,24 +8,6 @@ import { fadeInUp } from '../../../../../core/utils/animations/fadeInUp';
 
 const Gen1 = () => {
 	const t = useTranslations('Litepaper');
-	// const standardList: string[] = t('GEN1.standard.list', {
-	// 	returnObjects: true
-	// })
-	// const silverList: string[] = t('GEN1.silver.list', {
-	// 	returnObjects: true
-	// })
-	// const goldList: string[] = t('GEN1.gold.list', {
-	// 	returnObjects: true
-	// })
-	// const diamondList: string[] = t('GEN1.diamond.list', {
-	// 	returnObjects: true
-	// })
-	// const mintList: string[] = t('GEN1.mint.list', {
-	// 	returnObjects: true
-	// })
-	// const stakingList: string[] = t('GEN1.staking.list', {
-	// 	returnObjects: true
-	// })
 
 	return (
 		<motion.section id='#gen1' className={styles['main-section']}>
@@ -72,7 +54,7 @@ const Gen1 = () => {
 				/>
 			</motion.div>
 
-			<ul className={styles['mb-60']}>
+			<ul className={styles['mb-30']}>
 				{
 					['n1', 'n2', 'n3', 'n4', 'n5'].map((item, index) => {
 						return <motion.li
@@ -87,6 +69,26 @@ const Gen1 = () => {
 					})
 				}
 			</ul>
+
+			<motion.p
+				className={styles['mb-10']}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+			>
+				<span>{t('GEN1.passive_skill')}</span>
+			</motion.p>
+
+			<motion.p
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+				className={styles['mb-60']}
+			>
+				{t('GEN1.standard.ps_skill')}
+			</motion.p>
 
 			{/*Silver*/}
 			<motion.p
@@ -140,14 +142,34 @@ const Gen1 = () => {
 				<span>{t('GEN1.active_skill')}</span>
 			</motion.p>
 
-			{/*<ul className={styles['mb-60']}></ul>*/}
 			<motion.p
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
 				variants={fadeInUp}
+				className={styles['mb-30']}
 			>
 				{t('GEN1.silver.active')}
+			</motion.p>
+
+			<motion.p
+				className={styles['mb-10']}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+			>
+				<span>{t('GEN1.passive_skill')}</span>
+			</motion.p>
+
+			<motion.p
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+				className={styles['mb-60']}
+			>
+				{t('GEN1.silver.ps_skill')}
 			</motion.p>
 
 
@@ -192,15 +214,35 @@ const Gen1 = () => {
 				}
 			</ul>
 
-			<motion.p className={styles['mb-10']}
-								initial={'hidden'}
-								whileInView='show'
-								viewport={{ once: true, amount: 0.5 }}
-								variants={fadeInUp}
+			<motion.p
+				className={styles['mb-10']}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
 			>
 				<span>{t('GEN1.active_skill')}</span>
 			</motion.p>
 
+			<motion.p
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+				className={styles['mb-30']}
+			>
+				{t('GEN1.gold.active')}
+			</motion.p>
+
+			<motion.p
+				className={styles['mb-10']}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+			>
+				<span>{t('GEN1.passive_skill')}</span>
+			</motion.p>
 
 			<motion.p
 				initial={'hidden'}
@@ -209,7 +251,7 @@ const Gen1 = () => {
 				variants={fadeInUp}
 				className={styles['mb-60']}
 			>
-				{t('GEN1.gold.active')}
+				{t('GEN1.gold.ps_skill')}
 			</motion.p>
 
 			{/*Diamond*/}
@@ -264,14 +306,34 @@ const Gen1 = () => {
 				<span>{t('GEN1.active_skill')}</span>
 			</motion.p>
 
+			<motion.p
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+				className={styles['mb-30']}
+			>
+				{t('GEN1.diamond.active')}
+			</motion.p>
+
+			<motion.p
+				className={styles['mb-10']}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				variants={fadeInUp}
+			>
+				<span>{t('GEN1.passive_skill')}</span>
+			</motion.p>
 
 			<motion.p
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
 				variants={fadeInUp}
+				className={styles['mb-60']}
 			>
-				{t('GEN1.diamond.active')}
+				{t('GEN1.diamond.ps_skill')}
 			</motion.p>
 		</motion.section>
 	);

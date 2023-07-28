@@ -32,6 +32,50 @@ const Rarity = () => {
 				 dangerouslySetInnerHTML={{ __html: t.raw('RARITY.text') }}
 			/>
 
+			<motion.p
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView="show"
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+				dangerouslySetInnerHTML={{ __html: t.raw('RARITY.list_text_1') }}
+			/>
+
+			<ul>
+				{['n1', 'n2'].map((item, index) => {
+					return (
+						<motion.li
+							variants={fadeInUp}
+							initial={'hidden'}
+							whileInView="show"
+							viewport={{ once: true, amount: 0.5 }}
+							key={index}
+						>
+							{t(`RARITY.list_1.${item}`)}
+						</motion.li>
+					);
+				})}
+			</ul>
+
+			<motion.div
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView="show"
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+			>
+				<CfImage src={'823e4c84-df23-4aed-8f01-9e6a8c7dae00/public'} alt={'Rarity example'} fluid />
+			</motion.div>
+
+			<motion.p
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView="show"
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+				dangerouslySetInnerHTML={{ __html: t.raw('RARITY.list_text_2') }}
+			/>
+
 			<ul>
 				{['n1', 'n2', 'n3', 'n4'].map((item, index) => {
 					return (
@@ -42,11 +86,21 @@ const Rarity = () => {
 							viewport={{ once: true, amount: 0.5 }}
 							key={index}
 						>
-							{t(`RARITY.list.${item}`)}
+							{t(`RARITY.list_2.${item}`)}
 						</motion.li>
 					);
 				})}
 			</ul>
+
+			<motion.div
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView="show"
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+			>
+				<CfImage src={'7212ad44-b525-4c2f-bcc6-551b52cf2200/public'} alt={'Rarity example'} fluid />
+			</motion.div>
 
 			<motion.p
 				variants={fadeInUp}
@@ -55,15 +109,6 @@ const Rarity = () => {
 				viewport={{ once: true, amount: 0.5 }}
 				dangerouslySetInnerHTML={{ __html: t.raw('RARITY.aboutText') }}
 			/>
-
-			<motion.div
-				variants={fadeInUp}
-				initial={'hidden'}
-				whileInView="show"
-				viewport={{ once: true, amount: 0.5 }}
-			>
-				<CfImage src={'ae9189fd-691c-4d2e-3a05-bca15a684900/public'} alt={'Rarity example'} fluid />
-			</motion.div>
 
 		</motion.section>
 	);

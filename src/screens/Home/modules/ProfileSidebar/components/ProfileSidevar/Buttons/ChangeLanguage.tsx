@@ -13,6 +13,7 @@ const ChangeLanguage = () => {
 	return (
 		<ProfileButton
 			onClick={() => dispatch(setTypeMenu('lang'))}
+
 			icon={<IoIosGlobe />}
 			text={`${t('profileSidebar.language')} (${locale})`}
 		/>

@@ -6,6 +6,7 @@ import LanguageMenu from '../LanguageMenu/LanguageMenu'
 import { useAppDispatch, useAppSelector } from '../../../../../../core/hooks/store.hook';
 import { setProfileActive } from '../../../../../../core/store/slices/MenuSlice';
 import { useAccount } from 'wagmi';
+import CheckWlMenu from '../CheckWlMenu/CheckWlMenu';
 
 const ProfileSidebar = () => {
 	const { menu } = useAppSelector(state => state.ProfileSidebarSlice)
@@ -27,7 +28,8 @@ const ProfileSidebar = () => {
 						<div style={{ position: 'absolute', zIndex: '20', right: 0, top: height }} className={styles.profileSidebar}>
 							<User />
 							{menu === 'menu' && <MenuList />}
-							{menu === 'lang' && <LanguageMenu />}
+							{menu === 'wl' && <CheckWlMenu/>}
+							{/*{menu === 'lang' && <LanguageMenu />}*/}
 						</div>
 					</ClickAwayListener>
 				)

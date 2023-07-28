@@ -4,7 +4,7 @@ import { Styles } from './styles'
 interface ProfileButtonProps {
 	href?: string
 	onClick?: () => void
-	icon: ReactNode
+	icon?: ReactNode
 	text: string
 }
 
@@ -16,7 +16,7 @@ const ProfileButton: FC<ProfileButtonProps> = ({
 }) => {
 	return (
 		<Styles href={href} onClick={onClick}>
-			<i>{icon}</i>
+			{ icon && <i>{icon}</i> }
 			<p>{text}</p>
 		</Styles>
 	)

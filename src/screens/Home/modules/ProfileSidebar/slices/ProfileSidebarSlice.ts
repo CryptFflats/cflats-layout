@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-type typeMenu = 'menu' | 'lang'
+type typeMenu = 'menu' | 'lang' | 'wl' | 'genZero' | 'genFirst'
 
 interface ProfileSidebarState {
 	menu: typeMenu

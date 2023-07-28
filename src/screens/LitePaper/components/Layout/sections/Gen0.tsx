@@ -8,10 +8,6 @@ import { fadeInUp } from '../../../../../core/utils/animations/fadeInUp';
 
 const Gen0 = () => {
 	const t = useTranslations('Litepaper')
-	// const goldList: string[] = t('GEN0.gold_pass.list', { returnObjects: true })
-	// const diamondList: string[] = t('GEN0.diamond_pass.list', {
-	// 	returnObjects: true
-	// })
 
 	return (
 		<motion.section id='#gen0' className={styles['main-section']}>
@@ -48,6 +44,21 @@ const Gen0 = () => {
 				})}
 			</ul>
 
+			<motion.div
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+			>
+				<CfImage
+					data-aos='fade-up'
+					fluid
+					src={'d929403a-aad3-4272-99c8-2be48831aa00/public'}
+					alt={'Gen#0 Gold image'}
+				/>
+			</motion.div>
+
 			<motion.p  className={styles['mb-30']}
 								 variants={fadeInUp}
 								 initial={'hidden'}
@@ -57,7 +68,7 @@ const Gen0 = () => {
 				<span>{t('GEN0.diamond_pass.text')}</span>
 			</motion.p>
 
-			<ul className={styles['mb-60']}>
+			<ul className={styles['mb-30']}>
 				{['n1', 'n2', 'n3', 'n4', 'n5'].map((item, index) => {
 					return (
 						<motion.li key={index}
@@ -81,8 +92,8 @@ const Gen0 = () => {
 				<CfImage
 					data-aos='fade-up'
 					fluid
-					src={'34673381-91d9-4f53-9090-c9c6c37ad500/public'}
-					alt={'Gen#0 image'}
+					src={'31488b7a-fa1c-4027-52d0-38eb0727ca00/public'}
+					alt={'Gen#0 Gold image'}
 				/>
 			</motion.div>
 		</motion.section>

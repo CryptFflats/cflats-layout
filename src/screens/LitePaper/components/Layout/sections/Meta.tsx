@@ -71,9 +71,8 @@ const Meta = () => {
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
 				variants={fadeInUp}
-			>
-				{t('GAME.rooms.text3')}
-			</motion.p>
+				dangerouslySetInnerHTML={{ __html: t.raw('GAME.rooms.text3') }}
+			/>
 
 			<motion.p
 				initial={'hidden'}

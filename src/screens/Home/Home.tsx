@@ -19,7 +19,8 @@ import DevelopingModal from './components/DevelopingModal/DevelopingModal';
 import MobileMenu from './layouts/MobileMenu/MobileMenu';
 import MintModal from './components/MintModal/MintModal';
 import ModalVideo from './components/ModalVideo/ModalVideo';
-import Toastify from '../../components/Toastify/Toastify';
+//import Toastify from '../../components/Toastify/Toastify';
+import { SupportModal } from './modules/SupportModal';
 
 const Home = () => {
 	return (
@@ -42,6 +43,7 @@ const Home = () => {
 			</Main>
 			<Footer />
 
+			{/*<SupportModal />*/}
 			<DevelopingModal />
 			<MintModal />
 			<ModalVideo />

@@ -16,12 +16,12 @@ import Meta from './sections/Meta'
 import ScrollButton from '../../UI/ScrollButton/ScrollButton'
 import { useTranslations } from 'next-intl';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import Lands from './sections/Lands';
 
 const Layout = () => {
 	const [isMenuActive, setIsMenuActive] = useState(false)
 	const t = useTranslations('Litepaper')
-	const navigationData = ["INTRODUCTION", "CONCEPT", "ABOUT", "RARITY", "PROJECT_TOKEN", "dAPP", "GEN#0", "GEN#1", "GAME"]
-	//const body = document.body
+	const navigationData = ["INTRODUCTION", "CONCEPT", "ABOUT", "RARITY", "GEN#0", "GEN#1", "LANDS", "PROJECT_TOKEN", "dAPP", "GAME"]
 
 	const openMenu = () => {
 		setIsMenuActive(!isMenuActive);
@@ -111,10 +111,11 @@ const Layout = () => {
 					<Concept />
 					<Collection />
 					<Rarity />
-					<TokenProject />
-					<Dapp />
 					<Gen0 />
 					<Gen1 />
+					<Lands />
+					<TokenProject />
+					<Dapp />
 					<Meta />
 
 					<p className={classNames(styles['litepaper-copyright'])}>

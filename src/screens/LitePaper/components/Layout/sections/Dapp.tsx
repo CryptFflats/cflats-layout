@@ -29,7 +29,7 @@ const Dapp = () => {
 								whileInView='show'
 								viewport={{ once: true, amount: 0.5 }}
 								className={styles['mb-30']}
-								dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text') }}
+								dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_1') }}
 			/>
 
 			<motion.p
@@ -79,11 +79,12 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.aboutText') }}
+				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_2') }}
 			/>
 
 			<motion.div
@@ -91,13 +92,22 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
 			>
 				<CfImage
 					fluid
 					alt={'Dapp image'}
-					src={'37255c0d-7b2e-4bc6-fffc-eb60c17b7f00/public'}
+					src={'bb1a23c2-72a7-4a3b-5688-ecf0186a7600/public'}
 				/>
 			</motion.div>
+
+			<motion.p
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_3') }}
+			/>
 		</motion.section>
 	);
 };

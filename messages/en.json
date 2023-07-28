@@ -325,12 +325,16 @@
           "path":"#dapp"
         },
         "GEN#0": {
-          "title":"GEN#0 – CFLAT NFT PASS RARITY",
+          "title":"GEN#0 – NFT PASS RARITY",
           "path":"#gen0"
         },
         "GEN#1": {
           "title":"GEN#1 – LIVING ROOM RARITY",
           "path":"#gen1"
+        },
+        "LANDS": {
+          "title": "LANDS FOR FLATS",
+          "path": "#lands"
         },
         "GAME": {
           "title":"NFT STRUCTURE. META GAME.",
@@ -361,32 +365,39 @@
     },
     "RARITY": {
       "title": "RARITY",
-      "text": "Every <span>GEN#</span> has a rarity benefiting the holder in some way. Lets list general moments of the rarity of our NFT tokens.<br><br> <span>GEN#1-GEN#5 rarity:</span>",
-      "list": {
+      "text": "Every <span>GEN#</span> has a rarity benefiting the holder in some way. Lets list general moments of the rarity of our NFT tokens.",
+      "list_text_1": "<span>GEN#0 rarity:</span>",
+      "list_1": {
+        "n1": "Gold rarity – 90% of the total collection",
+        "n2": "Diamond rarity – 10% of the total collection"
+      },
+      "list_text_2": "<span>GEN#1-GEN#5 rarity:</span>",
+      "list_2": {
         "n1": "Standard rarity – 70% of the total collection.",
         "n2": "Silver rarity – 15% of the total collection.",
         "n3": "Gold rarity – 10% of the total collection.",
         "n4": "Diamond rarity – 5% of the total collection."
       },
-      "aboutText": "In order to consider how rarity affects anything, it is necessary to introduce the concept of our internal CFLAT token and the pre-game mechanics of the project, which will be available after the release of <span>GEN#1.</span>"
+      "aboutText": "<span>GEN#5</span> does not have rarity at all, because of the uniqueness of itself and 1111 of supply quantity. <br> <br> In order to consider how rarity affects anything, it is necessary to introduce the concept of our internal CFLAT token and the pre-game mechanics of the project, which will be available after the release of <span>GEN#1.</span>"
     },
     "CFLAT_TOKEN": {
       "title": "CFLAT PROJECT TOKEN",
-      "text": "<span>CFLAT</span> – internal project token acting as in-game currency, acquiring for renting an apartment (staking), used for internal payments between users, purchase of the next <span>GEN#</span>, etc.",
+      "text_1": "<span>CFLAT</span> – internal project token acting as in-game currency, acquiring for renting an apartment (staking), used for internal payments between users, purchase of the next <span>GEN#</span>, etc.",
       "list": {
         "n1": "Token name - CFLAT",
         "n2": "Standard - BEP20",
-        "n3": "Total Supply: 15 000 000 000",
-        "n4": "LP: (38%) - 5 700 000 000",
-        "n5": "Community token (Staking): (54%) - 8 100 000 000",
-        "n6": "Team: (8%) - 1 200 000 000",
-        "n7": "Starting price: 0,00008 $"
+        "n3": "Total Supply - 15 000 000 000",
+        "n4": "Liquid pool (38%) - 5 700 000 000",
+        "n5": "Team (8%) - 1 200 000 000",
+        "n6": "Community token (54%) - 8 100 000 000",
+        "n7": "Starting price - 0,00008 $"
       },
-      "aboutText": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token."
+      "text_2": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token.",
+      "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Binance Smart Chain</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for three types of cryptocurrency: <span>BNB, ETH, USDT.</span>\n"
     },
     "DAPP": {
       "title": "CRYPTOFLATS DAPP",
-      "text": "The second key point for understanding what the <span>Cryptoflats</span> project is will be our decentralized app responsible for all the main operations of the 1st big stage, before the main meta-game. <br><br> <span>CRYPTOFLATS dAPP</span> - internal project account, accessed through the Connect Wallet service. App is needed to account for the purchased NFT, acquisition of apartment pieces, NFT staking and earning CFLAT tokens. The account will display all purchased NFTs of the project, staking list, calculation of earned tokens and withdrawal to your wallet, taking into account the rarity and their advantages as well as primary game mechanics, in which it is possible to lose part of the income, or to acquire it. <br><br> <span>Account navigation:</span>",
+      "text_1": "The second key point for understanding what the <span>Cryptoflats</span> project is will be our decentralized app responsible for all the main operations of the 1st big stage, before the main meta-game. <br><br> <span>CRYPTOFLATS dAPP</span> - internal project account, accessed through the Connect Wallet service. App is needed to account for the purchased NFT, acquisition of apartment pieces, NFT staking and earning CFLAT tokens. The account will display all purchased NFTs of the project, staking list, calculation of earned tokens and withdrawal to your wallet, taking into account the rarity and their advantages as well as primary game mechanics, in which it is possible to lose part of the income, or to acquire it. <br><br> <span>Account navigation:</span>",
       "functions": {
         "select": "<span>SELECT ALL button</span> - highlights ALL NFTs, both collection and staking (marked by a round dot in the top right corner).",
         "stake": "<span>STAKE ALL button</span> - transfers all allocated NFTs to staking (does not affect already staked NFT)",
@@ -394,7 +405,8 @@
         "claim": "<span>CLAIM TOKENS button</span> - withdraws the token from the project to the owner's wallet (all or partly). That action follows smart contract rules for tokens.",
         "view": "<span>VIEW ALL button</span> - brings up a window with all NFTs purchased by user."
       },
-      "aboutText": "App account also contains a map of an apartment which opens gradually either for free, or at a discount, or for a fee, depending on user token rarity."
+      "text_2": "App account also contains a map of an apartment which opens gradually either for free, or at a discount, or for a fee, depending on user token rarity.",
+      "text_3":"Our application is under development and may differ in its functionality in the final version than shown in this document."
     },
     "GEN0": {
       "title": "GEN#0 – CFLAT NFT PASS RARITY",
@@ -432,7 +444,8 @@
           "n3": "Staking days - 180",
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
-        }
+        },
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 110% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "silver": {
         "title": "FLATS Silver NFT (15% drop chance)",
@@ -443,7 +456,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "A 50/50 chance for taking 30% from the income from one random Flats standard NFT user. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "active": "Silver NFT user will have 30% chance for taking 30% of the income of one random Flats standard NFT user, using special function of dApp. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 120% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "gold": {
         "title": "FLATS Gold NFT (10% drop chance)",
@@ -454,7 +468,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "A 50/50 chance for taking 40% from the income from one random Flats standard and silver NFT user. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "active": "Gold NFT user will have 30% chance for taking 40% of the income of one random Flats standard and FLATS silver NFT user, using special function of dApp. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 120% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "diamond": {
         "title": "FLATS Diamond NFT (5% drop chance)",
@@ -465,7 +480,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "A 50/50 chance for taking 50% from the income from one random Flats standard, silver and gold NFT user. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours"
+        "active": "Diamond NFT user will have 30% chance for taking 50% of the income of one random Flats standard, FLATS silver and FLATS gold NFT user, using special function of dApp. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "There is no need of defensing from every attempts of token stealing, because of NFT diamond rarity. You can absolutely be sure of being safe about this kind of game mechanics, but there is still the possibility of being robbed by a retaliatory attack after your successful attempt to steal tokens from an NFT user of a lower rarity."
       },
       "mint": {
         "title": "GEN#2 mint requires open territory:",
@@ -493,7 +509,7 @@
     },
     "GAME": {
       "title": "NFT STRUCTURE. META GAME",
-      "text": "This is an example of GEN # 1 NFT using - this will help understand how the game will operate in the Cryptoflats meta universe. <br><br> The NFT in the project consists of many 3D layers pre-rendered by our team. All elements are carefully selected for style, color and texture. Quantity of the rooms available is planned in such a way that in the future they can be folded into an apartment and used inside it with game and financial mechanics.",
+      "text": "This is an example of <span>GEN#1</span> NFT using - this will help understand how the game will operate in the Cryptoflats meta universe. <br><br> The NFT in the project consists of many 3D layers pre-rendered by our team. All elements are carefully selected for style, color and texture. Quantity of the rooms available is planned in such a way that in the future they can be folded into an apartment and used inside it with game and financial mechanics.",
       "rooms": {
         "text": "NFT room consists of the following layers:",
         "list": {
@@ -522,7 +538,7 @@
           "n23": "Rarity"
         },
         "text2": "Such a large number of layers allowed us to create a collection of truly unique images, but in the same visual style. All elements are 3D models, which will later be used to create a meta game in which everyone will have their own NFT apartment.",
-        "text3": "NFT apartment is a 3d space assembled from 5 rooms, each of which is a GEN# from 1 to 5. The assembly of the apartment is carried out automatically based on the metadatabase from each NFT purchased by the user.",
+        "text3": "NFT apartment is a 3d space assembled from 5 rooms, each of which is a <span>GEN#</span> from 1 to 5. The assembly of the apartment is carried out automatically based on the metadatabase from each NFT purchased by the user.",
         "text4": "Meta game is planned to be a truly online experience and accessed to be use wallet ID. Game engine Unity will allow us to implement good looking graphics, and also all game and financial mechanics"
       },
       "tenets_game": {
@@ -531,9 +547,23 @@
           "n1": "Live, meet, communicate - you will be able to move around your apartment using 3D avatar, invite other crypto-users through guest access, get a pet and change the whole feel of the apartment.",
           "n2": "Have fun - we are thinking about mechanics where you can break into other apartments, steal pets and cause damage and destruction. Maybe steal a sofa and put it in your apartment?",
           "n3": "Get creative - on our marketplace it will be possible to purchase 3D interior items for each of their rooms and apply them in real time so that your apartment is unique, and other users can appreciate your taste.",
-          "n4": "Invite people to hang out in private meetings, for fun or to do business - the financial mechanics of CFLAT token exchanges and voice chat will be implemented in the apartments. You can pay with tokens for a service to have a pink cat stolen for you, which was brought to order in apartment #84B7!"
+          "n4": "Invite people to hang out in private meetings, for fun or to do business - the financial mechanics of CFLAT token exchanges and voice chat will be implemented in the apartments. You can pay with tokens for a service to have a pink cat stolen for you, which was brought to order in apartment!"
         }
       }
+    },
+    "LANDS": {
+      "title": "LANDS FOR FLATS",
+      "text_1": "Every <span>GEN#</span> starting from the first one can be staked in our Cryptoflats decentralized application. To do this, the system provides for the acquisition of land for each room in order to place NFT tokens in staking mode.",
+      "text_2": "Land for <span>GEN#1</span> is given to everyone free of charge and by default, but in order to stake NFT tokens, starting from <span>GEN#2</span>, you need to purchase land within the application using СFLAT project tokens for payment, which can either be purchased using the site function through a smart contract, or accumulated using NFT room staking.",
+      "list_text": "<span>Approximate price of each land:</span>",
+      "list": {
+        "n1": "Land acquisition for GEN#2 placing = 50 000 CFLAT",
+        "n2": "Land acquisition for GEN#3 placing = 100 000 CFLAT",
+        "n3": "Land acquisition for GEN#3 placing = 150 000 CFLAT",
+        "n4": "Land acquisition for GEN#4 placing = 200 000 CFLAT",
+        "n5": "Land acquisition for GEN#4 placing = 250 000 CFLAT"
+      },
+      "text_3": "The user can use the benefits of the <span>NFT PASS</span> in order to buy land at a discount or receive it for free."
     },
     "litepaper_copyright": "All rights reserved."
   },

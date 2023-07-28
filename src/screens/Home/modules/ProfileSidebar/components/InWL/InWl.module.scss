@@ -1,0 +1,27 @@
+@import "src/assets/styles/helpers/mixin";
+
+.wlBar {
+  padding: 25px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include _768 {
+    padding: 20px 50px;
+  }
+}
+
+.wlItem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &.inWl {
+    color: #FFB800;;
+  }
+
+  @include _768 {
+    font-size: 1rem;
+    gap: 15px;
+  }
+}
