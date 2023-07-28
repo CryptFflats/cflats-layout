@@ -7,3 +7,4 @@ tsconfig.tsbuildinfo
 /playwright/.cache/
 /package-lock.json
 /yarn.lock
+.env.local
