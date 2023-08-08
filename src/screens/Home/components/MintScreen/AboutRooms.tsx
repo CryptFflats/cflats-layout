@@ -8,8 +8,8 @@ import { setTrailer } from '../../../../core/store/slices/ModalSlice'
 import { useTranslations } from 'next-intl';
 import { WatchTrailer } from '../../../../styled/BlueButton';
 import { CDN_URL } from '../../../../core/utils/constance';
-import WhiteListService from '../../../../core/services/WhiteList/WhiteList.service';
-import { IGetWhiteList } from '../../../../core/services/WhiteList/types';
+import WhiteListService from '../../../../core/services/WhiteListService/WhiteList.service';
+import { IGetWhiteList } from '../../../../core/services/WhiteListService/types';
 
 const AboutRooms = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(true)

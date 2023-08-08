@@ -3,7 +3,7 @@ import { CDN_URL, MINT_GEN_ZERO_ADDRESS } from '../../../../../core/utils/consta
 import CryptoflatsNFT from '../../../../../core/utils/contract/CryptoflatsNFT';
 import { useAccount } from 'wagmi';
 import abi from '../../../../../core/abi/gen_zero.json'
-import WhiteListService from '../../../../../core/services/WhiteList/WhiteList.service';
+import WhiteListService from '../../../../../core/services/WhiteListService/WhiteList.service';
 import { useAppDispatch } from '../../../../../core/hooks/store.hook';
 import { setIsUserHaveWl } from '../../../../../core/store/slices/UserSlice';
 

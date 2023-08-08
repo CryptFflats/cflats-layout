@@ -6,7 +6,7 @@ import classNames from "classnames";
 import { useAppDispatch } from '../../core/hooks/store.hook';
 import { setAvatar } from '../../core/store/slices/MenuSlice';
 import { userIconsData } from '../../core/data/userIcons.data';
-import WhiteListService from '../../core/services/WhiteList/WhiteList.service';
+import WhiteListService from '../../core/services/WhiteListService/WhiteList.service';
 import CryptoflatsNFT from '../../core/utils/contract/CryptoflatsNFT';
 import { useAccount } from 'wagmi';
 import AuthService from '../../core/services/AuthService/Auth.service';

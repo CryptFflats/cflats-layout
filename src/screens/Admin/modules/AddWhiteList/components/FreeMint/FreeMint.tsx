@@ -8,7 +8,7 @@ import YellowButton from '../../../../UI/YellowButton/YellowButton';
 import { useForm } from 'react-hook-form';
 import { stringToArr } from '../../utils/stringToArr';
 import { isAddressesVerify } from '../../../../../../core/utils/contract/utils/isAddressesVerify';
-import WhiteListService from '../../../../../../core/services/WhiteList/WhiteList.service';
+import WhiteListService from '../../../../../../core/services/WhiteListService/WhiteList.service';
 import { MINT_GEN_ZERO_ADDRESS } from '../../../../../../core/utils/constance';
 import { useAccount } from 'wagmi';
 import CryptoflatsNFT from '../../../../../../core/utils/contract/CryptoflatsNFT';

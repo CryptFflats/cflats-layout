@@ -22,12 +22,12 @@ const InWl: FC<InWlProps> = ({ inFree, inDiscount }) => {
 			<div className={classNames(styles.wlItem, inFree && styles.inWl)}>
 				{ inFree && <>{!query ? <IcInWlSmall /> : <IcInWl/>}</> }
 				{ !inFree && <>{!query ? <IcNotWlSmall /> : <IcNotWl/>}</> }
-				<i>Whitelist discount 30%</i>
+				<i>Whitelist FREE</i>
 			</div>
 			<div className={classNames(styles.wlItem, inDiscount && styles.inWl)}>
 				{ inDiscount && <>{!query ? <IcInWlSmall /> : <IcInWl/>}</> }
 				{ !inDiscount && <>{!query ? <IcNotWlSmall /> : <IcNotWl/>}</> }
-				<i>Whitelist FREE</i>
+				<i>Whitelist discount 30%</i>
 			</div>
 		</div>
 	);

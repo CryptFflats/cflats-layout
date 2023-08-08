@@ -5,13 +5,13 @@ import {
 	DialogContent,
 	DialogContentText
 } from '@mui/material'
-import React from 'react'
-import { TransitionProps } from '@mui/material/transitions'
-import Slide from '@mui/material/Slide'
+// import React from 'react'
+// import { TransitionProps } from '@mui/material/transitions'
+// import Slide from '@mui/material/Slide'
 
 export const CustomDialog = styled(Dialog)(({ theme }) => ({
 	'.MuiDialog-paper': {
-		borderRadius: '0',
+		borderRadius: '20px',
 		background: 'var(--color-gray-light)',
 		maxWidth: '800px',
 		'@media(max-width: 768px)': {

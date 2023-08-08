@@ -7,7 +7,7 @@ import {
 	CloseButton
 } from './styles'
 import  IcClose from '../../assets/images/icons/closeIcon.svg'
-import React, { FC, ReactNode, useState } from 'react'
+import React, { FC, ReactNode } from 'react'
 import { TransitionProps } from '@mui/material/transitions'
 import Slide from '@mui/material/Slide'
 import { useMediaQuery } from '@mui/material'

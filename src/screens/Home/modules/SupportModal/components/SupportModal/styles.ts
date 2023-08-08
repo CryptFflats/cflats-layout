@@ -67,7 +67,7 @@ export const Input = styled(TextField)(({ theme }) => ({
 	'.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
 		borderColor: '#C3B6B6',
 	},
-	'.Mui-focused .MuiOutlinedInput-notchedOutline': {
+	'.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
 		borderColor: '#C3B6B6',
 	},
 	'.MuiInputBase-input': {

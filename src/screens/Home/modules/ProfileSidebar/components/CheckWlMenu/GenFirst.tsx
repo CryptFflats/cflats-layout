@@ -1,6 +1,6 @@
 "use client"
 
-import WhiteListService from '../../../../../../core/services/WhiteList/WhiteList.service';
+import WhiteListService from '../../../../../../core/services/WhiteListService/WhiteList.service';
 import CryptoflatsNFT from '../../../../../../core/utils/contract/CryptoflatsNFT';
 import { MINT_GEN_FIRST_ADDRESS } from '../../../../../../core/utils/constance';
 import abi from '../../../../../../core/abi/gen_first.json';

@@ -43,7 +43,7 @@ const Home = () => {
 			</Main>
 			<Footer />
 
-			{/*<SupportModal />*/}
+			<SupportModal />
 			<DevelopingModal />
 			<MintModal />
 			<ModalVideo />

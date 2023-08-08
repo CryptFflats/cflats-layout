@@ -12,7 +12,7 @@ import { MINT_GEN_ZERO_ADDRESS } from '../../../../../../core/utils/constance';
 import abi from '../../../../../../core/abi/gen_zero.json';
 import { stringToArr } from '../../utils/stringToArr';
 import { isAddressesVerify } from '../../../../../../core/utils/contract/utils/isAddressesVerify';
-import WhiteListService from '../../../../../../core/services/WhiteList/WhiteList.service';
+import WhiteListService from '../../../../../../core/services/WhiteListService/WhiteList.service';
 import { useWhiteList } from '../../hooks/useWhiteList';
 import { Backdrop, CircularProgress } from '@mui/material';
 

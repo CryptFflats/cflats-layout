@@ -5,8 +5,8 @@ import abiForGenZero from '../../../../../core/abi/gen_zero.json';
 import abiForGenOne from '../../../../../core/abi/gen_first.json';
 import { stringToArr } from '../utils/stringToArr';
 import { isAddressesVerify } from '../../../../../core/utils/contract/utils/isAddressesVerify';
-import WhiteListService from '../../../../../core/services/WhiteList/WhiteList.service';
-import { WlType } from '../../../../../core/services/WhiteList/types';
+import WhiteListService from '../../../../../core/services/WhiteListService/WhiteList.service';
+import { WlType } from '../../../../../core/services/WhiteListService/types';
 import { useState } from 'react';
 
 export const useWhiteList = (gen: number, whitelistType: WlType) => {
