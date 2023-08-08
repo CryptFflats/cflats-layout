@@ -4,12 +4,10 @@ import classNames from 'classnames'
 import styles from './MintScreen.module.scss'
 import CfImage from '../../../../components/CfImage/CfImage'
 import { useAppDispatch } from '../../../../core/hooks/store.hook'
-import { setGenFirst, setGenZero, setWhileList } from '../../../../core/store/slices/MintSlice';
-import WlButton from '../../UI/WlButton/WlButton';
-import { BlueButton, RoomsButton } from '../../../../styled/BlueButton';
+import { setGenFirst, setGenZero } from '../../../../core/store/slices/MintSlice';
+import { RoomsButton } from '../../../../styled/BlueButton';
 import { MintZeroGen } from '../../modules/MintZeroGen';
 import MintFirstGen from '../../modules/MintFirstGen/components/MintFirstGen/MintFirstGen';
-import { WlMarket } from '../../modules/WlMarket';
 
 const AboutNft = () => {
 	const dispatch = useAppDispatch()
@@ -29,7 +27,7 @@ const AboutNft = () => {
 					MINT NFT PASS
 				</RoomsButton>
 
-				<WlButton onClick={() => dispatch(setWhileList(true))} />
+				{/*<WlButton onClick={() => dispatch(setWhileList(true))} />*/}
 			</div>
 
 			<div className={classNames(styles['dec-anim'], styles.sofa)}>
@@ -78,7 +76,7 @@ const AboutNft = () => {
 			{/*<MintNftPass />*/}
 			<MintZeroGen />
 			<MintFirstGen />
-			<WlMarket />
+			{/*<WlMarket />*/}
 		</div>
 	)
 }

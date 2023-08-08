@@ -14,6 +14,7 @@ const GenZero = ({ onClose }: { onClose:  () => void }) => {
 	const { address } = useAccount();
 	const [inFree, setInFree] = useState<boolean>(false)
 	const [inDiscount, setInDiscount] = useState<boolean>(false)
+	//const [isLoading, setIsLoading] = useState()
 
 	useEffect(() => {
 		const getStatus = async () => {
