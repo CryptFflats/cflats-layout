@@ -1,6 +1,7 @@
 @import "src/assets/styles/helpers/mixin";
 
 .wlBar {
+  position: relative;
   padding: 25px 40px;
   display: flex;
   flex-direction: column;
@@ -24,4 +25,17 @@
     font-size: 1rem;
     gap: 15px;
   }
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-gray);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }

@@ -36,7 +36,7 @@ const SupportForm = () => {
 
 					<FormElement>
 						<InputLabel>Email</InputLabel>
-						<Input type={'email'} {...register('email', {
+						<Input {...register('email', {
 							required: 'Required Field',
 							pattern: {
 								value: /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/,

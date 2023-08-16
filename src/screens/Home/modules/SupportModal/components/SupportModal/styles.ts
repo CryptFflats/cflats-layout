@@ -1,7 +1,7 @@
 'use client'
 
 import { styled } from '@mui/material/styles';
-import { Dialog, DialogContent, FormLabel, TextField } from '@mui/material';
+import { ButtonBase, Dialog, DialogContent, FormLabel, TextField } from '@mui/material';
 
 export const SupportDialog = styled(Dialog)(({ theme }) => ({
 	'.MuiDialog-paper': {
@@ -26,12 +26,11 @@ export const SupportDialogContent = styled(DialogContent)(({ theme }) => ({
 }))
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '50px 0 30px 0',
+	padding: '75px 0 30px 0',
 }))
 
 export const Container = styled('div')(({ theme }) => ({
-	maxWidth: '1090px',
-	margin: '0 auto'
+	padding: '0 46px'
 }))
 
 export const FormElement = styled('div')(({ theme }) => ({
@@ -76,4 +75,10 @@ export const Input = styled(TextField)(({ theme }) => ({
 		lineHeight: '1.5rem',
 		color: 'rgba(94, 94, 94, 1)',
 	}
+}))
+
+export const CloseButton = styled(ButtonBase)(({ theme }) => ({
+	position: 'absolute',
+	top: '30px',
+	right: '30px'
 }))

@@ -14,24 +14,30 @@ const GenZero = ({ onClose }: { onClose:  () => void }) => {
 	const { address } = useAccount();
 	const [inFree, setInFree] = useState<boolean>(false)
 	const [inDiscount, setInDiscount] = useState<boolean>(false)
-	//const [isLoading, setIsLoading] = useState()
+	const [isLoading, setIsLoading] = useState<boolean>(true)
 
 	useEffect(() => {
 		const getStatus = async () => {
-			const freeList = await WhiteListService.getWhiteList({ name: 'gen-zero', type: 'free' });
-			const discountList = await WhiteListService.getWhiteList({ name: 'gen-zero', type: 'discount' });
+			try {
+				const freeList = await WhiteListService.getWhiteList({ name: 'gen-zero', type: 'free' });
+				const discountList = await WhiteListService.getWhiteList({ name: 'gen-zero', type: 'discount' });
 
-			const cryptoflatsNFT = new CryptoflatsNFT(
-				MINT_GEN_FIRST_ADDRESS,
-				address ? address : '',
-				0,
-				freeList.data.addresses,
-				discountList.data.addresses,
-				abi
-			);
+				const cryptoflatsNFT = new CryptoflatsNFT(
+					MINT_GEN_FIRST_ADDRESS,
+					address ? address : '',
+					0,
+					freeList.data.addresses,
+					discountList.data.addresses,
+					abi
+				);
 
-			setInFree(await cryptoflatsNFT.isUserFreePurchaseWhitelist());
-			setInDiscount(await cryptoflatsNFT.isUserEarlyAccessWhiteList())
+				setInFree(await cryptoflatsNFT.isUserFreePurchaseWhitelist());
+				setInDiscount(await cryptoflatsNFT.isUserEarlyAccessWhiteList())
+			} catch(err: any) {
+			   throw new Error(err)
+			} finally {
+				setIsLoading(false)
+			}
 		}
 
 		getStatus();
@@ -47,7 +53,7 @@ const GenZero = ({ onClose }: { onClose:  () => void }) => {
 				/>
 			</li>
 			<li>
-				<InWl inFree={inFree} inDiscount={inDiscount} />
+				<InWl inFree={inFree} inDiscount={inDiscount} isLoading={isLoading} />
 			</li>
 		</>
 	);

@@ -7,18 +7,26 @@ import IcInWl from '../../../../../../assets/images/icons/ic_in_wl.svg'
 import IcNotWlSmall from '../../../../../../assets/images/icons/ic_no_wl_small.svg'
 import IcInWlSmall from '../../../../../../assets/images/icons/ic_in_wl_small.svg'
 import classNames from 'classnames';
-import { useMediaQuery } from '@mui/material';
+import { CircularProgress, useMediaQuery } from '@mui/material';
 
 interface InWlProps {
 	inFree: boolean
 	inDiscount: boolean
+	isLoading: boolean
 }
 
-const InWl: FC<InWlProps> = ({ inFree, inDiscount }) => {
+const InWl: FC<InWlProps> = ({ inFree, inDiscount, isLoading }) => {
 	const query = useMediaQuery('(min-width: 768px)')
 
 	return (
 		<div className={styles.wlBar}>
+			{
+				isLoading && (
+					<div className={styles.loading}>
+						<CircularProgress color="inherit" />
+					</div>
+				)
+			}
 			<div className={classNames(styles.wlItem, inFree && styles.inWl)}>
 				{ inFree && <>{!query ? <IcInWlSmall /> : <IcInWl/>}</> }
 				{ !inFree && <>{!query ? <IcNotWlSmall /> : <IcNotWl/>}</> }

@@ -4,10 +4,12 @@ import classNames from 'classnames'
 import styles from './MintScreen.module.scss'
 import CfImage from '../../../../components/CfImage/CfImage'
 import { useAppDispatch } from '../../../../core/hooks/store.hook'
-import { setGenFirst, setGenZero } from '../../../../core/store/slices/MintSlice';
+import { setGenFirst, setGenZero, setWhileList } from '../../../../core/store/slices/MintSlice';
 import { RoomsButton } from '../../../../styled/BlueButton';
 import { MintZeroGen } from '../../modules/MintZeroGen';
 import MintFirstGen from '../../modules/MintFirstGen/components/MintFirstGen/MintFirstGen';
+import { GrayButton, RoomsGrayButton } from '../../../../styled/GrayButton';
+import WlPlace from '../WlPlace/WlPlace';
 
 const AboutNft = () => {
 	const dispatch = useAppDispatch()
@@ -26,6 +28,12 @@ const AboutNft = () => {
 				>
 					MINT NFT PASS
 				</RoomsButton>
+
+				<RoomsGrayButton
+					onClick={() => dispatch(setWhileList(true))}
+				>
+					GET WHITELIST
+				</RoomsGrayButton>
 
 				{/*<WlButton onClick={() => dispatch(setWhileList(true))} />*/}
 			</div>
@@ -76,6 +84,7 @@ const AboutNft = () => {
 			{/*<MintNftPass />*/}
 			<MintZeroGen />
 			<MintFirstGen />
+			<WlPlace />
 			{/*<WlMarket />*/}
 		</div>
 	)

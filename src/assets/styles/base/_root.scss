@@ -26,3 +26,39 @@
   --color-purple-darken: #362066;
   --color-error: #FF0000;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #000;
+
+  &.red_box {
+    background: #ff0000;
+  }
+}
+
+.box.red_box {
+  background: #ff0000;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+  /*
+    Какие то стили....
+  */
+
+  //Класс для показа окна
+  &.visible {
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal.visible {
+
+}
