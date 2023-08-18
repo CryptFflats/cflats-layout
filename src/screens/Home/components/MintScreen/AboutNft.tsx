@@ -8,7 +8,7 @@ import { setGenFirst, setGenZero, setWhileList } from '../../../../core/store/sl
 import { RoomsButton } from '../../../../styled/BlueButton';
 import { MintZeroGen } from '../../modules/MintZeroGen';
 import MintFirstGen from '../../modules/MintFirstGen/components/MintFirstGen/MintFirstGen';
-import { GrayButton, RoomsGrayButton } from '../../../../styled/GrayButton';
+import { RoomsGrayButton } from '../../../../styled/GrayButton';
 import WlPlace from '../WlPlace/WlPlace';
 
 const AboutNft = () => {
@@ -18,15 +18,15 @@ const AboutNft = () => {
 		<div className={classNames(styles.aboutNft)}>
 			<div className={styles.mintButtons}>
 				<RoomsButton
-					onClick={() => dispatch(setGenFirst(true))}
-				>
-					MINT GEN 1
-				</RoomsButton>
-
-				<RoomsButton
 					onClick={() => dispatch(setGenZero(true))}
 				>
 					MINT NFT PASS
+				</RoomsButton>
+
+				<RoomsButton
+					onClick={() => dispatch(setGenFirst(true))}
+				>
+					MINT GEN 1
 				</RoomsButton>
 
 				<RoomsGrayButton

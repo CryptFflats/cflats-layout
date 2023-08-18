@@ -8,7 +8,19 @@
   top: 0;
   left: 0;
   z-index: 10;
-  padding-top: 35px;
+  padding: 30px 0;
+
+  @include _1440 {
+    padding: 40px 0;
+  }
+
+  @include _1200 {
+    padding: 25px 0;
+  }
+
+  @include _576 {
+    padding: 35px 0;
+  }
 }
 
 .bg  {
@@ -23,16 +35,25 @@
 }
 
 .content {
-  max-width: 500px;
+  max-width: 600px;
   height: 100%;
   margin: 0 auto;
-  padding: 10% 20px;
+  padding: 12.5% 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+  @include _1980 {
+    padding: 10% 10px;
+  }
+
+  @include _1440 {
+    max-width: 450px;
+    padding: 7% 25px;
+  }
+
   @include _1200 {
-    padding: 7% 20px;
+    padding: 7% 25px;
   }
 
   @include _480 {
@@ -44,25 +65,35 @@
   color: #fff;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-top: 10px;
   }
 
   > p {
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
+
+    @include _1980 {
+      margin-bottom: 3rem;
+    }
+
 
     @include _1550 {
       font-size: 1rem;
       line-height: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     @include _1200 {
       margin-bottom: 1rem;
     }
 
+    @include _576 {
+      font-size: 0.875rem;
+      line-height: normal;
+    }
+
     @include _400 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.875rem;
     }
   }
 }
