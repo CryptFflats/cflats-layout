@@ -398,8 +398,8 @@
     "DAPP": {
       "title1": "CRYPTOFLATS DAPP",
       "text_1": "<span>Cryptoflats DApp</span> represents a decentralized application and staking platform designed to incorporate key game mechanics integral to the project's concept. You can access the DApp directly via our website at <a href='https://cryptoflats.io/'>cryptoflats.io</a> using the \"Connect Wallet\" feature. The dedicated DApp section serves as a comprehensive guide to elucidate the functions and capabilities of our application.",
-      "text_2": "<br/>Upon launching the web application, users are greeted with the sleek and user-friendly interface of our DApp. We've meticulously designed intuitive menus and streamlined application logic for a seamless experience. <span>The primary objective of the Cryptoflats DApp is to facilitate the placement of acquired NFTs into staking, enabling the accumulation of rental income in CFLAT tokens</span>. Once a critical mass of app users is attained, a Play-to-Earn (P2E) feature becomes available, allowing users to earn tokens through engaging gameplay, including activities such as attacking and defending.",
-      "text_3": "<br/>Within our DApp, you'll find three primary sections: the left, center, and right areas, each serving distinct functions and features.",
+      "text_2": "Upon launching the web application, users are greeted with the sleek and user-friendly interface of our DApp. We've meticulously designed intuitive menus and streamlined application logic for a seamless experience. <span>The primary objective of the Cryptoflats DApp is to facilitate the placement of acquired NFTs into staking, enabling the accumulation of rental income in CFLAT tokens</span>. Once a critical mass of app users is attained, a Play-to-Earn (P2E) feature becomes available, allowing users to earn tokens through engaging gameplay, including activities such as attacking and defending.",
+      "text_3": "Within our DApp, you'll find three primary sections: the left, center, and right areas, each serving distinct functions and features.",
       "title2": "LEFT PART MENU",
       "text_4": "The left menu is comprised of buttons:",
       "text_5": "The <span>IMPORT NFT</span> option prompts a window where you can choose and import an NFT into the DApp. The system autonomously verifies the availability of our NFTs and presents them in the selection field. Once you've made your selection, simply click <span>IMPORT SELECTED</span>. The chosen NFTs will then relocate to the upper section of the central menu. Below, you can observe the NFT import mode, followed by the DApp's appearance after the NFT is added, and finally, the NFT placed in the staking window.",
@@ -420,7 +420,7 @@
         "n2": " – the average tokens earned on a weekly basis, including P2E mechanics.",
         "n3": " – the average tokens earned monthly, factoring in P2E mechanics."
       },
-      "text_12": "At the top of the left section, you'll discover an overview of the total tokens earned by the user. Adjacent is an interactive button that opens a menu with various sections: [Further sections detailed as per your content].",
+      "text_12": "At the top of the left section, you'll discover an overview of the total tokens earned by the user. Adjacent is an interactive button that opens a menu with various sections:",
       "list_2": {
         "n1": "MESSAGES:",
         "n2": "BUY CFLAT TOKEN:",

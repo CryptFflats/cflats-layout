@@ -29,7 +29,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_1') }}
 			/>
 			<motion.div
@@ -37,7 +37,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -47,7 +47,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -59,7 +59,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -69,6 +69,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -80,7 +81,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-60']}
 			>
 				<CflatsImage
 					fluid
@@ -100,6 +101,7 @@ const Dapp = () => {
 			</motion.h2>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -108,6 +110,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -120,7 +123,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-10']}
 			>
 				<CflatsImage
 					fluid
@@ -134,7 +137,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -144,6 +147,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -155,7 +159,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -166,6 +170,7 @@ const Dapp = () => {
 			
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -174,6 +179,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -186,7 +192,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -196,6 +202,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -208,7 +215,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -218,6 +225,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -226,6 +234,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -234,6 +243,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -241,7 +251,7 @@ const Dapp = () => {
 				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_11') }}
 			/>
 			
-			<ul>
+			<ul className={styles['mb-30']}>
 				{['n1', 'n2', 'n3'].map((item, index) => {
 					return (
 						<motion.li
@@ -259,6 +269,7 @@ const Dapp = () => {
 			</ul>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -266,7 +277,7 @@ const Dapp = () => {
 				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_12') }}
 			/>
 
-			<ul>
+			<ul className={styles['mb-30']}>
 				{['n1', 'n2', 'n3', 'n4', 'n5'].map((item, index) => {
 					return (
 						<motion.li
@@ -287,7 +298,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-60']}
 			>
 				<CflatsImage
 					fluid
@@ -307,6 +318,7 @@ const Dapp = () => {
 			</motion.h2>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -314,7 +326,7 @@ const Dapp = () => {
 				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_13') }}
 			/>
 			
-			<ul>
+			<ul className={styles['mb-30']}>
 				{['n1', 'n2', 'n3'].map((item, index) => {
 					return (
 						<motion.li
@@ -331,6 +343,7 @@ const Dapp = () => {
 			</ul>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -339,6 +352,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -346,7 +360,7 @@ const Dapp = () => {
 				dangerouslySetInnerHTML={{ __html: t.raw('DAPP.text_15') }}
 			/>
 
-			<ul>
+			<ul className={styles['mb-30']}>
 				{['n1', 'n2', 'n3'].map((item, index) => {
 					return (
 						<motion.li
@@ -363,6 +377,7 @@ const Dapp = () => {
 			</ul>
 
 			<motion.p
+				className={styles['mb-60']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -382,6 +397,7 @@ const Dapp = () => {
 			</motion.h2>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -390,6 +406,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -398,6 +415,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -406,6 +424,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -414,6 +433,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -422,6 +442,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -435,7 +456,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-60']}
 			>
 				<CflatsImage
 					fluid
@@ -457,6 +478,7 @@ const Dapp = () => {
 			</motion.h2>
 			
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -465,6 +487,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -473,6 +496,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -481,6 +505,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -489,6 +514,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-60']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -510,6 +536,7 @@ const Dapp = () => {
 			</motion.h2>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -518,6 +545,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -526,6 +554,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -535,6 +564,7 @@ const Dapp = () => {
 
 			
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -546,7 +576,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -556,6 +586,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -564,6 +595,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -572,6 +604,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -583,7 +616,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-10']}
 			>
 				<CflatsImage
 					fluid
@@ -593,6 +626,7 @@ const Dapp = () => {
 			</motion.div>
 			
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -604,7 +638,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-10']}
 			>
 				<CflatsImage
 					fluid
@@ -614,6 +648,7 @@ const Dapp = () => {
 			</motion.div>
 			
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -625,7 +660,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-60']}
 			>
 				<CflatsImage
 					fluid
@@ -645,6 +680,7 @@ const Dapp = () => {
 				{t('DAPP.title7')}
 			</motion.h2>
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -657,7 +693,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -667,6 +703,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -675,6 +712,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -686,7 +724,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -696,6 +734,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -704,6 +743,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -712,6 +752,7 @@ const Dapp = () => {
 			/>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -723,7 +764,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-10']}
 			>
 				<CflatsImage
 					fluid
@@ -733,6 +774,7 @@ const Dapp = () => {
 			</motion.div>
 			
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -744,7 +786,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -754,6 +796,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-10']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
@@ -765,7 +808,7 @@ const Dapp = () => {
 				initial={'hidden'}
 				whileInView='show'
 				viewport={{ once: true, amount: 0.5 }}
-				className={styles['mb-20']}
+				className={styles['mb-30']}
 			>
 				<CflatsImage
 					fluid
@@ -775,6 +818,7 @@ const Dapp = () => {
 			</motion.div>
 
 			<motion.p
+				className={styles['mb-30']}
 				variants={fadeInUp}
 				initial={'hidden'}
 				whileInView='show'
