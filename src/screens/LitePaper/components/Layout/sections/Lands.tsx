@@ -58,7 +58,7 @@ const Lands = () => {
 			/>
 
 			<ul className={styles['mb-30']}>
-				{['n1', 'n2', 'n3', 'n4', 'n5'].map((item, index) => {
+				{['n1', 'n2', 'n3', 'n4'].map((item, index) => {
 					return (
 						<motion.li key={index}
 											 variants={fadeInUp}

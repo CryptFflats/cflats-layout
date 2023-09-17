@@ -283,7 +283,7 @@
     "about_cryptoflats": "Generated nft apartments<br>Made by interior designers",
     "profileSidebar": {
       "myWallet": "My Wallet",
-      "enterDapp": "Enter Cryptoflats dApp",
+      "enterDapp": "Enter Cryptoflats DApp",
       "buyCflat": "Buy CFLAT token",
       "nftCollection": "My NFT collection",
       "language": "Language",
@@ -321,7 +321,7 @@
           "path":"#token-project"
         },
         "dAPP": {
-          "title":"CRYPTOFLATS dAPP",
+          "title":"CRYPTOFLATS DApp",
           "path":"#dapp"
         },
         "GEN#0": {
@@ -396,17 +396,104 @@
       "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Binance Smart Chain</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for three types of cryptocurrency: <span>BNB, ETH, USDT.</span>\n"
     },
     "DAPP": {
-      "title": "CRYPTOFLATS DAPP",
-      "text_1": "The second key point for understanding what the <span>Cryptoflats</span> project is will be our decentralized app responsible for all the main operations of the 1st big stage, before the main meta-game. <br><br> <span>CRYPTOFLATS dAPP</span> - internal project account, accessed through the Connect Wallet service. App is needed to account for the purchased NFT, acquisition of apartment pieces, NFT staking and earning CFLAT tokens. The account will display all purchased NFTs of the project, staking list, calculation of earned tokens and withdrawal to your wallet, taking into account the rarity and their advantages as well as primary game mechanics, in which it is possible to lose part of the income, or to acquire it. <br><br> <span>Account navigation:</span>",
-      "functions": {
-        "select": "<span>SELECT ALL button</span> - highlights ALL NFTs, both collection and staking (marked by a round dot in the top right corner).",
-        "stake": "<span>STAKE ALL button</span> - transfers all allocated NFTs to staking (does not affect already staked NFT)",
-        "unstake": "<span>UNSTAKE ALL button</span> - all staked allocated NFTs are transferred back to the owner's collection. If the lock is in effect (first five days of staking), then such an NFT remains staked.",
-        "claim": "<span>CLAIM TOKENS button</span> - withdraws the token from the project to the owner's wallet (all or partly). That action follows smart contract rules for tokens.",
-        "view": "<span>VIEW ALL button</span> - brings up a window with all NFTs purchased by user."
+      "title1": "CRYPTOFLATS DAPP",
+      "text_1": "<span>Cryptoflats DApp</span> represents a decentralized application and staking platform designed to incorporate key game mechanics integral to the project's concept. You can access the DApp directly via our website at <a href='https://cryptoflats.io/'>cryptoflats.io</a> using the \"Connect Wallet\" feature. The dedicated DApp section serves as a comprehensive guide to elucidate the functions and capabilities of our application.",
+      "text_2": "<br/>Upon launching the web application, users are greeted with the sleek and user-friendly interface of our DApp. We've meticulously designed intuitive menus and streamlined application logic for a seamless experience. <span>The primary objective of the Cryptoflats DApp is to facilitate the placement of acquired NFTs into staking, enabling the accumulation of rental income in CFLAT tokens</span>. Once a critical mass of app users is attained, a Play-to-Earn (P2E) feature becomes available, allowing users to earn tokens through engaging gameplay, including activities such as attacking and defending.",
+      "text_3": "<br/>Within our DApp, you'll find three primary sections: the left, center, and right areas, each serving distinct functions and features.",
+      "title2": "LEFT PART MENU",
+      "text_4": "The left menu is comprised of buttons:",
+      "text_5": "The <span>IMPORT NFT</span> option prompts a window where you can choose and import an NFT into the DApp. The system autonomously verifies the availability of our NFTs and presents them in the selection field. Once you've made your selection, simply click <span>IMPORT SELECTED</span>. The chosen NFTs will then relocate to the upper section of the central menu. Below, you can observe the NFT import mode, followed by the DApp's appearance after the NFT is added, and finally, the NFT placed in the staking window.",
+      "text_5_1": "The <span>CLAIM TOKENS</span> option enables you to withdraw accrued tokens from the DApp to your wallet. It's crucial to note that while the sale and purchase of tokens incur a 6% tax, which supports the project's development, the <span>CLAIM TOKENS</span> function exclusively transfers tokens from the contract to your wallet, resulting in a full 100% transfer. The CFLAT token serves as the in-game currency, initially valued at $0.00008. Certain in-game items, like CFLAT LANDS, can only be acquired using the CFLAT token. You can obtain this token during the project's initial phase through our website section using BNB, ETH, and USDT.",
+      "text_6": "The <span>SELECT ALL</span> option allows you to choose all NFTs situated in the upper section of the central area within the DApp. This means that imported NFTs will be highlighted. Pressing the <span>SELECT ALL</span> button once more will select all NFTs currently in staking, but it will deselect those in the upper section. Another press will re-highlight the upper section. To clear the selection, users can click on the area containing the selected NFTs.",
+      "text_7": "The <span>VIEW ALL</span> option takes you to the NFT display mode windows, where the status of each NFT is visible, such as free, staking, blocked, and so on. In this mode, it's easy to select the specific NFTs needed for subsequent actions. Note that the <span>SELECT ALL</span> option works according to the logic described above, allowing for efficient batch selection of NFTs in this mode as well.",
+      "text_8": "The <span>STAKE</span> option triggers the contract function <code>stake()</code> that moves the chosen NFT into staking. The NFT is locked for a period of 5 days, during which it cannot be withdrawn from staking. Staking NFTs not only generates income in our CFLAT token but also initiates the attack-defense gameplay. It's worth noting that NFTs with higher rarity levels yield a greater income in CFLAT tokens.",
+      "text_9": "The <span>UNSTAKE</span> option triggers a contract function that halts the NFT's staking mode, ceasing income generation. It's important to note that you can utilize this button only after the 5-day lock period on the NFT has been lifted. This means the NFT must be staked for a minimum of 5 days before it can be transferred back to your wallet.",
+      "text_10": "Regarding the P2E section focused on attack and defense, we will delve into it in more detail shortly. It's noteworthy that it operates when there's a critical mass of NFTs staked.",
+      "text_11": "Beneath these buttons, you'll find essential statistical information:",
+      "list_1": {
+        "n1": "Earned per day",
+        "n2": "Earned per week",
+        "n3": "Earned per month"
       },
-      "text_2": "App account also contains a map of an apartment which opens gradually either for free, or at a discount, or for a fee, depending on user token rarity.",
-      "text_3":"Our application is under development and may differ in its functionality in the final version than shown in this document."
+      "list_1_1": {
+        "n1": " – the average tokens earned daily, incorporating the P2E mechanics.",
+        "n2": " – the average tokens earned on a weekly basis, including P2E mechanics.",
+        "n3": " – the average tokens earned monthly, factoring in P2E mechanics."
+      },
+      "text_12": "At the top of the left section, you'll discover an overview of the total tokens earned by the user. Adjacent is an interactive button that opens a menu with various sections: [Further sections detailed as per your content].",
+      "list_2": {
+        "n1": "MESSAGES:",
+        "n2": "BUY CFLAT TOKEN:",
+        "n3": "BUY CRYPTOFLATS NFT:",
+        "n4": "SUPPORT:",
+        "n5": "EXIT DApp:"
+      },
+      "list_2_2": {
+        "n1": " This serves as a message center, where NFT transactions, user activity, vital project updates, and system changes within the DApp are all meticulously recorded.",
+        "n2": " Securely purchase CFLAT tokens directly from the DApp.",
+        "n3": " Instantly acquire NFTs directly from the DApp and have them automatically imported.",
+        "n4": " Easily create tickets and get in touch with the project support team for any assistance needed.",
+        "n5": " Effortlessly return to the website from the application."
+      },
+      "title3": "CENTRAL PART MENU",
+      "text_13": "The central section of the DApp provides a visual representation of your NFTs, showcasing their type and quantity. The rarity of each NFT is automatically assessed by our backend system. NFTs can exist in three states:",
+      "list_3": {
+        "n1": "Free:",
+        "n2": "Staked and Locked:",
+        "n3": "Continuous Staking for Over 180 Days:"
+      },
+      "list_3_3": {
+        "n1": " This signifies that the NFT has been imported into the DApp",
+        "n2": " This state occurs during the initial 5 days after the NFT is placed in staking, where it remains inaccessible for withdrawal",
+        "n3": " After staking continuously for a period exceeding 180 days, the NFT is automatically removes from the staking"
+      },
+      "text_14": "In the upper section of the central DApp interface, you'll find the imported NFTs, which can be assigned and moved into staking. Meanwhile, in the lower section of the central DApp interface, you'll see the staked tokens, which can either be in a locked state or available for withdrawal from staking.",
+      "text_15": "At the uppermost section of the central area, you'll find buttons to toggle between the various GEN# of the project, ranging from 0 to 5. The initial phase of the project will focus on GEN#0, GEN#1, and GEN#2.",
+      "list_4": {
+        "n1": "GEN#0:",
+        "n2": "GEN#1:",
+        "n3": "GEN#2:"
+      },
+      "list_4_4": {
+        "n1": " These $CFLAT passes offer a wide array of benefits as detailed in the Litepaper. To activate their functionalities, they need to be staked",
+        "n2": " This category encompasses 5555 crypto living rooms",
+        "n3": " This segment includes 4444 crypto bedrooms"
+      },
+      "text_16": "Within the navigation of sections for GEN#0, GEN#1, and GEN#2, the color scheme distinguishes their status. When a collection is gray, it indicates that the staking availability for that collection has not yet been announced. In contrast, when a collection is displayed in white, it signifies that the collection is currently available for purchase. For instance, GEN#0 and GEN#1 are available for sale, so they will be shown in white.",
+      "title4": "RIGHT PART MENU",
+      "text_17": "The right side of the menu features a statistics section and showcases a schematic representation of the active portion of the apartment that can be utilized for staking.",
+      "text_18": "At the upper portion of this section, you'll find statistics detailing the current number of users staking, along with the rarity of their holdings. This data is updated periodically, typically once a day. Below, you'll find a diagram of the apartment, referred to as <span>LANDS</span>. Each element within <span>LANDS</span> represents a cell where your apartments are situated in staking mode. To stake, for instance, GEN#2, you'll need to <span>unlock</span> the corresponding cell using $CFLAT tokens.",
+      "text_19": "A colored cell is one that has been unlocked either by you manually, received automatically at the outset, or opened as a result of staking a diamond $CFLAT pass.",
+      "text_20": "A gray cell signifies an inactive portion of the diagram, indicating that we have not yet announced this collection.",
+      "text_21": "A gray cell with a highlighted background indicates that the collection associated with this gene is currently available for purchase. If you enter GEN#2 without acquiring land, you won't have the ability to stake GEN#2 NFT. Instead of <span>STAKE NFT</span> at the bottom of the menu, you will see <span>BUY LAND</span> written.",
+      "text_22": "At the menu's top, there's a <span>PLAYGROUND</span> button—a testing platform for anyone interested in exploring how our DApp functions on the test network.",
+      "title5": "P2E SECTION ATTACK – DEFENSE",
+      "text_23": "<span>Attack – Defense</span> constitutes the inaugural phase of the Cryptoflats gaming mechanics, allowing participants to engage in offensive and defensive strategies to earn $CFLAT tokens. It's imperative to comprehend that the $CFLAT tokens secured in your crypto wallet are entirely secure and cannot be accessed by others.<br>The play-to-earn (P2E) gaming system exclusively operates on $CFLAT tokens displayed in your DApp balance, which are physically located on the staking smart contract. If you choose not to partake in the game, it's advisable to routinely transfer tokens to your personal wallet.",
+      "text_24": "Participation in the game is limited to players who have staked at least one NFT, regardless of its value.",
+      "text_25": "Precisely, only users with NFTs staked at a rarity level of SILVER or higher are eligible to engage in attacks.",
+      "text_26": "<span>ATTACK</span> is a process that grants you the opportunity to claim a portion of the income earned by a random user who staked their NFTs. This can amount to 30%, 40%, or even 50% of their earnings. It's essential to note that the tokens acquired through an attack should remain on the staking smart contract and not be withdrawn to the user’s wallet.",
+      "text_27": "<span>DEFENSE</span> is an obligatory process, serving as an opportunity to recover CFLAT tokens that may have been taken from you. This could amount to 110%, 120%, or even 130% of the stolen tokens, contingent on the rarity. You will have the flexibility to choose from different probabilities: 10%, 20%, or 30% for this process.",
+      "title6": "ATTACK ACTION",
+      "text_28": "The user initiates an attack by clicking on the <span>ATTACK</span> button located on the left side of the DApp section. This action prompts the opening of the attack window.",
+      "text_29": "Indeed, it's crucial to understand that you can only initiate an attack on individuals with a lower rarity level. For instance, SILVER can attack STANDARD, GOLD can attack both SILVER and STANDARD, while DIAMOND can attack players with any rarity level, including GOLD, SILVER, and STANDARD.",
+      "text_30": "Precisely, a STANDARD NFT user is unable to launch an attack, while a DIAMOND NFT user is immune to attacks. Nevertheless, it's worth noting that in the event of a successful defense by the attacked user, even a DIAMOND user can experience a loss of their earned tokens.",
+      "text_31": "Upon entering attack mode, you'll encounter a single action button represented by a sword enclosed in a red circle. By clicking on it, you initiate the process of locating a potential opponent. As a SILVER user, you have a 30% chance of acquiring the enemy's CFLAT tokens. If you're a GOLD user, this chance increases to 40%, and if you're a DIAMOND user, it further rises to 50%. We've designed an intuitive and informative menu to ensure users can swiftly grasp the mechanics without unnecessary time spent on learning the details.",
+      "text_32": "Before launching an attack, you have the option to send a message to a potential opponent to add an extra touch of suspense 😊. Upon a successful attack, you have the opportunity to launch a second attack on a different user for the same cost. In the event of an unsuccessful attempt, you can make another try, but the price will double, and a countdown will commence at 24:00:00. Once this countdown concludes, the cost of the attack will revert to its initial value.",
+      "img_helper_1": "<br/><span>Attack panel view:</span>",
+      "img_helper_2": "<br/><span>Search process for attack:</span>",
+      "img_helper_3": "<br/><span>Successful completion of the attack:</span>",
+      "img_helper_4": "<br/><span>Failed attack completion:</span>",
+      "title7": "DEFENSE ACTION",
+      "text_33": "In the event of a successful attack on your account, upon your initial login to the DApp, a modal window will greet you, notifying you of the attack.",
+      "text_34": "Following this notification, you'll have two choices. The first option is to leave the situation as it is and accept it. The second option is to take proactive steps to defend your property, which is precisely what the modal window proposes. When you click on <span>DEFENSE</span>, you'll be directed to a menu similar to the one presented to the attacker.",
+      "text_35": "You'll have a 24-hour window to respond to the attack. When you click on the primary button featuring crossed swords and the option to compose a stern message to your adversary, you can select the probability with which our backend will search for your assailant. The available choices are 10%, 20%, and 30%.",
+      "text_36": "Just like with an attack, each unsuccessful defense attempt can be retried, but each subsequent attempt will double in cost. We recommend giving it a shot 1-2 times with a 30% chance of success!",
+      "text_37": "Note that our DApp application is initially accessible in the Playground to ensure that we're delivering the best and fully functional product to our users. We are looking ahead with optimism and hope that you'll join us soon because we have ambitious plans to evolve the project into a meta-universe.",
+      "img_helper_5": "<br/><span>Defense panel view:</span>",
+      "img_helper_6": "<br/><span>Successful completion of the defense:</span>",
+      "img_helper_7": "<br/><span>Failed defense completion:</span>",
+      "img_helper_8": "<br/><span>We've also taken the steps to ensure that our DApp application offers an excellent user experience on mobile devices:</span>"
+
     },
     "GEN0": {
       "title": "GEN#0 – CFLAT NFT PASS RARITY",
@@ -456,8 +543,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "Silver NFT user will have 30% chance for taking 30% of the income of one random Flats standard NFT user, using special function of dApp. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
-        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 120% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "active": "Silver NFT user will have 30% chance for taking 30% of the income of one random Flats standard NFT user, using special function of DApp. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 130% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "gold": {
         "title": "FLATS Gold NFT (10% drop chance)",
@@ -468,8 +555,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "Gold NFT user will have 30% chance for taking 40% of the income of one random Flats standard and FLATS silver NFT user, using special function of dApp. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
-        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 120% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "active": "Gold NFT user will have 30% chance for taking 40% of the income of one random Flats standard and FLATS silver NFT user, using special function of DApp. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 130% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "diamond": {
         "title": "FLATS Diamond NFT (5% drop chance)",
@@ -480,7 +567,7 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "Diamond NFT user will have 30% chance for taking 50% of the income of one random Flats standard, FLATS silver and FLATS gold NFT user, using special function of dApp. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "active": "Diamond NFT user will have 30% chance for taking 50% of the income of one random Flats standard, FLATS silver and FLATS gold NFT user, using special function of DApp. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
         "ps_skill": "There is no need of defensing from every attempts of token stealing, because of NFT diamond rarity. You can absolutely be sure of being safe about this kind of game mechanics, but there is still the possibility of being robbed by a retaliatory attack after your successful attempt to steal tokens from an NFT user of a lower rarity."
       },
       "mint": {
@@ -557,11 +644,10 @@
       "text_2": "Land for <span>GEN#1</span> is given to everyone free of charge and by default, but in order to stake NFT tokens, starting from <span>GEN#2</span>, you need to purchase land within the application using СFLAT project tokens for payment, which can either be purchased using the site function through a smart contract, or accumulated using NFT room staking.",
       "list_text": "<span>Approximate price of each land:</span>",
       "list": {
-        "n1": "Land acquisition for GEN#2 placing = 50 000 CFLAT",
-        "n2": "Land acquisition for GEN#3 placing = 100 000 CFLAT",
-        "n3": "Land acquisition for GEN#3 placing = 150 000 CFLAT",
-        "n4": "Land acquisition for GEN#4 placing = 200 000 CFLAT",
-        "n5": "Land acquisition for GEN#4 placing = 250 000 CFLAT"
+        "n1": "Land acquisition for GEN#2 placing = 100 000 CFLAT",
+        "n2": "Land acquisition for GEN#3 placing = 150 000 CFLAT",
+        "n3": "Land acquisition for GEN#4 placing = 200 000 CFLAT",
+        "n4": "Land acquisition for GEN#5 placing = 250 000 CFLAT"
       },
       "text_3": "The user can use the benefits of the <span>NFT PASS</span> in order to buy land at a discount or receive it for free."
     },

@@ -22,12 +22,13 @@ const TokenProject = () => {
 				{t('CFLAT_TOKEN.title')}
 			</motion.h2>
 
-			<motion.p variants={fadeInUp}
-								initial={'hidden'}
-								whileInView='show'
-								viewport={{ once: true, amount: 0.5 }}
-								className={styles['mb-30']}
-								dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text_1') }}
+			<motion.p 
+				variants={fadeInUp}
+				initial={'hidden'}
+				whileInView='show'
+				viewport={{ once: true, amount: 0.5 }}
+				className={styles['mb-30']}
+				dangerouslySetInnerHTML={{ __html: t.raw('CFLAT_TOKEN.text_1') }}
 			/>
 
 			<motion.p

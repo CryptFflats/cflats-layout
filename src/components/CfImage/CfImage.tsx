@@ -36,4 +36,25 @@ const CfImage: FC<ImageProps> = ({
 	)
 }
 
-export default CfImage
+export const CflatsImage: FC<ImageProps> = ({
+	fluid,
+	src,
+	alt,
+	className,
+	draggable,
+	onLoad,
+	...rest
+}) => {
+	return (
+		<img
+			src={src}
+			draggable={draggable}
+			alt={alt}
+			className={classNames(fluid && styles.fluid, className)}
+			onLoad={onLoad}
+			{...rest} // Для передачи атрибута 'data'
+		/>
+	)
+}
+
+export default CfImage;
