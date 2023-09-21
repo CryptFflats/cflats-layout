@@ -42,7 +42,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/aptqmow.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/313c55af-5510-4cc5-c470-dabbfb915500/public'}
 				/>
 			</motion.div>
 
@@ -64,7 +64,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/mjmbclr.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/3ef57ce0-60fe-4788-ade1-da855a66fe00/public'}
 				/>
 			</motion.div>
 
@@ -86,7 +86,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/iifhcse.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/98c385d4-89fd-4dea-870e-c2594f0be100/public'}
 				/>
 			</motion.div>
 
@@ -128,7 +128,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/zrjfxke.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/92c7b32c-0205-40c2-5158-4bcf1e87b500/public'}
 				/>
 			</motion.div>
 
@@ -142,7 +142,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/zbvmgov.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/6cd24da4-cc32-488e-eb11-89d576897900/public'}
 				/>
 			</motion.div>
 
@@ -164,7 +164,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/ziwoaud.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/c87998c0-60f7-4d2c-75d7-f48e05adc500/public'}
 				/>
 			</motion.div>
 			
@@ -197,7 +197,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/hjesqqh.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/9e4ddbbb-f3da-4cb5-888a-c905175f0200/public'}
 				/>
 			</motion.div>
 
@@ -220,7 +220,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/lsihjqh.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/3b40c20f-8c45-4056-10db-96786fdc8900/public'}
 				/>
 			</motion.div>
 
@@ -303,7 +303,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/xixsjpn.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/c8ceea79-a4ff-45d7-6fc8-23fb874ae700/public'}
 				/>
 			</motion.div>
 
@@ -461,7 +461,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/pwxtuvp.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/ba295b5b-c92c-4784-270b-34a5f9185c00/public'}
 				/>
 			</motion.div>
 
@@ -581,7 +581,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/pwxtuvp.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/b1c1a902-cf8a-4cca-2511-f82823be7f00/public'}
 				/>
 			</motion.div>
 
@@ -621,7 +621,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/ipxcmrx.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/f8d7157d-9501-48b1-f150-ed704fd30400/public'}
 				/>
 			</motion.div>
 			
@@ -643,7 +643,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/oamuneb.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/a722503f-3dc9-4b42-82a1-bd52a2b89400/public'}
 				/>
 			</motion.div>
 			
@@ -665,7 +665,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/ssuyfeg.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/cf657f6c-780b-46c8-fb90-2d498acdf600/public'}
 				/>
 			</motion.div>
 
@@ -698,7 +698,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/zqaucnd.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/a8d88961-35f6-4a61-fa02-9bd1cb9b4b00/public'}
 				/>
 			</motion.div>
 
@@ -729,7 +729,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/auubvxt.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/136ac41e-b201-489b-1f59-bcf4f5e8f600/public'}
 				/>
 			</motion.div>
 
@@ -769,7 +769,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/pmydbdi.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/6f657318-7e74-4d45-4b78-064a30b70f00/public'}
 				/>
 			</motion.div>
 			
@@ -791,7 +791,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/lhjymjm.jpg'}
+					src={''}
 				/>
 			</motion.div>
 
@@ -813,7 +813,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://image.delivery/image/crpzeel.jpg'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/91f08cc2-9891-4caa-c715-a33c29c4e600/public'}
 				/>
 			</motion.div>
 
