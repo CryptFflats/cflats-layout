@@ -102,3 +102,56 @@
   }
 }
 
+
+
+@keyframes change_color_03 {
+
+  0% {
+    border: 4px solid #8401d2;
+  }
+
+  25% {
+    border: 4px solid #000000;
+  }
+
+  50% {
+    border: 4px solid #f60505;
+  }
+
+  75% {
+    border: 4px solid #ffffff;
+  }
+
+  100% {
+    border: 4px solid #0cf8ff;
+  }
+
+}
+
+
+@keyframes change_color_04 {
+
+  
+
+  0% {
+    border: 4px solid #0cf8ff;
+  }
+
+  25% {
+    border: 4px solid #f60505;
+  }
+
+  50% {
+    border: 4px solid #000000;
+  }
+
+  75% {
+    border: 4px solid #ffffff;
+  }
+
+  100% {
+    border: 4px solid #8401d2;
+  }
+
+}
+

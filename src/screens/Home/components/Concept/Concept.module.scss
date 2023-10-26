@@ -9,11 +9,15 @@ $purple: #ca47d6;
   @include _768 {
     margin-bottom: 30px;
   }
+
+  
 }
 
-.lineAnim {
-  background: $purple;
+.lineAnim .circle{
+  background-color: $purple;
 }
+
+
 
 .row {
   display: flex;

@@ -6,6 +6,7 @@ import MintSlice from './slices/MintSlice'
 import MintSuccess from './slices/MintSuccess';
 import NavbarSlice from './slices/NavbarSlice';
 import UserSlice from './slices/UserSlice';
+import MintError from './slices/MintError'
 
 export const store = configureStore({
 	reducer: {
@@ -15,7 +16,8 @@ export const store = configureStore({
 		MintSlice,
 		MintSuccess,
 		NavbarSlice,
-		UserSlice
+		UserSlice,
+		MintError,
 	}
 })
 

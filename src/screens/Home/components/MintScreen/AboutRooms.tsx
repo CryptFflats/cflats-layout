@@ -65,16 +65,16 @@ const AboutRooms = () => {
 							#p2e
 						</li>
 						<li className={classNames(styles.hashtag, styles['hashtag-2'])}>
-							#binancechain
+							#ethereumchain
 						</li>
 						<li className={classNames(styles.hashtag, styles['hashtag-3'])}>
-							#binancenft
+							#ethereumnft
 						</li>
 						<li className={classNames(styles.hashtag, styles['hashtag-4'])}>
 							#defi
 						</li>
 						<li className={classNames(styles.hashtag, styles['hashtag-5'])}>
-							#bnb
+							#eth
 						</li>
 					</ul>
 				</div>

@@ -26,11 +26,12 @@ const WlPlace = () => {
 						<div className={styles.content}>
 							<div className={styles.box}>
 								<p>
-									Use the opportunity of early free access and discount prices to get NFTs of a perspective p2e project in a binance smart chain.
+									Use the opportunity of early free access and discount prices to get NFTs of a perspective p2e project in ethereum network.
 								</p>
-								<GrayButton href={'https://zealy.io/c/cryptoflatscommunity'}
-														//@ts-ignore
-														target={'_blank'}
+								<GrayButton 
+									href={'https://zealy.io/c/cryptoflatscommunity'}
+									//@ts-ignore
+									target={'_blank'}
 								>
 									GET WHITELIST
 								</GrayButton>
@@ -39,9 +40,10 @@ const WlPlace = () => {
 								<p>
 									You can buy whitelist early access and get other benefits of our project. There is no need of task completing.
 								</p>
-								<GrayButton href={'https://wl.market/collections/cryptoflats?type=sell'}
-														//@ts-ignore
-														target={'_blank'}
+								<GrayButton 
+									href={'https://opensea.io/cryptoflatsnft'}
+									//@ts-ignore
+									target={'_blank'}
 								>
 									BUY WHITELIST
 								</GrayButton>

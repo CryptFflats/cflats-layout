@@ -35,7 +35,7 @@ const MintButton = () => {
 		<>
 			<MintDiv>
 				<BlueMint disabled={isLoading} onClick={mint} >
-					<i>MINT GEN 1</i>
+					<i>MINT GEN#1</i>
 					{isLoading && <Progress/>}
 				</BlueMint>
 			</MintDiv>

@@ -20,26 +20,49 @@
 }
 
 .animBox {
+  width: 100%;
   position: relative;
-  border-radius: 50%;
 
   @include _1200 {
     display: none;
   }
+
+  &.themeColorPurple {
+    .circle, .lineAnim{
+      background-color: #ca47d6;
+    }
+  }
+
+  &.themeColorYellow {
+    .circle, .lineAnim{
+      background-color: #FFC940;
+    }
+  }
+
+  &.themeColorGreen {
+    .circle, .lineAnim{
+      background-color: #AEDC2D;
+    }
+  }
 }
 
 .circle {
+  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: inherit;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .lineAnim {
   height: 2px;
-  background: inherit;
   position: absolute;
-  top: 50%;
   right: 0;
+  top: 50%;
   transform: translateY(-50%);
 }
+
+
+

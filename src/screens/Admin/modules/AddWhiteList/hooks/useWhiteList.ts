@@ -8,24 +8,28 @@ import { isAddressesVerify } from '../../../../../core/utils/contract/utils/isAd
 import WhiteListService from '../../../../../core/services/WhiteListService/WhiteList.service';
 import { WlType } from '../../../../../core/services/WhiteListService/types';
 import { useState } from 'react';
+import { Contract } from 'ethers';
 
 export const useWhiteList = (gen: number, whitelistType: WlType) => {
 	const { address, isDisconnected } = useAccount();
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 
 	const initializeClass = (gen: number) => {
-		let cryptoflatsNft: CryptoflatsNFT;
+		let cryptoflatsNft: CryptoflatsNFT | Contract;
+
+		
 
 		switch (gen) {
 			case 0:
-				cryptoflatsNft = new CryptoflatsNFT(
-					MINT_GEN_ZERO_ADDRESS,
-					address ? address : '',
-					0,
-					[],
-					[],
-					abiForGenZero
-				);
+				cryptoflatsNft = new Contract(MINT_GEN_ZERO_ADDRESS, abiForGenZero, );
+				// cryptoflatsNft = new CryptoflatsNFT(
+				// 	MINT_GEN_ZERO_ADDRESS,
+				// 	address ? address : '',
+				// 	0,
+				// 	[],
+				// 	[],
+				// 	abiForGenZero
+				// );
 				break;
 			case 1:
 				cryptoflatsNft = new CryptoflatsNFT(

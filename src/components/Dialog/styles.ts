@@ -49,8 +49,8 @@ export const CustomDialogContentText = styled(DialogContentText)(
 			color: 'var(--color-yellow)',
 			fontWeight: 700,
 			textDecorationLine: 'underline',
-			textUnderlineOffset: '7px'
-		}
+			textUnderlineOffset: '7px',
+		},
 	})
 )
 

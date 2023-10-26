@@ -1,6 +1,6 @@
-import { BigNumber, Contract, ethers, Signer } from 'ethers';
+import { BigNumberish, BrowserProvider, Contract, ethers, JsonRpcProvider, Signer } from 'ethers';
 import Web3 from 'web3';
-import { keccak256, parseEther } from 'ethers/lib/utils';
+import { keccak256, parseEther } from 'ethers';
 import { MerkleTree } from 'merkletreejs';
 
 declare var window: any;
@@ -9,9 +9,9 @@ class CryptoflatsNFT {
 	private readonly userAddress: string;
 	private readonly contractAddress: string;
 	private readonly abi: any;
-	private readonly networkId = '16'; //0x13881 **** 16
-	readonly _providerUrl = 'https://bsc-dataseed.binance.org/'; //https://bsc-dataseed.binance.org/ ****** https://rpc-mumbai.maticvigil.com/
-	private readonly _provider = new ethers.providers.JsonRpcProvider(
+	private readonly networkId = '1'; //0x13881 **** 16
+	readonly _providerUrl = 'https://eth-mainnet.g.alchemy.com/v2/uSqh8HEX1U9Fa4nWNcXo-Y_HGfAZkCSU'; //https://bsc-dataseed.binance.org/ ****** https://rpc-mumbai.maticvigil.com/
+	private readonly _provider = new JsonRpcProvider(
 		this._providerUrl
 	);
 	private readonly web3 = new Web3(
@@ -47,7 +47,7 @@ class CryptoflatsNFT {
 		this._contractWeb3 = new this.web3.eth.Contract(abi, contractAddress);
 		this._discountListAddresses = discountListAddresses;
 		this._freeListAddresses = freeListAddresses;
-		this._prices.set(0, { priceDiscount: '0.1', priceFull: '0.15' });
+		this._prices.set(0, { priceDiscount: '0.1', priceFull: '0.015' });
 		this._prices.set(1, { priceDiscount: '0.15', priceFull: '0.2' });
 		this._prices.set(2, { priceDiscount: '0.3', priceFull: '0.4' });
 		this._prices.set(3, { priceDiscount: '0', priceFull: '0' });
@@ -59,7 +59,7 @@ class CryptoflatsNFT {
 	private changeProvider = async () => {
 		try {
 			if (!window.ethereum) return;
-			const provider = new ethers.providers.Web3Provider(window.ethereum);
+			const provider = new BrowserProvider(window.ethereum);
 			const network = await provider.getNetwork();
 			const chainId = network ? network.chainId : null;
 
@@ -69,15 +69,15 @@ class CryptoflatsNFT {
 					method: 'wallet_addEthereumChain',
 					params: [
 						{
-							chainId: '0x38', // Chain ID для Binance Smart Chain
-							rpcUrls: ['https://bsc-dataseed.binance.org/'], // RPC-URL для Binance Smart Chain
-							chainName: 'Binance Smart Chain',
+							chainId: '0x1', // Chain ID для Ethereum
+							rpcUrls: ['https://eth.meowrpc.com'], // RPC-URL для Ethereum
+							chainName: 'Ethereum',
 							nativeCurrency: {
-								name: 'BNB',
-								symbol: 'BNB',
+								name: 'ETH',
+								symbol: 'ETH',
 								decimals: 18
 							},
-							blockExplorerUrls: ['https://bscscan.com'] // Ссылка на блокэксплорер для Binance Smart Chain
+							blockExplorerUrls: ['https://etherscan.io/'] // Ссылка на блокэксплорер для Ethereum
 						}
 					]
 				});
@@ -160,7 +160,7 @@ class CryptoflatsNFT {
 			const fullPrice = parseEther(prices?.priceFull as string);
 			const freePrice = parseEther('0');
 
-			const price: BigNumber = isUserFreePurchaseWhitelist
+			const price: BigNumberish = isUserFreePurchaseWhitelist
 				? freePrice
 				: isUserEarlyAccessWhiteList
 				? discountPrice

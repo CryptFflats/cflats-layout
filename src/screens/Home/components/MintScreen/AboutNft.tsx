@@ -20,13 +20,13 @@ const AboutNft = () => {
 				<RoomsButton
 					onClick={() => dispatch(setGenZero(true))}
 				>
-					MINT NFT PASS
+					MINT GEN#0
 				</RoomsButton>
 
 				<RoomsButton
 					onClick={() => dispatch(setGenFirst(true))}
 				>
-					MINT GEN 1
+					MINT GEN#1
 				</RoomsButton>
 
 				<RoomsGrayButton

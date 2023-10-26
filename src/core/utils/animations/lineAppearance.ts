@@ -5,7 +5,7 @@ export const lineAppearance: Variants = {
 		width: 0,
 	},
 	show: {
-		width: '800px',
+		width: 'calc(100% - 30px)',
 
 		transition: {
 			duration: 0.5,

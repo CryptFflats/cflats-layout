@@ -23,6 +23,9 @@ const Navigation = () => {
 			<li>
 				<a href={t(`navigation.litepaper.path`)}>{t(`navigation.litepaper.title`)}</a>
 			</li>
+			<li>
+				<a className={styles.navDapp} href={t(`navigation.dapp.path`)}>open dapp</a>
+			</li>
 		</ul>
 	);
 };

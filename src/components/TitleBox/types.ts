@@ -11,5 +11,6 @@ export interface TitleProps {
 }
 
 export interface LineAnimProps {
-	className?: string
+	className?: string,
+	theme?: "purple" | "yellow" | "green",
 }

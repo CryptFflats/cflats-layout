@@ -16,17 +16,24 @@ const TitleBox: FC<TitleBoxProps> & { Title: FC<TitleProps> } & {
 
 TitleBox.Title = ({ children }) => <h1>{children}</h1>
 
-TitleBox.LineAnim = ({ className }) => (
-	<div className={classNames(styles.animBox, className)}>
-		<div className={styles.circle}></div>
-		<motion.div
-			className={styles.lineAnim}
-			initial={'hidden'}
-			whileInView='show'
-			variants={lineAppearance}
-			viewport={{ once: true, amount: 0.5 }}
-		/>
-	</div>
-)
+TitleBox.LineAnim = ({ className, theme}) => {
+	const themeClassName = 
+		theme === "purple" ? `${styles.themeColorPurple}` :
+		theme === "yellow" ? `${styles.themeColorYellow}` : `${styles.themeColorGreen}`;
+
+
+	return ( 
+		<div className={`${classNames(styles.animBox)} ${themeClassName}`}>
+			<div className={styles.circle}></div>
+			<motion.div
+				className={`${styles.lineAnim}`}
+				initial={'hidden'}
+				whileInView='show'
+				variants={lineAppearance}
+				viewport={{ once: true, amount: 0.5 }}
+			/>
+		</div>
+	)
+}
 
 export default TitleBox

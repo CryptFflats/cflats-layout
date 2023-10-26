@@ -14,7 +14,7 @@ const Team = () => {
 		<ContentBox id={'team'} paddingBottomBig>
 			<TitleBox className={styles.animBox}>
 				<TitleBox.Title>{t('team.title')}</TitleBox.Title>
-				<TitleBox.LineAnim className={styles.lineAnim} />
+				<TitleBox.LineAnim className={styles.lineAnim} theme={"green"}/>
 			</TitleBox>
 
 			<p>{t('team.paragraph')}</p>
@@ -31,6 +31,7 @@ const Team = () => {
 					<div className={styles.teamCardAbout}>
 						<h1>{t('team.persons.Andrew.name')}</h1>
 						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.Andrew.about') }} />
+						<a className={`${styles.btnDiscord} ${styles.themeColorPink}`} href={"https://discordapp.com/users/834879781064933398"} target="_blank">discord</a>
 					</div>
 				</div>
 
@@ -45,6 +46,37 @@ const Team = () => {
 					<div className={styles.teamCardAbout}>
 						<h1>{t('team.persons.Max.name')}</h1>
 						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.Max.about') }} />
+						<a className={`${styles.btnDiscord} ${styles.themeColorYellow}`} href={"https://discordapp.com/users/343098956772933632"} target="_blank">discord</a>
+					</div>
+				</div>
+
+				<div className={styles.teamCard}>
+					<div className={classNames(styles.teamImg3, styles.teamImg, styles.teamImg3Resize)}>
+						<CfImage
+							src={'7a355d6e-c0d7-41b2-3703-7de70974cf00/public'}
+							alt={'Nice Arti Icon'}
+							fluid
+						/>
+					</div>
+					<div className={styles.teamCardAbout}>
+						<h1>{t('team.persons.ThreeFiveSeven.name')}</h1>
+						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.ThreeFiveSeven.about') }} />
+						<a className={`${styles.btnDiscord} ${styles.themeColorGreen}`} href={"https://discordapp.com/users/520645203502170122"} target="_blank">discord</a>
+					</div>
+				</div>
+
+				<div className={styles.teamCard}>
+					<div className={classNames(styles.teamImg4, styles.teamImg, styles.teamImg3Resize)}>
+						<CfImage
+							src={'95f50c5e-9664-4b67-9648-85dcb77f1300/public'}
+							alt={'Nice Arti Icon'}
+							fluid
+						/>
+					</div>
+					<div className={styles.teamCardAbout}>
+						<h1>{t('team.persons.NiceArti.name')}</h1>
+						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.NiceArti.about') }} />
+						<a className={`${styles.btnDiscord} ${styles.themeColorPurple}`} href={"https://discordapp.com/users/615956496089612328"} target="_blank">discord</a>
 					</div>
 				</div>
 			</div>

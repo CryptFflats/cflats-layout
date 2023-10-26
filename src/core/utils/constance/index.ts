@@ -1,10 +1,23 @@
 export const ALCHEMY_KEY = '3GK2w4-hctJiTfk99VUk1S1WqN32OtCc';
 export const WALLET_CONNECT_KEY = '4bde63a7e72834d7603a0b68e0e21ecc';
-export const MINT_GEN_ZERO_ADDRESS =
-	'0x006D917dD370c17DDF2c90c3076D02d317A628a7'; //mumbai - 0x24d5B7Ae56a27F862625d4f7041d6c2521D3bb73 || bnb - 0x006D917dD370c17DDF2c90c3076D02d317A628a7
-export const MINT_GEN_FIRST_ADDRESS =
-	'0x38951d304E3579005dB3D8D932077f2A6E48A500';
-export const IMAGE_DELIVERY_URL =
-	'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/';
-export const CDN_URL =
-	'https://cryptoflatss.fra1.cdn.digitaloceanspaces.com';
+
+
+// Cryptoflats NFT's
+export const MINT_GEN_ZERO_ADDRESS = '0x12dF79C44f40c372F03d06476a575B4Eb20D29d7';
+export const MINT_GEN_FIRST_ADDRESS = '0xdf6abb2afe40d335d6e2ec650cf0a5f3a671edd1';
+export const MINT_GEN_SECOND_ADDRESS = '0x20cadfbc9cf1e010fac94bb564c52e03a4a8f51e';
+export const MINT_GEN_THIRD_ADDRESS = '';
+export const MINT_GEN_FOURTH_ADDRESS = '';
+export const MINT_GEN_FIFTH_ADDRESS = '';
+
+// WL Boxes
+export const WL_BOX_FIRST_ADDRESS = '0x0bb3d5aed1f0131f2dd002026ae49288c7dc9dcc';
+export const WL_BOX_SECOND_ADDRESS = '';
+export const WL_BOX_THIRD_ADDRESS = '';
+export const WL_BOX_FOURTH_ADDRESS = '';
+export const WL_BOX_FIFTH_ADDRESS = '';
+
+
+
+export const IMAGE_DELIVERY_URL = 'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/';
+export const CDN_URL = 'https://cryptoflatss.fra1.cdn.digitaloceanspaces.com';

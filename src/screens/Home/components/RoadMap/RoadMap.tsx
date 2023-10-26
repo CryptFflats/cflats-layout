@@ -25,7 +25,7 @@ const RoadMap = () => {
 		<ContentBox id={'roadmap'}>
 			<TitleBox className={styles.animBox}>
 				<TitleBox.Title>{t('roadmap.title')}</TitleBox.Title>
-				<TitleBox.LineAnim className={styles.lineAnim} />
+				<TitleBox.LineAnim className={styles.lineAnim} theme={"yellow"}/>
 			</TitleBox>
 
 			<div className={styles.roadmapCards}>

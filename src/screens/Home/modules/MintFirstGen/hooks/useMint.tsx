@@ -6,39 +6,54 @@ import abi from '../../../../../core/abi/gen_first.json'
 import WhiteListService from '../../../../../core/services/WhiteListService/WhiteList.service';
 import { useAppDispatch } from '../../../../../core/hooks/store.hook';
 import { setIsUserHaveWl } from '../../../../../core/store/slices/UserSlice';
+import { getNftContract } from 'core/utils/contract/utils/contracts';
+import CflatsSigner from 'core/utils/contract/utils/CflatsSigner';
+import { setErrorMessage, setIsMintErrorActive } from 'core/store/slices/MintError';
+import BigNumber from 'bignumber.js';
 
 
 export const useMint = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isError, setIsError] = useState<boolean>(false);
 	const dispatch = useAppDispatch()
-	const { address } = useAccount();
 
 	const mintGen = async () => {
 		try {
 			setIsLoading(true);
 
-			const freeList = await WhiteListService.getWhiteList({ name: 'gen-first', type: 'free' });
-			const discountList = await WhiteListService.getWhiteList({ name: 'gen-first', type: 'discount' });
+			const signer = await CflatsSigner.getSigner();
+			const contractGen = await getNftContract(1, signer);
 
-			const cryptoflatsNFT = new CryptoflatsNFT(
-				MINT_GEN_FIRST_ADDRESS,
-				address ? address : '',
-				1,
-				freeList.data.addresses,
-				discountList.data.addresses,
-				abi
-			);
-
-			const isUserInFreeList = await cryptoflatsNFT.isUserFreePurchaseWhitelist();
-			const isUserInDiscountList = await cryptoflatsNFT.isUserEarlyAccessWhiteList();
-
-			if (!isUserInFreeList && !isUserInDiscountList) {
-				dispatch(setIsUserHaveWl(false))
-				throw new Error('You can`t mint our NFT because of you`re not whitelisted!')
+			// check if public sale is activated
+			if(await contractGen.isPublicSaleActive() === false) {
+				const errorMsg = `Public sale has not been activated yet!`;
+				
+				dispatch(setIsMintErrorActive(true))
+				dispatch(setErrorMessage(errorMsg));
+				
+				throw new Error(errorMsg);
 			}
 
-			return await cryptoflatsNFT.mintGen();
+
+			const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
+			const signerBalanceInEth = await CflatsSigner.getBalance();
+
+
+
+			// check user balance
+			if(signerBalanceInEth < publicSalePrice) {
+				const formatedBalance = (new BigNumber(signerBalanceInEth.toString())).dividedBy('1e18');
+				const errorMsg = `Balance should be at least 0.015 ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
+				
+				dispatch(setIsMintErrorActive(true))
+				dispatch(setErrorMessage(errorMsg));
+				
+				throw new Error(errorMsg);
+			}
+
+			return await contractGen.mint({
+				value: publicSalePrice
+			});
 		} catch (err: any) {
 			setIsError(true);
 			throw new Error(err);

@@ -38,7 +38,7 @@ const MintButton = () => {
 		<>
 			<MintDiv>
 				<BlueMint disabled={isLoading} onClick={mint}>
-					<i>MINT NFT PASS</i>
+					<i>MINT GEN#0</i>
 					{isLoading && <Progress/>}
 				</BlueMint>
 			</MintDiv>

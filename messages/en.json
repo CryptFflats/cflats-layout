@@ -25,7 +25,7 @@
     "about": {
       "first": {
         "title": "about",
-        "paragraph": "Cryptoflats - is a collection of generated NFT tokens on the Binance Smart Chain. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
+        "paragraph": "Cryptoflats - is a collection of generated NFT tokens on the Ethereum. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
       },
       "second": {
         "title": "specs",
@@ -145,7 +145,7 @@
           "classTitle": "turquoise-b",
           "progress": "20%",
           "headerTitle": "CREATING OF ISOMETRIC ROOMS",
-          "titleBody": "Q2 2023– Q3 2023",
+          "titleBody": "Q3 2023 – Q4 2023",
           "listText": {
             "n1": "DROP #1 - 5555 NFT isometric Living Rooms",
             "n2": "DROP #2 - 4444 NFT isometric Bedrooms",
@@ -159,7 +159,7 @@
           "classTitle": "blue-b",
           "progress": "40%",
           "headerTitle": "TOKENSALE",
-          "titleBody": "Q3 2023",
+          "titleBody": "Q4 2023",
           "listText": {
             "n1": "CFLAT token will be the internal game currency with a lot of advantages",
             "n2": "We will provide you the project of Tokenomics where you can see all the benefits",
@@ -171,7 +171,7 @@
           "classTitle": "yellow-b",
           "progress": "60%",
           "headerTitle": "FULL APARTMENT FROM NFT ROOMS",
-          "titleBody": "Q3 2023 – Q4 2023",
+          "titleBody": "Q4 2023 – Q1 2024",
           "listText": {
             "n1": "You can create full apartment based on the metadata of Cryptoflats NFT tokens",
             "n2": "Created apartment will turn to your individual p2e item",
@@ -184,7 +184,7 @@
           "classTitle": "pink-b",
           "progress": "80%",
           "headerTitle": "INTERNAL MARKETPLACE",
-          "titleBody": "Q4 2023",
+          "titleBody": "Q1 2024 – Q3 2024",
           "listText": {
             "n1": "You can use marketplace to buy interior items and then place them in you rooms",
             "n2": "Interior designers can post their items to marketplace and sell them to the apartment owners",
@@ -197,7 +197,7 @@
           "classTitle": "purple-b",
           "progress": "100%",
           "headerTitle": "THE GAME",
-          "titleBody": "Q1 2024– Q3 2024",
+          "titleBody": "TDA",
           "listText": {
             "n1": "Web game that allows you to spend fun and easy time with friends and make money while you at it",
             "n2": "Your crypto apartment will be turned to 3D model using metadata of nft tokens in your wallet",
@@ -221,6 +221,14 @@
         "Max": {
           "name": "Max Frei (MO)",
           "about": "Architect and designer<br>NFT world traveler"
+        },
+        "NiceArti": {
+          "name": "Nice Arti",
+          "about": "Backend & Blockchain Developer<br>Give me a Lamborghini"
+        },
+        "ThreeFiveSeven": {
+          "name": "Three Five Seven",
+          "about": "WEB3 Marketing<br>Runs from runs"
         }
       }
     },
@@ -231,7 +239,7 @@
     "faq": {
       "q1": {
         "question": "How do I get Cryptoflats NFT?",
-        "answer": "You can get NFT CryptoFlats using the MINT button on our website. In the future, you will be able to buyour NFT on any marketplace that supports BEP-721 tokens. Follow the news and you will definitely be one of the first to get it."
+        "answer": "You can get NFT CryptoFlats using the MINT button on our website. In the future, you will be able to buyour NFT on any marketplace that supports ERC-721 tokens. Follow the news and you will definitely be one of the first to get it."
       },
       "q2": {
         "question": "What is the meaning of the GEN#s?",
@@ -266,8 +274,8 @@
         "textMobile": "GEN#0 is a NFT PASS, which gives excellent benefits in the project and provides the best conditions for participation for the first nft holders! It gets you an additional benefits like discount and increasing active gaming skills!"
       },
       "gen_first": {
-        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. <br><br> By minting GEN#1, you will get random NFT of random rarity at one price. You can stake this NFT to get income in CFLAT tokens.",
-        "textMobile": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Binance smart chain eco system. By minting GEN#1, you will get random NFT of random rarity at one price."
+        "text": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Ethereum eco system. <br><br> By minting GEN#1, you will get random NFT of random rarity at one price. You can stake this NFT to get income in CFLAT tokens.",
+        "textMobile": "GEN#1 is an isometric living room consisting of 5555 NFT tokens, placed in Ethereum eco system. By minting GEN#1, you will get random NFT of random rarity at one price."
       },
       "wlMarket": {
         "text": "You can not fulfill the conditions of activity to receive the Whitelist, but purchase it right now on the website of our partners - WL Market. <br><br> We have compiled favorable price offers for you, individualization of NFT tokens, premium access and much more.",
@@ -345,7 +353,7 @@
     },
     "INTRODUCTION": {
       "title": "INTRODUCTION",
-      "text": "<span>Cryptoflats (abbr. CNRS)</span> - is a <span>gaming p2e </span> project with NFT tokens represented by procedurally generated NFT rooms <span>BEP-721</span> standard. Every NFT room is a flat cell containing game mechanics after being filled.<br><br>The room itself is an isometric image made out of <span>500+ 3D elements.</span> That is why projects come with a wide variety of furniture, patterns and textures. The collection is divided by <span>5 GEN#</span> each one representing a different room. All of our NFTs will be stored on Binance smart chain and will be available to mint at our website."
+      "text": "<span>Cryptoflats (abbr. CNRS)</span> - is a <span>gaming p2e </span> project with NFT tokens represented by procedurally generated NFT rooms <span>ERC-721</span> standard. Every NFT room is a flat cell containing game mechanics after being filled.<br><br>The room itself is an isometric image made out of <span>500+ 3D elements.</span> That is why projects come with a wide variety of furniture, patterns and textures. The collection is divided by <span>5 GEN#</span> each one representing a different room. All of our NFTs will be stored on Ethereum and will be available to mint at our website."
     },
     "CONCEPT": {
       "title": "CONCEPT",
@@ -393,7 +401,7 @@
         "n7": "Starting price - 0,00008 $"
       },
       "text_2": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token.",
-      "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Binance Smart Chain</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for three types of cryptocurrency: <span>BNB, ETH, USDT.</span>\n"
+      "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Ethereum</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for three types of cryptocurrency: <span>BNB, ETH, USDT.</span>\n"
     },
     "DAPP": {
       "title1": "CRYPTOFLATS DAPP",
@@ -656,7 +664,7 @@
   "MetaData": {
     "Home": {
       "title": "Cryptoflats - Home",
-      "description": "Cryptoflats - is a collection of generated NFT tokens on the Binance Smart Chain. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
+      "description": "Cryptoflats - is a collection of generated NFT tokens on the Ethereum. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
     },
     "LitePaper": {
       "description": "Cryptoflats Litepaper is a document where you can find all exhaustive information about project. It includes chapters about GENs rarity, CFLAT token, decentralized application and much more. Litepaper will be updated as each phase of the project begins. Follow our socials and stay tuned to be the first to know about every updates and drops!"

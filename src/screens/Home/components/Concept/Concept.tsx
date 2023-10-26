@@ -14,7 +14,7 @@ const Concept = () => {
 		<ContentBox paddingTopBig>
 			<TitleBox className={styles.animBox}>
 				<TitleBox.Title>{t('concept.title')}</TitleBox.Title>
-				<TitleBox.LineAnim className={styles.lineAnim} />
+				<TitleBox.LineAnim className={styles.lineAnim} theme={"purple"}/>
 			</TitleBox>
 
 			<div className={styles.row}>
