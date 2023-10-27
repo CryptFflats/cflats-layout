@@ -45,6 +45,7 @@ const Home = () => {
 
 			<SupportModal />
 			<DevelopingModal />
+			{/* @ts-ignore */}
 			<MintModal />
 			<ModalVideo />
 		</Wrapper>

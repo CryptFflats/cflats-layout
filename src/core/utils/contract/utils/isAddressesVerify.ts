@@ -1,4 +1,4 @@
-import { isAddress } from 'ethers/lib/utils';
+import { isAddress } from 'ethers';
 
 export const isAddressesVerify = (addresses: string[]): boolean => {
 	if (!addresses || !addresses.length) return false;
