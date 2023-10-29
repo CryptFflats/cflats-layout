@@ -1,15 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '..';
 
 interface MenuState {
 	developmentModal: boolean;
 	trailerModal: boolean;
 	supportModal: boolean;
+	wlBoxModal: boolean;
 }
 
 const initialState: MenuState = {
 	developmentModal: false,
 	trailerModal: false,
-	supportModal: false
+	supportModal: false,
+	wlBoxModal: false
 };
 
 const ModalSlice = createSlice({
@@ -24,10 +27,16 @@ const ModalSlice = createSlice({
 		},
 		setSupportModal(state, action: PayloadAction<boolean>) {
 			state.supportModal = action.payload;
+		},
+		setWlBoxModal(state, action: PayloadAction<boolean>) {
+			state.wlBoxModal = action.payload;
 		}
 	}
 });
 
-export const { setDevelopment, setTrailer, setSupportModal } =
+export const { setDevelopment, setTrailer, setSupportModal, setWlBoxModal } =
 	ModalSlice.actions;
 export default ModalSlice.reducer;
+
+export const selectWlBoxModal = (state: RootState) =>
+	state.ModalSlice.wlBoxModal;
