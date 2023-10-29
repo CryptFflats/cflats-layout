@@ -18,6 +18,9 @@ import {
 	getNftContract,
 	getWlBoxByGen
 } from 'core/utils/contract/utils/contracts';
+import BigNumber from 'bignumber.js';
+import { useAppDispatch } from 'core/hooks/store.hook';
+import { setErrorMessage, setIsMintErrorActive } from 'core/store/slices/MintError';
 
 const WlForm = () => {
 	const {
@@ -27,6 +30,8 @@ const WlForm = () => {
 		reset
 	} = useForm<ISubmit>();
 
+	const dispatch = useAppDispatch();
+
 	const submit = async (data: ISubmit) => {
 		const boxId = data.boxId;
 		if (isNaN(Number(boxId))) {
@@ -35,6 +40,7 @@ const WlForm = () => {
 
 		const signer = await CflatsSigner.getSigner();
 		const contractGen = await getNftContract(1, signer);
+		const signerBalanceInEth = await CflatsSigner.getBalance();
 
 		try {
 			await contractGen.mint([], [], boxId, {
@@ -44,6 +50,31 @@ const WlForm = () => {
 			throw new Error(e);
 		}
 	};
+
+	const submitWithoutWlBox = async () => {
+		const signer = await CflatsSigner.getSigner();
+		const contractGen = await getNftContract(1, signer);
+		const signerBalanceInEth = await CflatsSigner.getBalance();
+		const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
+		
+		if(signerBalanceInEth < publicSalePrice) {
+			const formatedBalance = (new BigNumber(signerBalanceInEth.toString())).dividedBy('1e18');
+			const errorMsg = `Balance should be at least 0.015 ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
+			
+			dispatch(setIsMintErrorActive(true))
+			dispatch(setErrorMessage(errorMsg));
+			
+			throw new Error(errorMsg);
+		}
+
+		try {
+			await contractGen.mint([], [], 20000, {
+				value: publicSalePrice
+			});
+		} catch (e: any) {
+			throw new Error(e);
+		}
+	}
 
 	return (
 		<FormWrapper>
@@ -64,7 +95,7 @@ const WlForm = () => {
 
 					<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
 						<BlueButton type={'submit'}>USE WL BOX</BlueButton>
-						<TextButton>MINT WITHOUT USING WL BOX</TextButton>
+						<TextButton >MINT WITHOUT USING WL BOX</TextButton>
 					</Box>
 				</form>
 			</Container>
