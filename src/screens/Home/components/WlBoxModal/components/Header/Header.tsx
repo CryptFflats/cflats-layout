@@ -1,6 +1,6 @@
 'use client';
 
-import { CloseButton, Container, FormHeader } from '../../styles';
+import { CloseButton, Container, FormHeader } from '../WlBoxModal/styles';
 import Logo from '../Logo/Logo';
 import { styled } from '@mui/material/styles';
 import { useWalletAddressHook } from '../../../../../../core/hooks/useWalletAddress.hook';

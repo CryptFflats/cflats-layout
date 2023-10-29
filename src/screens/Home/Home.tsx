@@ -19,7 +19,7 @@ import DevelopingModal from './components/DevelopingModal/DevelopingModal';
 import MobileMenu from './layouts/MobileMenu/MobileMenu';
 import MintModal from './components/MintModal/MintModal';
 import ModalVideo from './components/ModalVideo/ModalVideo';
-import WlBoxModal from './components/WlBoxModal/WlBoxModal';
+import { WlBoxModal } from './components/WlBoxModal';
 //import Toastify from '../../components/Toastify/Toastify';
 import { SupportModal } from './modules/SupportModal';
 
@@ -30,7 +30,7 @@ const Home = () => {
 			<WalletSidebar />
 			<ProfileSidebar />
 			<MobileMenu />
-			<WlBoxModal/>
+			<WlBoxModal />
 
 			<Main>
 				<MintScreen />
@@ -55,4 +55,3 @@ const Home = () => {
 };
 
 export default Home;
-

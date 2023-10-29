@@ -27,7 +27,7 @@ export const BlueButton = styled(Button)(({ theme }) => ({
 	},
 
 	'&:hover': {
-		background: '#0f6eb2'
+		background: '#08426d'
 	},
 
 	'@media(max-width: 1980px)': {
