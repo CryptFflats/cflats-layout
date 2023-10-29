@@ -6,9 +6,11 @@ import abi from '../../../../../core/abi/gen_first.json'
 import WhiteListService from '../../../../../core/services/WhiteListService/WhiteList.service';
 import { useAppDispatch } from '../../../../../core/hooks/store.hook';
 import { setIsUserHaveWl } from '../../../../../core/store/slices/UserSlice';
-import { getNftContract } from 'core/utils/contract/utils/contracts';
+import { getNftContract, getWlBoxByGen } from 'core/utils/contract/utils/contracts';
 import CflatsSigner from 'core/utils/contract/utils/CflatsSigner';
 import { setErrorMessage, setIsMintErrorActive } from 'core/store/slices/MintError';
+import { setIsWlBoxActive } from 'core/store/slices/WlBoxSlices';
+
 import BigNumber from 'bignumber.js';
 
 
@@ -23,6 +25,15 @@ export const useMint = () => {
 
 			const signer = await CflatsSigner.getSigner();
 			const contractGen = await getNftContract(1, signer);
+			const contractWlBox = await getWlBoxByGen(1, signer);
+
+			const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
+			if(await contractWlBox.balanceOf(signer.address) > 0n)
+			{
+				dispatch(setIsWlBoxActive(true));
+				return;
+			}
+			
 
 			// check if public sale is activated
 			if(await contractGen.isPublicSaleActive() === false) {
@@ -34,8 +45,6 @@ export const useMint = () => {
 				throw new Error(errorMsg);
 			}
 
-
-			const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
 			const signerBalanceInEth = await CflatsSigner.getBalance();
 
 

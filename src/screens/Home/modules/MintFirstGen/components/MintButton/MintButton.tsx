@@ -24,8 +24,8 @@ const MintButton = () => {
 		try {
 			if (!isConnected) return dispatch(setWalletActive(true))
 			const tx = await mintGen();
-			dispatch(setIsActive(true))
-			dispatch(setTxHash(tx.transactionHash))
+			// dispatch(setIsActive(true))
+			// dispatch(setTxHash(tx.transactionHash))
 		} catch(err: any) {
 			throw new Error(err);
 		}

@@ -7,9 +7,11 @@ import MintSuccess from './slices/MintSuccess';
 import NavbarSlice from './slices/NavbarSlice';
 import UserSlice from './slices/UserSlice';
 import MintError from './slices/MintError'
+import WlBoxSlices from './slices/WlBoxSlices'
 
 export const store = configureStore({
 	reducer: {
+		WlBoxSlices,
 		MenuSlice,
 		ModalSlice,
 		ProfileSidebarSlice,
