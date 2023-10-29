@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import Dialog from '../../../../../../components/Dialog/Dialog';
 import { setIsUserHaveWl } from '../../../../../../core/store/slices/UserSlice';
-import { setWlBoxModal } from 'core/store/slices/ModalSlice';
+
 
 
 const MintButton = () => {
@@ -24,7 +24,7 @@ const MintButton = () => {
 	const mint = async () => {
 		try {
 			if (!isConnected) return dispatch(setWalletActive(true))
-			dispatch(setWlBoxModal(true));
+			// dispatch(setWlBoxModal(true));
 			const tx = await mintGen();
 			// dispatch(setIsActive(true))
 			// dispatch(setTxHash(tx.transactionHash))

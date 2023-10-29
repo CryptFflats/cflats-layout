@@ -11,7 +11,7 @@ import {
 
 export const WlBoxDialog = styled(Dialog)(({ theme }) => ({
 	'.MuiDialog-paper': {
-		borderRadius: '50px',
+		borderRadius: '30px',
 		background: 'var(--color-gray-light)',
 		maxWidth: '700px',
 		width: '100%',
@@ -26,9 +26,6 @@ export const WlBoxDialogContent = styled(DialogContent)(({ theme }) => ({
 	background: 'var(--color-gray-light)',
 	borderRadius: '0',
 	padding: '0',
-	'@media(max-width: 768px)': {
-		padding: '30px'
-	}
 }));
 
 export const CloseButton = styled(ButtonBase)(({ theme }) => ({
@@ -74,7 +71,7 @@ export const FormElement = styled('div')(({ theme }) => ({
 	display: 'flex',
 	flexDirection: 'column',
 	gap: '10px',
-	marginBottom: '40px'
+	marginBottom: '40px',
 }));
 
 export const InputLabel = styled(FormLabel)(({ theme }) => ({

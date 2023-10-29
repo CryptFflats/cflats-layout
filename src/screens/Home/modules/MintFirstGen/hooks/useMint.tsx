@@ -10,6 +10,7 @@ import { getNftContract, getWlBoxByGen } from 'core/utils/contract/utils/contrac
 import CflatsSigner from 'core/utils/contract/utils/CflatsSigner';
 import { setErrorMessage, setIsMintErrorActive } from 'core/store/slices/MintError';
 import { setIsWlBoxActive } from 'core/store/slices/WlBoxSlices';
+import { setWlBoxModal } from 'core/store/slices/ModalSlice';
 
 import BigNumber from 'bignumber.js';
 
@@ -30,7 +31,7 @@ export const useMint = () => {
 			const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
 			if(await contractWlBox.balanceOf(signer.address) > 0n)
 			{
-				dispatch(setIsWlBoxActive(true));
+				dispatch(setWlBoxModal(true));
 				return;
 			}
 			
