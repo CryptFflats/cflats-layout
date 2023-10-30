@@ -13,6 +13,7 @@ import Dialog from '../../../../../../components/Dialog/Dialog';
 import { setIsUserHaveWl } from '../../../../../../core/store/slices/UserSlice';
 
 
+
 const MintButton = () => {
 	const dispatch = useAppDispatch();
 	const { isLoading, mintGen } = useMint();
@@ -23,6 +24,7 @@ const MintButton = () => {
 	const mint = async () => {
 		try {
 			if (!isConnected) return dispatch(setWalletActive(true))
+			// dispatch(setWlBoxModal(true));
 			const tx = await mintGen();
 			// dispatch(setIsActive(true))
 			// dispatch(setTxHash(tx.transactionHash))

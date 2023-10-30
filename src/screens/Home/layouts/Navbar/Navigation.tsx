@@ -1,10 +1,17 @@
 'use client';
 
+import { useAppDispatch } from 'core/hooks/store.hook';
 import styles from './Navbar.module.scss';
 import { useTranslations } from 'next-intl';
+import { setDevelopment } from '../../../../core/store/slices/ModalSlice';
 
 const Navigation = () => {
 	const t = useTranslations('Home');
+	const dispatch = useAppDispatch();
+
+	const getInDevelopment = (e: any) => {
+		dispatch(setDevelopment(true));
+	}
 
 	return (
 		<ul className={styles.navigation}>
@@ -24,7 +31,7 @@ const Navigation = () => {
 				<a href={t(`navigation.litepaper.path`)}>{t(`navigation.litepaper.title`)}</a>
 			</li>
 			<li>
-				<a className={styles.navDapp} href={t(`navigation.dapp.path`)}>open dapp</a>
+				<a className={styles.navDapp} onClick={(e: any) => getInDevelopment(e)}>open dapp</a>
 			</li>
 		</ul>
 	);

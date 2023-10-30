@@ -30,7 +30,7 @@ const Team = () => {
 					</div>
 					<div className={styles.teamCardAbout}>
 						<h1>{t('team.persons.Andrew.name')}</h1>
-						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.Andrew.about') }} />
+						<p className={styles.pText} dangerouslySetInnerHTML={{ __html: t.raw('team.persons.Andrew.about') }} />
 						<a className={`${styles.btnDiscord} ${styles.themeColorPink}`} href={"https://discordapp.com/users/834879781064933398"} target="_blank">discord</a>
 					</div>
 				</div>
@@ -45,7 +45,7 @@ const Team = () => {
 					</div>
 					<div className={styles.teamCardAbout}>
 						<h1>{t('team.persons.Max.name')}</h1>
-						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.Max.about') }} />
+						<p className={styles.pText} dangerouslySetInnerHTML={{ __html: t.raw('team.persons.Max.about') }} />
 						<a className={`${styles.btnDiscord} ${styles.themeColorYellow}`} href={"https://discordapp.com/users/343098956772933632"} target="_blank">discord</a>
 					</div>
 				</div>
@@ -60,7 +60,7 @@ const Team = () => {
 					</div>
 					<div className={styles.teamCardAbout}>
 						<h1>{t('team.persons.ThreeFiveSeven.name')}</h1>
-						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.ThreeFiveSeven.about') }} />
+						<p className={styles.pText} dangerouslySetInnerHTML={{ __html: t.raw('team.persons.ThreeFiveSeven.about') }} />
 						<a className={`${styles.btnDiscord} ${styles.themeColorGreen}`} href={"https://discordapp.com/users/520645203502170122"} target="_blank">discord</a>
 					</div>
 				</div>
@@ -75,7 +75,7 @@ const Team = () => {
 					</div>
 					<div className={styles.teamCardAbout}>
 						<h1>{t('team.persons.NiceArti.name')}</h1>
-						<p dangerouslySetInnerHTML={{ __html: t.raw('team.persons.NiceArti.about') }} />
+						<p className={styles.pText} dangerouslySetInnerHTML={{ __html: t.raw('team.persons.NiceArti.about') }} />
 						<a className={`${styles.btnDiscord} ${styles.themeColorPurple}`} href={"https://discordapp.com/users/615956496089612328"} target="_blank">discord</a>
 					</div>
 				</div>
