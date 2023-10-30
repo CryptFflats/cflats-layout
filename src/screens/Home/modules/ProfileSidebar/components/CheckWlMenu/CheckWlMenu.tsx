@@ -11,7 +11,7 @@ const CheckWlMenu = () => {
 
 	return (
 		<ul className={styles.wlMenu}>
-			{type == 'buttons' && <Buttons onOpenZero={() => setType('genZero')} onOpenFirst={() => setType('genFirst')} />}
+			{type == 'buttons' && <Buttons onOpenFirst={() => setType('genFirst')} />}
 			{type === 'genZero' && <GenZero onClose={() => setType('buttons')} />}
 			{type === 'genFirst' && <GenFirst onClose={() => setType('buttons')} />}
 		</ul>

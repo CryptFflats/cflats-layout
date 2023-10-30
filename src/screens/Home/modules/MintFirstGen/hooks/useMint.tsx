@@ -60,7 +60,9 @@ export const useMint = () => {
 				
 				throw new Error(errorMsg);
 			}
+			
 
+			console.log(publicSalePrice)
 			return await contractGen.mint({
 				value: publicSalePrice
 			});

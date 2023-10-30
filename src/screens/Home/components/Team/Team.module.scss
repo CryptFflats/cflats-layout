@@ -17,6 +17,7 @@
 
 .teamCards {
   margin: 100px;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -58,8 +59,8 @@
     line-height: $text-height;
 
     @include _768 {
-      font-size: $text-mobile;
-      line-height: $text-mobile-height;
+      font-size: 2rem;
+      line-height: 2rem;
     }
 
     
