@@ -18,7 +18,12 @@ const RoadMap = () => {
 	]
 
 	const toggleAccordion = (index: any) => {
-		setHeightEl(heightEl === -1 ? index : -1);
+		if(heightEl === index)
+		{
+			setHeightEl(-1);
+			return;
+		}
+		setHeightEl(index);
 	}
 
 	return (
