@@ -22,6 +22,7 @@ import BigNumber from 'bignumber.js';
 import { useAppDispatch } from 'core/hooks/store.hook';
 import { setErrorMessage, setIsMintErrorActive } from 'core/store/slices/MintError';
 import styles from "./WlForm.module.scss";
+import { useState } from 'react';
 
 const WlForm = () => {
 	const {
@@ -33,6 +34,8 @@ const WlForm = () => {
 
 	const dispatch = useAppDispatch();
 
+	const [getErrorMsg, setErrorMsg] = useState('');
+
 	const submit = async (data: ISubmit) => {
 		const boxId = data.boxId;
 		if (isNaN(Number(boxId))) {
@@ -41,7 +44,6 @@ const WlForm = () => {
 
 		const signer = await CflatsSigner.getSigner();
 		const contractGen = await getNftContract(1, signer);
-		const signerBalanceInEth = await CflatsSigner.getBalance();
 
 		try {
 			await contractGen.mint([], [], boxId, {
@@ -79,6 +81,43 @@ const WlForm = () => {
 		}
 	}
 
+
+	const handleVerification = async (e: any) => {
+		const targetValue = Number(e.target.value);
+		
+		if(isNaN(targetValue)) {
+			setErrorMsg('* ID should be only a number');
+			return;
+		}
+
+		try{
+			const signer = await CflatsSigner.getSigner();
+			const wlBoxContract = await getWlBoxByGen(1, signer);
+
+			const mintedSupply = await wlBoxContract.mintedSupply();
+
+			if(mintedSupply < targetValue)
+			{
+				setErrorMsg('* ID does not exists yet');
+				return;
+			}
+
+			const ownerOfWl = await wlBoxContract.ownerOf(targetValue);
+
+			if(ownerOfWl.toLowerCase() !== signer.address.toLowerCase())
+			{
+				setErrorMsg('* You are not an ID owner');
+				return;
+			}
+		}
+		catch(e)
+		{
+			setErrorMsg('* Connection aborted');
+		}
+
+		setErrorMsg('');
+	}
+
 	return (
 		<FormWrapper>
 			<Container>
@@ -90,14 +129,16 @@ const WlForm = () => {
 								required: 'Required Field'
 							})}
 							placeholder='Input your WL Box ID...'
+							onChange={async (e: any) => await handleVerification(e)}
 						/>
 						{errors.boxId && (
 							<ErrorMessage>{errors.boxId.message}</ErrorMessage>
 						)}
+						<ErrorMessage>{getErrorMsg}</ErrorMessage>
 					</FormElement>
 
-					<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-						<BlueButton type={'submit'}>USE WL BOX</BlueButton>
+					<Box className={styles.mintBox}>
+						<BlueButton type={'submit'} className={styles.mintButton}>USE WL BOX</BlueButton>
 						<TextButton onClick={submitWithoutWlBox}>MINT WITHOUT USING WL BOX</TextButton>
 					</Box>
 				</form>

@@ -35,11 +35,11 @@ export const CloseButton = styled(ButtonBase)(({ theme }) => ({
 }));
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '75px 0 30px 15px'
+	padding: '50px 0 25px 40px'
 }));
 
 export const Container = styled('div')(({ theme }) => ({
-	padding: '0 46px'
+	padding: '0 40px'
 }));
 
 export const Input = styled(TextField)(({ theme }) => ({
@@ -62,6 +62,7 @@ export const Input = styled(TextField)(({ theme }) => ({
 	'.MuiInputBase-input': {
 		padding: '16px 25px',
 		fontSize: '1rem',
+		fontWeight: '600',
 		lineHeight: '1.5rem',
 		color: 'rgba(94, 94, 94, 1)'
 	}
@@ -82,5 +83,5 @@ export const InputLabel = styled(FormLabel)(({ theme }) => ({
 	fontWeight: 600,
 	color: 'rgba(195, 182, 182, 1)',
 	textTransform: 'uppercase',
-	paddingLeft: '25px'
+	paddingLeft: '5px'
 }));
