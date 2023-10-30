@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles';
 import { Button } from '@mui/material';
 
 export const BlueButton = styled(Button)(({ theme }) => ({
+	transition: '0.05s ease-in-out',
 	fontFamily: 'var(--font-nunito)',
 	padding: '25px 60px',
 	fontSize: '2.25rem',

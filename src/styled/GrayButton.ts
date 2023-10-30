@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles';
 import { Button } from '@mui/material';
 
 export const GrayButton = styled(Button)(({ theme }) => ({
+	transition: '0.05s ease-in-out',
 	fontFamily: 'var(--font-nunito)',
 	padding: '25px 60px',
 	fontSize: '2.25rem',
@@ -27,7 +28,8 @@ export const GrayButton = styled(Button)(({ theme }) => ({
 	},
 
 	'&:hover': {
-		background: 'rgba(51, 51, 51, 1)'
+		background: '#adadad',
+		color: 'rgba(51, 51, 51, 1)',
 	},
 
 	'@media(max-width: 1980px)': {
