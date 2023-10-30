@@ -21,6 +21,7 @@ import {
 import BigNumber from 'bignumber.js';
 import { useAppDispatch } from 'core/hooks/store.hook';
 import { setErrorMessage, setIsMintErrorActive } from 'core/store/slices/MintError';
+import styles from "./WlForm.module.scss";
 
 const WlForm = () => {
 	const {
@@ -57,9 +58,11 @@ const WlForm = () => {
 		const signerBalanceInEth = await CflatsSigner.getBalance();
 		const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
 		
+		
 		if(signerBalanceInEth < publicSalePrice) {
 			const formatedBalance = (new BigNumber(signerBalanceInEth.toString())).dividedBy('1e18');
-			const errorMsg = `Balance should be at least 0.015 ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
+			const formatedPrice = (new BigNumber(publicSalePrice.toString())).dividedBy('1e18');
+			const errorMsg = `Balance should be at least ${formatedPrice} ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
 			
 			dispatch(setIsMintErrorActive(true))
 			dispatch(setErrorMessage(errorMsg));
@@ -95,7 +98,7 @@ const WlForm = () => {
 
 					<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
 						<BlueButton type={'submit'}>USE WL BOX</BlueButton>
-						<TextButton >MINT WITHOUT USING WL BOX</TextButton>
+						<TextButton onClick={submitWithoutWlBox}>MINT WITHOUT USING WL BOX</TextButton>
 					</Box>
 				</form>
 			</Container>
