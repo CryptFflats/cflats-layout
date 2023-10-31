@@ -6,11 +6,11 @@ $aboutBg: 'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/8fd0f37f-da74-4d18-2
   min-height: 780px;
   width: 100%;
   background: url($aboutBg);
-  padding: 120px 0;
+  padding: 120px 20px;
 
   @include _768 {
     min-height: 600px;
-    padding: 85px 0;
+    padding: 85px 20px;
   }
 }
 

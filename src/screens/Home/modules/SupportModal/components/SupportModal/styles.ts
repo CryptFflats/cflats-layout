@@ -26,7 +26,7 @@ export const SupportDialogContent = styled(DialogContent)(({ theme }) => ({
 }))
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '75px 0 30px 0',
+	padding: '75px 0 30px 55px',
 }))
 
 export const Container = styled('div')(({ theme }) => ({
