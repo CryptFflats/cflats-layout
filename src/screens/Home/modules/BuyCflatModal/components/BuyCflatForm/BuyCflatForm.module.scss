@@ -1,0 +1,13 @@
+@import 'src/assets/styles/helpers/mixin';
+@import 'src/assets/styles/helpers/variables';
+
+.title {
+	color: #c3b6b6;
+	font-family: Open Sans;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: center;
+	margin-bottom: 23px;
+}
