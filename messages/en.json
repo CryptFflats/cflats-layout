@@ -347,6 +347,10 @@
         "GAME": {
           "title":"NFT STRUCTURE. META GAME.",
           "path":"#meta"
+        },
+        "CONTRACTS": {
+          "title":"SMART CONTRACTS",
+          "path":"#contracts"
         }
         },
       "goUp": "GO UP"
@@ -354,6 +358,67 @@
     "INTRODUCTION": {
       "title": "INTRODUCTION",
       "text": "<span>Cryptoflats (abbr. CNRS)</span> - is a <span>gaming p2e </span> project with NFT tokens represented by procedurally generated NFT rooms <span>ERC-721</span> standard. Every NFT room is a flat cell containing game mechanics after being filled.<br><br>The room itself is an isometric image made out of <span>500+ 3D elements.</span> That is why projects come with a wide variety of furniture, patterns and textures. The collection is divided by <span>5 GEN#</span> each one representing a different room. All of our NFTs will be stored on Ethereum and will be available to mint at our website."
+    },
+    "CONTRACTS": {
+      "title": "SMART CONTRACTS",
+      "contract_names_list": {
+        "n1": "Token: ",
+        "n2": "GEN#0: ",
+        "n3": "GEN#1: ",
+        "n4": "GEN#2: ",
+        "n5": "Whitelist Box GEN#1: ",
+        "n6": "Territory: ",
+        "n7": "Staking: ",
+        "n8": "Exchanger: ",
+        "n9": "Database: ",
+        "n10": "Dapp: "
+      },
+      "contract_addresses_list": {
+        "n1": "0x42b5A36f9A6bb2686824df4F5106fF3aa5d52ac8",
+        "n2": "0x12dF79C44f40c372F03d06476a575B4Eb20D29d7",
+        "n3": "0xDf6AbB2Afe40D335d6e2Ec650cf0A5f3A671EDD1",
+        "n4": "0x20CadFbc9cF1E010Fac94Bb564C52E03A4a8F51E",
+        "n5": "0x0BB3D5AEd1f0131f2DD002026Ae49288C7Dc9Dcc",
+        "n6": "0xbfCf8110bd0038159A8107AD403a761307A924b0",
+        "n7": "0xf2DDF01e54F00656a7d427E2d8DA33B8c885aaD3",
+        "n8": "0xe65Da3f60Aa334A2c8D797137aDDFb34Bf204908",
+        "n9": "0x1632D6e5d3B9203250678a0E2e397B06745b9686",
+        "n10": "0xc1CF74186b592fe3f1a0f71744b6d0DD43f37822"
+      },
+      "contract_dapp_list": {
+        "n1": "The thief initiates the process by paying for the theft service.",
+        "n2": "Subsequently, the smart contract operator is triggered. Their role is to carry out the theft, targeting funds from a randomly selected victim's staking contract.",
+        "n3": "Once the funds are acquired, they are redirected to the fraudster's staking pool.",
+        "n4": "Importantly, it's worth noting that the cost of each subsequent theft payment doubles, increasing in price with each iteration.",
+        "n5": "To prevent repeated thefts at the same price, a reset of the increased price is only possible after 24 hours from the time of the first theft."
+      },
+      "contract_dapp_defense_list": {
+        "n1": "A user must first be targeted by another user in an attack for the protection functionality to be activated. It won't work proactively; an attack is a prerequisite.",
+        "n2": "Once under attack, the user can activate the protection functionality. They can choose from three different plans with varying percentages (e.g., 10%, 20%, or 30%).",
+        "n3": "After selecting the desired protection plan, the user triggers the contract operator. The contract operator then calls the refund function.",
+        "n4": "If the refund function is executed successfully, the user not only recovers their funds, but they also have the opportunity to claim a percentage from the attacker, as stipulated by the chosen protection plan."
+      },
+      "subtitle_1": "Cryptoflats token (CFLAT)",
+      "subtitle_2": "Cryptoflats Exchanger",
+      "subtitle_3": "Cryptoflats GEN",
+      "subtitle_4": "Cryptoflats Whitelist Box",
+      "subtitle_5": "Cryptoflats Territory",
+      "subtitle_6": "Cryptoflats Database",
+      "subtitle_7": "Cryptoflats Staking",
+      "subtitle_8": "Cryptoflats Dapp",
+      "text_1": "Crypto projects employ smart contracts to implement the logic of their applications, mirroring the functionality of web applications. Cryptoflex is not an exception, as it offers comprehensive documentation for its smart contracts for your reference.",
+      "text_2": "The CFLAT token is a utility token specifically created for facilitating in-game actions within the DApp. In order to ensure the project's stability, a 6% transaction fee has been implemented for the token. Half of this fee is allocated to the Team Wallet address, while the remaining 3% is directed towards the Cryptoflats Exchanger. Starting price per token is $0.00008.",
+      "text_3": "The Exchanger contract is a native Cryptoflats contract for the purchase of a CFLAT token. The contract owner sets the initial price range for the purchase of a CFLAT token, which is also the minimum price at which the token is traded.",
+      "text_4": "Cryptoflats Genes represent NFT contracts for apartments that are dynamically generated and permanently recorded on the Ethereum blockchain. These contracts serve as a pivotal component within the DApp game, with a total of six distinctive genes: GEN#0, GEN#1, GEN#2, GEN#3, GEN#4, and GEN#5. Each gene fulfills a unique role in enhancing the overall DApp gaming experience.",
+      "text_5": "White list boxes are contracts with which you can get a discount on the purchase of GEN. A WL BOX contract is created for each GEN.",
+      "text_6": "The \"Territories\" contract plays a crucial role in activating gene staking for GEN#2 to GEN#5 of the dApp. It serves as the key mechanism for enabling and managing gene staking within this range of gene versions.",
+      "text_7": "The contract owner possesses the authority to establish a CFLAT - Token A token pair. During this process, the contract owner specifies several essential parameters, including the initial token value, the address of the token that users can exchange for CFLAT, the anticipated token reserve amount for bolstering CFLAT's price by 5%, and the minimum exchange threshold. It's important to note that these parameters are configured only once during the pair creation and cannot be altered by the owner in the future.",
+      "text_8": "The Database contract serves as a critical component for managing user participation in the DApp game. This contract is responsible for controlling the number of users involved and assigning default roles, typically \"user\". In cases where unusual user activity or a high volume of complaints concerning a particular user's account are detected, the contract also provides the capability to place that user on a blacklist, effectively preventing fraudulent behavior.",
+      "text_9": "The Staking contract represents a pivotal element of the dApp ecosystem, offering users the opportunity to earn CFLAT tokens as a reward for their willingness to assume risks and engage in the DApp game.",
+      "text_10": "The DApp contract serves as the central component for the Cryptoflats Thieves and Defenders game, responsible for executing the primary mechanisms of theft and fund restitution. Here's how it works:",
+      "text_11": "This mechanism adds an escalating cost to theft attempts, making it progressively more expensive for would-be thieves and introducing a cooldown period between thefts.",
+      "text_12": "The protection functionality operates as follows:",
+      "text_13": "In summary, the protection functionality allows users to defend themselves against attacks by selecting a protection plan and triggering the contract operator, which, upon success, not only refunds their funds but also enables them to claim a percentage of the attacker's assets, depending on the chosen plan."
     },
     "CONCEPT": {
       "title": "CONCEPT",
@@ -528,7 +593,7 @@
     },
     "GEN1": {
       "title": "GEN#1 - LIVING ROOM RARITY",
-      "text": "This part of the lightpaper consist of rarity properties for GEN#1. With each level of GEN# returns will increase.",
+      "text": "This part of the litepaper consist of rarity properties for GEN#1. With each level of GEN# returns will increase.",
       "passive_skill": "Passive skill:",
       "active_skill": "Active skill:",
       "standard": {

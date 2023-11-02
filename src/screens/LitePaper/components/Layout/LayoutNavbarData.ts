@@ -7,5 +7,6 @@ export const layoutNavbarData = [
 	{ title: 'CRYPTOFLATS dAPP', path: '#dapp' },
 	{ title: 'GEN#0 – CFLAT NFT PASS RARITY', path: '#gen0' },
 	{ title: 'GEN#1 – LIVING ROOM RARITY', path: '#gen1' },
-	{ title: 'NFT STRUCTURE. META GAME.', path: '#meta' }
+	{ title: 'NFT STRUCTURE. META GAME', path: '#meta' },
+	{ title: 'SMART CONTRACTS', path: '#contracts' },
 ]

@@ -13,6 +13,7 @@ import Dapp from './sections/Dapp'
 import Gen0 from './sections/Gen0'
 import Gen1 from './sections/Gen1'
 import Meta from './sections/Meta'
+import Contracts from './sections/Contracts'
 import ScrollButton from '../../UI/ScrollButton/ScrollButton'
 import { useTranslations } from 'next-intl';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
@@ -21,7 +22,7 @@ import Lands from './sections/Lands';
 const Layout = () => {
 	const [isMenuActive, setIsMenuActive] = useState(false)
 	const t = useTranslations('Litepaper')
-	const navigationData = ["INTRODUCTION", "CONCEPT", "ABOUT", "RARITY", "GEN#0", "GEN#1", "LANDS", "PROJECT_TOKEN", "dAPP", "GAME"]
+	const navigationData = ["INTRODUCTION", "CONCEPT", "ABOUT", "RARITY", "GEN#0", "GEN#1", "LANDS", "PROJECT_TOKEN", "dAPP", "GAME", "CONTRACTS"]
 
 	const openMenu = () => {
 		setIsMenuActive(!isMenuActive);
@@ -117,9 +118,10 @@ const Layout = () => {
 					<TokenProject />
 					<Dapp />
 					<Meta />
+					<Contracts />
 
 					<p className={classNames(styles['litepaper-copyright'])}>
-						Cryptoflats Lightpaper 2023 (c) {t('litepaper_copyright')}
+						Cryptoflats Litepaper 2023 © {t('litepaper_copyright')}
 					</p>
 				</div>
 
