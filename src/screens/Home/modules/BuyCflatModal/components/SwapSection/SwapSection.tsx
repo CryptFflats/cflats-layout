@@ -17,7 +17,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 			</SwapSectionRow>
 			<SwapSectionRow>
 				<SwapSectionAmount>{amount}</SwapSectionAmount>
-				{/* <TokenComponent /> */}
+				<TokenComponent />
 			</SwapSectionRow>
 		</SwapSectionWrapper>
 	);

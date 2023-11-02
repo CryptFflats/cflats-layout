@@ -9,7 +9,8 @@ export const SwapSectionWrapper = styled(Box)(({ theme }) => ({
 
 export const SwapSectionRow = styled(Box)(({ theme }) => ({
 	display: 'flex',
-	justifyContent: 'space-between'
+	justifyContent: 'space-between',
+	alignItems: 'center'
 }));
 
 export const SwapSectionTitle = styled('span')(({ theme }) => ({
