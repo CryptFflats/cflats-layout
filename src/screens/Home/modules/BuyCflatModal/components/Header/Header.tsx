@@ -17,8 +17,6 @@ import Burger from 'screens/Home/layouts/Navbar/Burger';
 const Header = () => {
 	const address = useWalletAddressHook();
 	const dispatch = useAppDispatch();
-	const [vpWidth, vpHeight] = useViewportSizes();
-	console.log(vpWidth);
 
 	return (
 		<FormHeader>
