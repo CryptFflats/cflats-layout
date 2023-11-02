@@ -9,6 +9,8 @@ import { useAccount } from 'wagmi';
 import ProfileButton from '../ProfileButton/ProfileButton';
 import { BiArrowBack } from 'react-icons/bi';
 import InWl from '../InWL/InWl';
+import { getNftContract } from 'core/utils/contract/utils/contracts';
+import CflatsSigner from 'core/utils/contract/utils/CflatsSigner';
 
 const GenFirst = ({ onClose }: { onClose:  () => void }) => {
 	const { address } = useAccount();
@@ -22,17 +24,21 @@ const GenFirst = ({ onClose }: { onClose:  () => void }) => {
 				const freeList = await WhiteListService.getWhiteList({ name: 'gen-first', type: 'free' });
 				const discountList = await WhiteListService.getWhiteList({ name: 'gen-first', type: 'discount' });
 
-				const cryptoflatsNFT = new CryptoflatsNFT(
-					MINT_GEN_FIRST_ADDRESS,
-					address ? address : '',
-					1,
-					freeList.data.addresses,
-					discountList.data.addresses,
-					abi
-				);
+				// const cryptoflatsNFT = new CryptoflatsNFT(
+				// 	MINT_GEN_FIRST_ADDRESS,
+				// 	address ? address : '',
+				// 	1,
+				// 	freeList.data.addresses,
+				// 	discountList.data.addresses,
+				// 	abi
+				// );
 
-				setInFree(await cryptoflatsNFT.isUserFreePurchaseWhitelist());
-				setInDiscount(await cryptoflatsNFT.isUserEarlyAccessWhiteList())
+				const signer = await CflatsSigner.getSigner();
+				const cryptoflatsNFT = await getNftContract(1, signer);
+
+
+				// setInFree(await cryptoflatsNFT.isUserFreePurchaseWhitelist());
+				setInDiscount(await cryptoflatsNFT.isUserEarlyAccessWhiteList());
 			} catch(err: any) {
 			    throw new Error(err);
 			} finally {

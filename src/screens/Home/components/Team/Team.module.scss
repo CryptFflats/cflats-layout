@@ -1,197 +1,189 @@
-@import "src/assets/styles/base/animation";
-@import "src/assets/styles/helpers/mixin";
-@import "src/assets/styles/helpers/variables";
+@import 'src/assets/styles/base/animation';
+@import 'src/assets/styles/helpers/mixin';
+@import 'src/assets/styles/helpers/variables';
 
 .animBox {
-  margin-bottom: 60px;
-  color: var(--color-green);
+	margin-bottom: 60px;
+	color: var(--color-green);
 
-  @include _768 {
-    margin-bottom: 30px;
-  }
+	@include _768 {
+		margin-bottom: 30px;
+	}
 }
 
 .lineAnim {
-  background: var(--color-green);
+	background: var(--color-green);
 }
 
 .teamCards {
-  margin: 100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
+	margin: 100px 0px;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
 
-  @include _1200 {
-    justify-content: center;
-    gap: 150px;
-  }
+	@include _1200 {
+		justify-content: center;
+		gap: 150px;
+	}
 
-  @include _768 {
-    
-    gap: 60px;
-  }
+	@include _768 {
+		gap: 60px;
+	}
 }
 
 .teamCard {
-  margin-top: 70px;
-  margin-bottom: 100px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 250px;
-  
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	width: 250px;
+
+	&Content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .pText {
-  font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
 .teamCardAbout {
-  margin-top: 40px;
-  position: relative;
+	margin-top: 40px;
+	position: relative;
 
-  > h1 {
-    font-family: var(--body-font-family);
-    font-size: $text;
-    line-height: $text-height;
+	> h1 {
+		font-family: var(--body-font-family);
+		font-size: $text;
+		line-height: $text-height;
 
-    @include _768 {
-      font-size: $text-mobile;
-      line-height: $text-mobile-height;
-    }
+		@include _768 {
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+	}
 
-    
-  }
+	@include _768 {
+		margin-top: 30px;
+	}
+}
 
-  @include _768 {
-    margin-top: 30px;
-  }
+.btnDiscord {
+	transition: 0.1s ease-in-out;
 
-  .btnDiscord {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.1s ease-in-out;
-    
-    text-decoration: none;
-    border: none;
-    color: #F3F3F3;
-    font-weight: 700;
-    font-size: 1.3rem;
-    padding: 15px 50px;
-    border-radius: 200px;
-    text-transform: uppercase;
-    font-family: var(--body-font-family);
-    box-shadow: 3px 6px 6px 0 rgba($color: #000000, $alpha: 0.15);
+	text-decoration: none;
+	border: none;
+	color: #f3f3f3;
+	font-weight: 700;
+	font-size: 1.3rem;
+	padding: 15px 50px;
+	border-radius: 200px;
+	text-transform: uppercase;
+	font-family: var(--body-font-family);
+	box-shadow: 3px 6px 6px 0 rgba($color: #000000, $alpha: 0.15);
+	margin-top: 50px;
 
-    @include _768 {
-      top: 100px;
-      font-size: 1rem;
-      padding: 5px 30px;
-    }
-  }
+	@include _768 {
+		top: 100px;
+		font-size: 1rem;
+		padding: 5px 30px;
+	}
+}
 
-  .themeColorPink{
-    &.btnDiscord {
-      background-color: #D01083;
-    }
+.themeColorPink {
+	&.btnDiscord {
+		background-color: #d01083;
+	}
 
-    &:hover{
-      background-color: #7a0b4e;
-      color: #c0c0c0;
-    }
-  }
+	&:hover {
+		background-color: #7a0b4e;
+		color: #c0c0c0;
+	}
+}
 
-  .themeColorYellow{
-    &.btnDiscord {
-      background-color: #FFA401;
-    }
+.themeColorYellow {
+	&.btnDiscord {
+		background-color: #ffa401;
+	}
 
-    &:hover{
-      background-color: #885901;
-      color: #c0c0c0;
-    }
-  }
+	&:hover {
+		background-color: #885901;
+		color: #c0c0c0;
+	}
+}
 
+.themeColorPurple {
+	&.btnDiscord {
+		background-color: #7f65b6;
 
-  .themeColorPurple{
-    &.btnDiscord {
-      background-color: #7F65B6;
+		@include _768 {
+			top: 120px;
+		}
+	}
 
-      @include _768 {
-        top: 120px;
-      }
-    }
+	&:hover {
+		background-color: #483a66;
+		color: #c0c0c0;
+	}
+}
 
-    &:hover{
-      background-color: #483a66;
-      color: #c0c0c0;
-    }
-  }
+.themeColorGreen {
+	&.btnDiscord {
+		background-color: #0fb295;
+	}
 
-  .themeColorGreen{
-    &.btnDiscord {
-      background-color: #0FB295;
-    }
-
-    &:hover{
-      background-color: #095e4e;
-      color: #c0c0c0;
-    }
-  }
-
-  
+	&:hover {
+		background-color: #095e4e;
+		color: #c0c0c0;
+	}
 }
 
 .teamImg {
-  max-width: 250px;
-  max-height: 250px;
-  overflow: hidden;
+	overflow: hidden;
+	height: 250px;
+	width: 250px;
 
-  @include _768 {
-    width: 200px !important;
-    height: 200px !important;
-  }
+	@include _768 {
+		width: 200px !important;
+		height: 200px !important;
+	}
 }
 
 .teamImg1 {
-  animation: change_color_01 infinite 8s linear;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  border-radius: 50%;
-
+	animation: change_color_01 infinite 8s linear;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	border-radius: 50%;
 }
 
 .teamImg2 {
-  animation: change_color_02 infinite 8s linear;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  border-radius: 50%;
-
+	animation: change_color_02 infinite 8s linear;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	border-radius: 50%;
 }
 
 .teamImg3 {
-  animation: change_color_03 infinite 8s linear;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  border-radius: 50%;
-
+	animation: change_color_03 infinite 8s linear;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	border-radius: 50%;
 }
 .teamImg4 {
-  animation: change_color_04 infinite 8s linear;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  border-radius: 50%;
+	animation: change_color_04 infinite 8s linear;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	border-radius: 50%;
 }
 
-.teamImg3Resize{
-  & img {
-    transform: scale(1.3);
-    margin-top: 30px;
-    margin-left: -30px;
-  }
-
+.teamImg3Resize {
+	& img {
+		transform: scale(1.3);
+		margin-top: 30px;
+		margin-left: -30px;
+	}
 }

@@ -12,7 +12,7 @@ import CheckWl from '../ProfileSidevar/Buttons/CheckWl';
 const menuData = [
 	<EnterDapp />,
 	<BuyCflat />,
-	<CheckWl />,
+	// <CheckWl />,
 	<Support />,
 	<LogOut />
 ]

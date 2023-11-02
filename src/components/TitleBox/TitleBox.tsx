@@ -14,7 +14,7 @@ const TitleBox: FC<TitleBoxProps> & { Title: FC<TitleProps> } & {
 	return <div className={classNames(styles.titleBox, className)}>{children}</div>
 }
 
-TitleBox.Title = ({ children }) => <h1>{children}</h1>
+TitleBox.Title = ({ children, className }) => <h1 className={className}>{children}</h1>
 
 TitleBox.LineAnim = ({ className, theme}) => {
 	const themeClassName = 

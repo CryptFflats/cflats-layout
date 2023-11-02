@@ -19,7 +19,7 @@ const MobileMenu = () => {
 	const { height } = useAppSelector(state => state.NavbarSlice);
 	const dispatch = useAppDispatch();
 	const t = useTranslations('Home');
-	const navigationLinks = ['about', 'roadmap', 'team', 'faq', 'litepaper'];
+	const navigationLinks = ['about', 'roadmap', 'team', 'faq', 'litepaper', 'dapp'];
 
 
 	return (

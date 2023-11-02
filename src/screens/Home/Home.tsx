@@ -22,6 +22,7 @@ import ModalVideo from './components/ModalVideo/ModalVideo';
 import { WlBoxModal } from './components/WlBoxModal';
 //import Toastify from '../../components/Toastify/Toastify';
 import { SupportModal } from './modules/SupportModal';
+import { BuyCflatModal } from './modules/BuyCflatModal';
 
 const Home = () => {
 	return (
@@ -47,6 +48,7 @@ const Home = () => {
 
 			<SupportModal />
 			<DevelopingModal />
+			<BuyCflatModal />
 			{/* @ts-ignore */}
 			<MintModal />
 			<ModalVideo />

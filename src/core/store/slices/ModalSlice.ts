@@ -6,13 +6,15 @@ interface MenuState {
 	trailerModal: boolean;
 	supportModal: boolean;
 	wlBoxModal: boolean;
+	buyCflatModal: boolean;
 }
 
 const initialState: MenuState = {
 	developmentModal: false,
 	trailerModal: false,
 	supportModal: false,
-	wlBoxModal: false
+	wlBoxModal: false,
+	buyCflatModal: false
 };
 
 const ModalSlice = createSlice({
@@ -30,13 +32,23 @@ const ModalSlice = createSlice({
 		},
 		setWlBoxModal(state, action: PayloadAction<boolean>) {
 			state.wlBoxModal = action.payload;
+		},
+		setBuyCflatModal(state, action: PayloadAction<boolean>) {
+			state.buyCflatModal = action.payload;
 		}
 	}
 });
 
-export const { setDevelopment, setTrailer, setSupportModal, setWlBoxModal } =
-	ModalSlice.actions;
+export const {
+	setDevelopment,
+	setTrailer,
+	setSupportModal,
+	setWlBoxModal,
+	setBuyCflatModal
+} = ModalSlice.actions;
 export default ModalSlice.reducer;
 
 export const selectWlBoxModal = (state: RootState) =>
 	state.ModalSlice.wlBoxModal;
+export const selectCflatModal = (state: RootState) =>
+	state.ModalSlice.buyCflatModal;

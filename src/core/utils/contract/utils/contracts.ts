@@ -16,7 +16,7 @@ import {
 } from "core/utils/constance";
 
 import CflatsGenZeroAbi from '../../../../core/abi/gen_zero.json';
-import CflatsGenAbi from '../../../../core/abi/gen_zero.json';
+import CflatsGenAbi from '../../../../core/abi/gen_first.json';
 import CflatsWlBoxAbi from '../../../../core/abi/CflatsWlBoxAbi.json';
 
 export async function getTokenContract(signer: JsonRpcSigner) 

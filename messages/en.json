@@ -20,6 +20,10 @@
       "litepaper":{
         "title": "litepaper",
         "path": "/litepaper"
+      },
+      "dapp": {
+        "title": "dapp",
+        "path": "#"
       }
       },
     "about": {

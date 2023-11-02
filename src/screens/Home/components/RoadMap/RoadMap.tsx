@@ -1,14 +1,14 @@
-import styles from './RoadMap.module.scss'
-import ContentBox from '../../../../containers/ContentBox/ContentBox'
-import TitleBox from '../../../../components/TitleBox/TitleBox'
-import React, { useState } from 'react'
-import classNames from 'classnames'
+import styles from './RoadMap.module.scss';
+import ContentBox from '../../../../containers/ContentBox/ContentBox';
+import TitleBox from '../../../../components/TitleBox/TitleBox';
+import React, { useState } from 'react';
+import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 
 const RoadMap = () => {
-	const [heightEl, setHeightEl] = useState<number>(-1)
-	const elRef = React.useRef() as React.MutableRefObject<HTMLInputElement>
-	const t = useTranslations('Home')
+	const [heightEl, setHeightEl] = useState<number>(-1);
+	const elRef = React.useRef() as React.MutableRefObject<HTMLInputElement>;
+	const t = useTranslations('Home');
 	const accodionData = [
 		{ key: "20%", arr: ['n1', 'n2', 'n3', 'n4', 'n5'] },
 		{ key: "40%", arr: ['n1', 'n2', 'n3'] },
@@ -18,7 +18,12 @@ const RoadMap = () => {
 	]
 
 	const toggleAccordion = (index: any) => {
-		setHeightEl(index)
+		if(heightEl === index)
+		{
+			setHeightEl(-1);
+			return;
+		}
+		setHeightEl(index);
 	}
 
 	return (
