@@ -16,3 +16,9 @@ export const ErrorMessage = styled('div')(({ theme }) => ({
 	fontSize: '1.125rem',
 	color: 'var(--color-error)'
 }));
+
+export const CenterBtnWrapper = styled('div')(() => ({
+	width: '100%',
+	display: 'flex',
+	justifyContent: 'center'
+}));
