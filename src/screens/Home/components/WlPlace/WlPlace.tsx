@@ -41,7 +41,7 @@ const WlPlace = () => {
 									You can buy whitelist early access and get other benefits of our project. There is no need of task completing.
 								</p>
 								<GrayButton 
-									href={'https://opensea.io/cryptoflatsnft'}
+									href={'https://opensea.io/collection/cryptoflats-wl-box-gen1'}
 									//@ts-ignore
 									target={'_blank'}
 								>
