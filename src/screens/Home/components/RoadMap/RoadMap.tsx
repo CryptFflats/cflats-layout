@@ -38,13 +38,12 @@ const RoadMap = () => {
 					return (
 						<div
 							className={classNames(styles.roadmapCard, styles[t(`roadmap.accordion.${item.key}.class`)])}
-							onClick={() => toggleAccordion(index)}
 							key={index}
 						>
-							<div className={styles.roadmapHeader}>
+							<div className={styles.roadmapHeader} onClick={() => toggleAccordion(index)}>
 								<div className={styles.progress}>{t(`roadmap.accordion.${item.key}.progress`)}</div>
 
-								<h2 className={classNames(styles.roadmapCardTitle)}>
+								<h2 className={classNames(styles.roadmapCardTitle)} unselectable={'on'}>
 									{t(`roadmap.accordion.${item.key}.headerTitle`)}
 								</h2>
 							</div>

@@ -4,7 +4,10 @@ import SocialIcons from '../../../../UI/SocialIcons/SocialIcons'
 import { useTranslations } from 'next-intl';
 
 const Footer = () => {
-	const t = useTranslations('Home')
+	const t = useTranslations('Home');
+	const getCurrentYear = () => {
+		return new Date().getFullYear();
+	}
 
 	return (
 		<footer className={styles.footer}>
@@ -16,7 +19,7 @@ const Footer = () => {
 
 					<div className={styles.copyright}>
 						<p>
-							<span>© 2022 Cryptoflats</span> {t('footer.all_rights_reserved')}
+							<span>Cryptoflats 2022 - {getCurrentYear()} ©</span> {t('footer.all_rights_reserved')}
 						</p>
 					</div>
 

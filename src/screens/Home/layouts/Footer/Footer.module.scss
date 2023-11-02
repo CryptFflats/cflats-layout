@@ -39,17 +39,17 @@
     font-weight: 700;
     position: relative;
 
-    &::before {
-      background: #fff;
-      border-radius: 50%;
-      content: "";
-      height: 3px;
-      position: absolute;
-      right: -10px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      width: 3px;
-    }
+    // &::before {
+    //   background: #fff;
+    //   border-radius: 50%;
+    //   content: "";
+    //   height: 3px;
+    //   position: absolute;
+    //   right: -10px;
+    //   top: 50%;
+    //   -webkit-transform: translateY(-50%);
+    //   transform: translateY(-50%);
+    //   width: 3px;
+    // }
   }
 }

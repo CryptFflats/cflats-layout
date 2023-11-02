@@ -126,7 +126,7 @@ const Contracts = () => {
 			>
 				<CfImage
 					fluid
-					src={'4ee8819e-80cb-432e-6c6c-add191f45a00/public'}
+					src={'0e310c78-d341-405e-a53e-591736094f00/public'}
 					alt={'Whitelist Box Image'}
 				/>
 			</motion.div>

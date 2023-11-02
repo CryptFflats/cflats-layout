@@ -29,11 +29,11 @@
     "about": {
       "first": {
         "title": "about",
-        "paragraph": "Cryptoflats - is a collection of generated NFT tokens on the Ethereum. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
+        "paragraph": "Cryptoflats is a collection of NFT tokens on the Ethereum blockchain. These tokens represent isometric rooms with vibrant designs and intricate details, categorized into five different room types. By collecting at least one token from each room type, you will have the opportunity to construct your very own Cryptoflat. In the initial stage, we will release 5555 NFT living rooms, and in subsequent stages, the quantity will decrease by 1000 pieces with each release."
       },
       "second": {
         "title": "specs",
-        "paragraph": "Every Cryptoflat room is unique and created from a combination of more than 500+ 3D elements such as walls, floors, furniture, decor, light and cats :) You can expect different tiers of rarity within this collection components."
+        "paragraph": "Each Cryptoflat room is a one-of-a-kind creation, formed through a combination of over 500+ 3D elements, including walls, floors, furniture, decor, lighting, and even some feline friends! You can anticipate varying tiers of rarity among these collection components, making each room a truly unique and exciting addition to your Cryptoflat."
       }
     },
     "cryptoflats_video": {
@@ -43,7 +43,7 @@
     },
     "rarity": {
       "title": "RARITY",
-      "about": "Each class of NFT has a different probability of being minted. There will be from 5555 to 2222 tokens of GEN#1-GEN#4, in which there will be standard, silver, gold and diamond rarities. GEN#5 will not have a rarity at all, because of its uniqueness by itself.",
+      "about": "Within our NFT collection, each class has a distinct probability of being minted. GEN#1 through GEN#4 will consist of a range of tokens, with quantities decreasing from 5555 to 2222. These tokens will offer standard, silver, gold, and diamond rarities. In contrast, GEN#5, being inherently unique, won't have rarity distinctions, as its distinctiveness sets it apart.",
       "tabs": {
         "rarity_01": {
           "id": "rarity_01",
@@ -139,7 +139,7 @@
     },
     "concept": {
       "title": "CONCEPT",
-      "paragraph": "Cryptoflats project develops and transforms since 2021, inspired by the thought of developing a meta-universe where every player has their designer apartments with interactive and financial mechanics.\nThe ability to earn rental income by renting out an apartment or room is certainly not something new, but we have some interactive tools in mind, that make this process really exciting - a p2e game in which everyone will have their own virtual apartment with a unique style."
+      "paragraph": "The Cryptoflats project has been evolving and growing since 2021, fueled by the vision of creating a meta-universe where every player can own designer apartments enriched with interactive and financial mechanics. While the concept of earning rental income from apartment or room rentals is not entirely novel, our project brings an innovative twist to this experience. We're introducing interactive tools that promise to make the process genuinely thrilling—a play-to-earn (P2E) game where each participant possesses a virtual apartment with a distinctive style and unique features, elevating the entire experience."
     },
     "roadmap": {
       "title": "ROADMAP",
@@ -216,7 +216,7 @@
     },
     "team": {
       "title": "TEAM",
-      "paragraph": "Cryptoflats was created by two architects who are passionate about blockchain and NFT technologies. The idea of free creative interpretation and the absence of limiting technical factors made it possible to create a bright and stylish interior collection that includes elements of surrealism and comfort all rolled into one",
+      "paragraph": "Cryptoflats was conceived by two passionate architects with a deep appreciation for blockchain and NFT technologies. Their creative vision, unbounded by technical constraints, enabled the development of a vibrant and stylish interior collection that seamlessly weaves elements of surrealism and comfort into a captivating fusion of art and design.",
       "persons": {
         "Andrew": {
           "name": "Andrew Archie",
@@ -238,32 +238,32 @@
     },
     "game": {
       "title": "THE GAME",
-      "paragraph": "Our project is about design, entertainment, interaction and income creating. We want to unite everyone who liked our project into one big and friendly community. After you put all the rooms together and turn them into a full-fledged apartment, then you can invite your friends to it and interact with each other using avatars."
+      "paragraph": "Our project embodies the essence of design, entertainment, interaction, and income generation. We aspire to bring together all those who appreciate our project into a vast and amiable community. Once you've assembled all the rooms to form a complete apartment, you'll have the opportunity to invite your friends to join and interact within it, using avatars to enrich your collective experience."
     },
     "faq": {
       "q1": {
-        "question": "How do I get Cryptoflats NFT?",
-        "answer": "You can get NFT CryptoFlats using the MINT button on our website. In the future, you will be able to buyour NFT on any marketplace that supports ERC-721 tokens. Follow the news and you will definitely be one of the first to get it."
+        "question": "How can I get Cryptoflats NFT?",
+        "answer": "You can acquire NFT CryptoFlats by simply clicking the \"MINT\" button on our website. Moreover, in the near future, you'll have the opportunity to purchase our NFT on any marketplace that accommodates ERC-721 tokens. Stay updated with our latest news, and you'll likely be among the first to seize this exciting opportunity."
       },
       "q2": {
-        "question": "What is the meaning of the GEN#s?",
-        "answer": "Each GEN# signifies phases of project development. With each new phase, we will provide the opportunity to purchase the next room in your future crypto apartment. There are 6 GENs from 0 to 5 and you can get the idea about it in our Litepaper."
+        "question": "What is the meaning of the GEN#?",
+        "answer": "Each GEN# represents a distinct phase in the development of our project. As we progress through these phases, you'll have the chance to acquire the next room in your future crypto apartment. We have a total of 6 GENs, ranging from 0 to 5, and you can find more detailed information in our Litepaper to gain a comprehensive understanding of our project."
       },
       "q3": {
         "question": "How many rooms will be created?",
-        "answer": "We will create 5 types of rooms in the first season of the project: Living room, Bedroom, Kitchen-dining room, Play room and the so-called Secret room. The number of each type of room will decrease by 1000 with each new drop."
+        "answer": "In the inaugural season of our project, we're planning to introduce five distinct types of rooms: the Living room, Bedroom, Kitchen-Dining room, Play room, and the intriguing Secret room. It's important to note that with each new drop, the quantity of each room type will decrease by 1000."
       },
       "q4": {
         "question": "What is the secret room?",
-        "answer": "The secret room will be different from the usual room in the apartment. It will be a cool place where surreal fantasies will take shape. The secret room will be available for sale at the end of the first season of the project in the form of a mystery box."
+        "answer": "The Secret room will be a unique and distinct space within the apartment, offering an opportunity for surreal fantasies to come to life. At the conclusion of the project's first season, the Secret room will be made available for purchase in the form of a mystery box, providing an exciting and enigmatic experience for our community."
       },
       "q5": {
         "question": "I bought all types of rooms. What should I do next?",
-        "answer": "The most interesting thing is coming - all your purchased crypto rooms will be formed into a full-fledged apartment, where you can invite your other friends and get an interesting gaming experience"
+        "answer": "Here's the most captivating aspect: all the crypto rooms you acquire will come together to create a complete and fully furnished apartment. This apartment can serve as a gathering place where you can invite your friends, promising an engaging gaming experience for all."
       },
       "q6": {
         "question": "What kind of game you are going to create?",
-        "answer": "We will not reveal our hand yet, but we can say for sure this will be an interactive online game where you will be able to communicate, move not only in your NFT apartment, but also visit others. Maybe make a mess there or something?"
+        "answer": "While we're keeping some details close to our chest for now, we can certainly confirm that this will be an interactive online game. In this game, you'll have the ability to communicate and not only explore and interact within your NFT apartment but also visit other players' apartments. The possibilities may include creating a bit of mischief or having unique experiences beyond the confines of your own space. Stay tuned for more exciting updates!"
       }
       },
     "footer": {
@@ -470,17 +470,17 @@
         "n7": "Starting price - 0,00008 $"
       },
       "text_2": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token.",
-      "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Ethereum</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for three types of cryptocurrency: <span>BNB, ETH, USDT.</span>\n"
+      "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Ethereum</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for two types of cryptocurrency: <span>ETH, USDT.</span>\n"
     },
     "DAPP": {
       "title1": "CRYPTOFLATS DAPP",
-      "text_1": "<span>Cryptoflats DApp</span> represents a decentralized application and staking platform designed to incorporate key game mechanics integral to the project's concept. You can access the DApp directly via our website at <a href='https://cryptoflats.io/'>cryptoflats.io</a> using the \"Connect Wallet\" feature. The dedicated DApp section serves as a comprehensive guide to elucidate the functions and capabilities of our application.",
+      "text_1": "<span>Cryptoflats DApp</span> represents a decentralized application and staking platform designed to incorporate key game mechanics integral to the project's concept. You can access the DApp directly via our website at <a href='https://cryptoflats.io/'>cryptoflats.io</a> by pressing \"OPEN DAPP\" button. The dedicated DApp section serves as a comprehensive guide to elucidate the functions and capabilities of our application.",
       "text_2": "Upon launching the web application, users are greeted with the sleek and user-friendly interface of our DApp. We've meticulously designed intuitive menus and streamlined application logic for a seamless experience. <span>The primary objective of the Cryptoflats DApp is to facilitate the placement of acquired NFTs into staking, enabling the accumulation of rental income in CFLAT tokens</span>. Once a critical mass of app users is attained, a Play-to-Earn (P2E) feature becomes available, allowing users to earn tokens through engaging gameplay, including activities such as attacking and defending.",
       "text_3": "Within our DApp, you'll find three primary sections: the left, center, and right areas, each serving distinct functions and features.",
       "title2": "LEFT PART MENU",
       "text_4": "The left menu is comprised of buttons:",
       "text_5": "The <span>IMPORT NFT</span> option prompts a window where you can choose and import an NFT into the DApp. The system autonomously verifies the availability of our NFTs and presents them in the selection field. Once you've made your selection, simply click <span>IMPORT SELECTED</span>. The chosen NFTs will then relocate to the upper section of the central menu. Below, you can observe the NFT import mode, followed by the DApp's appearance after the NFT is added, and finally, the NFT placed in the staking window.",
-      "text_5_1": "The <span>CLAIM TOKENS</span> option enables you to withdraw accrued tokens from the DApp to your wallet. It's crucial to note that while the sale and purchase of tokens incur a 6% tax, which supports the project's development, the <span>CLAIM TOKENS</span> function exclusively transfers tokens from the contract to your wallet, resulting in a full 100% transfer. The CFLAT token serves as the in-game currency, initially valued at $0.00008. Certain in-game items, like CFLAT LANDS, can only be acquired using the CFLAT token. You can obtain this token during the project's initial phase through our website section using BNB, ETH, and USDT.",
+      "text_5_1": "The <span>CLAIM TOKENS</span> option enables you to withdraw accrued tokens from the DApp to your wallet. It's crucial to note that while the sale and purchase of tokens incur a 6% tax, which supports the project's development, the <span>CLAIM TOKENS</span> function exclusively transfers tokens from the contract to your wallet, resulting in a full 100% transfer. The CFLAT token serves as the in-game currency, initially valued at $0.00008. Certain in-game items, like CFLAT LANDS, can only be acquired using the CFLAT token. You can obtain this token during the project's initial phase through our website section using ETH and USDT.",
       "text_6": "The <span>SELECT ALL</span> option allows you to choose all NFTs situated in the upper section of the central area within the DApp. This means that imported NFTs will be highlighted. Pressing the <span>SELECT ALL</span> button once more will select all NFTs currently in staking, but it will deselect those in the upper section. Another press will re-highlight the upper section. To clear the selection, users can click on the area containing the selected NFTs.",
       "text_7": "The <span>VIEW ALL</span> option takes you to the NFT display mode windows, where the status of each NFT is visible, such as free, staking, blocked, and so on. In this mode, it's easy to select the specific NFTs needed for subsequent actions. Note that the <span>SELECT ALL</span> option works according to the logic described above, allowing for efficient batch selection of NFTs in this mode as well.",
       "text_8": "The <span>STAKE</span> option triggers the contract function <code>stake()</code> that moves the chosen NFT into staking. The NFT is locked for a period of 5 days, during which it cannot be withdrawn from staking. Staking NFTs not only generates income in our CFLAT token but also initiates the attack-defense gameplay. It's worth noting that NFTs with higher rarity levels yield a greater income in CFLAT tokens.",
@@ -609,7 +609,7 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 110% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 110% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 ETH for a 10% chance of a return, 0.02 ETH for a 20% chance of a return, and 0.03 ETH for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "silver": {
         "title": "FLATS Silver NFT (15% drop chance)",
@@ -620,8 +620,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "Silver NFT user will have 30% chance for taking 30% of the income of one random Flats standard NFT user, using special function of DApp. Rent cost = 0,025 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
-        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 130% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "active": "Silver NFT user will have 30% chance for taking 30% of the income of one random Flats standard NFT user, using special function of DApp. Rent cost = 0,025 ETH for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 130% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 ETH for a 10% chance of a return, 0.02 ETH for a 20% chance of a return, and 0.03 ETH for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "gold": {
         "title": "FLATS Gold NFT (10% drop chance)",
@@ -632,8 +632,8 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "Gold NFT user will have 30% chance for taking 40% of the income of one random Flats standard and FLATS silver NFT user, using special function of DApp. Rent cost = 0,02 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
-        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 130% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 BNB for a 10% chance of a return, 0.02 BNB for a 20% chance of a return, and 0.03 BNB for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
+        "active": "Gold NFT user will have 30% chance for taking 40% of the income of one random Flats standard and FLATS silver NFT user, using special function of DApp. Rent cost = 0,02 ETH for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "ps_skill": "If a third party used the token stealing feature and you lost a portion of your staking income, then you can try to get it back in the amount of 130% of the stolen amount. You can return stolen tokens within 24 hours after the theft, paying 0.01 ETH for a 10% chance of a return, 0.02 ETH for a 20% chance of a return, and 0.03 ETH for a 30% chance of a return. Subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours."
       },
       "diamond": {
         "title": "FLATS Diamond NFT (5% drop chance)",
@@ -644,13 +644,13 @@
           "n4": "Claim to unstake - after 5 days",
           "n5": "Token claim - 100% to wallet"
         },
-        "active": "Diamond NFT user will have 30% chance for taking 50% of the income of one random Flats standard, FLATS silver and FLATS gold NFT user, using special function of DApp. Rent cost = 0,015 BNB for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
+        "active": "Diamond NFT user will have 30% chance for taking 50% of the income of one random Flats standard, FLATS silver and FLATS gold NFT user, using special function of DApp. Rent cost = 0,015 ETH for the first use of the skill per day, subsequent use of the skill is twice as expensive. The cost of the skill returns to the initial cost after 24 hours. Only non claimed tokens are able to be stolen.",
         "ps_skill": "There is no need of defensing from every attempts of token stealing, because of NFT diamond rarity. You can absolutely be sure of being safe about this kind of game mechanics, but there is still the possibility of being robbed by a retaliatory attack after your successful attempt to steal tokens from an NFT user of a lower rarity."
       },
       "mint": {
         "title": "GEN#2 mint requires open territory:",
         "list": [
-          "If there is no stake GEN 1: you must first open the GEN#1 plot for 0.05 bnb",
+          "If there is no stake GEN 1: you must first open the GEN#1 plot for 0.05 ETH",
           "If there is a staked GEN 1: 15000 CFLAT",
           "With a staked CFLAT PASS (GEN#0), the corresponding bonuses apply."
         ]
@@ -733,7 +733,7 @@
   "MetaData": {
     "Home": {
       "title": "Cryptoflats - Home",
-      "description": "Cryptoflats - is a collection of generated NFT tokens on the Ethereum. These tokens are isometric rooms with bright design and many details, divided by 5 types of rooms. By collecting at least one token from each room, you will be able to construct your own Сryptoflat. First stage will bring live 5555 nft living rooms. The next stages will be 1000 pieces less each."
+      "description": "Cryptoflats is a collection of NFT tokens on the Ethereum blockchain. These tokens represent isometric rooms with vibrant designs and intricate details, categorized into five different room types. By collecting at least one token from each room type, you will have the opportunity to construct your very own Cryptoflat. In the initial stage, we will release 5555 NFT living rooms, and in subsequent stages, the quantity will decrease by 1000 pieces with each release."
     },
     "LitePaper": {
       "description": "Cryptoflats Litepaper is a document where you can find all exhaustive information about project. It includes chapters about GENs rarity, CFLAT token, decentralized application and much more. Litepaper will be updated as each phase of the project begins. Follow our socials and stay tuned to be the first to know about every updates and drops!"
