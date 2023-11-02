@@ -11,8 +11,13 @@ import {
 	setBuyCflatModal,
 	setSupportModal
 } from '../../../../../../core/store/slices/ModalSlice';
-import useViewportSizes from 'use-viewport-sizes';
-import Burger from 'screens/Home/layouts/Navbar/Burger';
+
+const WalletAddress = styled('p')(() => ({
+	fontSize: '16px',
+	'@media(max-width: 768px)': {
+		display: 'none'
+	}
+}));
 
 const Header = () => {
 	const address = useWalletAddressHook();
@@ -30,6 +35,8 @@ const Header = () => {
 				<Logo />
 				<FlexGroup>
 					<MyWallet onlyIcon />
+
+					<WalletAddress>{address}</WalletAddress>
 
 					<CloseButton onClick={() => dispatch(setBuyCflatModal(false))}>
 						<IcClose />

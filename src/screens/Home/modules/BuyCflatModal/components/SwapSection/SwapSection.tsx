@@ -1,4 +1,5 @@
 import {
+	ComponentHolder,
 	MaxLabel,
 	SwapSectionAmount,
 	SwapSectionRow,
@@ -16,8 +17,10 @@ export const SwapSection = (props: SwapSectionProps) => {
 				{maxLabel && <MaxLabel>max</MaxLabel>}
 			</SwapSectionRow>
 			<SwapSectionRow>
-				<SwapSectionAmount>{amount}</SwapSectionAmount>
-				<TokenComponent />
+				<SwapSectionAmount placeholder='0'></SwapSectionAmount>
+				<ComponentHolder>
+					<TokenComponent />
+				</ComponentHolder>
 			</SwapSectionRow>
 		</SwapSectionWrapper>
 	);

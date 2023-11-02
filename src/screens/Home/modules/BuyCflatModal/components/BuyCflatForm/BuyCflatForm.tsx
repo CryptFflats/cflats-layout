@@ -1,13 +1,8 @@
 'use client';
 
 import styles from './BuyCflatForm.module.scss';
-import { ErrorMessage, FormWrapper } from './styles';
-import {
-	Container,
-	FormElement,
-	Input,
-	InputLabel
-} from '../BuyCflatModal/styles';
+import { CenterBtnWrapper, ErrorMessage, FormWrapper } from './styles';
+import { Container } from '../BuyCflatModal/styles';
 import { useForm } from 'react-hook-form';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -32,6 +27,7 @@ const CustomTabs = styled(Tabs)(({ theme }) => ({
 
 interface StyledTabProps {
 	label: string;
+	disabled?: boolean;
 }
 
 const StyledTab = styled((props: StyledTabProps) => (
@@ -55,9 +51,21 @@ const StyledTab = styled((props: StyledTabProps) => (
 		fontWeight: '700',
 		color: '#5E5E5E',
 		border: 'none'
+	}
+}));
+
+const CloseButton = styled(BlueButton)(() => ({
+	backgroundColor: '#CA2E2E',
+	filter: 'drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.20))',
+	margin: '0 auto',
+	display: 'none',
+
+	'&:hover': {
+		backgroundColor: '#CA2E2E'
 	},
-	'&.Mui-focusVisible': {
-		// backgroundColor: 'rgba(100, 95, 228, 0.32)'
+
+	'@media(max-width: 768px)': {
+		display: 'block'
 	}
 }));
 
@@ -85,7 +93,6 @@ const BuyCflatForm = () => {
 				<TitleBox.Title className={styles.title}>
 					TOKEN SALE MENU
 				</TitleBox.Title>
-
 				<TabsWrapper>
 					<CustomTabs
 						value={value}
@@ -94,10 +101,23 @@ const BuyCflatForm = () => {
 					>
 						<StyledTab label='Buy' />
 						/
-						<StyledTab label='Sell' />
+						<StyledTab label='Sell' disabled />
 					</CustomTabs>
 					<BuyTab value={value} index={0} />
 				</TabsWrapper>
+				<TitleBox.Title className={styles.tokenInfoHeader}>
+					Token information
+				</TitleBox.Title>
+
+				<p className={styles.tokenInfo}>
+					Selling or buying tokens is TAXED at 6%. The liquidity of the token is
+					designed for a long term period. Starting price is 0.00008$. You can
+					buy our project products with discount, using CFLAT tokens.
+				</p>
+
+				<CenterBtnWrapper>
+					<CloseButton onClick={() => console.log('fuck')}>CLOSE</CloseButton>
+				</CenterBtnWrapper>
 			</Container>
 		</FormWrapper>
 	);
@@ -109,8 +129,11 @@ const TabsWrapper = styled(Box)(({ theme }) => ({
 	border: '1px solid #C3B6B6',
 	background: '#EADEDE',
 	minWidth: '300px',
-	maxWidth: '500px',
-	margin: '0 auto'
+	margin: '0 auto',
+
+	'@media(max-width: 768px)': {
+		maxWidth: '500px'
+	}
 }));
 
 export default BuyCflatForm;
