@@ -18,6 +18,10 @@ export const WL_BOX_FOURTH_ADDRESS = '';
 export const WL_BOX_FIFTH_ADDRESS = '';
 
 
+// Exchanger
+export const EXCHAHGER_ADDRESS = '0xe65Da3f60Aa334A2c8D797137aDDFb34Bf204908';
+
+
 
 export const IMAGE_DELIVERY_URL = 'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/';
 export const CDN_URL = 'https://cryptoflatss.fra1.cdn.digitaloceanspaces.com';

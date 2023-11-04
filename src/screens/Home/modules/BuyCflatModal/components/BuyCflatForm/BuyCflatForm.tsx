@@ -14,6 +14,7 @@ import TitleBox from 'components/TitleBox/TitleBox';
 import { useState } from 'react';
 import { styled } from '@mui/material';
 import { BuyTab } from '../Tabs/BuyTab/BuyTab';
+import { Text } from 'UI/Text';
 
 const CustomTabs = styled(Tabs)(({ theme }) => ({
 	'.MuiTabs-indicator': {
@@ -33,7 +34,7 @@ interface StyledTabProps {
 const StyledTab = styled((props: StyledTabProps) => (
 	<Tab disableRipple {...props} />
 ))(({ theme }) => ({
-	fontFamily: 'Open Sans',
+	
 	fontSize: '17px',
 	lineHeight: '23px',
 	letterSpacing: '0em',
@@ -48,6 +49,7 @@ const StyledTab = styled((props: StyledTabProps) => (
 	},
 
 	'&.Mui-selected': {
+		
 		fontWeight: '700',
 		color: '#5E5E5E',
 		border: 'none'
@@ -99,8 +101,7 @@ const BuyCflatForm = () => {
 						onChange={handleChange}
 						aria-label='Buy sell tabs'
 					>
-						<StyledTab label='Buy' />
-						/
+						<StyledTab label='Buy /' />
 						<StyledTab label='Sell' disabled />
 					</CustomTabs>
 					<BuyTab value={value} index={0} />
@@ -109,11 +110,11 @@ const BuyCflatForm = () => {
 					Token information
 				</TitleBox.Title>
 
-				<p className={styles.tokenInfo}>
+				<Text className={styles.tokenInfo}>
 					Selling or buying tokens is TAXED at 6%. The liquidity of the token is
-					designed for a long term period. Starting price is 0.00008$. You can
+					designed for a long term period. Starting price is 0.0005$. You can
 					buy our project products with discount, using CFLAT tokens.
-				</p>
+				</Text>
 
 				<CenterBtnWrapper>
 					<CloseButton onClick={() => console.log('fuck')}>CLOSE</CloseButton>

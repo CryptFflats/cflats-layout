@@ -18,26 +18,43 @@ export interface TokenDesc {
 	};
 	label: string;
 	value: string;
+	address: string;
 }
 
 const tokens: Array<TokenDesc> = [
 	{
-		id: 'usdt',
-		img: { src: '0ddbf9c4-8788-4dcc-131d-8f28ba047800/public', alt: 'USDT' },
-		label: 'USDT',
-		value: 'usdt'
+		id: 'eth',
+		img: { src: 'ab20a406-f3ce-4c6c-b5d9-edbd1864a100/public', alt: 'ETH' },
+		label: 'ETH',
+		value: 'eth',
+		address: "0x0000000000000000000000000000000000000000",
 	},
 	{
 		id: 'usdt',
-		img: { src: 'ab20a406-f3ce-4c6c-b5d9-edbd1864a100/public', alt: 'ETH' },
-		label: 'ETH',
-		value: 'eth'
-	}
+		img: { src: '0ddbf9c4-8788-4dcc-131d-8f28ba047800/public', alt: 'USDT' },
+		label: 'USDT',
+		value: 'usdt',
+		address: '0xdac17f958d2ee523a2206206994597c13d831ec7'
+	},
 ];
 
 export interface CustomOptionProps {
 	token: TokenDesc;
 	[key: string]: any;
+}
+
+export function getUsedToken()
+{
+	return TokenAddressMap.address;
+}
+
+function setUsedToken(tokenAddress: string)
+{
+	TokenAddressMap.address = tokenAddress;
+}
+
+const TokenAddressMap = {
+	"address": tokens[0].address
 }
 
 export const CustomOption = (props: CustomOptionProps) => {
@@ -53,11 +70,19 @@ export const CustomOption = (props: CustomOptionProps) => {
 };
 
 export const Selector = () => {
-	const [token, setToken] = useState('usdt');
+	const [token, setToken] = useState('eth');
 
 	const handleChange = (event: SelectChangeEvent<string>) => {
-		console.log(event.target);
 		setToken(event.target.value);
+		
+		for(let i = 0; i < tokens.length; i++)
+		{
+			if(event.target.value === tokens[i].value)
+			{
+				setUsedToken(tokens[i].address);
+				return;
+			}
+		}
 	};
 
 	return (

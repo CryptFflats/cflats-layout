@@ -28,13 +28,14 @@ export const Option = styled(MenuItem)(() => ({
 	alignItems: 'center',
 	backgroundColor: '#EADEDE',
 	borderRadius: 50,
-	padding: 2,
-	minHeight: '28px'
+	padding: '5px',
+	minHeight: '28px',
+	marginTop: 4,
 }));
 
 export const CustomSelect = styled(Select<string>)(() => ({
 	root: {
-		backgroundColor: 'blue'
+		backgroundColor: 'blue',
 	},
 	'.MuiPaper-root': {
 		backgroundColor: 'red'
