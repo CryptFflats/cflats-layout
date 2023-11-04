@@ -25,7 +25,7 @@ export const WlBoxDialogContent = styled(DialogContent)(({ theme }) => ({
 	color: 'rgb(255, 255, 255)',
 	background: 'var(--color-gray-light)',
 	borderRadius: '0',
-	padding: '0',
+	padding: '0'
 }));
 
 export const CloseButton = styled(ButtonBase)(({ theme }) => ({
@@ -71,8 +71,7 @@ export const Input = styled(TextField)(({ theme }) => ({
 export const FormElement = styled('div')(({ theme }) => ({
 	display: 'flex',
 	flexDirection: 'column',
-	gap: '10px',
-	marginBottom: '40px',
+	flex: 1
 }));
 
 export const InputLabel = styled(FormLabel)(({ theme }) => ({
@@ -84,4 +83,12 @@ export const InputLabel = styled(FormLabel)(({ theme }) => ({
 	color: 'rgba(195, 182, 182, 1)',
 	textTransform: 'uppercase',
 	paddingLeft: '5px'
+}));
+
+export const FormElementWrapper = styled('div')(({ theme }) => ({
+	display: 'flex',
+	justifyContent: 'space-between',
+	alignItems: 'center',
+	margin: '40px 0',
+	gap: '10px'
 }));

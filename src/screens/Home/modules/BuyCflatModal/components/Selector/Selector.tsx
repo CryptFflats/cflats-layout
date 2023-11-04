@@ -56,7 +56,6 @@ export const Selector = () => {
 	const [token, setToken] = useState('usdt');
 
 	const handleChange = (event: SelectChangeEvent<string>) => {
-		console.log(event.target);
 		setToken(event.target.value);
 	};
 

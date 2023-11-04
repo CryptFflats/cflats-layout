@@ -14,6 +14,7 @@ import TitleBox from 'components/TitleBox/TitleBox';
 import { useState } from 'react';
 import { styled } from '@mui/material';
 import { BuyTab } from '../Tabs/BuyTab/BuyTab';
+import { Text } from 'UI/Text';
 
 const CustomTabs = styled(Tabs)(({ theme }) => ({
 	'.MuiTabs-indicator': {
@@ -109,11 +110,11 @@ const BuyCflatForm = () => {
 					Token information
 				</TitleBox.Title>
 
-				<p className={styles.tokenInfo}>
+				<Text className={styles.tokenInfo}>
 					Selling or buying tokens is TAXED at 6%. The liquidity of the token is
 					designed for a long term period. Starting price is 0.00008$. You can
 					buy our project products with discount, using CFLAT tokens.
-				</p>
+				</Text>
 
 				<CenterBtnWrapper>
 					<CloseButton onClick={() => console.log('fuck')}>CLOSE</CloseButton>

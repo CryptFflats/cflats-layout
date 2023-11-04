@@ -1,14 +1,22 @@
-.mintButton{
-    font-size: 1.5rem !important;
+.mintButton {
+	font-size: 1.5rem !important;
 }
 
-.mintBox{
-    display: flex;
-    justify-content: space-between;
+.mintBox {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 28px;
 
-    @media (max-width: 750px) {
-        margin-top: 20px;
-        flex-direction: column;
-        row-gap: 20px;
-    }
+	@media (max-width: 750px) {
+		margin-top: 20px;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
+
+.text {
+	color: #767272;
+	padding: 0 20px;
+	line-height: 19.07px;
 }
