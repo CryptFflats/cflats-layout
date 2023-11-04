@@ -50,6 +50,12 @@
     background: var(--color-purple);
     color: var(--color-purple-darken);
   }
+
+  @include _768 {
+    h2 {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 .roadmapHeader {
