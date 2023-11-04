@@ -14,7 +14,7 @@ export const TabWrapper = styled(Box)(({ theme }) => ({
 
 export const CustomBlueBottom = styled(BlueButton)(() => ({
 	'@media (max-width: 1980px)': {
-		padding: '5px 26px',
+		padding: '10px 26px',
 		fontSize: '1.3rem',
 		marginTop: '23px'
 	}

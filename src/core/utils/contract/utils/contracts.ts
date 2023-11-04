@@ -13,11 +13,13 @@ import {
     WL_BOX_THIRD_ADDRESS,
     WL_BOX_FOURTH_ADDRESS,
     WL_BOX_FIFTH_ADDRESS,
+    EXCHAHGER_ADDRESS,
 } from "core/utils/constance";
 
 import CflatsGenZeroAbi from '../../../../core/abi/gen_zero.json';
 import CflatsGenAbi from '../../../../core/abi/gen_first.json';
 import CflatsWlBoxAbi from '../../../../core/abi/CflatsWlBoxAbi.json';
+import CflatsExchangerAbi from '../../../../core/abi/CflatsExchangerAbi.json';
 
 export async function getTokenContract(signer: JsonRpcSigner) 
 {
@@ -57,10 +59,18 @@ export async function getWlBoxByGen(genNumber: number, signer: JsonRpcSigner)
 }
 
 
+export async function getExchangerContract(signer: JsonRpcSigner)
+{
+    return new Contract(EXCHAHGER_ADDRESS, CflatsExchangerAbi, signer);
+}
+
+
+
 async function changeNetworkToEthereumIfNeeded() 
 {
     // change network to eth if other network selected
 	if(await CflatsSigner.getCurrentNetworkId() !== 1n){
 		await CflatsSigner.changeNetwork(EvmChain.ETHEREUM);
 	}
-} 
+}
+

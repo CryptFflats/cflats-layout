@@ -3,5 +3,5 @@ export interface SwapSectionProps {
 	amount: number;
 	TokenComponent: React.FC;
 	maxLabel?: boolean;
-	onChange: (value: number) => void;
+	onChange: (value: number | string) => void;
 }

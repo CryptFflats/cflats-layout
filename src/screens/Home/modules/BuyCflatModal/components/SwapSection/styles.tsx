@@ -55,21 +55,21 @@ export const SwapSectionAmount = styled('input')(({ theme }) => ({
 	},
 
 	'::-webkit-input-placeholder': {
-		/* WebKit, Blink, Edge */ color: '#909'
+		/* WebKit, Blink, Edge */ color: '#C3B6B6',
 	},
 	':-moz-placeholder': {
-		/* Mozilla Firefox 4 to 18 */ color: '#909',
+		/* Mozilla Firefox 4 to 18 */ color: '#C3B6B6',
 		opacity: 1
 	},
 	'::-moz-placeholder': {
-		/* Mozilla Firefox 19+ */ color: '',
+		/* Mozilla Firefox 19+ */ color: '#C3B6B6',
 		opacity: 1
 	},
 	':-ms-input-placeholder': {
-		/* Internet Explorer 10-11 */ color: ''
+		/* Internet Explorer 10-11 */ color: '#C3B6B6'
 	},
 	'::-ms-input-placeholder': {
-		/* Microsoft Edge */ color: ''
+		/* Microsoft Edge */ color: '#C3B6B6'
 	},
 	'::placeholder': {
 		color: '#C3B6B6'
