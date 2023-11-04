@@ -3,6 +3,7 @@ import { CustomBlueBottom, TabWrapper } from './styles';
 import { TabPanelProps } from '../types';
 import { CenterBtnWrapper } from '../../BuyCflatForm/styles';
 import { CustomOption, Selector, TokenDesc } from '../../Selector/Selector';
+import { memo, useState } from 'react';
 
 const cflat: TokenDesc = {
 	id: 'usdt',
@@ -14,8 +15,20 @@ const cflat: TokenDesc = {
 	value: 'cflat'
 };
 
+const MemoCflatToken = memo(() => (
+	<CustomOption token={cflat} style={{ paddingRight: '8px' }} />
+));
+
 export const BuyTab = (props: TabPanelProps) => {
 	const { value, index } = props;
+	const [payValue, setPayValue] = useState(0);
+	const [receiveValue, setReceiveValue] = useState(0);
+
+	const handleBuy: React.MouseEventHandler<HTMLButtonElement> = () => {
+		try {
+			alert('Nick implement me!!!');
+		} catch (error) {}
+	};
 
 	return (
 		<>
@@ -23,23 +36,22 @@ export const BuyTab = (props: TabPanelProps) => {
 				<>
 					<TabWrapper role='tabpanel' hidden={value !== index}>
 						<SwapSection
-							amount={0}
+							amount={payValue}
 							title='You pay'
 							maxLabel
 							TokenComponent={Selector}
-							{...props}
+							onChange={setPayValue}
 						/>
 						<SwapSection
-							amount={0}
+							amount={receiveValue}
 							title='You receive'
 							{...props}
-							TokenComponent={() => (
-								<CustomOption token={cflat} style={{ paddingRight: '8px' }} />
-							)}
+							TokenComponent={MemoCflatToken}
+							onChange={setReceiveValue}
 						/>
 					</TabWrapper>
 					<CenterBtnWrapper>
-						<CustomBlueBottom>BUY TOKENS</CustomBlueBottom>
+						<CustomBlueBottom onClick={handleBuy}>BUY TOKENS</CustomBlueBottom>
 					</CenterBtnWrapper>
 				</>
 			)}

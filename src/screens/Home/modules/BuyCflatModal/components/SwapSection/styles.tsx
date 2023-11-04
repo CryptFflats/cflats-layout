@@ -27,7 +27,10 @@ export const SwapSectionTitle = styled('span')(({ theme }) => ({
 }));
 
 export const MaxLabel = styled(SwapSectionTitle)(({ theme }) => ({
-	color: '#C3B6B6'
+	color: '#C3B6B6',
+	'&:hover': {
+		cursor: 'pointer'
+	}
 }));
 
 export const SwapSectionAmount = styled('input')(({ theme }) => ({
@@ -43,7 +46,8 @@ export const SwapSectionAmount = styled('input')(({ theme }) => ({
 	marginBottom: 57,
 
 	'@media(max-width: 768px)': {
-		marginBottom: 0
+		marginBottom: 0,
+		width: '74%'
 	},
 
 	'&:active': {
