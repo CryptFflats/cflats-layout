@@ -462,12 +462,12 @@
       "text_1": "<span>CFLAT</span> – internal project token acting as in-game currency, acquiring for renting an apartment (staking), used for internal payments between users, purchase of the next <span>GEN#</span>, etc.",
       "list": {
         "n1": "Token name - CFLAT",
-        "n2": "Standard - BEP20",
+        "n2": "Standard - ERC20",
         "n3": "Total Supply - 15 000 000 000",
-        "n4": "Liquid pool (38%) - 5 700 000 000",
-        "n5": "Team (8%) - 1 200 000 000",
-        "n6": "Community token (54%) - 8 100 000 000",
-        "n7": "Starting price - 0,00008 $"
+        "n4": "Liquid pool (38%) - ~5 700 000 000",
+        "n5": "Team (8%) - ~1 100 000 000",
+        "n6": "Community token (54%) - ~8 100 000 000",
+        "n7": "Starting price - 0,0005 $"
       },
       "text_2": "Selling or buying tokens is <span>TAXED at 6%.</span> The liquidity of the token is designed for a long term period. After the NFT sale, we will create a liquidity pool on the DEX exchange, according to our tokenomics, thereby predicting the growth of our CFLAT token.",
       "text_3": "The token sale starts from the moment our smart contract is deployed on the <span>Ethereum</span> network. The price of the token, until the moment of placement on the decentralized exchange, is floating and starts from <span>$0.00008.</span> The increase in the price of the token will be calculated with our internal mathematical formula as the number of tokens decreases.\n<br><br>\nWe also offer to invest in the project by buying our tokens at <span>30%</span> cheaper than the current price, starting from an investment of <span>$1,000.</span> To do this, you need to contact the support service of our project.\n<br><br>\nThe token can be bought for two types of cryptocurrency: <span>ETH, USDT.</span>\n"

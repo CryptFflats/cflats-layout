@@ -439,7 +439,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/1c2162aa-1734-416f-2131-79beb587b600/public'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/4d8bd6a4-5eb7-44e7-888e-ccfe37fe1f00/public'}
 				/>
 			</motion.div>
 
@@ -599,7 +599,7 @@ const Dapp = () => {
 				<CflatsImage
 					fluid
 					alt={'Dapp image'}
-					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/dd73a1f2-0997-4117-4f38-d33a293a3700/public'}
+					src={'https://imagedelivery.net/HmgqhtdzVbRs-_BPsHnYHg/f7946a35-c8b8-4778-610d-3af0e9fcd100/public'}
 				/>
 			</motion.div>
 			

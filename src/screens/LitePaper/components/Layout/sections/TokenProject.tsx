@@ -50,7 +50,7 @@ const TokenProject = () => {
 			/>
 
 			<ul className={styles.strong}>
-				{['n1', 'n2', 'n3', 'n4', 'n6', 'n7'].map((item, index) => {
+				{['n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7'].map((item, index) => {
 					return (
 						<motion.li
 							variants={fadeInUp}
