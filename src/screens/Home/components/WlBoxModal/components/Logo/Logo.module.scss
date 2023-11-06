@@ -1,78 +1,81 @@
-@import "src/assets/styles/helpers/mixin";
-@import "src/assets/styles/helpers/variables";
+@import 'src/assets/styles/helpers/mixin';
+@import 'src/assets/styles/helpers/variables';
 
 .logo {
-  position: relative;
-  color: rgb(255, 255, 255);
+	position: relative;
+	color: rgb(255, 255, 255);
 
-  > h1 {
+	> h1 {
 		font-size: 1.37rem;
 		font-weight: $bold;
 
-    @include _1980 {
-      font-size: 1rem;
-      line-height: 2.5rem;
-    }
+		@include _1920 {
+			font-size: 1rem;
+			line-height: 2.5rem;
+		}
+
+		@include _480 {
+			font-size: 14px;
+			line-height: 2.5rem;
+		}
 	}
 
-  > p {
-    font-size: $text-small;
-    line-height: $text-small-height;
-    font-weight: $semiBold;
-    padding-left: 0.1rem;
+	> p {
+		font-size: $text-small;
+		line-height: $text-small-height;
+		font-weight: $semiBold;
+		padding-left: 0.1rem;
 
-    @include _1024 {
-      display: none;
-    }
-  }
+		@include _1024 {
+			display: none;
+		}
+	}
 }
 
 .key {
-  position: absolute;
-  top: -35px;
-  left: -41px;
-  width: 68px;
-  height: 64px;
-  animation: move infinite linear .7s;
-  animation-direction: alternate;
+	position: absolute;
+	top: -35px;
+	left: -41px;
+	width: 68px;
+	height: 64px;
+	animation: move infinite linear 0.7s;
+	animation-direction: alternate;
 
-  @include _1980 {
+	@include _1920 {
 		top: -24px;
 		left: -28px;
 		width: 52px;
 		height: 52px;
 	}
 
-  @include _768 {
-    height: 44px;
-    width: 46px;
-    top: -27px;
-    left: -32px;
+	@include _768 {
+		height: 44px;
+		width: 46px;
+		top: -27px;
+		left: -32px;
 
-    svg {
-      width: 55px;
-      height: 55px;
+		svg {
+			width: 55px;
+			height: 55px;
+		}
+	}
 
+	@include _480 {
+		top: -4px;
+		left: -17px;
 
-    }
-  }
-
-  @include _480 {
-    top: -20px;
-    left: -25px;;
-
-    svg {
-      width: 45px;
-      height: 45px;
-    }
-  }
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
 }
 
 @keyframes move {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(10deg);
-  }
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
 }

@@ -1,6 +1,17 @@
-.tokenInfo {
+@import 'src/assets/styles/helpers/mixin';
+@import 'src/assets/styles/helpers/variables';
+
+.text {
 	color: #5e5e5e;
-	font-size: 14px;
 	font-weight: 400;
 	line-height: normal;
+	font-size: 18px;
+
+	@include _1920 {
+		font-size: 14px;
+	}
+
+	@include _480 {
+		font-size: 10px;
+	}
 }

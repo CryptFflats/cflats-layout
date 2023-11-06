@@ -2,11 +2,11 @@
 
 import { CloseButton, Container, FormHeader } from '../WlBoxModal/styles';
 import Logo from '../Logo/Logo';
-import { styled } from '@mui/material/styles';
 import { useWalletAddressHook } from '../../../../../../core/hooks/useWalletAddress.hook';
 import IcClose from '../../../../../../assets/images/icons/ic_close_white.svg';
 import { useAppDispatch } from '../../../../../../core/hooks/store.hook';
 import { setWlBoxModal } from '../../../../../../core/store/slices/ModalSlice';
+import { MyWallet } from 'UI/MyWallet';
 
 const Header = () => {
 	const address = useWalletAddressHook();
@@ -25,6 +25,7 @@ const Header = () => {
 					<IcClose />
 				</CloseButton>
 				<Logo />
+				<MyWallet />
 			</Container>
 		</FormHeader>
 	);
