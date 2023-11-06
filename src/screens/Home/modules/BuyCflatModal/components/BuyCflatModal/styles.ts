@@ -42,12 +42,15 @@ export const BuyCflatDialogContent = styled(DialogContent)(({ theme }) => ({
 }));
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '50px 70px 17px 55px',
+	padding: '35px 70px 10px 55px',
 
 	'@media(max-width: 768px)': {
-		padding: '15px 20px',
-		paddingTop: '40px',
-		marginRight: '-20px'
+		padding: '15px 40px',
+		paddingTop: '40px'
+	},
+
+	'@media(max-width: 480px)': {
+		padding: '5px 20px'
 	}
 }));
 

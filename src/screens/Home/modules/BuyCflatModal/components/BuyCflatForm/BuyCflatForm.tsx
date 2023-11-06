@@ -15,6 +15,7 @@ import { useState } from 'react';
 import { styled } from '@mui/material';
 import { BuyTab } from '../Tabs/BuyTab/BuyTab';
 import { Text } from 'UI/Text';
+import { ModalButton } from 'styled/ModalButton';
 
 const CustomTabs = styled(Tabs)(({ theme }) => ({
 	'.MuiTabs-indicator': {
@@ -34,7 +35,6 @@ interface StyledTabProps {
 const StyledTab = styled((props: StyledTabProps) => (
 	<Tab disableRipple {...props} />
 ))(({ theme }) => ({
-	
 	fontSize: '17px',
 	lineHeight: '23px',
 	letterSpacing: '0em',
@@ -49,17 +49,15 @@ const StyledTab = styled((props: StyledTabProps) => (
 	},
 
 	'&.Mui-selected': {
-		
 		fontWeight: '700',
 		color: '#5E5E5E',
 		border: 'none'
 	}
 }));
 
-const CloseButton = styled(BlueButton)(() => ({
+const CloseButton = styled(ModalButton)(() => ({
 	backgroundColor: '#CA2E2E',
 	filter: 'drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.20))',
-	margin: '0 auto',
 	display: 'none',
 
 	'&:hover': {
@@ -67,6 +65,7 @@ const CloseButton = styled(BlueButton)(() => ({
 	},
 
 	'@media(max-width: 768px)': {
+		marginTop: '20px',
 		display: 'block'
 	}
 }));

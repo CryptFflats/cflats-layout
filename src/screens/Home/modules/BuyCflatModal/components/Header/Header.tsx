@@ -1,8 +1,8 @@
 'use client';
 
 import { CloseButton, Container, FormHeader } from '../BuyCflatModal/styles';
-import Logo from '../Logo/Logo';
-import MyWallet from '../MyWallet/MyWallet';
+import { Logo } from 'UI/Logo';
+import { MyWallet } from 'UI/MyWallet';
 import { styled } from '@mui/material/styles';
 import { useWalletAddressHook } from '../../../../../../core/hooks/useWalletAddress.hook';
 import IcClose from '../../../../../../assets/images/icons/ic_close_white.svg';

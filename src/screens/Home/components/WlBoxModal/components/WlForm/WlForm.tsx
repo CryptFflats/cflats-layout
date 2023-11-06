@@ -28,6 +28,7 @@ import {
 import styles from './WlForm.module.scss';
 import { useState } from 'react';
 import { Text } from 'UI/Text';
+import { ModalButton } from 'styled/ModalButton';
 
 const WlForm = () => {
 	const {
@@ -129,12 +130,11 @@ const WlForm = () => {
 				<form autoComplete={'off'} onSubmit={handleSubmit(submit)}>
 					<Text className={styles.text}>
 						Dear costumer, we are appreciated for purchasing WL BOX to get an
-						opportunity of free mint of GEN#1.
+						opportunity of free mint of GEN#1. Please fill the form bellow:
 					</Text>
 
 					<FormElementWrapper>
-						<FormElement>
-							{/* <InputLabel>Whitelist Box ID</InputLabel> */}
+						<FormElement className={styles.inputWrapper}>
 							<Input
 								{...register('boxId', {
 									required: 'Required Field'
@@ -148,23 +148,18 @@ const WlForm = () => {
 							<ErrorMessage>{getErrorMsg}</ErrorMessage>
 						</FormElement>
 
-						<BlueButton type={'submit'} className={styles.mintButton}>
+						<ModalButton type={'submit'} className={styles.btn}>
 							USE WL BOX
-						</BlueButton>
+						</ModalButton>
 					</FormElementWrapper>
 
 					<Text className={styles.text}>
-						Please fill the form bellow: If you want to avoid using WL BOX and
-						mint above than one NFT GEN#1, please use MINT button bellow.
+						If you want to avoid using WL BOX and mint above than one NFT GEN#1,
+						please use MINT button bellow.
 					</Text>
 
 					<Box className={styles.mintBox}>
-						<BlueButton
-							onClick={submitWithoutWlBox}
-							className={styles.mintButton}
-						>
-							MINT GEN#1
-						</BlueButton>
+						<ModalButton onClick={submitWithoutWlBox}>MINT GEN#1</ModalButton>
 					</Box>
 				</form>
 			</Container>

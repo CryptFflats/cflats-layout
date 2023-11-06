@@ -3,6 +3,7 @@ import {
 	ComponentHolder,
 	MaxLabel,
 	SwapSectionAmount,
+	SwapSectionAmountWrapper,
 	SwapSectionRow,
 	SwapSectionTitle,
 	SwapSectionWrapper
@@ -122,12 +123,18 @@ export const SwapSection = (props: SwapSectionProps) => {
 				{maxLabel && <MaxLabel onClick={handleMaxClick}>max</MaxLabel>}
 			</SwapSectionRow>
 			<SwapSectionRow>
-				<SwapSectionAmount placeholder='0' value={amount} onChange={async (e) => handleChange(e)} />
+				<SwapSectionAmountWrapper>
+					<SwapSectionAmount
+						placeholder='0'
+						value={amount}
+						onChange={async e => handleChange(e)}
+					/>
+					<ErrorMessage>{getErrorMsg}</ErrorMessage>
+				</SwapSectionAmountWrapper>
 				<ComponentHolder>
 					<TokenComponent />
 				</ComponentHolder>
 			</SwapSectionRow>
-			<ErrorMessage>{getErrorMsg}</ErrorMessage>
 		</SwapSectionWrapper>
 	);
 };

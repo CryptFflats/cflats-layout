@@ -8,5 +8,5 @@ type Props = {
 
 export const Text = (props: Props) => {
 	const { className, children } = props;
-	return <p className={classNames(styles.tokenInfo, className)}>{children}</p>;
+	return <p className={classNames(styles.text, className)}>{children}</p>;
 };

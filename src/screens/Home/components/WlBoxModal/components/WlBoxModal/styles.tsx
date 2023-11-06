@@ -15,7 +15,7 @@ export const WlBoxDialog = styled(Dialog)(({ theme }) => ({
 		background: 'var(--color-gray-light)',
 		maxWidth: '700px',
 		width: '100%',
-		'@media(max-width: 768px)': {
+		'@media(max-width: 1920px)': {
 			maxWidth: '500px'
 		}
 	}
@@ -23,7 +23,7 @@ export const WlBoxDialog = styled(Dialog)(({ theme }) => ({
 
 export const WlBoxDialogContent = styled(DialogContent)(({ theme }) => ({
 	color: 'rgb(255, 255, 255)',
-	background: 'var(--color-gray-light)',
+	background: '#2c2c2c',
 	borderRadius: '0',
 	padding: '0'
 }));
@@ -31,15 +31,30 @@ export const WlBoxDialogContent = styled(DialogContent)(({ theme }) => ({
 export const CloseButton = styled(ButtonBase)(({ theme }) => ({
 	position: 'absolute',
 	top: '30px',
-	right: '30px'
+	right: '30px',
+
+	'@media(max-width: 480px)': {
+		top: '10px',
+		right: '20px'
+	}
 }));
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '50px 0 25px 40px'
+	padding: '50px 0 15px 0',
+	paddingRight: '30px',
+	paddingLeft: '30px',
+
+	'@media (max-width: 480px)': {
+		padding: '30px 0 10px 20px'
+	}
 }));
 
 export const Container = styled('div')(({ theme }) => ({
-	padding: '0 40px'
+	padding: '0 40px',
+
+	'@media (max-width: 480px)': {
+		padding: '0 15px'
+	}
 }));
 
 export const Input = styled(TextField)(({ theme }) => ({
@@ -60,11 +75,18 @@ export const Input = styled(TextField)(({ theme }) => ({
 		borderColor: '#C3B6B6'
 	},
 	'.MuiInputBase-input': {
-		padding: '16px 25px',
-		fontSize: '1rem',
+		padding: '8px 16px',
+		fontSize: '18px',
 		fontWeight: '600',
-		lineHeight: '1.5rem',
-		color: 'rgba(94, 94, 94, 1)'
+		color: 'rgba(94, 94, 94, 1)',
+
+		'@media (max-width: 1920px)': {
+			fontSize: '14px'
+		},
+
+		'@media (max-width: 480px)': {
+			fontSize: '12px'
+		}
 	}
 }));
 
@@ -75,8 +97,6 @@ export const FormElement = styled('div')(({ theme }) => ({
 }));
 
 export const InputLabel = styled(FormLabel)(({ theme }) => ({
-	// fontSize: '1.5rem',
-	// lineHeight: '2rem',
 	fontSize: '1.25rem',
 	lineHeight: '1.5rem',
 	fontWeight: 600,
@@ -88,7 +108,11 @@ export const InputLabel = styled(FormLabel)(({ theme }) => ({
 export const FormElementWrapper = styled('div')(({ theme }) => ({
 	display: 'flex',
 	justifyContent: 'space-between',
-	alignItems: 'center',
+	alignItems: 'flex-start',
 	margin: '40px 0',
-	gap: '10px'
+	gap: '20px',
+
+	'@media (max-width: 480px)': {
+		margin: '20px 0'
+	}
 }));

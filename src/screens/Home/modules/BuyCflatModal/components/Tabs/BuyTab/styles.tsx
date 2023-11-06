@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 import { BlueButton } from 'styled/BlueButton';
+import { ModalButton } from 'styled/ModalButton';
 
 export const TabWrapper = styled(Box)(({ theme }) => ({
 	display: 'flex',
@@ -12,10 +13,6 @@ export const TabWrapper = styled(Box)(({ theme }) => ({
 	}
 }));
 
-export const CustomBlueBottom = styled(BlueButton)(() => ({
-	'@media (max-width: 1980px)': {
-		padding: '10px 26px',
-		fontSize: '1.3rem',
-		marginTop: '23px'
-	}
+export const CustomBlueBottom = styled(ModalButton)(() => ({
+	marginTop: '23px'
 }));

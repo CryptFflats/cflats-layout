@@ -13,6 +13,14 @@ export const SwapSectionRow = styled(Box)(({ theme }) => ({
 	position: 'relative',
 	alignItems: 'start',
 
+	'&:nth-child(2)': {
+		height: '120px',
+
+		'@media(max-width: 768px)': {
+			height: 'auto'
+		}
+	},
+
 	'@media(max-width: 768px)': {
 		alignItems: 'center'
 	}
@@ -33,6 +41,10 @@ export const MaxLabel = styled(SwapSectionTitle)(({ theme }) => ({
 	}
 }));
 
+export const SwapSectionAmountWrapper = styled('div')(({ theme }) => ({
+	alignSelf: 'flex-start'
+}));
+
 export const SwapSectionAmount = styled('input')(({ theme }) => ({
 	color: '#757575',
 	fontSize: '40px',
@@ -43,19 +55,13 @@ export const SwapSectionAmount = styled('input')(({ theme }) => ({
 	background: '#F4E9E9',
 	outline: 'none',
 	width: '100%',
-	marginBottom: 57,
-
-	'@media(max-width: 768px)': {
-		marginBottom: 0,
-		width: '74%'
-	},
 
 	'&:active': {
 		border: 'none'
 	},
 
 	'::-webkit-input-placeholder': {
-		/* WebKit, Blink, Edge */ color: '#C3B6B6',
+		/* WebKit, Blink, Edge */ color: '#C3B6B6'
 	},
 	':-moz-placeholder': {
 		/* Mozilla Firefox 4 to 18 */ color: '#C3B6B6',
@@ -79,5 +85,9 @@ export const SwapSectionAmount = styled('input')(({ theme }) => ({
 export const ComponentHolder = styled('div')(({ theme }) => ({
 	position: 'absolute',
 	bottom: 0,
-	right: 0
+	right: 0,
+
+	'@media(max-width: 768px)': {
+		position: 'static'
+	}
 }));
