@@ -1,8 +1,17 @@
-import { SwapSection, getInputTokensAmount, getTokensAmountIn } from '../../SwapSection/SwapSection';
+import {
+	SwapSection,
+	getInputTokensAmount,
+	getTokensAmountIn
+} from '../../SwapSection/SwapSection';
 import { CustomBlueBottom, TabWrapper } from './styles';
 import { TabPanelProps } from '../types';
 import { CenterBtnWrapper } from '../../BuyCflatForm/styles';
-import { CustomOption, Selector, TokenDesc, getUsedToken } from '../../Selector/Selector';
+import {
+	CustomOption,
+	Selector,
+	TokenDesc,
+	getUsedToken
+} from '../../Selector/Selector';
 import { memo, useEffect, useState } from 'react';
 import CflatsSigner from 'core/utils/contract/utils/CflatsSigner';
 import { getExchangerContract } from 'core/utils/contract/utils/contracts';
@@ -16,7 +25,7 @@ const cflat: TokenDesc = {
 	},
 	label: 'CFLAT',
 	value: 'cflat',
-	address: '0x',
+	address: '0x'
 };
 
 const MemoCflatToken = memo(() => (
@@ -34,15 +43,17 @@ export const BuyTab = (props: TabPanelProps) => {
 			const signer = await CflatsSigner.getSigner();
 			const exchangerContract = await getExchangerContract(signer);
 
-			if(tokenUsed.toLowerCase() === ZeroAddress)
-			{
-				const tx = await exchangerContract.swapExactEthForTokens({value: getTokensAmountIn()});
+			if (tokenUsed.toLowerCase() === ZeroAddress) {
+				const tx = await exchangerContract.swapExactEthForTokens({
+					value: getTokensAmountIn()
+				});
 				await tx.wait();
 				alert(tx);
-			}
-			else
-			{
-				const tx = await exchangerContract.swapExactTokensForTokens(tokenUsed, getTokensAmountIn);
+			} else {
+				const tx = await exchangerContract.swapExactTokensForTokens(
+					tokenUsed,
+					getTokensAmountIn
+				);
 				await tx.wait();
 				alert(tx);
 			}
@@ -50,13 +61,12 @@ export const BuyTab = (props: TabPanelProps) => {
 	};
 
 	useEffect(() => {
-		const handleInputedTokensAmount = async () =>
-		{
+		const handleInputedTokensAmount = async () => {
 			setReceiveValue(getInputTokensAmount());
-		}
+		};
 
 		handleInputedTokensAmount();
-	})
+	});
 
 	return (
 		<>
