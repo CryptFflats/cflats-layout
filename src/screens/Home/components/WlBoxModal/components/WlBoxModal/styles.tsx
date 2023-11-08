@@ -16,7 +16,7 @@ export const WlBoxDialog = styled(Dialog)(({ theme }) => ({
 		maxWidth: '700px',
 		width: '100%',
 		'@media(max-width: 1920px)': {
-			maxWidth: '500px'
+			maxWidth: '530px'
 		}
 	}
 }));
@@ -30,8 +30,8 @@ export const WlBoxDialogContent = styled(DialogContent)(({ theme }) => ({
 
 export const CloseButton = styled(ButtonBase)(({ theme }) => ({
 	position: 'absolute',
-	top: '30px',
-	right: '30px',
+	top: '20px',
+	right: '20px',
 
 	'@media(max-width: 480px)': {
 		top: '10px',
@@ -40,17 +40,12 @@ export const CloseButton = styled(ButtonBase)(({ theme }) => ({
 }));
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '50px 0 15px 0',
-	paddingRight: '30px',
-	paddingLeft: '30px',
-
-	'@media (max-width: 480px)': {
-		padding: '30px 0 10px 20px'
-	}
+	padding: '40px 40px 10px 20px',
 }));
 
 export const Container = styled('div')(({ theme }) => ({
-	padding: '0 40px',
+	padding: '0 20px 0 40px',
+	
 
 	'@media (max-width: 480px)': {
 		padding: '0 15px'
@@ -65,20 +60,18 @@ export const Input = styled(TextField)(({ theme }) => ({
 		borderRadius: '35px'
 	},
 	'.MuiOutlinedInput-notchedOutline': {
-		borderColor: '#C3B6B6',
-		borderWidth: '2px'
+		border: '1px solid #B1A6A6',
 	},
 	'.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
-		borderColor: '#C3B6B6'
+		border: '1px solid #B1A6A6',
 	},
 	'.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-		borderColor: '#C3B6B6'
+		border: '1px solid #B1A6A6',
 	},
 	'.MuiInputBase-input': {
 		padding: '8px 16px',
 		fontSize: '18px',
-		fontWeight: '600',
-		color: 'rgba(94, 94, 94, 1)',
+		color: '#B1A6A6',
 
 		'@media (max-width: 1920px)': {
 			fontSize: '14px'

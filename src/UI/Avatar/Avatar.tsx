@@ -13,7 +13,7 @@ const Avatar = () => {
 	const { avatar } = useAppSelector(state => state.MenuSlice)
 
   return (
-    <span className={classNames(styles.avatar, isLoading && styles.noBorder)}>
+    	<span className={classNames(styles.avatar, isLoading && styles.noBorder)}>
 			<CfImage
 				onLoad={() => setIsLoading(false)}
 				style={{ display: isLoading ? 'none' : '' }}

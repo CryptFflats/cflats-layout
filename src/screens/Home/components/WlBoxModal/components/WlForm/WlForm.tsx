@@ -136,10 +136,11 @@ const WlForm = () => {
 					<FormElementWrapper>
 						<FormElement className={styles.inputWrapper}>
 							<Input
+								className={styles.inputField}
 								{...register('boxId', {
 									required: 'Required Field'
 								})}
-								placeholder='ENTER WL BOX ID:'
+								placeholder='Input WL BOX ID...'
 								onChange={async (e: any) => await handleVerification(e)}
 							/>
 							{errors.boxId && (

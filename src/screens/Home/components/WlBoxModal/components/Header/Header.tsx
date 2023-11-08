@@ -7,6 +7,7 @@ import IcClose from '../../../../../../assets/images/icons/ic_close_white.svg';
 import { useAppDispatch } from '../../../../../../core/hooks/store.hook';
 import { setWlBoxModal } from '../../../../../../core/store/slices/ModalSlice';
 import { MyWallet } from 'UI/MyWallet';
+import styles from "./Header.module.scss";
 
 const Header = () => {
 	const address = useWalletAddressHook();
@@ -25,7 +26,7 @@ const Header = () => {
 				<CloseButton onClick={() => dispatch(setWlBoxModal(false))}>
 					<IcClose />
 				</CloseButton>
-				<MyWallet />
+				<MyWallet/>
 			</Container>
 		</FormHeader>
 	);

@@ -16,6 +16,10 @@
 	width: 50%;
 }
 
+.inputField::placeholder{
+	color: red !important;
+}
+
 .btn {
 	width: 50%;
 }

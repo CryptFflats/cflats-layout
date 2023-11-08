@@ -3,10 +3,9 @@ import { Button } from '@mui/material';
 
 export const ModalButton = styled(Button)(({ theme }) => ({
 	transition: '0.05s ease-in-out',
-	fontFamily: 'var(--font-nunito)',
 	padding: '9px 58px',
 	fontSize: '18px',
-	lineHeight: '25.78px',
+	lineHeight: '21px',
 	fontWeight: 700,
 	display: 'inline-flex',
 	gap: '20px',
