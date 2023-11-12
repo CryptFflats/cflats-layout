@@ -3,12 +3,11 @@ import { Button } from '@mui/material';
 
 export const ModalButton = styled(Button)(({ theme }) => ({
 	transition: '0.05s ease-in-out',
-	padding: '9px 58px',
-	fontSize: '18px',
+	padding: '7px 56px',
+	fontSize: '14px',
 	lineHeight: '21px',
 	fontWeight: 700,
 	display: 'inline-flex',
-	gap: '20px',
 	alignItems: 'center',
 	position: 'relative',
 	background: '#0f6eb2',
@@ -30,14 +29,14 @@ export const ModalButton = styled(Button)(({ theme }) => ({
 		background: '#08426d'
 	},
 
-	'@media(max-width: 1920px)': {
-		padding: '8px 44px',
-		fontSize: '14px',
-		lineHeight: '19.34px'
-	},
+	// '@media(max-width: 1920px)': {
+	// 	padding: '8px 40px',
+	// 	fontSize: '14px',
+	// 	lineHeight: '19.34px'
+	// },
 
-	'@media(max-width: 576px)': {
-		padding: '8px 15px',
-		fontSize: '10px'
-	}
+	// '@media(max-width: 576px)': {
+	// 	padding: '8px 15px',
+	// 	fontSize: '10px'
+	// }
 }));

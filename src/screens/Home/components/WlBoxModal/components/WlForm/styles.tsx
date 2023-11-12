@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 export const FormWrapper = styled('div')(({ theme }) => ({
 	borderRadius: '30px',
 	background: 'rgba(244, 233, 233, 1)',
-	height: 330,
+	height: 325,
 }));
 
 export const ErrorMessage = styled('div')(({ theme }) => ({

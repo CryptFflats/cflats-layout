@@ -44,7 +44,7 @@ export const FormHeader = styled('div')(({ theme }) => ({
 }));
 
 export const Container = styled('div')(({ theme }) => ({
-	padding: '0 20px 0 40px',
+	padding: '0 40px 0 40px',
 	
 
 	'@media (max-width: 480px)': {
@@ -57,7 +57,7 @@ export const Input = styled(TextField)(({ theme }) => ({
 		borderRadius: '20px'
 	},
 	'& .MuiInputBase-root': {
-		borderRadius: '35px'
+		borderRadius: '35px',
 	},
 	'.MuiOutlinedInput-notchedOutline': {
 		border: '1px solid #B1A6A6',
@@ -67,19 +67,13 @@ export const Input = styled(TextField)(({ theme }) => ({
 	},
 	'.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
 		border: '1px solid #B1A6A6',
+		
 	},
 	'.MuiInputBase-input': {
-		padding: '8px 16px',
-		fontSize: '18px',
+		padding: '7.5px 16px',
+		fontSize: '14px',
 		color: '#B1A6A6',
-
-		'@media (max-width: 1920px)': {
-			fontSize: '14px'
-		},
-
-		'@media (max-width: 480px)': {
-			fontSize: '12px'
-		}
+		
 	}
 }));
 
@@ -102,8 +96,8 @@ export const FormElementWrapper = styled('div')(({ theme }) => ({
 	display: 'flex',
 	justifyContent: 'space-between',
 	alignItems: 'flex-start',
-	margin: '40px 0',
-	gap: '20px',
+	margin: '35px 0',
+	gap: '40px',
 
 	'@media (max-width: 480px)': {
 		margin: '20px 0'

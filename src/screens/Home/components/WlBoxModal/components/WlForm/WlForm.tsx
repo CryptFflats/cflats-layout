@@ -128,7 +128,7 @@ const WlForm = () => {
 		<FormWrapper>
 			<Container>
 				<form autoComplete={'off'} onSubmit={handleSubmit(submit)}>
-					<Text className={styles.text}>
+					<Text>
 						Dear costumer, we are appreciated for purchasing WL BOX to get an
 						opportunity of free mint of GEN#1. Please fill the form bellow:
 					</Text>
@@ -146,7 +146,7 @@ const WlForm = () => {
 							{errors.boxId && (
 								<ErrorMessage>{errors.boxId.message}</ErrorMessage>
 							)}
-							<ErrorMessage>{getErrorMsg}</ErrorMessage>
+							<ErrorMessage className={styles['wl-box-err']}>{getErrorMsg}</ErrorMessage>
 						</FormElement>
 
 						<ModalButton type={'submit'} className={styles.btn}>
@@ -154,7 +154,7 @@ const WlForm = () => {
 						</ModalButton>
 					</FormElementWrapper>
 
-					<Text className={styles.text}>
+					<Text className={styles["wl-box-text"]}>
 						If you want to avoid using WL BOX and mint above than one NFT GEN#1,
 						please use MINT button bellow.
 					</Text>
