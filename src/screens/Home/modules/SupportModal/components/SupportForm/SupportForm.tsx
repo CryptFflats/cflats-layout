@@ -91,7 +91,7 @@ const SupportForm = () => {
 							})}
 							multiline
 							sx={{
-								'.MuiInputBase-input': { minHeight: '100px', pl: '16px' }
+								'.MuiInputBase-input': { minHeight: '100px', pl: '8px' }
 							}}
 						/>
 					</FormElement>
