@@ -1,0 +1,8 @@
+.text {
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.col {
+    display: flex;
+}

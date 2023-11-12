@@ -11,13 +11,7 @@ import {
 	setBuyCflatModal,
 	setSupportModal
 } from '../../../../../../core/store/slices/ModalSlice';
-
-const WalletAddress = styled('p')(() => ({
-	fontSize: '16px',
-	'@media(max-width: 768px)': {
-		display: 'none'
-	}
-}));
+import { WalletAddress } from 'UI/WalletAddress';
 
 const Header = () => {
 	const address = useWalletAddressHook();

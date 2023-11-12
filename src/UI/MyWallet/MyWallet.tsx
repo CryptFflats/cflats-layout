@@ -4,12 +4,15 @@
 import { styled } from '@mui/material/styles';
 import Avatar from '../Avatar/Avatar';
 
-export const MyWallet = (props: { onlyIcon?: boolean }) => {
-	const { onlyIcon } = props;
+export const MyWallet = (props: {
+	onlyIcon?: boolean;
+	textClassName?: string;
+}) => {
+	const { onlyIcon, textClassName } = props;
 	return (
 		<FlexBox>
-			<Avatar/>
-			{!onlyIcon && <span>My wallet</span>}
+			<Avatar />
+			{!onlyIcon && <span className={textClassName}>My wallet</span>}
 		</FlexBox>
 	);
 };
@@ -41,6 +44,7 @@ export const FlexBox = styled('div')(({ theme }) => ({
 
 	'& > span:nth-child(2)': {
 		fontWeight: 700,
+		fontSize: '14px',
 	}
 
 	
