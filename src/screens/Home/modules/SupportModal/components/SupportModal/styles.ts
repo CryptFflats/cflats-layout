@@ -17,7 +17,7 @@ export const SupportDialog = styled(Dialog)(({ theme }) => ({
 	},
 
 	'.MuiDialog-paper': {
-		borderRadius: '50px',
+		borderRadius: '30px',
 		background: 'var(--color-gray-light)',
 		maxWidth: '720px',
 		width: '100%',
@@ -41,7 +41,7 @@ export const SupportDialogContent = styled(DialogContent)(({ theme }) => ({
 }));
 
 export const FormHeader = styled('div')(({ theme }) => ({
-	padding: '60px 0 17px 55px',
+	padding: '40px 15px 17px 25px',
 	background: '#2C2C2C',
 	'@media (max-width: 768px)': {
 		padding: '35px 0 15px 30px'
@@ -94,7 +94,7 @@ export const Input = styled(TextField)(({ theme }) => ({
 		borderRadius: '20px'
 	},
 	'& .MuiInputBase-root': {
-		borderRadius: '35px'
+		borderRadius: '22px'
 	},
 	'.MuiOutlinedInput-notchedOutline': {
 		borderColor: '#C3B6B6',
@@ -107,7 +107,7 @@ export const Input = styled(TextField)(({ theme }) => ({
 		borderColor: '#C3B6B6'
 	},
 	'.MuiInputBase-input': {
-		padding: '8px 25px',
+		padding: '10px 25px',
 		fontSize: '14px',
 		lineHeight: 'normal',
 		color: 'rgba(94, 94, 94, 1)',

@@ -16,6 +16,8 @@ import { styled } from '@mui/material';
 import { BuyTab } from '../Tabs/BuyTab/BuyTab';
 import { Text } from 'UI/Text';
 import { ModalButton } from 'styled/ModalButton';
+import { setBuyCflatModal } from 'core/store/slices/ModalSlice';
+import { useAppDispatch } from 'core/hooks/store.hook';
 
 const CustomTabs = styled(Tabs)(({ theme }) => ({
 	'.MuiTabs-indicator': {
@@ -82,6 +84,8 @@ const BuyCflatForm = () => {
 		console.log(data);
 	};
 
+	const dispatch = useAppDispatch();
+
 	const [value, setValue] = useState(0);
 
 	const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -116,7 +120,7 @@ const BuyCflatForm = () => {
 				</Text>
 
 				<CenterBtnWrapper>
-					<CloseButton onClick={() => console.log('fuck')}>CLOSE</CloseButton>
+					<CloseButton onClick={() => dispatch(setBuyCflatModal(false))}>CLOSE</CloseButton>
 				</CenterBtnWrapper>
 			</Container>
 		</FormWrapper>

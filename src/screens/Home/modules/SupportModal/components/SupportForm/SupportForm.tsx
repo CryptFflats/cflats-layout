@@ -13,6 +13,8 @@ import { Box } from '@mui/material';
 import { BlueButton } from '../../../../../../styled/BlueButton';
 import { ISubmit } from './types';
 import { ModalButton } from 'styled/ModalButton';
+import { Styles } from 'screens/Home/modules/ProfileSidebar/components/ProfileButton/styles';
+import styles from "./SupportForm.module.scss";
 
 const SupportForm = () => {
 	const {
@@ -37,9 +39,9 @@ const SupportForm = () => {
 								<ErrorMessage>{errors.name.message}</ErrorMessage>
 							)}
 						</InputLabelWrapper>
-						<Input
+						<Input placeholder='e.g. John Doe'
 							{...register('name', {
-								required: 'Required Field',
+								required: '*Required Field',
 								minLength: {
 									value: 2,
 									message: 'Min length is 2'
@@ -60,8 +62,9 @@ const SupportForm = () => {
 							)}
 						</InputLabelWrapper>
 						<Input
+							placeholder='e.g. some@mail.com'
 							{...register('email', {
-								required: 'Required Field',
+								required: '*Required Field',
 								pattern: {
 									value: /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/,
 									message: 'Enter a valid email address!'
@@ -78,8 +81,9 @@ const SupportForm = () => {
 							)}
 						</InputLabelWrapper>
 						<Input
+							placeholder='Input your text here...'
 							{...register('message', {
-								required: 'Required Field',
+								required: '*Required Field',
 								minLength: {
 									value: 10,
 									message: 'Min length is 10'
@@ -97,7 +101,7 @@ const SupportForm = () => {
 					</FormElement>
 
 					<Box sx={{ textAlign: 'center' }}>
-						<BlueButton type={'submit'}>SEND MESSAGE</BlueButton>
+						<BlueButton className={styles["__btn"]} type={'submit'}>SEND MESSAGE</BlueButton>
 					</Box>
 				</form>
 			</Container>

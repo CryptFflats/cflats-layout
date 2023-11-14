@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 
 export const FormWrapper = styled('div')(({ theme }) => ({
-	borderRadius: '50px',
+	borderRadius: '30px',
 	background: 'rgba(244, 233, 233, 1)',
 	padding: '30px 0 35px 0',
 

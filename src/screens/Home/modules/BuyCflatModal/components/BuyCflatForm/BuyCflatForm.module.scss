@@ -15,9 +15,8 @@
 	color: #5e5e5e;
 	font-size: 16px;
 	font-weight: 600;
-	margin: 0 50px;
+	margin: 0 100px;
 	margin-top: 24px;
-	margin-bottom: 13px;
 
 	@include _768 {
 		margin: 0;
@@ -27,7 +26,7 @@
 }
 
 .tokenInfo {
-	margin: 0 50px;
+	margin: -25px 95px 0 100px;
 
 	@include _768 {
 		margin: 0;

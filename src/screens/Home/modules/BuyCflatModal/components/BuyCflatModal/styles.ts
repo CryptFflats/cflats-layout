@@ -17,7 +17,7 @@ export const BuyCflatDialog = styled(Dialog)(({ theme }) => ({
 	},
 
 	'.MuiDialog-paper': {
-		borderRadius: '50px',
+		borderRadius: '30px',
 		background: 'var(--color-gray-light)',
 		maxWidth: '720px',
 		'@media(max-width: 768px)': {
@@ -55,7 +55,7 @@ export const FormHeader = styled('div')(({ theme }) => ({
 }));
 
 export const Container = styled('div')(({ theme }) => ({
-	padding: '0px 20px'
+	padding: '5px 20px'
 }));
 
 export const FormElement = styled('div')(({ theme }) => ({
