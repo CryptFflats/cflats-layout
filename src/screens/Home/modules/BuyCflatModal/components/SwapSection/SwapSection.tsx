@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	ComponentHolder,
 	MaxLabel,
@@ -15,6 +15,7 @@ import { getUsedToken } from '../Selector/Selector';
 import { ZeroAddress, ethers } from 'ethers';
 import { getExchangerContract } from 'core/utils/contract/utils/contracts';
 import { ErrorMessage } from 'screens/Home/components/WlBoxModal/components/WlForm/styles';
+import styles from './SwapSection.module.scss';
 
 
 export const SwapSection = (props: SwapSectionProps) => {
@@ -29,19 +30,14 @@ export const SwapSection = (props: SwapSectionProps) => {
 		{
 			return;
 		}
+		
 
 		const signer = await CflatsSigner.getSigner();
 		const exchangerContract = await getExchangerContract(signer);
 		const tokenUsed = getUsedToken();
 
 		const balance = tokenUsed === ethers.ZeroAddress ? await CflatsSigner.getBalance() : await CflatsSigner.getBalance(tokenUsed);
-
-
-		let decimals = 18;
-		if(tokenUsed.toLowerCase() !== ZeroAddress.toLowerCase())
-		{
-			decimals = 6;
-		}
+		const decimals = tokenUsed.toLowerCase() !== ZeroAddress.toLowerCase() ? 6 : 18;
 
 
 		const formatedValue = (new BigNumber(value)).multipliedBy(`1e${decimals}`);
@@ -50,7 +46,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 		if(formatedValue.isLessThan(minSwapAmount))
 		{
 			const formatedMinSwapAmount = (new BigNumber(minSwapAmount)).dividedBy(`1e${decimals}`);
-			setErroMsg(`Minimal Exchange amount for swap is ${formatedMinSwapAmount}`);
+			setErroMsg(`Minimal Exchange amount is ${formatedMinSwapAmount}`);
 		}
 		else if(formatedValue.isGreaterThan(balance.toString()))
 		{
@@ -74,6 +70,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 		}
 
 		setTokensAmountIn(formatedValue.toString());
+		
 		onChange(value);
 	};
 
@@ -99,7 +96,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 		if(formatedValue.isLessThan(minSwapAmount))
 		{
 			const formatedMinSwapAmount = (new BigNumber(minSwapAmount)).dividedBy(`1e${decimals}`);
-			setErroMsg(`Minimal Exchange amount for swap is ${formatedMinSwapAmount}`);
+			setErroMsg(`Minimal Exchange amount is ${formatedMinSwapAmount}`);
 		}
 		else
 		{
@@ -116,6 +113,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 		onChange(balance.toString() < '0.000001' ? '0' : `${formatedBalance.toFormat(5)}`);
 	};
 
+
 	return (
 		<SwapSectionWrapper>
 			<SwapSectionRow sx={{ mb: '8px' }}>
@@ -129,7 +127,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 						value={amount}
 						onChange={async e => handleChange(e)}
 					/>
-					<ErrorMessage>{getErrorMsg}</ErrorMessage>
+					<ErrorMessage className={styles["_err-msg"]}>{getErrorMsg}</ErrorMessage>
 				</SwapSectionAmountWrapper>
 				<ComponentHolder>
 					<TokenComponent />

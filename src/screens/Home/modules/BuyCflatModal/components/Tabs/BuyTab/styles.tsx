@@ -14,5 +14,5 @@ export const TabWrapper = styled(Box)(({ theme }) => ({
 }));
 
 export const CustomBlueBottom = styled(ModalButton)(() => ({
-	marginTop: '23px'
+	marginTop: '20px',
 }));

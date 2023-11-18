@@ -21,11 +21,13 @@ import { useAppDispatch } from 'core/hooks/store.hook';
 
 const CustomTabs = styled(Tabs)(({ theme }) => ({
 	'.MuiTabs-indicator': {
+
 		height: 0
 	},
 
 	'.MuiTabs-flexContainer': {
-		justifyContent: 'center'
+		justifyContent: 'center',
+		margin: '-10px !important'
 	}
 }));
 
@@ -104,8 +106,8 @@ const BuyCflatForm = () => {
 						onChange={handleChange}
 						aria-label='Buy sell tabs'
 					>
-						<StyledTab label='Buy /' />
-						<StyledTab label='Sell' disabled />
+						<StyledTab label='Buy' />
+						<StyledTab label=' / Sell' disabled />
 					</CustomTabs>
 					<BuyTab value={value} index={0} />
 				</TabsWrapper>
@@ -128,7 +130,7 @@ const BuyCflatForm = () => {
 };
 
 const TabsWrapper = styled(Box)(({ theme }) => ({
-	padding: '22px 14px',
+	padding: '20px 14px',
 	borderRadius: '25px',
 	border: '1px solid #C3B6B6',
 	background: '#EADEDE',

@@ -80,7 +80,7 @@ export const InputLabel = styled(FormLabel)(({ theme }) => ({
 	fontSize: '14px',
 	lineHeight: 'normal',
 	fontWeight: 600,
-	color: 'rgba(195, 182, 182, 1)',
+	color: '#767272',
 	textTransform: 'uppercase',
 	paddingLeft: '25px',
 
@@ -97,14 +97,16 @@ export const Input = styled(TextField)(({ theme }) => ({
 		borderRadius: '22px'
 	},
 	'.MuiOutlinedInput-notchedOutline': {
-		borderColor: '#C3B6B6',
-		borderWidth: '2px'
+		borderColor: '#767272',
+		borderWidth: 1,
 	},
 	'.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
-		borderColor: '#C3B6B6'
+		borderColor: '#767272',
+		borderWidth: 1,
 	},
 	'.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-		borderColor: '#C3B6B6'
+		borderColor: '#767272',
+		borderWidth: 1,
 	},
 	'.MuiInputBase-input': {
 		padding: '10px 25px',

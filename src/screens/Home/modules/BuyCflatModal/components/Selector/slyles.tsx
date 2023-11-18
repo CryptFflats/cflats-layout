@@ -8,12 +8,12 @@ export const BootstrapInput = styled(InputBase)(({ theme }) => ({
 		minWidth: '100px',
 		backgroundColor: '#EADEDE',
 		transition: theme.transitions.create(['border-color', 'box-shadow']),
-		padding: 2,
+		padding: 5,
 		'&:focus': {
 			border: 'none',
 			borderRadius: 50
 		}
-	}
+	},
 }));
 
 export const OptionText = styled('span')(() => ({

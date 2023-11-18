@@ -14,9 +14,20 @@ export const WlBoxDialog = styled(Dialog)(({ theme }) => ({
 		borderRadius: '30px',
 		background: 'var(--color-gray-light)',
 		maxWidth: '700px',
-		width: '100%',
+		
+		
+
 		'@media(max-width: 1920px)': {
 			maxWidth: '530px'
+		},
+
+		'@media(max-width: 760px)': {
+			padding: 0,
+			margin: 0,
+			maxHeight: '100vh !important',
+			maxWidth: '100vw',
+			height: '100vh',
+			borderRadius: '0',
 		}
 	}
 }));
@@ -25,7 +36,12 @@ export const WlBoxDialogContent = styled(DialogContent)(({ theme }) => ({
 	color: 'rgb(255, 255, 255)',
 	background: '#2c2c2c',
 	borderRadius: '0',
-	padding: '0'
+	padding: '0',
+	overflow: 'hidden',
+
+	'@media(max-width: 760px)': {
+		borderRadius: '0',
+	}
 }));
 
 export const CloseButton = styled(ButtonBase)(({ theme }) => ({
@@ -34,17 +50,21 @@ export const CloseButton = styled(ButtonBase)(({ theme }) => ({
 	right: '20px',
 
 	'@media(max-width: 480px)': {
-		top: '10px',
+		top: '43px',
 		right: '20px'
 	}
 }));
 
 export const FormHeader = styled('div')(({ theme }) => ({
 	padding: '40px 40px 10px 20px',
+
+	'@media(max-width: 760px)': {
+		padding: '35px 20px 10px 20px',
+	}
 }));
 
 export const Container = styled('div')(({ theme }) => ({
-	padding: '0 40px 0 40px',
+	padding: '0 40px',
 	
 
 	'@media (max-width: 480px)': {
@@ -54,33 +74,51 @@ export const Container = styled('div')(({ theme }) => ({
 
 export const Input = styled(TextField)(({ theme }) => ({
 	'&.MuiTextField-root': {
-		borderRadius: '20px'
+		borderRadius: '20px',
+
+		'@media (max-width: 760px)': {
+			width: '100% !important',
+		},
 	},
 	'& .MuiInputBase-root': {
 		borderRadius: '35px',
+
+		'@media (max-width: 760px)': {
+			width: '100% !important',
+		},
 	},
 	'.MuiOutlinedInput-notchedOutline': {
 		border: '1px solid #B1A6A6',
+
+		'@media (max-width: 760px)': {
+			width: '100% !important',
+		},
 	},
 	'.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
 		border: '1px solid #B1A6A6',
 	},
 	'.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
 		border: '1px solid #B1A6A6',
-		
 	},
 	'.MuiInputBase-input': {
 		padding: '7.5px 16px',
 		fontSize: '14px',
 		color: '#B1A6A6',
-		
+
+		'@media (max-width: 760px)': {
+			maxWidth: '100% !important',
+			textAlign: 'center',
+		},
 	}
 }));
 
 export const FormElement = styled('div')(({ theme }) => ({
 	display: 'flex',
 	flexDirection: 'column',
-	flex: 1
+	flex: 1,
+	'@media (max-width: 760px)': {
+		width: '100%',
+	},
 }));
 
 export const InputLabel = styled(FormLabel)(({ theme }) => ({
@@ -89,7 +127,9 @@ export const InputLabel = styled(FormLabel)(({ theme }) => ({
 	fontWeight: 600,
 	color: 'rgba(195, 182, 182, 1)',
 	textTransform: 'uppercase',
-	paddingLeft: '5px'
+	paddingLeft: '5px',
+
+	
 }));
 
 export const FormElementWrapper = styled('div')(({ theme }) => ({
@@ -99,7 +139,12 @@ export const FormElementWrapper = styled('div')(({ theme }) => ({
 	margin: '35px 0',
 	gap: '40px',
 
+	'@media (max-width: 760px)': {
+		flexDirection: 'column',
+		gap: '20px',
+	},
+
 	'@media (max-width: 480px)': {
-		margin: '20px 0'
+		margin: '40px 20px'
 	}
 }));

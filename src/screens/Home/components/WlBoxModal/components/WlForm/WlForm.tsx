@@ -160,7 +160,7 @@ const WlForm = () => {
 					</Text>
 
 					<Box className={styles.mintBox}>
-						<ModalButton onClick={submitWithoutWlBox}>MINT GEN#1</ModalButton>
+						<ModalButton className={styles.__mintBoxBtn} onClick={submitWithoutWlBox}>MINT GEN#1</ModalButton>
 					</Box>
 				</form>
 			</Container>

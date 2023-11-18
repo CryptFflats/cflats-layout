@@ -11,7 +11,7 @@ export const ModalButton = styled(Button)(({ theme }) => ({
 	alignItems: 'center',
 	position: 'relative',
 	background: '#0f6eb2',
-	boxShadow: '3px 6px 6px rgb(0 0 0 / 15%)',
+	boxShadow: '0 4px 4px rgb(0 0 0 / 25%)',
 	borderRadius: '50px',
 	textDecoration: 'none',
 	color: '#FFF',
@@ -35,8 +35,7 @@ export const ModalButton = styled(Button)(({ theme }) => ({
 	// 	lineHeight: '19.34px'
 	// },
 
-	// '@media(max-width: 576px)': {
-	// 	padding: '8px 15px',
-	// 	fontSize: '10px'
-	// }
+	'@media(max-width: 760px)': {
+		width: '100%',
+	}
 }));

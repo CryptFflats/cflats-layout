@@ -45,6 +45,10 @@ export const FlexBox = styled('div')(({ theme }) => ({
 	'& > span:nth-child(2)': {
 		fontWeight: 700,
 		fontSize: '14px',
+
+		'@media (max-width: 480px)': {
+			display: 'none',
+		}
 	}
 
 	

@@ -4,7 +4,12 @@ export const SwapSectionWrapper = styled(Box)(({ theme }) => ({
 	borderRadius: '25px',
 	background: '#F4E9E9',
 	padding: '15px 30px',
-	width: '100%'
+	width: '100%',
+
+	'@media(max-width: 768px)': {
+		padding: '10px 14px',
+		borderRadius: '17px',
+	}
 }));
 
 export const SwapSectionRow = styled(Box)(({ theme }) => ({
@@ -31,13 +36,17 @@ export const SwapSectionTitle = styled('span')(({ theme }) => ({
 	fontSize: '17px',
 	fontStyle: 'normal',
 	fontWeight: '400',
-	lineHeight: 'normal'
+	lineHeight: 'normal',
+
+	'@media(max-width: 768px)': {
+		fontSize: '14px',
+	}
 }));
 
 export const MaxLabel = styled(SwapSectionTitle)(({ theme }) => ({
 	color: '#C3B6B6',
 	'&:hover': {
-		cursor: 'pointer'
+		cursor: 'pointer',
 	}
 }));
 
@@ -48,13 +57,17 @@ export const SwapSectionAmountWrapper = styled('div')(({ theme }) => ({
 export const SwapSectionAmount = styled('input')(({ theme }) => ({
 	color: '#757575',
 	fontSize: '40px',
-	fontStyle: 'normal',
-	fontWeight: '600',
+	fontStyle: 'bold',
+	fontWeight: '500',
 	lineHeight: 'normal',
 	border: 'none',
 	background: '#F4E9E9',
 	outline: 'none',
 	width: '100%',
+
+	'@media(max-width: 768px)': {
+		fontSize: '35px',
+	},
 
 	'&:active': {
 		border: 'none'
@@ -86,6 +99,8 @@ export const ComponentHolder = styled('div')(({ theme }) => ({
 	position: 'absolute',
 	bottom: 0,
 	right: 0,
+	padding: 0,
+	margin: 0,
 
 	'@media(max-width: 768px)': {
 		position: 'static'

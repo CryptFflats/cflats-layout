@@ -3,6 +3,7 @@ import ProfileButton from '../../ProfileButton/ProfileButton';
 import { useAppDispatch } from '../../../../../../../core/hooks/store.hook';
 import { useTranslations } from 'next-intl';
 import { setBuyCflatModal } from '../../../../../../../core/store/slices/ModalSlice';
+import { setProfileActive } from 'core/store/slices/MenuSlice';
 
 const BuyCflat = () => {
 	const dispatch = useAppDispatch();
@@ -12,7 +13,10 @@ const BuyCflat = () => {
 		<ProfileButton
 			icon={<AiOutlineDollar />}
 			text={t('profileSidebar.buyCflat')}
-			onClick={() => dispatch(setBuyCflatModal(true))}
+			onClick={() => {
+				dispatch(setBuyCflatModal(true));
+				dispatch(setProfileActive(false));
+			}}
 		/>
 	);
 };

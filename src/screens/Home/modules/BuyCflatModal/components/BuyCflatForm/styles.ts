@@ -6,7 +6,8 @@ export const FormWrapper = styled('div')(({ theme }) => ({
 	padding: '25px 0 50px 0',
 	'@media(max-width: 768px)': {
 		borderRadius: '0',
-		height: '100%'
+		height: '100vh',
+		paddingTop: '15px',
 	}
 }));
 
