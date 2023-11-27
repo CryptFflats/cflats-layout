@@ -5,7 +5,7 @@ export const FormWrapper = styled('div')(({ theme }) => ({
 	background: 'rgba(244, 233, 233, 1)',
 	height: 325,
 
-	'@media (min-width: 1920px)': {
+	'@media (min-width: 1970px)': {
 		height: 360,
 	},
 
