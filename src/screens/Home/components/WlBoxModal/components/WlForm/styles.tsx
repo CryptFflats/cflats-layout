@@ -5,10 +5,14 @@ export const FormWrapper = styled('div')(({ theme }) => ({
 	background: 'rgba(244, 233, 233, 1)',
 	height: 325,
 
+	'@media (min-width: 1920px)': {
+		height: 360,
+	},
+
 	'@media(max-width: 760px)': {
 		borderRadius: 0,
 		height: '100%',
-	}
+	},
 }));
 
 export const ErrorMessage = styled('div')(({ theme }) => ({

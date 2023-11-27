@@ -13,13 +13,8 @@ export const WlBoxDialog = styled(Dialog)(({ theme }) => ({
 	'.MuiDialog-paper': {
 		borderRadius: '30px',
 		background: 'var(--color-gray-light)',
-		maxWidth: '700px',
-		
-		
-
-		'@media(max-width: 1920px)': {
-			maxWidth: '530px'
-		},
+		maxWidth: '530px',
+		fontSize: '1rem !important',
 
 		'@media(max-width: 760px)': {
 			padding: 0,

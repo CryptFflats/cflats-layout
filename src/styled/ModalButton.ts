@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 export const ModalButton = styled(Button)(({ theme }) => ({
 	transition: '0.05s ease-in-out',
 	padding: '7px 56px',
+	height: '36px',
 	fontSize: '14px',
 	lineHeight: '21px',
 	fontWeight: 700,

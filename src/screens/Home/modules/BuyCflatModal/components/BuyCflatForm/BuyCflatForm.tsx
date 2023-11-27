@@ -130,7 +130,7 @@ const BuyCflatForm = () => {
 };
 
 const TabsWrapper = styled(Box)(({ theme }) => ({
-	padding: '20px 14px',
+	padding: '20px',
 	borderRadius: '25px',
 	border: '1px solid #C3B6B6',
 	background: '#EADEDE',
