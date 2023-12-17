@@ -26,7 +26,7 @@ export const SwapSection = (props: SwapSectionProps) => {
 		const value = e.target.value;
 		
 
-		if(isNaN(Number(value)) === true)
+		if(isNaN(Number(value)))
 		{
 			return;
 		}

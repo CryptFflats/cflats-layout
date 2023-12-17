@@ -4,7 +4,7 @@ import { useConnect } from 'wagmi';
 import IcMetaMask from '../../../../../../assets/images/icons/metamask-icon.svg'
 import IcCoinBase  from '../../../../../../assets/images/icons/coinbase-icon.svg'
 import IcWalletConnect  from '../../../../../../assets/images/icons/wallet_connect-icon-b79e8b13.svg'
-import IcLedgerWallet  from '../../../../../../assets/images/icons/ledger-icon.svg'
+//import IcLedgerWallet  from '../../../../../../assets/images/icons/ledger-icon.svg'
 import ConnectButton from '../ConnectButton/ConnectButton';
 
 
@@ -32,12 +32,12 @@ const Wallets = () => {
 			loading: isLoading && connectors[2].id === pendingConnector?.id,
 			name: "Wallet Connect"
 		},
-		{
-			icon: <IcLedgerWallet />,
-			connector: connectors[3],
-			loading: isLoading && connectors[3].id === pendingConnector?.id,
-			name: "Ledger Wallet"
-		}
+		// {
+		// 	icon: <IcLedgerWallet />,
+		// 	connector: connectors[3],
+		// 	loading: isLoading && connectors[3].id === pendingConnector?.id,
+		// 	name: "Ledger Wallet"
+		// }
 	]
 
 //walletSidebar.about

@@ -8,7 +8,6 @@ import { FC } from 'react'
 interface SocialIconsProps {
 	className?: string
 	direction?: 'center' | 'start'
-
 }
 const SocialIcons: FC<SocialIconsProps> = ({ className }) => {
 	return (
