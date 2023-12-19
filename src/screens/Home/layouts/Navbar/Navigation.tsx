@@ -28,7 +28,7 @@ const Navigation = () => {
 				<a href={t(`navigation.faq.path`)}>{t(`navigation.faq.title`)}</a>
 			</li>
 			<li>
-				<a href="https://docs.cryptoflats.io">{t(`navigation.litepaper.title`)}</a>
+				<a target='_blank' href="https://docs.cryptoflats.io">{t(`navigation.litepaper.title`)}</a>
 			</li>
 			<li>
 				<a className={styles.navDapp} onClick={(e: any) => getInDevelopment(e)}>open dapp</a>

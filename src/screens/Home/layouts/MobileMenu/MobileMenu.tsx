@@ -44,8 +44,6 @@ const MobileMenu = () => {
 					</ul>
 
 					<SocialIcons className={styles.socialIcons} />
-
-					<LanguageChanger />
 				</div>
 			</div>
 		</Menu>
