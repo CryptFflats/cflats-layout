@@ -14,7 +14,7 @@ const Footer = () => {
 			<Container>
 				<div className={styles.row}>
 					<div className={styles.terms}>
-						<a href='/litepaper'>litepaper</a>
+						<a href='https://docs.cryptoflats.io'>litepaper</a>
 					</div>
 
 					<div className={styles.copyright}>
