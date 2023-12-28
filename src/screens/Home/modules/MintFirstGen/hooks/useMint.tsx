@@ -59,29 +59,42 @@ export const useMint = () => {
 				}
 
 				if (await contractGen.isUserEarlyAccessWhitelist(merkleTreeDataDiscount.merkleProof, signer.address) === true) {
+					const signerBalanceInEth = await CflatsSigner.getBalance();
+
+					// check user balance
+					if(signerBalanceInEth < discountPrice) {
+						const formatedBalance = (new BigNumber(signerBalanceInEth.toString())).dividedBy('1e18');
+						const errorMsg = `Balance should be at least 0.015 ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
+
+						dispatch(setIsMintErrorActive(true))
+						dispatch(setErrorMessage(errorMsg));
+
+						throw new Error(errorMsg);
+					}
+
 					return await contractGen.mint({
 						value: discountPrice
 					});
 				}
 			}
 
-			const signerBalanceInEth = await CflatsSigner.getBalance();
+			// const signerBalanceInEth = await CflatsSigner.getBalance();
+			//
+			// // check user balance
+			// if(signerBalanceInEth < publicSalePrice) {
+			// 	const formatedBalance = (new BigNumber(signerBalanceInEth.toString())).dividedBy('1e18');
+			// 	const errorMsg = `Balance should be at least 0.015 ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
+			//
+			// 	dispatch(setIsMintErrorActive(true))
+			// 	dispatch(setErrorMessage(errorMsg));
+			//
+			// 	throw new Error(errorMsg);
+			// }
 
-			// check user balance
-			if(signerBalanceInEth < publicSalePrice) {
-				const formatedBalance = (new BigNumber(signerBalanceInEth.toString())).dividedBy('1e18');
-				const errorMsg = `Balance should be at least 0.015 ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(5)} ETH`;
-
-				dispatch(setIsMintErrorActive(true))
-				dispatch(setErrorMessage(errorMsg));
-
-				throw new Error(errorMsg);
-			}
-
-			console.log(publicSalePrice)
-			return await contractGen.mint({
-				value: publicSalePrice
-			});
+			// console.log(publicSalePrice)
+			// return await contractGen.mint({
+			// 	value: publicSalePrice
+			// });
 		} catch (err: any) {
 			setIsError(true);
 			throw new Error(err);
