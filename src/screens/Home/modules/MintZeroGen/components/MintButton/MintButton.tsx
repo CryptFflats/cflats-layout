@@ -21,8 +21,6 @@ const MintButton = () => {
 	const {isConnected} = useAccount()
 	const t = useTranslations('Home')
 
-
-
 	const mint = async () => {
 		try {
 			if (!isConnected) return dispatch(setWalletActive(true))
