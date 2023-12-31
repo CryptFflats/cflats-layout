@@ -29,6 +29,8 @@ import styles from './WlForm.module.scss';
 import { useState } from 'react';
 import { Text } from 'UI/Text';
 import { ModalButton } from 'styled/ModalButton';
+import { DISCOUT_WL_ADDRESSES, FREE_WL_ADDRESSES, getMerkleTreeData } from 'core/utils/utils/helpers';
+import { useMintForGenOneIfSignerInWl } from 'screens/Home/modules/MintFirstGen/hooks/useMintForGenOneIfSignerInWl';
 
 const WlForm = () => {
 	const {
@@ -39,22 +41,42 @@ const WlForm = () => {
 	} = useForm<ISubmit>();
 
 	const dispatch = useAppDispatch();
-
+	const NOT_WL_BOX_ID = 555_555_555n;
 	const [getErrorMsg, setErrorMsg] = useState('');
 
 	const submit = async (data: ISubmit) => {
 		const boxId = data.boxId;
+
 		if (isNaN(Number(boxId))) {
 			return;
 		}
 
-		const signer = await CflatsSigner.getSigner();
-		const contractGen = await getNftContract(1, signer);
-
+		
 		try {
-			await contractGen.mint([], [], boxId, {
-				value: 0
-			});
+			const signer = await CflatsSigner.getSigner();
+			const contractGen = await getNftContract(1, signer);
+			const isWlBoxUsed = await contractGen.isWlBoxIdUsed(boxId);
+			
+			const merkleTreeDataFree = getMerkleTreeData(FREE_WL_ADDRESSES, signer.address);
+			const merkleTreeDataDiscount = getMerkleTreeData(DISCOUT_WL_ADDRESSES, signer.address);
+			
+			if(!isWlBoxUsed) {
+				await contractGen.mint(
+					merkleTreeDataFree.merkleProof,
+					merkleTreeDataDiscount.merkleProof,
+					boxId
+					);
+			} else {
+				const isUserFreePurchaseWhitelistWithoutWlBox = await contractGen.isUserFreePurchaseWhitelist(merkleTreeDataFree.merkleProof, signer.address, NOT_WL_BOX_ID);
+				const isUserEarlyAccessWhitelist = await contractGen.isUserEarlyAccessWhitelist(merkleTreeDataDiscount.merkleProof, signer.address);
+				
+				const boolToText = isUserFreePurchaseWhitelistWithoutWlBox === true ? `Sorry, but your WL BOX ${boxId} is already used you can choose other options of mint. You still can claim your NFT for free because you are in a FREE PURCHASE WHITELIST!` :
+					isUserEarlyAccessWhitelist ? `Sorry, but your WL BOX ${boxId} is already used you can choose other options of mint. You can claim your NFT with a discount because you are in a DISCOUNT WHITELIST!` : 
+					`Sorry, but your WL BOX ${boxId} is already used you can choose other options of mint`;
+
+				dispatch(setIsMintErrorActive(true))
+				dispatch(setErrorMessage(boolToText));
+			}
 		} catch (e: any) {
 			throw new Error(e);
 		}
@@ -63,30 +85,31 @@ const WlForm = () => {
 	const submitWithoutWlBox = async () => {
 		const signer = await CflatsSigner.getSigner();
 		const contractGen = await getNftContract(1, signer);
-		const signerBalanceInEth = await CflatsSigner.getBalance();
-		const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
-
-		if (signerBalanceInEth < publicSalePrice) {
-			const formatedBalance = new BigNumber(
-				signerBalanceInEth.toString()
-			).dividedBy('1e18');
-			const formatedPrice = new BigNumber(publicSalePrice.toString()).dividedBy(
-				'1e18'
-			);
-			const errorMsg = `Balance should be at least ${formatedPrice} ETH to buy GEN#0. Current balance ${formatedBalance.toFormat(
-				5
-			)} ETH`;
-
-			dispatch(setIsMintErrorActive(true));
-			dispatch(setErrorMessage(errorMsg));
-
-			throw new Error(errorMsg);
-		}
+		const merkleTreeDataFree = getMerkleTreeData(FREE_WL_ADDRESSES, signer.address);
+		const merkleTreeDataDiscount = getMerkleTreeData(DISCOUT_WL_ADDRESSES, signer.address);
 
 		try {
-			await contractGen.mint([], [], 20000, {
-				value: publicSalePrice
-			});
+			const isUserFreePurchaseWhitelistWithoutWlBox = await contractGen.isUserFreePurchaseWhitelist(merkleTreeDataFree.merkleProof, signer.address, NOT_WL_BOX_ID);
+			const isUserEarlyAccessWhitelist = await contractGen.isUserEarlyAccessWhitelist(merkleTreeDataDiscount.merkleProof, signer.address);
+
+			if(isUserFreePurchaseWhitelistWithoutWlBox || isUserEarlyAccessWhitelist) {
+				return await useMintForGenOneIfSignerInWl(
+					contractGen,
+					merkleTreeDataFree.merkleProof,
+					merkleTreeDataDiscount.merkleProof,
+					NOT_WL_BOX_ID,
+					dispatch
+				);
+			}
+
+			const publicSalePrice = await contractGen.PUBLIC_SALE_PRICE();
+			return await contractGen.mint(
+				merkleTreeDataFree.merkleProof,
+				merkleTreeDataDiscount.merkleProof,
+				NOT_WL_BOX_ID,
+				{
+					value: publicSalePrice
+				});
 		} catch (e: any) {
 			throw new Error(e);
 		}
