@@ -47,6 +47,10 @@ export const useMint = () => {
 			const merkleTreeDataDiscount = getMerkleTreeData(DISCOUT_WL_ADDRESSES, signer.address);
 
 
+			console.log('free', merkleTreeDataFree.merkleRoot)
+			console.log('discount', merkleTreeDataDiscount.merkleRoot)
+
+
 
 			// check if public sale is activated
 			if (await contractGen.isPublicSaleActive() === false) {
