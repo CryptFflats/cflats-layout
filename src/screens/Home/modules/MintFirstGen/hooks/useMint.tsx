@@ -47,8 +47,8 @@ export const useMint = () => {
 			const merkleTreeDataDiscount = getMerkleTreeData(DISCOUT_WL_ADDRESSES, signer.address);
 
 
-			console.log('free', merkleTreeDataFree.merkleRoot)
-			console.log('discount', merkleTreeDataDiscount.merkleRoot)
+			// console.log('free', merkleTreeDataFree.merkleRoot)
+			// console.log('discount', merkleTreeDataDiscount.merkleRoot)
 
 
 
